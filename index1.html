@@ -3,30 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="BallKutz — A Barbearia dos Campeões em Luanda. Cortes de excelência, planos de assinatura PRO & PRO MAX. Reserva já pelo WhatsApp." />
-  <meta name="keywords" content="barbearia Luanda, barbershop Angola, corte de cabelo Luanda, BallKutz, fade Angola, barba Luanda" />
-  <meta name="author" content="BallKutz Barbershop" />
-  <meta name="robots" content="index, follow" />
-  <title>BallKutz | Barbershop — Luanda, Angola</title>
-
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type"        content="business.business" />
-  <meta property="og:title"       content="BallKutz | A Barbearia dos Campeões — Luanda" />
-  <meta property="og:description" content="Cortes de precisão, experiência de clube premium em Luanda. Planos PRO e PRO MAX disponíveis. Reserva pelo WhatsApp." />
-  <meta property="og:url"         content="https://www.ballkutz.com" />
-  <meta property="og:image"       content="https://www.ballkutz.com/og-image.jpg" />
-  <meta property="og:locale"      content="pt_AO" />
-  <meta property="og:site_name"   content="BallKutz Barbershop" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="BallKutz | Barbershop — Luanda" />
-  <meta name="twitter:description" content="Cortes de precisão, experiência de clube premium em Luanda." />
-  <meta name="twitter:image"       content="https://www.ballkutz.com/og-image.jpg" />
-
-  <!-- Theme color for mobile browsers -->
-  <meta name="theme-color" content="#512944" />
-  <meta name="msapplication-TileColor" content="#512944" />
+  <meta name="description" content="BallKutz — A Barbearia dos Campeões em Luanda. Cortes de excelência com experiência de clube premium." />
+  <title>BallKutz | Barbershop — Luanda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -208,7 +186,7 @@
     /* ================================================
        NAVIGATION
        ================================================ */
-    .site-header {
+    .nav {
       position: fixed;
       top: 0;
       left: 0;
@@ -216,25 +194,20 @@
       z-index: 1000;
       padding: 1.2rem 0;
       transition: background 0.35s ease, padding 0.35s ease;
-      /* Prevent any child from bleeding outside */
-      overflow: hidden;
     }
 
-    .site-header--scrolled {
+    .nav--scrolled {
       background: rgba(10,10,10,0.95);
       backdrop-filter: blur(16px);
       padding: 0.75rem 0;
       border-bottom: 1px solid var(--border);
-      overflow: visible; /* allow shadow to show when scrolled */
     }
 
     .nav__inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      /* Clamp total width so nothing escapes the container */
-      width: 100%;
+      gap: 2rem;
     }
 
     .nav__logo {
@@ -242,22 +215,19 @@
       align-items: center;
       gap: 0.6rem;
       flex-shrink: 0;
-      text-decoration: none;
     }
 
     .nav__logo-icon {
-      width: 36px;
-      height: 36px;
-      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
     }
 
     .nav__logo-text {
       font-family: var(--font-heading);
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 700;
       letter-spacing: 0.05em;
       color: var(--white);
-      white-space: nowrap;
     }
 
     .nav__logo-text span { color: var(--gold); }
@@ -265,21 +235,17 @@
     .nav__links {
       display: flex;
       align-items: center;
-      gap: 2rem;
-      /* Allow links to shrink before overflowing */
-      flex-wrap: nowrap;
-      min-width: 0;
+      gap: 2.5rem;
     }
 
     .nav__links a {
       font-family: var(--font-heading);
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--grey-light);
       transition: color 0.2s ease;
       position: relative;
-      white-space: nowrap;
     }
 
     .nav__links a::after {
@@ -299,21 +265,19 @@
     .nav__actions {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
+      gap: 1rem;
     }
 
     .lang-toggle {
       font-family: var(--font-heading);
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
       color: var(--grey-light);
       border: 1px solid rgba(255,255,255,0.15);
-      padding: 0.38rem 0.7rem;
+      padding: 0.4rem 0.8rem;
       transition: var(--transition);
       cursor: pointer;
       background: transparent;
-      white-space: nowrap;
     }
 
     .lang-toggle:hover {
@@ -323,97 +287,50 @@
 
     .nav__hamburger {
       display: none;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       color: var(--white);
-      padding: 0.4rem 0.5rem;
+      padding: 0.3rem;
       background: transparent;
-      cursor: pointer;
-      flex-shrink: 0;
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: border-color 0.2s ease;
     }
 
-    .nav__hamburger:hover { border-color: var(--gold); color: var(--gold); }
-
-    /* ── Mobile full-screen drawer ── */
+    /* Mobile menu */
     .nav__mobile {
       position: fixed;
       inset: 0;
       background: var(--black);
-      /* Above header so it covers everything */
-      z-index: 1001;
+      z-index: 999;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
-      /* Slide in from the right */
+      gap: 2.5rem;
       transform: translateX(100%);
       transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      overflow-y: auto;
-      padding: 5rem 2rem 3rem;
     }
 
     .nav__mobile.open { transform: translateX(0); }
 
-    /* All anchor & button children in mobile menu */
-    .nav__mobile .mobile-link,
-    .nav__mobile .mobile-call-link {
+    .nav__mobile a {
       font-family: var(--font-heading);
-      font-size: clamp(1.8rem, 6vw, 2.8rem);
+      font-size: 2.5rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--grey-light);
       transition: color 0.2s ease;
-      text-decoration: none;
     }
 
-    .nav__mobile .mobile-link:hover,
-    .nav__mobile .mobile-call-link:hover { color: var(--gold); }
-
-    .nav__mobile .mobile-divider {
-      width: 40px;
-      height: 1px;
-      background: var(--border);
-    }
+    .nav__mobile a:hover { color: var(--gold); }
 
     .nav__mobile-close {
       position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
+      top: 1.5rem;
+      right: 1.5rem;
       font-size: 1.5rem;
       color: var(--grey-light);
       background: transparent;
       cursor: pointer;
-      border: 1px solid rgba(255,255,255,0.1);
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: var(--transition);
     }
-
-    .nav__mobile-close:hover { color: var(--gold); border-color: var(--gold); }
-
-    .nav__mobile .mobile-lang {
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      color: var(--grey);
-      text-transform: uppercase;
-      border: 1px solid var(--border);
-      padding: 0.4rem 1rem;
-      background: transparent;
-      cursor: pointer;
-      transition: var(--transition);
-      margin-top: 0.5rem;
-    }
-
-    .nav__mobile .mobile-lang:hover { color: var(--gold); border-color: var(--gold); }
 
     /* ================================================
        HERO
@@ -1420,13 +1337,8 @@
     }
 
     @media (max-width: 768px) {
-      /* Nav: hide desktop links and reservar button, show hamburger */
-      .nav__links { display: none; }
-      .nav__actions .btn { display: none; }
+      .nav__links, .nav__actions .btn { display: none; }
       .nav__hamburger { display: flex; }
-      /* Keep lang toggle visible in desktop actions */
-      .nav__actions { gap: 0.5rem; }
-
       .plans__grid { grid-template-columns: 1fr; }
       .gallery__grid { grid-template-columns: 1fr 1fr; }
       .gallery__item:nth-child(1) { grid-row: auto; aspect-ratio: 3/4; }
@@ -1434,472 +1346,14 @@
       .form-row { grid-template-columns: 1fr; }
       .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
       .hero__stats { gap: 1.5rem; flex-wrap: wrap; }
-      .review-card { flex: 0 0 85vw; }
+      .review-card { flex: 0 0 calc(85vw); }
       .time-slots-grid { grid-template-columns: repeat(3, 1fr); }
-      .booking-mode-btns { flex-direction: column; }
-      .booking-mode-card { flex: 1 1 100%; }
     }
 
     @media (max-width: 480px) {
-      .btn { padding: 0.75rem 1.2rem; font-size: 0.78rem; }
+      .btn { padding: 0.75rem 1.4rem; font-size: 0.8rem; }
       .gallery__grid { grid-template-columns: 1fr; }
       .gallery__item { aspect-ratio: 4/3 !important; grid-column: auto !important; }
-      .nav__logo-text { font-size: 1.1rem; }
-    }
-
-    /* ================================================
-       ABOUT / BRAND STORY SECTION
-       ================================================ */
-    .about {
-      background: var(--black);
-      padding: clamp(4rem, 8vw, 7rem) 0;
-      position: relative;
-      z-index: 1;
-    }
-
-    .about__layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(3rem, 6vw, 6rem);
-      align-items: center;
-    }
-
-    .about__visual {
-      position: relative;
-    }
-
-    .about__visual-main {
-      width: 100%;
-      aspect-ratio: 4/5;
-      object-fit: cover;
-      filter: brightness(0.85) contrast(1.1);
-    }
-
-    .about__visual-badge {
-      position: absolute;
-      bottom: -1.5rem;
-      right: -1.5rem;
-      width: 130px;
-      height: 130px;
-      background: var(--purple);
-      border: 2px solid var(--gold);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .about__visual-badge .number {
-      font-family: var(--font-heading);
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--gold);
-      line-height: 1;
-    }
-
-    .about__visual-badge .text {
-      font-family: var(--font-heading);
-      font-size: 0.6rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-top: 0.3rem;
-      line-height: 1.3;
-    }
-
-    .about__content { }
-
-    .about__values {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 2.5rem;
-    }
-
-    .about__value {
-      padding: 1.2rem 1.5rem;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about__value::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 3px;
-      height: 100%;
-      background: var(--gold);
-    }
-
-    .about__value-icon {
-      font-size: 1.2rem;
-      color: var(--gold);
-      margin-bottom: 0.6rem;
-    }
-
-    .about__value-title {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.35rem;
-    }
-
-    .about__value-text {
-      font-size: 0.78rem;
-      color: var(--grey-light);
-      line-height: 1.55;
-    }
-
-    @media (max-width: 768px) {
-      .about__layout { grid-template-columns: 1fr; gap: 2.5rem; }
-      .about__visual-badge { bottom: -1rem; right: -0.5rem; width: 100px; height: 100px; }
-      .about__visual-badge .number { font-size: 1.7rem; }
-      .about__values { grid-template-columns: 1fr; gap: 1rem; }
-    }
-
-    /* ================================================
-       YOUTUBE FACADE (Gallery Video)
-       ================================================ */
-    .yt-facade {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: var(--black);
-      cursor: pointer;
-      overflow: hidden;
-      margin-top: 4px;
-    }
-
-    .yt-facade__thumb {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease, filter 0.3s ease;
-      filter: brightness(0.7);
-    }
-
-    .yt-facade:hover .yt-facade__thumb {
-      transform: scale(1.03);
-      filter: brightness(0.55);
-    }
-
-    .yt-facade__play {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.8rem;
-      pointer-events: none;
-    }
-
-    .yt-facade__play-icon {
-      width: 72px;
-      height: 72px;
-      background: rgba(10,10,10,0.8);
-      border: 2px solid var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      color: var(--gold);
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    .yt-facade:hover .yt-facade__play-icon {
-      transform: scale(1.12);
-      background: var(--gold);
-      color: var(--black);
-    }
-
-    .yt-facade__label {
-      font-family: var(--font-heading);
-      font-size: 0.75rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: rgba(0,0,0,0.5);
-      padding: 0.3rem 0.8rem;
-    }
-
-    .yt-facade__iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* ================================================
-       MOBILE STICKY CTA BAR
-       ================================================ */
-    .mobile-cta-bar {
-      display: none; /* shown only on mobile via media query */
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 980;
-      background: rgba(10,10,10,0.97);
-      backdrop-filter: blur(12px);
-      border-top: 1px solid var(--border);
-      padding: 0.75rem 1rem;
-      gap: 0.75rem;
-    }
-
-    .mobile-cta-bar a,
-    .mobile-cta-bar button {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.85rem 0.5rem;
-      font-family: var(--font-heading);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: var(--transition);
-      cursor: pointer;
-      border: none;
-    }
-
-    .mobile-cta-bar .mcta-call {
-      background: transparent;
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .mobile-cta-bar .mcta-call:hover {
-      border-color: #25D366;
-      color: #25D366;
-    }
-
-    .mobile-cta-bar .mcta-book {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--black);
-      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
-    }
-
-    .mobile-cta-bar .mcta-book:hover {
-      opacity: 0.92;
-      transform: translateY(-1px);
-    }
-
-    @media (max-width: 768px) {
-      .mobile-cta-bar {
-        display: flex;
-      }
-      /* Push page content above the bar so nothing hides behind it */
-      body { padding-bottom: 72px; }
-      /* Float WA button sits above the bar */
-      .whatsapp-float { bottom: 5.5rem; }
-    }
-
-    /* ================================================
-       SCROLL-TO-TOP BUTTON
-       ================================================ */
-    .scroll-top {
-      position: fixed;
-      bottom: 2rem;
-      left: 2rem;
-      z-index: 890;
-      width: 44px;
-      height: 44px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--gold);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(12px);
-      transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.2s ease;
-      pointer-events: none;
-      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
-    }
-
-    .scroll-top.visible {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: all;
-    }
-
-    .scroll-top:hover {
-      border-color: var(--gold);
-      background: var(--surface-2);
-    }
-
-    @media (max-width: 768px) {
-      .scroll-top { bottom: 5.5rem; left: 1rem; }
-    }
-
-    /* ================================================
-       BOOKING MODE CHOOSER
-       ================================================ */
-    .booking-quick-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .btn--call {
-      background: transparent;
-      color: var(--white);
-      border: 1px solid rgba(37,211,102,0.5);
-    }
-    .btn--call:hover {
-      background: rgba(37,211,102,0.12);
-      border-color: #25D366;
-      color: #25D366;
-      transform: translateY(-2px);
-    }
-
-    .btn--wa-quick {
-      background: rgba(37,211,102,0.1);
-      color: #25D366;
-      border: 1px solid rgba(37,211,102,0.4);
-    }
-    .btn--wa-quick:hover {
-      background: rgba(37,211,102,0.2);
-      border-color: #25D366;
-      transform: translateY(-2px);
-    }
-
-    /* Mode chooser cards */
-    .booking-mode-chooser {
-      margin-bottom: 2rem;
-    }
-
-    .booking-mode-label {
-      font-family: var(--font-heading);
-      font-size: 0.65rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--grey-light);
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .booking-mode-btns {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .booking-mode-card {
-      flex: 1 1 0;
-      padding: 1.4rem 1.2rem;
-      background: var(--surface-2);
-      border: 2px solid var(--border);
-      cursor: pointer;
-      transition: var(--transition);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .booking-mode-card:hover {
-      border-color: var(--gold);
-    }
-
-    .booking-mode-card.active {
-      border-color: var(--gold);
-      background: rgba(133,117,78,0.08);
-    }
-
-    .booking-mode-card.active::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-light));
-    }
-
-    .booking-mode-card__icon {
-      font-size: 1.8rem;
-      margin-bottom: 0.6rem;
-      display: block;
-      color: var(--grey-light);
-      transition: color 0.2s ease;
-    }
-
-    .booking-mode-card.active .booking-mode-card__icon { color: var(--gold); }
-
-    .booking-mode-card__title {
-      font-family: var(--font-heading);
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.3rem;
-      color: var(--white);
-    }
-
-    .booking-mode-card__sub {
-      font-size: 0.7rem;
-      color: var(--grey);
-      line-height: 1.4;
-    }
-
-    /* Panel transitions */
-    .booking-panel {
-      opacity: 0;
-      transform: translateY(16px);
-      pointer-events: none;
-      max-height: 0;
-      overflow: hidden;
-      transition: opacity 0.35s ease, transform 0.35s ease, max-height 0.4s ease;
-    }
-
-    .booking-panel.panel-visible {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: all;
-      max-height: 1200px;
-    }
-
-    /* Home visit extra fields */
-    .home-location-field {
-      margin-top: 0.5rem;
-    }
-
-    textarea.form-input {
-      resize: vertical;
-      min-height: 90px;
-    }
-
-    /* Divider with text */
-    .or-divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin: 1.8rem 0;
-      font-family: var(--font-heading);
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      color: var(--grey);
-      text-transform: uppercase;
-    }
-    .or-divider::before, .or-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
     }
   </style>
 </head>
@@ -1909,12 +1363,12 @@
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
-  <header class="site-header" id="mainNav" role="banner">
+  <nav class="nav" id="mainNav">
     <div class="container">
-      <nav class="nav__inner" aria-label="Primary navigation">
+      <div class="nav__inner">
 
-        <a href="#" class="nav__logo" aria-label="BallKutz — página principal">
-          <svg class="nav__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <a href="#" class="nav__logo">
+          <svg class="nav__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" fill="#512944"/>
             <path d="M20 6 L26 16 L38 18 L29 27 L31 39 L20 33 L9 39 L11 27 L2 18 L14 16 Z" fill="#85754E" opacity="0.9"/>
             <circle cx="20" cy="22" r="5" fill="#0a0a0a"/>
@@ -1923,8 +1377,7 @@
           <span class="nav__logo-text">BALL<span>KUTZ</span></span>
         </a>
 
-        <ul class="nav__links" role="list">
-          <li><a href="#sobre" data-i18n="nav_about">Sobre</a></li>
+        <ul class="nav__links">
           <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
           <li><a href="#planos" data-i18n="nav_plans">Planos</a></li>
           <li><a href="#equipa" data-i18n="nav_team">Equipa</a></li>
@@ -1932,38 +1385,28 @@
         </ul>
 
         <div class="nav__actions">
-          <button class="lang-toggle" id="langToggle" aria-label="Mudar idioma">EN</button>
+          <button class="lang-toggle" id="langToggle">EN</button>
           <a href="#reservar" class="btn btn--primary" data-i18n="nav_cta">Reservar</a>
-          <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
-            <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          </button>
         </div>
 
-      </nav>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Mobile Full-screen Drawer -->
-  <div class="nav__mobile" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
-    <button class="nav__mobile-close" id="mobileClose" aria-label="Fechar menu">
-      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobileMenu" role="navigation" aria-label="Mobile menu">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
     </button>
-
-    <a href="#sobre"    class="mobile-link" data-i18n="nav_about">Sobre</a>
-    <a href="#servicos"  class="mobile-link" data-i18n="nav_services">Serviços</a>
-    <a href="#planos"    class="mobile-link" data-i18n="nav_plans">Planos</a>
-    <a href="#equipa"    class="mobile-link" data-i18n="nav_team">Equipa</a>
-    <a href="#galeria"   class="mobile-link" data-i18n="nav_gallery">Galeria</a>
-
-    <div class="mobile-divider"></div>
-
-    <a href="#reservar"  class="btn btn--primary mobile-link" data-i18n="nav_cta">Reservar</a>
-    <!-- ⚙️ UPDATE: Replace +244900000000 with actual phone number -->
-    <a href="tel:+244900000000" class="mobile-call-link">
-      <i class="fa-solid fa-phone" aria-hidden="true"></i> Ligar Agora
-    </a>
-
-    <button class="mobile-lang" id="mobileLangToggle" aria-label="Mudar idioma">PT / EN</button>
+    <a href="#servicos" class="mobile-link" data-i18n="nav_services">Serviços</a>
+    <a href="#planos" class="mobile-link" data-i18n="nav_plans">Planos</a>
+    <a href="#equipa" class="mobile-link" data-i18n="nav_team">Equipa</a>
+    <a href="#galeria" class="mobile-link" data-i18n="nav_gallery">Galeria</a>
+    <a href="#reservar" class="btn btn--primary" data-i18n="nav_cta">Reservar</a>
   </div>
 
   <!-- ============================================================
@@ -2023,66 +1466,6 @@
     </div>
 
     <div class="hero__diagonal-accent"></div>
-  </section>
-
-  <!-- ============================================================
-       SOBRE NÓS (ABOUT)
-       ============================================================ -->
-  <section class="about" id="sobre">
-    <div class="container">
-      <div class="about__layout">
-
-        <!-- Visual -->
-        <div class="about__visual reveal">
-          <img
-            class="about__visual-main"
-            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=80"
-            alt="Interior da BallKutz Barbershop Luanda"
-            loading="lazy"
-          />
-          <div class="about__visual-badge">
-            <span class="number">2+</span>
-            <span class="text">Anos de excelência</span>
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div class="about__content reveal">
-          <span class="label" data-i18n="about_eyebrow">A nossa história</span>
-          <h2 class="heading-lg" style="margin-top:0.75rem;margin-bottom:1.2rem;" data-i18n="about_title">MAIS DO QUE UM CORTE.</h2>
-          <p style="font-size:0.95rem;color:var(--grey-light);line-height:1.8;margin-bottom:1rem;" data-i18n="about_p1">
-            A BallKutz nasceu da fusão entre dois mundos: a precisão do barbeiro e a paixão pelo desporto. Um espaço onde cada visita é uma experiência única — música, jogo e o melhor corte da tua vida.
-          </p>
-          <p style="font-size:0.95rem;color:var(--grey-light);line-height:1.8;" data-i18n="about_p2">
-            Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, a tua imagem está sempre no topo da tabela.
-          </p>
-
-          <div class="about__values">
-            <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
-              <div class="about__value-title" data-i18n="about_v1_title">Excelência</div>
-              <div class="about__value-text" data-i18n="about_v1_text">Cada corte é executado com precisão absoluta e atenção ao detalhe.</div>
-            </div>
-            <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
-              <div class="about__value-title" data-i18n="about_v2_title">Comunidade</div>
-              <div class="about__value-text" data-i18n="about_v2_text">Um espaço de convívio onde o desporto une os nossos clientes.</div>
-            </div>
-            <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-              <div class="about__value-title" data-i18n="about_v3_title">Confiança</div>
-              <div class="about__value-text" data-i18n="about_v3_text">Profissionalismo e compromisso em cada serviço prestado.</div>
-            </div>
-            <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
-              <div class="about__value-title" data-i18n="about_v4_title">Luxo</div>
-              <div class="about__value-text" data-i18n="about_v4_text">Decoração premium que faz sentires-te num clube de campeões.</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
   </section>
 
   <!-- ============================================================
@@ -2441,34 +1824,14 @@
           <img src="https://images.unsplash.com/photo-1570872626485-d8ffea69f463?w=600&q=80" alt="BallKutz haircut 6" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Ritual</span></div>
         </div>
-      </div><!-- /gallery__grid -->
-
-      <!-- YouTube Video Facade — ⚙️ Set data-video-id to your actual YouTube ID -->
-      <div
-        class="yt-facade reveal"
-        id="ytFacade"
-        data-video-id="VIDEO_ID"
-        role="button"
-        tabindex="0"
-        aria-label="Assistir ao vídeo BallKutz no YouTube"
-      >
-        <img
-          class="yt-facade__thumb"
-          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1280&q=80"
-          alt="BallKutz — vídeo dos nossos trabalhos"
-          loading="lazy"
-        />
-        <div class="yt-facade__play" aria-hidden="true">
-          <div class="yt-facade__play-icon">
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <span class="yt-facade__label" data-i18n="gallery_yt_label">Ver no YouTube</span>
-        </div>
       </div>
 
     </div>
   </section>
-      
+
+  <!-- ============================================================
+       AVALIAÇÕES (REVIEWS)
+       ============================================================ -->
   <section class="section reviews" id="avaliacoes">
     <div class="container">
 
@@ -2569,7 +1932,7 @@
 
       <div class="booking__layout">
 
-        <!-- ── Left: contact info ── -->
+        <!-- Contact Info -->
         <div class="booking__info reveal">
           <p class="hero__sub" style="margin-bottom:0" data-i18n="booking_desc">
             Preenche o formulário e recebes confirmação no teu WhatsApp em breve.
@@ -2577,29 +1940,30 @@
 
           <div class="booking__contact-items">
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div>
                 <div class="booking__contact-label" data-i18n="contact_address_label">Morada</div>
+                <!-- ⚙️ UPDATE: Replace with actual address -->
                 <div class="booking__contact-value">Luanda, Angola</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
               <div>
                 <div class="booking__contact-label">WhatsApp</div>
-                <!-- ⚙️ UPDATE phone -->
+                <!-- ⚙️ UPDATE: Replace with actual phone number -->
                 <div class="booking__contact-value">+244 9XX XXX XXX</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-solid fa-clock"></i></div>
               <div>
                 <div class="booking__contact-label" data-i18n="contact_hours_label">Horário</div>
                 <div class="booking__contact-value" data-i18n="contact_hours">Seg–Sáb: 09h–19h · Dom: 10h–16h</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-brands fa-instagram"></i></div>
               <div>
                 <div class="booking__contact-label">Instagram</div>
                 <div class="booking__contact-value">@ballkutzbarbershop</div>
@@ -2608,239 +1972,107 @@
           </div>
         </div>
 
-        <!-- ── Right: booking form area ── -->
+        <!-- Booking Form -->
         <div class="booking-form reveal" id="bookingFormWrap">
 
-          <!-- Quick-contact bar: Call + WhatsApp without form -->
-          <div class="booking-quick-actions">
-            <!-- ⚙️ UPDATE tel number -->
-            <a href="tel:+244900000000" class="btn btn--call">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span data-i18n="quick_call">Ligar Agora</span>
-            </a>
-            <a href="https://wa.me/244900000000" target="_blank" rel="noopener" class="btn btn--wa-quick" id="waQuickBtn">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="quick_wa">WhatsApp Rápido</span>
-            </a>
-          </div>
+          <!-- ⚙️ FormSubmit.co: Replace 'info@ballkutz.com' with actual email before going live -->
+          <!-- The form uses JS/fetch for submission below -->
 
-          <div class="or-divider" data-i18n="or_form">ou preenche o formulário</div>
+          <!-- Honeypot anti-spam -->
+          <input class="form-honeypot" type="text" name="_honeypot" id="honeypot" tabindex="-1" autocomplete="off" />
 
-          <!-- ── Step 1: Choose mode ── -->
-          <div class="booking-mode-chooser">
-            <span class="booking-mode-label" data-i18n="mode_label">Como preferes o teu corte?</span>
-            <div class="booking-mode-btns" role="group" aria-label="Escolha do tipo de reserva">
-
-              <button class="booking-mode-card active" id="modeBarbershop" data-mode="barbershop" aria-pressed="true">
-                <span class="booking-mode-card__icon" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
-                <div class="booking-mode-card__title" data-i18n="mode_shop_title">Na Barbearia</div>
-                <div class="booking-mode-card__sub" data-i18n="mode_shop_sub">Vens até nós. Experiência completa de clube.</div>
-              </button>
-
-              <button class="booking-mode-card" id="modeHome" data-mode="home" aria-pressed="false">
-                <span class="booking-mode-card__icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
-                <div class="booking-mode-card__title" data-i18n="mode_home_title">Ao Domicílio</div>
-                <div class="booking-mode-card__sub" data-i18n="mode_home_sub">Vamos até ti. Corte no conforto da tua casa.</div>
-              </button>
-
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="clientName" data-i18n="form_name">Nome</label>
+              <input class="form-input" type="text" id="clientName" placeholder="O teu nome" autocomplete="name" />
+              <div class="form-error" id="nameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="clientPhone" data-i18n="form_phone">WhatsApp</label>
+              <input class="form-input" type="tel" id="clientPhone" placeholder="+244 9XX XXX XXX" autocomplete="tel" />
+              <div class="form-error" id="phoneError" data-i18n="form_phone_error">Número de WhatsApp inválido.</div>
             </div>
           </div>
 
-          <!-- Honeypot (shared) -->
-          <input class="form-honeypot" type="text" name="_honeypot" id="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-group">
+            <label class="form-label" for="clientEmail" data-i18n="form_email">E-mail <span style="color:var(--grey)">(opcional)</span></label>
+            <input class="form-input" type="email" id="clientEmail" placeholder="email@exemplo.com" autocomplete="email" />
+          </div>
 
-          <!-- ══════════════════════════════════
-               PANEL A: Barbershop Form
-               ══════════════════════════════════ -->
-          <div class="booking-panel panel-visible" id="panelBarbershop" aria-live="polite">
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="clientName" data-i18n="form_name">Nome</label>
-                <input class="form-input" type="text" id="clientName" placeholder="O teu nome" autocomplete="name" />
-                <div class="form-error" id="nameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="clientPhone" data-i18n="form_phone">WhatsApp</label>
-                <input class="form-input" type="tel" id="clientPhone" placeholder="+244 9XX XXX XXX" autocomplete="tel" />
-                <div class="form-error" id="phoneError" data-i18n="form_phone_error">Número de WhatsApp inválido.</div>
-              </div>
-            </div>
-
+          <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="clientEmail" data-i18n="form_email">E-mail <span style="color:var(--grey)">(opcional)</span></label>
-              <input class="form-input" type="email" id="clientEmail" placeholder="email@exemplo.com" autocomplete="email" />
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="bookingService" data-i18n="form_service">Serviço</label>
-                <select class="form-select" id="bookingService">
-                  <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
-                  <optgroup label="Cortes">
-                    <option value="Line Up">Line Up — 1.500 KZ</option>
-                    <option value="Kutz Criança">Kutz Criança — 3.000 KZ</option>
-                    <option value="Kutz Cabelo">Kutz Cabelo — 4.500 KZ</option>
-                    <option value="Degradê Completo">Degradê Completo — 5.000 KZ</option>
-                    <option value="Ballkutz Ritual">Ballkutz Ritual — 6.000 KZ</option>
-                    <option value="Design Premium">Design Premium — 7.000 KZ</option>
-                  </optgroup>
-                  <optgroup label="Barba">
-                    <option value="Aparar Barba">Aparar Barba — 2.000 KZ</option>
-                    <option value="Kutz Barba">Kutz Barba — 4.000 KZ</option>
-                    <option value="Barba + Design">Barba + Design — 4.500 KZ</option>
-                    <option value="Barba Ritual Navalha">Barba Ritual Navalha — 5.500 KZ</option>
-                  </optgroup>
-                  <optgroup label="Estética">
-                    <option value="Limpeza de Pele">Limpeza de Pele — 6.000 KZ</option>
-                    <option value="Hidratação Capilar">Hidratação Capilar — 5.500 KZ</option>
-                    <option value="24K Gold Limpeza de Pele">24K Gold Limpeza de Pele — 10.000 KZ</option>
-                    <option value="Pigmentação Capilar">Pigmentação Capilar — 7.500 KZ</option>
-                  </optgroup>
-                  <optgroup label="Combo">
-                    <option value="Kutz Cabelo + Barba">Kutz Cabelo + Barba — 8.000 KZ</option>
-                    <option value="Ritual Completo">Ritual Completo — 12.000 KZ</option>
-                    <option value="VIP Champion Package">VIP Champion Package — 18.000 KZ</option>
-                  </optgroup>
-                </select>
-                <div class="form-error" id="serviceError" data-i18n="form_service_error">Seleciona um serviço.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="bookingBarber" data-i18n="form_barber">Barbeiro</label>
-                <select class="form-select" id="bookingBarber">
-                  <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
-                  <option value="Mário Santos">Mário Santos — Head Barber</option>
-                  <option value="Carlos Lopes">Carlos Lopes — Senior Barber</option>
-                  <option value="André Mendes">André Mendes — Skin Specialist</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="bookingDate" data-i18n="form_date">Data</label>
-                <input class="form-input" type="date" id="bookingDate" />
-                <div class="form-error" id="dateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_time">Hora</label>
-                <div class="time-slots-grid" id="timeSlotsGrid" role="group" aria-label="Escolha o horário">
-                  <!-- Generated by JS -->
-                </div>
-                <div class="form-error" id="timeError" data-i18n="form_time_error">Seleciona um horário.</div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="consent-label">
-                <input type="checkbox" id="consentCheck" />
-                <span data-i18n="form_consent">Concordo com o tratamento dos meus dados para fins de marcação e comunicação de promoções da BallKutz.</span>
-              </label>
-              <div class="form-error" id="consentError" data-i18n="form_consent_error">Precisas de aceitar para continuar.</div>
-            </div>
-
-            <button class="btn btn--primary form-submit-btn" id="submitBooking" type="button">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="form_submit">Confirmar Marcação</span>
-            </button>
-
-          </div><!-- /panelBarbershop -->
-
-          <!-- ══════════════════════════════════
-               PANEL B: At-Home Form
-               ══════════════════════════════════ -->
-          <div class="booking-panel" id="panelHome" aria-live="polite">
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="homeClientName" data-i18n="form_name">Nome</label>
-                <input class="form-input" type="text" id="homeClientName" placeholder="O teu nome" autocomplete="name" />
-                <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="homeClientPhone" data-i18n="form_phone">WhatsApp / Telemóvel</label>
-                <input class="form-input" type="tel" id="homeClientPhone" placeholder="+244 9XX XXX XXX" autocomplete="tel" />
-                <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número de WhatsApp inválido.</div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada / Localização</label>
-              <textarea class="form-input" id="homeLocation" placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda. Ou partilha o link da tua localização Google Maps." rows="3"></textarea>
-              <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua morada.</div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
-              <select class="form-select" id="homeService">
+              <label class="form-label" for="bookingService" data-i18n="form_service">Serviço</label>
+              <select class="form-select" id="bookingService">
                 <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
                 <optgroup label="Cortes">
-                  <option value="Line Up (Domicílio)">Line Up</option>
-                  <option value="Kutz Criança (Domicílio)">Kutz Criança</option>
-                  <option value="Kutz Cabelo (Domicílio)">Kutz Cabelo</option>
-                  <option value="Degradê Completo (Domicílio)">Degradê Completo</option>
-                  <option value="Ballkutz Ritual (Domicílio)">Ballkutz Ritual</option>
-                  <option value="Design Premium (Domicílio)">Design Premium</option>
+                  <option value="Line Up">Line Up — 1.500 KZ</option>
+                  <option value="Kutz Criança">Kutz Criança — 3.000 KZ</option>
+                  <option value="Kutz Cabelo">Kutz Cabelo — 4.500 KZ</option>
+                  <option value="Degradê Completo">Degradê Completo — 5.000 KZ</option>
+                  <option value="Ballkutz Ritual">Ballkutz Ritual — 6.000 KZ</option>
+                  <option value="Design Premium">Design Premium — 7.000 KZ</option>
                 </optgroup>
                 <optgroup label="Barba">
-                  <option value="Aparar Barba (Domicílio)">Aparar Barba</option>
-                  <option value="Kutz Barba (Domicílio)">Kutz Barba</option>
-                  <option value="Barba + Design (Domicílio)">Barba + Design</option>
+                  <option value="Aparar Barba">Aparar Barba — 2.000 KZ</option>
+                  <option value="Kutz Barba">Kutz Barba — 4.000 KZ</option>
+                  <option value="Barba + Design">Barba + Design — 4.500 KZ</option>
+                  <option value="Barba Ritual Navalha">Barba Ritual Navalha — 5.500 KZ</option>
+                </optgroup>
+                <optgroup label="Estética">
+                  <option value="Limpeza de Pele">Limpeza de Pele — 6.000 KZ</option>
+                  <option value="Hidratação Capilar">Hidratação Capilar — 5.500 KZ</option>
+                  <option value="24K Gold Limpeza de Pele">24K Gold Limpeza de Pele — 10.000 KZ</option>
+                  <option value="Pigmentação Capilar">Pigmentação Capilar — 7.500 KZ</option>
                 </optgroup>
                 <optgroup label="Combo">
-                  <option value="Kutz Cabelo + Barba (Domicílio)">Kutz Cabelo + Barba</option>
-                  <option value="Ritual Completo (Domicílio)">Ritual Completo</option>
+                  <option value="Kutz Cabelo + Barba">Kutz Cabelo + Barba — 8.000 KZ</option>
+                  <option value="Ritual Completo">Ritual Completo — 12.000 KZ</option>
+                  <option value="VIP Champion Package">VIP Champion Package — 18.000 KZ</option>
                 </optgroup>
               </select>
-              <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
+              <div class="form-error" id="serviceError" data-i18n="form_service_error">Seleciona um serviço.</div>
             </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="homeDate" data-i18n="form_date">Data Preferida</label>
-                <input class="form-input" type="date" id="homeDate" />
-                <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
-                <select class="form-select" id="homeTime">
-                  <option value="">Seleciona uma hora</option>
-                  <option>09:00</option><option>09:30</option>
-                  <option>10:00</option><option>10:30</option>
-                  <option>11:00</option><option>11:30</option>
-                  <option>12:00</option><option>12:30</option>
-                  <option>14:00</option><option>14:30</option>
-                  <option>15:00</option><option>15:30</option>
-                  <option>16:00</option><option>16:30</option>
-                  <option>17:00</option><option>17:30</option>
-                  <option>18:00</option><option>18:30</option>
-                </select>
-                <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
-              </div>
-            </div>
-
             <div class="form-group">
-              <label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes Adicionais <span style="color:var(--grey)">(opcional)</span></label>
-              <textarea class="form-input" id="homeNotes" placeholder="Ex: portão azul, tocar campainha, preciso de estacionamento, etc." rows="2"></textarea>
+              <label class="form-label" for="bookingBarber" data-i18n="form_barber">Barbeiro</label>
+              <select class="form-select" id="bookingBarber">
+                <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
+                <option value="Mário Santos">Mário Santos — Head Barber</option>
+                <option value="Carlos Lopes">Carlos Lopes — Senior Barber</option>
+                <option value="André Mendes">André Mendes — Skin Specialist</option>
+              </select>
             </div>
+          </div>
 
+          <div class="form-row">
             <div class="form-group">
-              <label class="consent-label">
-                <input type="checkbox" id="homeConsentCheck" />
-                <span data-i18n="form_consent">Concordo com o tratamento dos meus dados para fins de marcação e comunicação de promoções da BallKutz.</span>
-              </label>
-              <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para continuar.</div>
+              <label class="form-label" for="bookingDate" data-i18n="form_date">Data</label>
+              <input class="form-input" type="date" id="bookingDate" />
+              <div class="form-error" id="dateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
             </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_time">Hora</label>
+              <div class="time-slots-grid" id="timeSlotsGrid">
+                <!-- Generated by JS -->
+              </div>
+              <div class="form-error" id="timeError" data-i18n="form_time_error">Seleciona um horário.</div>
+            </div>
+          </div>
 
-            <button class="btn btn--primary form-submit-btn" id="submitHomeBooking" type="button">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="home_submit">Solicitar Corte ao Domicílio</span>
-            </button>
+          <div class="form-group">
+            <label class="consent-label">
+              <input type="checkbox" id="consentCheck" />
+              <span data-i18n="form_consent">Concordo com o tratamento dos meus dados para fins de marcação e comunicação de promoções da BallKutz.</span>
+            </label>
+            <div class="form-error" id="consentError" data-i18n="form_consent_error">Precisas de aceitar para continuar.</div>
+          </div>
 
-          </div><!-- /panelHome -->
+          <button class="btn btn--primary form-submit-btn" id="submitBooking" type="button">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="form_submit">Confirmar Marcação</span>
+          </button>
 
-        </div><!-- /booking-form -->
-      </div><!-- /booking__layout -->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2877,10 +2109,9 @@
         <div>
           <div class="footer__col-title" data-i18n="footer_nav">Navegação</div>
           <ul class="footer__links">
-            <li><a href="#sobre"   data-i18n="nav_about">Sobre</a></li>
-            <li><a href="#planos"  data-i18n="nav_plans">Planos</a></li>
+            <li><a href="#planos" data-i18n="nav_plans">Planos</a></li>
             <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
-            <li><a href="#equipa"  data-i18n="nav_team">Equipa</a></li>
+            <li><a href="#equipa" data-i18n="nav_team">Equipa</a></li>
             <li><a href="#galeria" data-i18n="nav_gallery">Galeria</a></li>
             <li><a href="#reservar" data-i18n="nav_cta">Reservar</a></li>
           </ul>
@@ -2903,7 +2134,7 @@
             <!-- ⚙️ UPDATE: Replace with actual contact details -->
             <li><a href="#">Luanda, Angola</a></li>
             <li><a href="tel:+244900000000">+244 9XX XXX XXX</a></li>
-            <li><a href="/cdn-cgi/l/email-protection#1871767e77587a797474736d6c62367b7775"><span class="__cf_email__" data-cfemail="076e6961684765666b6b6c72737d2964686a">[email&#160;protected]</span></a></li>
+            <li><a href="mailto:info@ballkutz.com">info@ballkutz.com</a></li>
             <li><a href="#">Seg–Sáb: 09h–19h</a></li>
             <li><a href="#">Dom: 10h–16h</a></li>
           </ul>
@@ -2921,26 +2152,8 @@
   <!-- WhatsApp Float Button -->
   <!-- ⚙️ UPDATE: Replace +244900000000 with actual WhatsApp number -->
   <a href="https://wa.me/244900000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp BallKutz">
-    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
-
-  <!-- Scroll-to-top -->
-  <button class="scroll-top" id="scrollTopBtn" aria-label="Voltar ao topo">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-  </button>
-
-  <!-- Mobile Sticky CTA Bar (visible on mobile only) -->
-  <div class="mobile-cta-bar" role="complementary" aria-label="Acções rápidas">
-    <!-- ⚙️ UPDATE tel number -->
-    <a href="tel:+244900000000" class="mcta-call">
-      <i class="fa-solid fa-phone" aria-hidden="true"></i>
-      <span data-i18n="quick_call">Ligar</span>
-    </a>
-    <a href="#reservar" class="mcta-book">
-      <i class="fa-solid fa-scissors" aria-hidden="true"></i>
-      <span data-i18n="nav_cta">Reservar</span>
-    </a>
-  </div>
 
   <!-- Success Overlay -->
   <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true" aria-label="Booking confirmed">
@@ -2955,15 +2168,17 @@
     </div>
   </div>
 
-
   <!-- ============================================================
        JAVASCRIPT
        ============================================================ -->
   <script>
     'use strict';
 
-    const WHATSAPP_NUMBER = '244900000000';
-    const CONTACT_EMAIL   = 'info@ballkutz.com';
+    // ================================================
+    // CONSTANTS — ⚙️ Update these before going live
+    // ================================================
+    const WHATSAPP_NUMBER = '244900000000'; // e.g. 244912345678 (no + or spaces)
+    const CONTACT_EMAIL   = 'info@ballkutz.com'; // FormSubmit.co receiving email
 
     const TIME_SLOTS = [
       '09:00','09:30','10:00','10:30','11:00','11:30',
@@ -2971,515 +2186,550 @@
       '16:00','16:30','17:00','17:30','18:00','18:30',
     ];
 
+    // ================================================
+    // LANGUAGE SYSTEM
+    // ================================================
     let currentLang = 'pt';
 
     const LOCALES = {
       pt: {
-        nav_services:'Serviços', nav_plans:'Planos', nav_team:'Equipa',
-        nav_gallery:'Galeria', nav_cta:'Reservar', nav_about:'Sobre',
-        hero_eyebrow:'Luanda, Angola · Est. 2023',
-        hero_line1:'VISTA A SUA', hero_line2:'NOVA PELE.',
-        hero_sub:'A barbearia dos campeões em Luanda. Cortes de precisão, experiência de clube premium.',
-        hero_cta:'Reservar Agora', hero_cta2:'Ver Serviços',
-        stat_rating:'Avaliação', stat_clients:'Clientes', stat_services:'Serviços', stat_anos:'Anos',
-        plans_eyebrow:'Season Tickets — Torna-te membro', plans_title:'PLANOS DE ASSINATURA',
-        plan_pro_badge:'Plano PRO', plan_pro_limit:'Limitado 2× por mês',
-        plan_promax_badge:'Plano PRO MAX', plan_promax_limit:'Ilimitados — Quantas vezes quiser',
-        plan_cta:'Aderir ao Plano', plan_promax_cta:'Aderir ao PRO MAX',
-        service_kutz_crianca:'Kutz Criança', service_kutz_barba:'Kutz Barba',
-        service_kutz_cabelo:'Kutz Cabelo', service_kutz_cabelo_barba:'Kutz Cabelo + Barba',
-        service_degrade:'Degradê Completo', service_design_premium:'Design Premium',
-        service_aparar_barba:'Aparar Barba', service_barba_design:'Barba + Design',
-        service_barba_ritual:'Barba Ritual Navalha', service_limpeza:'Limpeza de Pele',
-        service_hidratacao:'Hidratação Capilar', service_pigmentacao:'Pigmentação Capilar',
-        service_ritual_completo:'Ritual Completo',
-        services_eyebrow:'The Playbook — Preços', services_title:'SERVIÇOS',
-        tab_cortes:'Cortes', tab_barba:'Barba', tab_estetica:'Estética', tab_combo:'Combo',
-        team_eyebrow:'Starting XI — Os nossos', team_title:'A EQUIPA',
-        barber_head:'Head Barber · Capitão', barber_senior:'Senior Barber',
-        barber_barber:'Barber · Skin Specialist', stat_years:'Anos Exp.', stat_specialty:'Especialidade',
-        barber_book:'Agendar →',
-        gallery_eyebrow:'Match Highlights — O nosso trabalho', gallery_title:'GALERIA',
-        reviews_eyebrow:"Fans' Voice — O que dizem", reviews_title:'AVALIAÇÕES',
-        review1_text:'"Melhor barbearia de Luanda, sem dúvida. O ambiente é incrível, parece que estamos num clube de campeões. O Mário fez um trabalho espetacular no meu fade."',
-        review2_text:'"Aderi ao plano PRO MAX e vale cada kwanza. Corte perfeito sempre que apareço, sem filas de espera. O Carlos é uma máquina a fazer designs."',
-        review3_text:'"Levei o meu filho e ficámos os dois super satisfeitos. Espaço limpo, modernos, música boa e ainda tem PlayStation! Voltámos na semana seguinte."',
-        review4_text:'"Fiz o 24K Gold Limpeza de Pele e a pele ficou renovada. O André é um profissional de excelência. Recomendo a toda a gente que se preocupa com a sua imagem."',
-        booking_eyebrow:'Final Whistle — Marca o teu lugar', booking_title:'RESERVAR',
-        booking_desc:'Preenche o formulário e recebes confirmação no teu WhatsApp em breve.',
-        contact_address_label:'Morada', contact_hours_label:'Horário',
-        contact_hours:'Seg–Sáb: 09h–19h · Dom: 10h–16h',
-        quick_call:'Ligar Agora', quick_wa:'WhatsApp Rápido', or_form:'ou preenche o formulário',
-        mode_label:'Como preferes o teu corte?',
-        mode_shop_title:'Na Barbearia', mode_shop_sub:'Vens até nós. Experiência completa de clube.',
-        mode_home_title:'Ao Domicílio', mode_home_sub:'Vamos até ti. Corte no conforto da tua casa.',
-        form_name:'Nome', form_name_error:'Por favor insere o teu nome.',
-        form_phone:'WhatsApp', form_phone_error:'Número de WhatsApp inválido.',
-        form_email:'E-mail (opcional)',
-        form_service:'Serviço', form_service_placeholder:'Seleciona um serviço',
-        form_service_error:'Seleciona um serviço.',
-        form_barber:'Barbeiro', form_barber_placeholder:'Qualquer barbeiro',
-        form_date:'Data', form_date_error:'Seleciona uma data válida.',
-        form_time:'Hora', form_time_error:'Seleciona um horário.',
-        home_location_label:'Morada / Localização', home_location_error:'Por favor indica a tua morada.',
-        home_notes_label:'Detalhes Adicionais',
-        form_consent:'Concordo com o tratamento dos meus dados para fins de marcação e comunicação de promoções da BallKutz.',
-        form_consent_error:'Precisas de aceitar para continuar.',
-        form_submit:'Confirmar Marcação', home_submit:'Solicitar Corte ao Domicílio',
-        success_title:'Pedido na Bancada!',
-        success_msg:'O teu WhatsApp foi aberto com os detalhes da marcação.\nAguarda a confirmação da equipa BallKutz em breve. 🏆',
-        success_close:'Fechar',
-        footer_tagline:'A barbearia dos campeões em Luanda. Luxo, desporto e excelência num só espaço.',
-        footer_nav:'Navegação', footer_services:'Serviços', footer_contact:'Contacto',
-        footer_rights:'Todos os direitos reservados.', footer_made:'Feito com ✂️ para os campeões',
-        about_eyebrow:'A nossa história', about_title:'MAIS DO QUE UM CORTE.',
-        about_p1:'A BallKutz nasceu da fusão entre dois mundos: a precisão do barbeiro e a paixão pelo desporto. Um espaço onde cada visita é uma experiência única — música, jogo e o melhor corte da tua vida.',
-        about_p2:'Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, a tua imagem está sempre no topo da tabela.',
-        about_v1_title:'Excelência', about_v1_text:'Cada corte é executado com precisão absoluta e atenção ao detalhe.',
-        about_v2_title:'Comunidade', about_v2_text:'Um espaço de convívio onde o desporto une os nossos clientes.',
-        about_v3_title:'Confiança', about_v3_text:'Profissionalismo e compromisso em cada serviço prestado.',
-        about_v4_title:'Luxo', about_v4_text:'Decoração premium que faz sentires-te num clube de campeões.',
-        gallery_yt_label:'Ver no YouTube',
+        nav_services: 'Serviços',
+        nav_plans: 'Planos',
+        nav_team: 'Equipa',
+        nav_gallery: 'Galeria',
+        nav_cta: 'Reservar',
+        hero_eyebrow: 'Luanda, Angola · Est. 2023',
+        hero_line1: 'VISTA A SUA',
+        hero_line2: 'NOVA PELE.',
+        hero_sub: 'A barbearia dos campeões em Luanda. Cortes de precisão, experiência de clube premium.',
+        hero_cta: 'Reservar Agora',
+        hero_cta2: 'Ver Serviços',
+        stat_rating: 'Avaliação',
+        stat_clients: 'Clientes',
+        stat_services: 'Serviços',
+        stat_anos: 'Anos',
+        plans_eyebrow: 'Season Tickets — Torna-te membro',
+        plans_title: 'PLANOS DE ASSINATURA',
+        plan_pro_badge: 'Plano PRO',
+        plan_pro_limit: 'Limitado 2× por mês',
+        plan_promax_badge: 'Plano PRO MAX',
+        plan_promax_limit: 'Ilimitados — Quantas vezes quiser',
+        plan_cta: 'Aderir ao Plano',
+        plan_promax_cta: 'Aderir ao PRO MAX',
+        service_kutz_crianca: 'Kutz Criança',
+        service_kutz_barba: 'Kutz Barba',
+        service_kutz_cabelo: 'Kutz Cabelo',
+        service_kutz_cabelo_barba: 'Kutz Cabelo + Barba',
+        service_degrade: 'Degradê Completo',
+        service_design_premium: 'Design Premium',
+        service_aparar_barba: 'Aparar Barba',
+        service_barba_design: 'Barba + Design',
+        service_barba_ritual: 'Barba Ritual Navalha',
+        service_limpeza: 'Limpeza de Pele',
+        service_hidratacao: 'Hidratação Capilar',
+        service_pigmentacao: 'Pigmentação Capilar',
+        service_ritual_completo: 'Ritual Completo',
+        services_eyebrow: 'The Playbook — Preços',
+        services_title: 'SERVIÇOS',
+        tab_cortes: 'Cortes',
+        tab_barba: 'Barba',
+        tab_estetica: 'Estética',
+        tab_combo: 'Combo',
+        team_eyebrow: 'Starting XI — Os nossos',
+        team_title: 'A EQUIPA',
+        barber_head: 'Head Barber · Capitão',
+        barber_senior: 'Senior Barber',
+        barber_barber: 'Barber · Skin Specialist',
+        stat_years: 'Anos Exp.',
+        stat_specialty: 'Especialidade',
+        barber_book: 'Agendar →',
+        gallery_eyebrow: 'Match Highlights — O nosso trabalho',
+        gallery_title: 'GALERIA',
+        reviews_eyebrow: "Fans' Voice — O que dizem",
+        reviews_title: 'AVALIAÇÕES',
+        review1_text: '"Melhor barbearia de Luanda, sem dúvida. O ambiente é incrível, parece que estamos num clube de campeões. O Mário fez um trabalho espetacular no meu fade."',
+        review2_text: '"Aderi ao plano PRO MAX e vale cada kwanza. Corte perfeito sempre que apareço, sem filas de espera. O Carlos é uma máquina a fazer designs."',
+        review3_text: '"Levei o meu filho e ficámos os dois super satisfeitos. Espaço limpo, modernos, música boa e ainda tem PlayStation! Voltámos na semana seguinte."',
+        review4_text: '"Fiz o 24K Gold Limpeza de Pele e a pele ficou renovada. O André é um profissional de excelência. Recomendo a toda a gente que se preocupa com a sua imagem."',
+        booking_eyebrow: 'Final Whistle — Marca o teu lugar',
+        booking_title: 'RESERVAR',
+        booking_desc: 'Preenche o formulário e recebes confirmação no teu WhatsApp em breve.',
+        contact_address_label: 'Morada',
+        contact_hours_label: 'Horário',
+        contact_hours: 'Seg–Sáb: 09h–19h · Dom: 10h–16h',
+        form_name: 'Nome',
+        form_name_error: 'Por favor insere o teu nome.',
+        form_phone: 'WhatsApp',
+        form_phone_error: 'Número de WhatsApp inválido.',
+        form_email: 'E-mail (opcional)',
+        form_service: 'Serviço',
+        form_service_placeholder: 'Seleciona um serviço',
+        form_service_error: 'Seleciona um serviço.',
+        form_barber: 'Barbeiro',
+        form_barber_placeholder: 'Qualquer barbeiro',
+        form_date: 'Data',
+        form_date_error: 'Seleciona uma data válida.',
+        form_time: 'Hora',
+        form_time_error: 'Seleciona um horário.',
+        form_consent: 'Concordo com o tratamento dos meus dados para fins de marcação e comunicação de promoções da BallKutz.',
+        form_consent_error: 'Precisas de aceitar para continuar.',
+        form_submit: 'Confirmar Marcação',
+        success_title: 'Pedido na Bancada!',
+        success_msg: 'O teu WhatsApp foi aberto com os detalhes da marcação.\nAguarda a confirmação da equipa BallKutz em breve. 🏆',
+        success_close: 'Fechar',
+        footer_tagline: 'A barbearia dos campeões em Luanda. Luxo, desporto e excelência num só espaço.',
+        footer_nav: 'Navegação',
+        footer_services: 'Serviços',
+        footer_contact: 'Contacto',
+        footer_rights: 'Todos os direitos reservados.',
+        footer_made: 'Feito com ✂️ para os campeões',
       },
       en: {
-        nav_services:'Services', nav_plans:'Plans', nav_team:'Team',
-        nav_gallery:'Gallery', nav_cta:'Book Now', nav_about:'About',
-        hero_eyebrow:'Luanda, Angola · Est. 2023',
-        hero_line1:'WEAR YOUR', hero_line2:'NEW SKIN.',
-        hero_sub:"The champions' barbershop in Luanda. Precision cuts, premium club experience.",
-        hero_cta:'Book Now', hero_cta2:'View Services',
-        stat_rating:'Rating', stat_clients:'Clients', stat_services:'Services', stat_anos:'Years',
-        plans_eyebrow:'Season Tickets — Become a member', plans_title:'SUBSCRIPTION PLANS',
-        plan_pro_badge:'PRO Plan', plan_pro_limit:'Limited 2× per month',
-        plan_promax_badge:'PRO MAX Plan', plan_promax_limit:'Unlimited — As many times as you want',
-        plan_cta:'Join the Plan', plan_promax_cta:'Join PRO MAX',
-        service_kutz_crianca:"Kid's Cut", service_kutz_barba:'Beard Cut',
-        service_kutz_cabelo:'Hair Cut', service_kutz_cabelo_barba:'Hair + Beard',
-        service_degrade:'Full Fade', service_design_premium:'Premium Design',
-        service_aparar_barba:'Beard Trim', service_barba_design:'Beard + Design',
-        service_barba_ritual:'Straight Razor Ritual', service_limpeza:'Skin Cleanse',
-        service_hidratacao:'Hair Hydration', service_pigmentacao:'Hair Pigmentation',
-        service_ritual_completo:'Full Ritual',
-        services_eyebrow:'The Playbook — Pricing', services_title:'SERVICES',
-        tab_cortes:'Cuts', tab_barba:'Beard', tab_estetica:'Aesthetics', tab_combo:'Combo',
-        team_eyebrow:'Starting XI — Our team', team_title:'THE TEAM',
-        barber_head:'Head Barber · Captain', barber_senior:'Senior Barber',
-        barber_barber:'Barber · Skin Specialist', stat_years:'Yrs Exp.', stat_specialty:'Specialty',
-        barber_book:'Book →',
-        gallery_eyebrow:'Match Highlights — Our work', gallery_title:'GALLERY',
-        reviews_eyebrow:"Fans' Voice — What they say", reviews_title:'REVIEWS',
-        review1_text:'"Best barbershop in Luanda, no doubt. The vibe is incredible, feels like a champions\' club. Mário did a spectacular job on my fade."',
-        review2_text:'"Joined the PRO MAX plan and it\'s worth every kwanza. Perfect cut every time I show up, no queues. Carlos is a machine at designs."',
-        review3_text:'"Took my son and we were both super happy. Clean, modern space, great music and they even have PlayStation! We came back the following week."',
-        review4_text:'"Did the 24K Gold Skin Cleanse and my skin was completely renewed. André is a true professional. I recommend it to anyone who cares about their image."',
-        booking_eyebrow:'Final Whistle — Book your spot', booking_title:'BOOK NOW',
-        booking_desc:'Fill in the form and receive confirmation on your WhatsApp shortly.',
-        contact_address_label:'Address', contact_hours_label:'Hours',
-        contact_hours:'Mon–Sat: 9am–7pm · Sun: 10am–4pm',
-        quick_call:'Call Now', quick_wa:'Quick WhatsApp', or_form:'or fill in the form',
-        mode_label:'How do you prefer your cut?',
-        mode_shop_title:'At the Barbershop', mode_shop_sub:'Come to us. Full club experience.',
-        mode_home_title:'Home Visit', mode_home_sub:'We come to you. Cut in the comfort of your home.',
-        form_name:'Name', form_name_error:'Please enter your name.',
-        form_phone:'WhatsApp', form_phone_error:'Invalid WhatsApp number.',
-        form_email:'E-mail (optional)',
-        form_service:'Service', form_service_placeholder:'Select a service',
-        form_service_error:'Please select a service.',
-        form_barber:'Barber', form_barber_placeholder:'Any barber',
-        form_date:'Date', form_date_error:'Please select a valid date.',
-        form_time:'Time', form_time_error:'Please select a time slot.',
-        home_location_label:'Address / Location', home_location_error:'Please provide your address.',
-        home_notes_label:'Additional Details',
-        form_consent:'I agree to the processing of my data for booking and BallKutz promotional communications.',
-        form_consent_error:'You need to accept to continue.',
-        form_submit:'Confirm Booking', home_submit:'Request Home Visit',
-        success_title:'On the Bench!',
-        success_msg:'Your WhatsApp was opened with the booking details.\nAwait confirmation from the BallKutz team shortly. 🏆',
-        success_close:'Close',
-        footer_tagline:"The champions' barbershop in Luanda. Luxury, sport and excellence in one place.",
-        footer_nav:'Navigation', footer_services:'Services', footer_contact:'Contact',
-        footer_rights:'All rights reserved.', footer_made:'Made with ✂️ for champions',
-        about_eyebrow:'Our story', about_title:'MORE THAN A CUT.',
-        about_p1:"BallKutz was born from the fusion of two worlds: the precision of the barber and the passion for sport. A space where every visit is a unique experience — music, game and the best cut of your life.",
-        about_p2:"Here you're not just another client. You're part of the club. With exclusive subscription plans, your image is always at the top of the table.",
-        about_v1_title:'Excellence', about_v1_text:'Every cut is executed with absolute precision and attention to detail.',
-        about_v2_title:'Community', about_v2_text:'A social space where sport brings our clients together.',
-        about_v3_title:'Trust', about_v3_text:'Professionalism and commitment in every service delivered.',
-        about_v4_title:'Luxury', about_v4_text:'Premium décor that makes you feel like you\'re in a champions\' club.',
-        gallery_yt_label:'Watch on YouTube',
+        nav_services: 'Services',
+        nav_plans: 'Plans',
+        nav_team: 'Team',
+        nav_gallery: 'Gallery',
+        nav_cta: 'Book Now',
+        hero_eyebrow: 'Luanda, Angola · Est. 2023',
+        hero_line1: 'WEAR YOUR',
+        hero_line2: 'NEW SKIN.',
+        hero_sub: 'The champions\' barbershop in Luanda. Precision cuts, premium club experience.',
+        hero_cta: 'Book Now',
+        hero_cta2: 'View Services',
+        stat_rating: 'Rating',
+        stat_clients: 'Clients',
+        stat_services: 'Services',
+        stat_anos: 'Years',
+        plans_eyebrow: 'Season Tickets — Become a member',
+        plans_title: 'SUBSCRIPTION PLANS',
+        plan_pro_badge: 'PRO Plan',
+        plan_pro_limit: 'Limited 2× per month',
+        plan_promax_badge: 'PRO MAX Plan',
+        plan_promax_limit: 'Unlimited — As many times as you want',
+        plan_cta: 'Join the Plan',
+        plan_promax_cta: 'Join PRO MAX',
+        service_kutz_crianca: "Kid's Cut",
+        service_kutz_barba: 'Beard Cut',
+        service_kutz_cabelo: 'Hair Cut',
+        service_kutz_cabelo_barba: 'Hair + Beard',
+        service_degrade: 'Full Fade',
+        service_design_premium: 'Premium Design',
+        service_aparar_barba: 'Beard Trim',
+        service_barba_design: 'Beard + Design',
+        service_barba_ritual: 'Straight Razor Ritual',
+        service_limpeza: 'Skin Cleanse',
+        service_hidratacao: 'Hair Hydration',
+        service_pigmentacao: 'Hair Pigmentation',
+        service_ritual_completo: 'Full Ritual',
+        services_eyebrow: 'The Playbook — Pricing',
+        services_title: 'SERVICES',
+        tab_cortes: 'Cuts',
+        tab_barba: 'Beard',
+        tab_estetica: 'Aesthetics',
+        tab_combo: 'Combo',
+        team_eyebrow: 'Starting XI — Our team',
+        team_title: 'THE TEAM',
+        barber_head: 'Head Barber · Captain',
+        barber_senior: 'Senior Barber',
+        barber_barber: 'Barber · Skin Specialist',
+        stat_years: 'Yrs Exp.',
+        stat_specialty: 'Specialty',
+        barber_book: 'Book →',
+        gallery_eyebrow: 'Match Highlights — Our work',
+        gallery_title: 'GALLERY',
+        reviews_eyebrow: "Fans' Voice — What they say",
+        reviews_title: 'REVIEWS',
+        review1_text: '"Best barbershop in Luanda, no doubt. The vibe is incredible, feels like a champions\' club. Mário did a spectacular job on my fade."',
+        review2_text: '"Joined the PRO MAX plan and it\'s worth every kwanza. Perfect cut every time I show up, no queues. Carlos is a machine at designs."',
+        review3_text: '"Took my son and we were both super happy. Clean, modern space, great music and they even have PlayStation! We came back the following week."',
+        review4_text: '"Did the 24K Gold Skin Cleanse and my skin was completely renewed. André is a true professional. I recommend it to anyone who cares about their image."',
+        booking_eyebrow: 'Final Whistle — Book your spot',
+        booking_title: 'BOOK NOW',
+        booking_desc: 'Fill in the form and receive confirmation on your WhatsApp shortly.',
+        contact_address_label: 'Address',
+        contact_hours_label: 'Hours',
+        contact_hours: 'Mon–Sat: 9am–7pm · Sun: 10am–4pm',
+        form_name: 'Name',
+        form_name_error: 'Please enter your name.',
+        form_phone: 'WhatsApp',
+        form_phone_error: 'Invalid WhatsApp number.',
+        form_email: 'E-mail (optional)',
+        form_service: 'Service',
+        form_service_placeholder: 'Select a service',
+        form_service_error: 'Please select a service.',
+        form_barber: 'Barber',
+        form_barber_placeholder: 'Any barber',
+        form_date: 'Date',
+        form_date_error: 'Please select a valid date.',
+        form_time: 'Time',
+        form_time_error: 'Please select a time slot.',
+        form_consent: 'I agree to the processing of my data for booking and BallKutz promotional communications.',
+        form_consent_error: 'You need to accept to continue.',
+        form_submit: 'Confirm Booking',
+        success_title: 'On the Bench!',
+        success_msg: 'Your WhatsApp was opened with the booking details.\nAwait confirmation from the BallKutz team shortly. 🏆',
+        success_close: 'Close',
+        footer_tagline: 'The champions\' barbershop in Luanda. Luxury, sport and excellence in one place.',
+        footer_nav: 'Navigation',
+        footer_services: 'Services',
+        footer_contact: 'Contact',
+        footer_rights: 'All rights reserved.',
+        footer_made: 'Made with ✂️ for champions',
       },
     };
 
+    /**
+     * Updates all elements with data-i18n attribute to the current language.
+     */
     function updateAllText() {
       const dict = LOCALES[currentLang];
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (dict[key] !== undefined) el.textContent = dict[key];
+        if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+        }
       });
     }
 
+    /**
+     * Toggles the site language between PT and EN.
+     */
     function toggleLanguage() {
       currentLang = currentLang === 'pt' ? 'en' : 'pt';
-      const label = currentLang === 'pt' ? 'EN' : 'PT';
-      const toggle = document.getElementById('langToggle');
-      if (toggle) toggle.textContent = label;
+      document.getElementById('langToggle').textContent = currentLang === 'pt' ? 'EN' : 'PT';
       document.documentElement.lang = currentLang;
       updateAllText();
     }
 
-    // ── Navigation ──
-    function initNavigation() {
-      const header      = document.getElementById('mainNav');
-      const hamburger   = document.getElementById('hamburger');
-      const mobileMenu  = document.getElementById('mobileMenu');
-      const mobileClose = document.getElementById('mobileClose');
+    // ================================================
+    // NAVIGATION
+    // ================================================
 
-      const openMenu = () => {
-        mobileMenu.classList.add('open');
-        hamburger.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-      };
-      const closeMenu = () => {
-        mobileMenu.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      };
+    function initNavigation() {
+      const nav          = document.getElementById('mainNav');
+      const hamburger    = document.getElementById('hamburger');
+      const mobileMenu   = document.getElementById('mobileMenu');
+      const mobileClose  = document.getElementById('mobileClose');
+      const mobileLinks  = document.querySelectorAll('.mobile-link');
+
+      const openMenu  = () => mobileMenu.classList.add('open');
+      const closeMenu = () => mobileMenu.classList.remove('open');
 
       hamburger.addEventListener('click', openMenu);
       mobileClose.addEventListener('click', closeMenu);
+      mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
 
-      // Close on any link click inside mobile menu (except lang toggle)
-      mobileMenu.querySelectorAll('a').forEach(el => el.addEventListener('click', closeMenu));
-
+      // Sticky nav scroll effect
       window.addEventListener('scroll', () => {
-        header.classList.toggle('site-header--scrolled', window.scrollY > 60);
+        nav.classList.toggle('nav--scrolled', window.scrollY > 60);
       }, { passive: true });
 
+      // Language toggle
       document.getElementById('langToggle').addEventListener('click', toggleLanguage);
-
-      const mobileLang = document.getElementById('mobileLangToggle');
-      if (mobileLang) {
-        mobileLang.addEventListener('click', () => {
-          toggleLanguage();
-          mobileLang.textContent = currentLang === 'pt' ? 'Switch to EN' : 'Mudar para PT';
-        });
-      }
-
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
-      });
     }
 
-    // ── Services tabs ──
+    // ================================================
+    // SERVICES TABS
+    // ================================================
+
     function initServiceTabs() {
-      document.querySelectorAll('.tab-btn').forEach(btn => {
+      const tabBtns   = document.querySelectorAll('.tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-          document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+          const targetTab = btn.dataset.tab;
+
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabPanels.forEach(p => p.classList.remove('active'));
+
           btn.classList.add('active');
-          document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+          document.getElementById(`tab-${targetTab}`).classList.add('active');
         });
       });
 
+      // Clicking a service pre-fills the booking form
       document.querySelectorAll('.service-item').forEach(item => {
         item.addEventListener('click', () => {
+          const serviceName = item.dataset.service;
           const select = document.getElementById('bookingService');
-          const opt = [...select.options].find(o => o.value === item.dataset.service);
-          if (opt) {
-            select.value = item.dataset.service;
-            switchBookingMode('barbershop');
+          const option = [...select.options].find(o => o.value === serviceName);
+          if (option) {
+            select.value = serviceName;
+            document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
           }
-          document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
         });
       });
     }
 
-    // ── Team cards ──
+    // ================================================
+    // TEAM — clicking barber pre-selects in booking form
+    // ================================================
+
     function initTeamCards() {
       document.querySelectorAll('.barber-card').forEach(card => {
         card.addEventListener('click', () => {
+          const barberName = card.dataset.barber;
           const select = document.getElementById('bookingBarber');
-          const opt = [...select.options].find(o => o.value === card.dataset.barber);
-          if (opt) {
-            select.value = card.dataset.barber;
-            switchBookingMode('barbershop');
+          const option = [...select.options].find(o => o.value === barberName);
+          if (option) {
+            select.value = barberName;
+            document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
           }
-          document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
         });
       });
     }
 
-    // ── Reviews slider ──
+    // ================================================
+    // REVIEWS SLIDER
+    // ================================================
+
     function initReviewsSlider() {
-      const track = document.getElementById('reviewsTrack');
-      const dots  = document.querySelectorAll('.reviews__dot');
-      const cards = track ? [...track.querySelectorAll('.review-card')] : [];
-      if (!cards.length) return;
+      const track    = document.getElementById('reviewsTrack');
+      const dots     = document.querySelectorAll('.reviews__dot');
+      const cards    = track.querySelectorAll('.review-card');
+      let currentIdx = 0;
+      let autoTimer;
 
-      let idx = 0;
-      const perView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-      const maxIdx  = Math.max(0, cards.length - perView);
+      const CARDS_PER_VIEW = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+      const MAX_IDX        = Math.max(0, cards.length - CARDS_PER_VIEW);
 
-      const goTo = (i) => {
-        idx = Math.max(0, Math.min(i, maxIdx));
-        track.style.transform = 'translateX(-' + (idx * (cards[0].offsetWidth + 24)) + 'px)';
-        dots.forEach((d, di) => d.classList.toggle('active', di === idx));
-      };
+      function goTo(idx) {
+        currentIdx = Math.max(0, Math.min(idx, MAX_IDX));
+        const cardWidth = cards[0].offsetWidth + 24; // gap
+        track.style.transform = `translateX(-${currentIdx * cardWidth}px)`;
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIdx));
+      }
 
-      dots.forEach(d => d.addEventListener('click', () => { clearInterval(timer); goTo(+d.dataset.idx); }));
-      let timer = setInterval(() => goTo(idx >= maxIdx ? 0 : idx + 1), 4500);
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          clearInterval(autoTimer);
+          goTo(Number(dot.dataset.idx));
+        });
+      });
+
+      function autoAdvance() {
+        goTo(currentIdx >= MAX_IDX ? 0 : currentIdx + 1);
+      }
+
+      autoTimer = setInterval(autoAdvance, 4500);
     }
 
-    // ── Time slots ──
+    // ================================================
+    // TIME SLOTS RENDERING
+    // ================================================
+
     function renderTimeSlots() {
       const grid = document.getElementById('timeSlotsGrid');
-      if (!grid) return;
       grid.innerHTML = '';
-      TIME_SLOTS.forEach(t => {
+
+      TIME_SLOTS.forEach(time => {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'time-slot';
-        btn.textContent = t;
-        btn.dataset.time = t;
+        btn.textContent = time;
+        btn.dataset.time = time;
+
         btn.addEventListener('click', () => {
-          grid.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+          document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
           btn.classList.add('selected');
         });
+
         grid.appendChild(btn);
       });
     }
 
-    // ── Booking mode switcher ──
-    let activeMode = 'barbershop';
+    // ================================================
+    // BOOKING FORM
+    // ================================================
 
-    function switchBookingMode(mode) {
-      if (activeMode === mode) return;
-      activeMode = mode;
-      const shop = document.getElementById('panelBarbershop');
-      const home = document.getElementById('panelHome');
-      const cShop = document.getElementById('modeBarbershop');
-      const cHome = document.getElementById('modeHome');
-      if (mode === 'barbershop') {
-        home.classList.remove('panel-visible');
-        shop.classList.add('panel-visible');
-        cShop.classList.add('active');    cShop.setAttribute('aria-pressed','true');
-        cHome.classList.remove('active'); cHome.setAttribute('aria-pressed','false');
-      } else {
-        shop.classList.remove('panel-visible');
-        home.classList.add('panel-visible');
-        cHome.classList.add('active');    cHome.setAttribute('aria-pressed','true');
-        cShop.classList.remove('active'); cShop.setAttribute('aria-pressed','false');
-      }
+    function getSelectedTime() {
+      const selected = document.querySelector('.time-slot.selected');
+      return selected ? selected.dataset.time : '';
     }
 
-    // ── Validation helpers ──
-    const isPhone   = v => v.replace(/\D/g,'').length >= 9;
-    const isDate    = v => v && new Date(v) >= new Date(new Date().toDateString());
-    const showErr   = (id, show) => { const e = document.getElementById(id); if(e) e.classList.toggle('visible', show); };
-    const getSlot   = () => { const s = document.querySelector('.time-slot.selected'); return s ? s.dataset.time : ''; };
+    /**
+     * Validates the booking form fields.
+     * @returns {boolean} True if valid, false otherwise.
+     */
+    function validateBookingForm() {
+      const name    = document.getElementById('clientName').value.trim();
+      const phone   = document.getElementById('clientPhone').value.trim();
+      const service = document.getElementById('bookingService').value;
+      const date    = document.getElementById('bookingDate').value;
+      const time    = getSelectedTime();
+      const consent = document.getElementById('consentCheck').checked;
 
-    function validateShopForm() {
-      const n = document.getElementById('clientName').value.trim();
-      const p = document.getElementById('clientPhone').value.trim();
-      const s = document.getElementById('bookingService').value;
-      const d = document.getElementById('bookingDate').value;
-      const t = getSlot();
-      const c = document.getElementById('consentCheck').checked;
-      showErr('nameError',!n); showErr('phoneError',!isPhone(p)); showErr('serviceError',!s);
-      showErr('dateError',!isDate(d)); showErr('timeError',!t); showErr('consentError',!c);
-      return n && isPhone(p) && s && isDate(d) && t && c;
-    }
+      const errors = {
+        nameError:    !name,
+        phoneError:   !phone || phone.replace(/\D/g, '').length < 9,
+        serviceError: !service,
+        dateError:    !date || new Date(date) < new Date(new Date().toDateString()),
+        timeError:    !time,
+        consentError: !consent,
+      };
 
-    function validateHomeForm() {
-      const n = document.getElementById('homeClientName').value.trim();
-      const p = document.getElementById('homeClientPhone').value.trim();
-      const l = document.getElementById('homeLocation').value.trim();
-      const s = document.getElementById('homeService').value;
-      const d = document.getElementById('homeDate').value;
-      const t = document.getElementById('homeTime').value;
-      const c = document.getElementById('homeConsentCheck').checked;
-      showErr('homeNameError',!n); showErr('homePhoneError',!isPhone(p)); showErr('homeLocationError',!l);
-      showErr('homeServiceError',!s); showErr('homeDateError',!isDate(d)); showErr('homeTimeError',!t);
-      showErr('homeConsentError',!c);
-      return n && isPhone(p) && l && s && isDate(d) && t && c;
-    }
-
-    // ── WhatsApp URL builders ──
-    function waShop(d) {
-      const msg = [
-        'Olá BallKutz! 🏆','',
-        'Quero agendar o meu corte na barbearia:','',
-        '✂️ *Serviço:* '+d.service,
-        '👤 *Barbeiro:* '+(d.barber||'Qualquer disponível'),
-        '📅 *Data:* '+d.date, '⏰ *Hora:* '+d.time,'',
-        '👤 *Nome:* '+d.name, '📱 *WhatsApp:* '+d.phone,'',
-        'Aguardo confirmação. Obrigado!'
-      ].join('\n');
-      return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg);
-    }
-
-    function waHome(d) {
-      const lines = [
-        'Olá BallKutz! 🏠✂️','',
-        'Quero solicitar um corte ao domicílio:','',
-        '✂️ *Serviço:* '+d.service,
-        '📅 *Data Preferida:* '+d.date, '⏰ *Hora Preferida:* '+d.time,'',
-        '👤 *Nome:* '+d.name, '📱 *WhatsApp:* '+d.phone,
-        '📍 *Morada:* '+d.location,
-      ];
-      if(d.notes) lines.push('📝 *Detalhes:* '+d.notes);
-      lines.push('','Aguardo confirmação e confirmação de preço. Obrigado!');
-      return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(lines.join('\n'));
-    }
-
-    function waQuick() {
-      return 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Olá BallKutz! 🏆 Quero agendar um corte. Podem ajudar?');
-    }
-
-    // ── Email notification ──
-    async function notifyEmail(payload) {
-      try {
-        await fetch('https://formsubmit.co/ajax/'+CONTACT_EMAIL, {
-          method:'POST',
-          headers:{'Content-Type':'application/json','Accept':'application/json'},
-          body:JSON.stringify({_captcha:'false', _subject:'Nova marcação — '+payload.Nome, ...payload}),
-        });
-      } catch(e) { console.warn('Email failed:',e); }
-    }
-
-    // ── Success overlay ──
-    const showSuccess = () => document.getElementById('successOverlay').classList.add('visible');
-    const hideSuccess = () => document.getElementById('successOverlay').classList.remove('visible');
-
-    // ── Booking form init ──
-    function initBookingForm() {
-      const today = new Date().toISOString().split('T')[0];
-      ['bookingDate','homeDate'].forEach(id => {
+      Object.entries(errors).forEach(([id, hasError]) => {
         const el = document.getElementById(id);
-        if(el) el.setAttribute('min', today);
+        if (el) el.classList.toggle('visible', hasError);
       });
+
+      return !Object.values(errors).some(Boolean);
+    }
+
+    /**
+     * Constructs a pre-filled WhatsApp message from booking data.
+     * @param {Object} data - Booking form data.
+     * @returns {string} Encoded WhatsApp URL.
+     */
+    function buildWhatsAppUrl(data) {
+      const message = [
+        `Olá BallKutz! 🏆`,
+        ``,
+        `Quero agendar o meu corte:`,
+        ``,
+        `✂️ *Serviço:* ${data.service}`,
+        `👤 *Barbeiro:* ${data.barber || 'Qualquer disponível'}`,
+        `📅 *Data:* ${data.date}`,
+        `⏰ *Hora:* ${data.time}`,
+        ``,
+        `👤 *Nome:* ${data.name}`,
+        `📱 *WhatsApp:* ${data.phone}`,
+        ``,
+        `Aguardo confirmação. Obrigado!`,
+      ].join('\n');
+
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    /**
+     * Sends booking details to FormSubmit.co for email notification.
+     * @param {Object} data - Booking data.
+     * @returns {Promise<void>}
+     */
+    async function sendBookingEmail(data) {
+      const payload = {
+        _subject: `Nova marcação BallKutz — ${data.name}`,
+        _captcha: 'false',
+        Nome:      data.name,
+        WhatsApp:  data.phone,
+        Email:     data.email || 'Não fornecido',
+        Serviço:   data.service,
+        Barbeiro:  data.barber || 'Qualquer disponível',
+        Data:      data.date,
+        Hora:      data.time,
+      };
+
+      const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept':        'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Email submission failed: HTTP ${response.status}`);
+      }
+
+      return response.json();
+    }
+
+    function showSuccessOverlay() {
+      const overlay = document.getElementById('successOverlay');
+      overlay.classList.add('visible');
+    }
+
+    function hideSuccessOverlay() {
+      const overlay = document.getElementById('successOverlay');
+      overlay.classList.remove('visible');
+    }
+
+    function initBookingForm() {
+      // Set minimum date to today
+      const dateInput = document.getElementById('bookingDate');
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
 
       renderTimeSlots();
 
-      // Mode cards
-      document.getElementById('modeBarbershop').addEventListener('click', () => switchBookingMode('barbershop'));
-      document.getElementById('modeHome').addEventListener('click', () => switchBookingMode('home'));
+      const submitBtn = document.getElementById('submitBooking');
 
-      // Quick WA button
-      const waBtn = document.getElementById('waQuickBtn');
-      if(waBtn) waBtn.addEventListener('click', e => { e.preventDefault(); window.open(waQuick(),'_blank','noopener'); });
+      submitBtn.addEventListener('click', async () => {
+        // Honeypot check — if filled, silently abort (bot detected)
+        const honeypot = document.getElementById('honeypot');
+        if (honeypot && honeypot.value) return;
 
-      // Shop submit
-      document.getElementById('submitBooking').addEventListener('click', async () => {
-        if(document.getElementById('honeypot').value) return;
-        if(!validateShopForm()) return;
-        const data = {
-          name: document.getElementById('clientName').value.trim(),
-          phone: document.getElementById('clientPhone').value.trim(),
-          email: document.getElementById('clientEmail').value.trim(),
+        if (!validateBookingForm()) return;
+
+        const bookingData = {
+          name:    document.getElementById('clientName').value.trim(),
+          phone:   document.getElementById('clientPhone').value.trim(),
+          email:   document.getElementById('clientEmail').value.trim(),
           service: document.getElementById('bookingService').value,
-          barber: document.getElementById('bookingBarber').value,
-          date: document.getElementById('bookingDate').value,
-          time: getSlot(),
+          barber:  document.getElementById('bookingBarber').value,
+          date:    document.getElementById('bookingDate').value,
+          time:    getSelectedTime(),
         };
-        const btn = document.getElementById('submitBooking');
-        const span = btn.querySelector('span');
-        btn.disabled = true; span.textContent = '...';
-        await notifyEmail({Nome:data.name, WhatsApp:data.phone, Email:data.email||'N/A',
-          Serviço:data.service, Barbeiro:data.barber||'Qualquer', Data:data.date, Hora:data.time, Tipo:'Barbearia'});
-        window.open(waShop(data),'_blank','noopener');
-        showSuccess();
-        btn.disabled = false; span.textContent = LOCALES[currentLang].form_submit;
-      });
 
-      // Home submit
-      document.getElementById('submitHomeBooking').addEventListener('click', async () => {
-        if(document.getElementById('honeypot').value) return;
-        if(!validateHomeForm()) return;
-        const data = {
-          name: document.getElementById('homeClientName').value.trim(),
-          phone: document.getElementById('homeClientPhone').value.trim(),
-          location: document.getElementById('homeLocation').value.trim(),
-          service: document.getElementById('homeService').value,
-          date: document.getElementById('homeDate').value,
-          time: document.getElementById('homeTime').value,
-          notes: document.getElementById('homeNotes').value.trim(),
-        };
-        const btn = document.getElementById('submitHomeBooking');
-        const span = btn.querySelector('span');
-        btn.disabled = true; span.textContent = '...';
-        await notifyEmail({Nome:data.name, WhatsApp:data.phone, Serviço:data.service,
-          Data:data.date, Hora:data.time, Morada:data.location, Notas:data.notes||'N/A', Tipo:'Domicílio'});
-        window.open(waHome(data),'_blank','noopener');
-        showSuccess();
-        btn.disabled = false; span.textContent = LOCALES[currentLang].home_submit;
-      });
+        // Disable button during submission
+        submitBtn.disabled = true;
+        submitBtn.querySelector('span').textContent = '...';
 
-      document.getElementById('closeSuccess').addEventListener('click', hideSuccess);
-      document.getElementById('successOverlay').addEventListener('click', e => {
-        if(e.target === e.currentTarget) hideSuccess();
-      });
-    }
-
-    // ── Scroll reveal ──
-    function initScrollAnimations() {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach((entry, i) => {
-          if(!entry.isIntersecting) return;
-          setTimeout(() => entry.target.classList.add('visible'), (i % 4) * 80);
-          observer.unobserve(entry.target);
-        });
-      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    }
-
-    // ── YouTube Facade ──
-    function initYouTubeFacade() {
-      const facade = document.getElementById('ytFacade');
-      if (!facade) return;
-
-      const loadVideo = () => {
-        const videoId = facade.dataset.videoId;
-        if (!videoId || videoId === 'VIDEO_ID') {
-          // No real ID set yet — open YouTube channel instead
-          window.open('https://youtube.com/@ballkutz', '_blank', 'noopener');
-          return;
+        // Fire email (non-blocking — don't fail UX if email errors)
+        try {
+          await sendBookingEmail(bookingData);
+        } catch (error) {
+          console.error('Email notification failed:', error);
+          // Email failure is non-critical; WhatsApp is the primary channel
         }
-        // Replace facade with live iframe
-        const iframe = document.createElement('iframe');
-        iframe.className = 'yt-facade__iframe';
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
-        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
-        iframe.allowFullscreen = true;
-        iframe.title = 'BallKutz video';
-        facade.innerHTML = '';
-        facade.appendChild(iframe);
-        facade.style.cursor = 'default';
-        facade.removeEventListener('click', loadVideo);
-        facade.removeEventListener('keydown', handleKey);
-      };
 
-      const handleKey = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); } };
+        // Open WhatsApp with pre-filled message
+        const waUrl = buildWhatsAppUrl(bookingData);
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
 
-      facade.addEventListener('click', loadVideo);
-      facade.addEventListener('keydown', handleKey);
-    }
+        // Show success overlay
+        showSuccessOverlay();
 
-    // ── Scroll-to-top button ──
-    function initScrollTop() {
-      const btn = document.getElementById('scrollTopBtn');
-      if (!btn) return;
+        // Re-enable button and reset label
+        submitBtn.disabled = false;
+        submitBtn.querySelector('span').textContent = LOCALES[currentLang].form_submit;
+      });
 
-      window.addEventListener('scroll', () => {
-        btn.classList.toggle('visible', window.scrollY > 600);
-      }, { passive: true });
-
-      btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.getElementById('closeSuccess').addEventListener('click', hideSuccessOverlay);
+      document.getElementById('successOverlay').addEventListener('click', e => {
+        if (e.target === e.currentTarget) hideSuccessOverlay();
       });
     }
 
-    // ── Init ──
+    // ================================================
+    // SCROLL ANIMATIONS (Intersection Observer)
+    // ================================================
+
+    function initScrollAnimations() {
+      const reveals = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, idx) => {
+            if (!entry.isIntersecting) return;
+            // Stagger sibling reveals slightly
+            const delay = (idx % 3) * 80;
+            setTimeout(() => entry.target.classList.add('visible'), delay);
+            observer.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+      );
+
+      reveals.forEach(el => observer.observe(el));
+    }
+
+    // ================================================
+    // INITIALIZATION
+    // ================================================
+
     document.addEventListener('DOMContentLoaded', () => {
       initNavigation();
       initServiceTabs();
@@ -3487,8 +2737,6 @@
       initReviewsSlider();
       initBookingForm();
       initScrollAnimations();
-      initYouTubeFacade();
-      initScrollTop();
       updateAllText();
     });
 
