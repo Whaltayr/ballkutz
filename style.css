@@ -1474,6 +1474,7 @@
       line-height: 1.3;
     }
 
+    .about__content { }
 
     .about__values {
       display: grid;
@@ -1865,8 +1866,566 @@
       height: 1px;
       background: var(--border);
     }
-  
-    /* ================================================
+
+/* ================================================
+   YOUTUBE 3-VIDEO GRID
+   ================================================ */
+.yt-section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.yt-section__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.yt-section__channel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--grey-light);
+  border: 1px solid var(--border);
+  padding: 0.45rem 1rem;
+  transition: var(--transition);
+}
+
+.yt-section__channel-link:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.yt-section__channel-link i { color: #FF0000; }
+
+/* 3-video layout: hero-left + 2-stacked-right */
+.yt-grid {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 4px;
+}
+
+.yt-grid__item {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+/* The featured (first) video spans both rows on the left */
+.yt-grid__item--featured {
+  grid-row: 1 / 3;
+}
+
+.yt-grid__item--featured .yt-facade__play-icon {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+}
+
+/* Facade inside grid items */
+.yt-grid__item .yt-facade {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  margin-top: 0;
+}
+
+.yt-grid__item--featured .yt-facade {
+  min-height: 440px;
+}
+
+/* Video title badge at bottom of each facade */
+.yt-facade__meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+  padding: 2.5rem 1.2rem 1rem;
+  pointer-events: none;
+}
+
+.yt-facade__meta-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.yt-grid__item--featured .yt-facade__meta-title {
+  font-size: 1rem;
+}
+
+.yt-facade__meta-duration {
+  font-size: 0.68rem;
+  color: var(--grey-light);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .yt-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .yt-grid__item--featured {
+    grid-row: auto;
+  }
+
+  .yt-grid__item .yt-facade,
+  .yt-grid__item--featured .yt-facade {
+    min-height: 55vw;
+  }
+
+  .yt-section__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ================================================
+   LOCATION / MAP SECTION
+   ================================================ */
+.location {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+}
+
+.location__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.location__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.location__detail {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.location__detail-icon {
+  width: 46px;
+  height: 46px;
+  background: rgba(133,117,78,0.1);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.location__detail-label {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 0.3rem;
+}
+
+.location__detail-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.location__detail-value a {
+  color: var(--gold);
+  transition: opacity 0.2s;
+}
+
+.location__detail-value a:hover { opacity: 0.75; }
+
+.location__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.location__map-wrap {
+  position: relative;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.location__map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: none;
+  display: block;
+  filter: grayscale(30%) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+
+.location__map-wrap:hover iframe {
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Diagonal overlay accent on map corner */
+.location__map-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 0; height: 0;
+  border-left: 20px solid var(--gold);
+  border-bottom: 20px solid transparent;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .location__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .location__map-wrap { min-height: 300px; }
+  .location__map-wrap iframe { min-height: 300px; }
+}
+
+/* ================================================
+   SOBRE PAGE — SHARED PAGE HERO
+   ================================================ */
+.page-hero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+  overflow: hidden;
+  background: var(--black);
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 80% at 70% 40%, rgba(81,41,68,0.6) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 50% at 20% 80%, rgba(133,117,78,0.1) 0%, transparent 55%),
+    #0a0a0a;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  padding-top: 9rem;
+}
+
+.page-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.page-hero__breadcrumb a { color: var(--gold); transition: opacity 0.2s; }
+.page-hero__breadcrumb a:hover { opacity: 0.7; }
+.page-hero__breadcrumb span { color: var(--grey); }
+
+.page-hero__diagonal {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: var(--black);
+  clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+  z-index: 2;
+}
+
+/* ================================================
+   SOBRE PAGE — STORY / TIMELINE
+   ================================================ */
+.story {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--black);
+}
+
+.story__intro {
+  max-width: 70ch;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.story__intro p {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--grey-light);
+  line-height: 1.85;
+  margin-top: 1.2rem;
+}
+
+.story__big-quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  border-left: 3px solid var(--gold);
+  padding-left: 1.5rem;
+  margin: 3rem 0;
+  line-height: 1.3;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.timeline__item:last-child { padding-bottom: 0; }
+
+.timeline__dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background: var(--gold);
+  border: 2px solid var(--black);
+  box-shadow: 0 0 0 3px var(--gold);
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline__year {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.timeline__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.timeline__text {
+  font-size: 0.9rem;
+  color: var(--grey-light);
+  line-height: 1.75;
+  max-width: 55ch;
+}
+
+/* ================================================
+   SOBRE PAGE — BRAND DNA
+   ================================================ */
+.brand-dna {
+  background: var(--surface);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-dna__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.brand-dna__visual {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.brand-dna__img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.brand-dna__img:first-child {
+  margin-top: 2rem;
+}
+
+.brand-dna__color-palette {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.brand-dna__swatch {
+  flex: 1;
+  height: 36px;
+  position: relative;
+}
+
+.brand-dna__swatch-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.4rem;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: var(--grey);
+  white-space: nowrap;
+}
+
+.brand-dna__pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.brand-pillar {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 1.4rem 1.2rem;
+  transition: var(--transition);
+}
+
+.brand-pillar:hover { border-color: var(--gold); }
+
+.brand-pillar__icon {
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+
+.brand-pillar__title {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.brand-pillar__text {
+  font-size: 0.78rem;
+  color: var(--grey-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .brand-dna__layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .brand-dna__pillars { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .brand-dna__pillars { grid-template-columns: 1fr; }
+}
+
+/* ================================================
+   SOBRE PAGE — MANIFESTO BANNER
+   ================================================ */
+.manifesto {
+  background: var(--purple-dark);
+  border-top: 1px solid rgba(133,117,78,0.3);
+  border-bottom: 1px solid rgba(133,117,78,0.3);
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(133,117,78,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.manifesto__quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  max-width: 22ch;
+  margin: 0 auto 1.5rem;
+}
+
+.manifesto__quote span { color: var(--gold); }
+
+.manifesto__sub {
+  font-size: 0.9rem;
+  color: rgba(245,245,245,0.6);
+  letter-spacing: 0.08em;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================================================
+   SOBRE PAGE — CTA SECTION
+   ================================================ */
+.sobre-cta {
+  background: var(--black);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  text-align: center;
+}
+
+.sobre-cta__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+/* ================================================
    CORREÇÃO DE RESPONSIVIDADE (< 480px)
    ================================================ */
 @media (max-width: 480px) {

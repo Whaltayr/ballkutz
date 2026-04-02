@@ -31,10 +31,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
-
- 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
+<body>
 
 <body>
 
@@ -56,7 +60,7 @@
         </a>
 
         <ul class="nav__links" role="list">
-          <li><a href="#sobre" data-i18n="nav_about">Sobre</a></li>
+          <li><a href="sobre.html" data-i18n="nav_about">Sobre</a></li>
           <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
           <li><a href="#planos" data-i18n="nav_plans">Planos</a></li>
           <li><a href="#equipa" data-i18n="nav_team">Equipa</a></li>
@@ -81,7 +85,7 @@
       <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
 
-    <a href="#sobre"    class="mobile-link" data-i18n="nav_about">Sobre</a>
+    <a href="sobre.html" class="mobile-link" data-i18n="nav_about">Sobre</a>
     <a href="#servicos"  class="mobile-link" data-i18n="nav_services">Serviços</a>
     <a href="#planos"    class="mobile-link" data-i18n="nav_plans">Planos</a>
     <a href="#equipa"    class="mobile-link" data-i18n="nav_team">Equipa</a>
@@ -168,7 +172,7 @@
         <div class="about__visual reveal">
           <img
             class="about__visual-main"
-            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=700&q=80"
+            src="img/image-1.webp"
             alt="Interior da BallKutz Barbershop Luanda"
             loading="lazy"
           />
@@ -550,57 +554,148 @@
 
       <div class="gallery__grid reveal">
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="BallKutz haircut 1" loading="lazy" />
+          <img src="img/image-10.webp" alt="BallKutz haircut 1" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Fade Premium</span></div>
         </div>
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="BallKutz haircut 2" loading="lazy" />
+          <img src="img/image-2.webp" alt="BallKutz haircut 2" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Degradê</span></div>
         </div>
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="BallKutz haircut 3" loading="lazy" />
+          <img src="img/image-3.webp" alt="BallKutz haircut 3" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Line Up</span></div>
         </div>
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80" alt="BallKutz shop" loading="lazy" />
+          <img src="img/image-15.webp" alt="BallKutz shop" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">O Espaço</span></div>
         </div>
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80" alt="BallKutz haircut 5" loading="lazy" />
+          <img src="img/image-14.webp" alt="BallKutz haircut 5" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Design</span></div>
         </div>
         <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1570872626485-d8ffea69f463?w=600&q=80" alt="BallKutz haircut 6" loading="lazy" />
+          <img src="img/image-5.webp" alt="BallKutz haircut 6" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Ritual</span></div>
         </div>
       </div><!-- /gallery__grid -->
 
-      <!-- YouTube Video Facade — ⚙️ Set data-video-id to your actual YouTube ID -->
-      <div
-        class="yt-facade reveal"
-        id="ytFacade"
-        data-video-id="VIDEO_ID"
-        role="button"
-        tabindex="0"
-        aria-label="Assistir ao vídeo BallKutz no YouTube"
-      >
-        <img
-          class="yt-facade__thumb"
-          src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1280&q=80"
-          alt="BallKutz — vídeo dos nossos trabalhos"
-          loading="lazy"
-        />
-        <div class="yt-facade__play" aria-hidden="true">
-          <div class="yt-facade__play-icon">
-            <i class="fa-brands fa-youtube"></i>
+      <!-- ── YouTube Videos Section ── -->
+      <div class="yt-section reveal">
+        <div class="yt-section__header">
+          <div>
+            <span class="label">BallKutz TV — Os nossos vídeos</span>
+            <h3 class="heading-md" style="margin-top:0.5rem;">VÍDEOS EM DESTAQUE</h3>
           </div>
-          <span class="yt-facade__label" data-i18n="gallery_yt_label">Ver no YouTube</span>
+          <a
+            href="https://www.youtube.com/@BallKutz"
+            target="_blank"
+            rel="noopener"
+            class="yt-section__channel-link"
+            aria-label="Ver canal BallKutz no YouTube"
+          >
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            Ver Canal Completo
+          </a>
         </div>
-      </div>
+
+        <div class="yt-grid">
+
+          <!-- Featured video — Video 1 -->
+          <div class="yt-grid__item yt-grid__item--featured">
+            <div
+              class="yt-facade"
+              data-video-id="XDFzLd9zLoU"
+              data-title="BallKutz — Highlights"
+              role="button"
+              tabindex="0"
+              aria-label="Assistir ao vídeo BallKutz"
+            >
+              <img
+                class="yt-facade__thumb"
+                src="https://img.youtube.com/vi/XDFzLd9zLoU/maxresdefault.jpg"
+                alt="BallKutz vídeo 1 — Fade premium Luanda"
+                loading="lazy"
+              />
+              <div class="yt-facade__play" aria-hidden="true">
+                <div class="yt-facade__play-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="yt-facade__label">Assistir</span>
+              </div>
+              <div class="yt-facade__meta" aria-hidden="true">
+                <div class="yt-facade__meta-title">BallKutz — O Clube dos Campeões</div>
+                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="yt-grid__item">
+            <div
+              class="yt-facade"
+              data-video-id="pEA_D2WquPM"
+              data-title="BallKutz Cuts"
+              role="button"
+              tabindex="0"
+              aria-label="Assistir ao vídeo BallKutz"
+            >
+              <img
+                class="yt-facade__thumb"
+                src="https://img.youtube.com/vi/pEA_D2WquPM/maxresdefault.jpg"
+                alt="BallKutz vídeo 2 — Cortes em destaque"
+                loading="lazy"
+              />
+              <div class="yt-facade__play" aria-hidden="true">
+                <div class="yt-facade__play-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="yt-facade__label">Assistir</span>
+              </div>
+              <div class="yt-facade__meta" aria-hidden="true">
+                <div class="yt-facade__meta-title">Cortes em Destaque</div>
+                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="yt-grid__item">
+            <div
+              class="yt-facade"
+              data-video-id="4LA-pAhzYq0"
+              data-title="BallKutz Experience"
+              role="button"
+              tabindex="0"
+              aria-label="Assistir ao vídeo BallKutz"
+            >
+              <img
+                class="yt-facade__thumb"
+                src="https://img.youtube.com/vi/4LA-pAhzYq0/maxresdefault.jpg"
+                alt="BallKutz vídeo 3 — A experiência"
+                loading="lazy"
+              />
+              <div class="yt-facade__play" aria-hidden="true">
+                <div class="yt-facade__play-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="yt-facade__label">Assistir</span>
+              </div>
+              <div class="yt-facade__meta" aria-hidden="true">
+                <div class="yt-facade__meta-title">A Experiência BallKutz</div>
+                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /yt-grid -->
+      </div><!-- /yt-section -->
 
     </div>
   </section>
-      
+
+  <!-- ============================================================
+       AVALIAÇÕES (REVIEWS)
+       ============================================================ -->
   <section class="section reviews" id="avaliacoes">
     <div class="container">
 
@@ -977,6 +1072,116 @@
   </section>
 
   <!-- ============================================================
+       LOCALIZAÇÃO (LOCATION)
+       ============================================================ -->
+  <section class="location" id="localizacao" aria-label="Como nos encontrar">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Como nos encontrar</span>
+        <h2 class="heading-lg">LOCALIZAÇÃO</h2>
+      </div>
+
+      <div class="location__layout">
+
+        <!-- Info column -->
+        <div class="location__info reveal">
+
+          <div class="location__detail">
+            <div class="location__detail-icon" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="location__detail-label">Morada</div>
+              <div class="location__detail-value">
+                Luanda, Angola<br>
+                <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener">
+                  Ver no Google Maps →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__detail">
+            <div class="location__detail-icon" aria-hidden="true">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <div class="location__detail-label">Horário de Funcionamento</div>
+              <div class="location__detail-value">
+                Segunda – Sábado: 09h00 – 19h00<br>
+                Domingo: 10h00 – 16h00
+              </div>
+            </div>
+          </div>
+
+          <div class="location__detail">
+            <div class="location__detail-icon" aria-hidden="true">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="location__detail-label">WhatsApp / Chamada</div>
+              <!-- ⚙️ UPDATE: Replace with actual phone -->
+              <div class="location__detail-value">
+                <a href="tel:+244900000000">+244 9XX XXX XXX</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__detail">
+            <div class="location__detail-icon" aria-hidden="true">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <div class="location__detail-label">Instagram</div>
+              <div class="location__detail-value">
+                <a href="https://instagram.com/ballkutzbarbershop" target="_blank" rel="noopener">
+                  @ballkutzbarbershop
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="location__actions">
+            <a
+              href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary"
+              aria-label="Abrir no Google Maps"
+            >
+              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+              Como Chegar
+            </a>
+            <a href="#reservar" class="btn btn--ghost">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Reservar
+            </a>
+          </div>
+
+        </div><!-- /location__info -->
+
+        <!-- Map column -->
+        <div class="location__map-wrap reveal" aria-label="Mapa BallKutz Luanda">
+          <iframe
+            title="BallKutz Barbershop — Localização em Luanda"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.3!2d13.2343!3d-8.8368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zBallKutz+Barbershop+Luanda!5e0!3m2!1spt!2sao!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-hidden="true"
+          ></iframe>
+          <!-- ⚙️ To get the correct embed URL:
+               1. Go to https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5
+               2. Click Share → Embed a map
+               3. Copy the src URL and paste it above -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
        FOOTER
        ============================================================ -->
   <footer class="footer">
@@ -994,7 +1199,7 @@
             <a href="https://instagram.com/ballkutzbarbershop" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="https://youtube.com/@ballkutz" class="footer__social-link" target="_blank" rel="noopener" aria-label="YouTube">
+            <a href="https://youtube.com/@BallKutz" class="footer__social-link" target="_blank" rel="noopener" aria-label="YouTube">
               <i class="fa-brands fa-youtube"></i>
             </a>
             <a href="#" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -1009,7 +1214,7 @@
         <div>
           <div class="footer__col-title" data-i18n="footer_nav">Navegação</div>
           <ul class="footer__links">
-            <li><a href="#sobre"   data-i18n="nav_about">Sobre</a></li>
+            <li><a href="sobre.html" data-i18n="nav_about">Sobre</a></li>
             <li><a href="#planos"  data-i18n="nav_plans">Planos</a></li>
             <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
             <li><a href="#equipa"  data-i18n="nav_team">Equipa</a></li>
@@ -1088,6 +1293,45 @@
   </div>
 
 
-<script src="app.js"></script>
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/244900000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp BallKutz">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="mobile-cta-bar" role="complementary" aria-label="Acções rápidas">
+    <a href="tel:+244900000000" class="mcta-call">
+      <i class="fa-solid fa-phone" aria-hidden="true"></i>
+      <span data-i18n="quick_call">Ligar</span>
+    </a>
+    <a href="#reservar" class="mcta-book">
+      <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+      <span data-i18n="nav_cta">Reservar</span>
+    </a>
+  </div>
+
+  <!-- Success Overlay -->
+  <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true" aria-label="Booking confirmed">
+    <div class="success-box">
+      <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 class="success-title" data-i18n="success_title">Pedido na Bancada!</h3>
+      <p class="success-msg" data-i18n="success_msg">
+        O teu WhatsApp foi aberto com os detalhes da marcação.<br>
+        Aguarda a confirmação da equipa BallKutz em breve. 🏆
+      </p>
+      <button class="btn btn--primary" id="closeSuccess" data-i18n="success_close">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
