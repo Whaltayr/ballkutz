@@ -1,7 +1,7 @@
     'use strict';
 
-    const WHATSAPP_NUMBER = '244900000000';
-    const CONTACT_EMAIL   = 'info@ballkutz.com';
+    const WHATSAPP_NUMBER = '244932783626';
+    const CONTACT_EMAIL   = 'https://hook.eu1.make.com/219sfporr8ngjjppens5t71lw8z7w1ul';
 
     const TIME_SLOTS = [
       '09:00','09:30','10:00','10:30','11:00','11:30',
