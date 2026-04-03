@@ -1,7 +1,8 @@
     'use strict';
 
     const WHATSAPP_NUMBER = '244932783626';
-    const CONTACT_EMAIL   = 'https://hook.eu1.make.com/219sfporr8ngjjppens5t71lw8z7w1ul';
+    const CONTACT_EMAIL   = 'josiwhatson@gmail.com';
+     const MAKE_WEBHOOK   = 'https://hook.eu1.make.com/219sfporr8ngjjppens5t71lw8z7w1ul';
 
     const TIME_SLOTS = [
       '09:00','09:30','10:00','10:30','11:00','11:30',
@@ -377,12 +378,12 @@
     // ── Email notification ──
     async function notifyEmail(payload) {
       try {
-        await fetch('https://formsubmit.co/ajax/'+CONTACT_EMAIL, {
+        await fetch(MAKE_WEBHOOK, {
           method:'POST',
-          headers:{'Content-Type':'application/json','Accept':'application/json'},
-          body:JSON.stringify({_captcha:'false', _subject:'Nova marcação — '+payload.Nome, ...payload}),
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(payload.Nome, ...payload),
         });
-      } catch(e) { console.warn('Email failed:',e); }
+      } catch(err) { console.warn('make webhook falhou:',err); }
     }
 
     // ── Success overlay ──
