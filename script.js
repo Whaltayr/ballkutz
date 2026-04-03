@@ -381,7 +381,7 @@
         await fetch(MAKE_WEBHOOK, {
           method:'POST',
           headers:{'Content-Type':'application/json'},
-          body:JSON.stringify(payload.Nome, ...payload),
+          body:JSON.stringify(payload),
         });
       } catch(err) { console.warn('make webhook falhou:',err); }
     }
