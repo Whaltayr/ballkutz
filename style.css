@@ -1,4 +1,12 @@
-    /* ================================================
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/TTF/Rex-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ================================================
        CSS VARIABLES
        ================================================ */
     :root {
@@ -15,7 +23,7 @@
       --grey:         #666666;
       --grey-light:   #aaaaaa;
       --white:        #f5f5f5;
-      --font-heading: 'Oswald', sans-serif;
+      --font-heading: 'MyCustomFont', sans-serif;
       --font-body:    'Montserrat', sans-serif;
       --transition:   all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
       --radius:       2px;
