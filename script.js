@@ -47,42 +47,37 @@ const LOCALES = {
     stat_clients: "Clientes",
     stat_services: "Serviços",
     stat_anos: "Anos",
-   // Planos
-plans_eyebrow:       'Season Tickets — Torna-te membro',
-plans_title:         'ESCOLHA A SUA ASSINATURA',
-plans_subtitle:      'Mensal · Sem contratos · Cancela quando quiseres',
-plans_cat_limited:   '2 Vezes por Mês',
-plans_cat_unlimited: 'Ilimitado',
-plan_period_limited:   '/ 2x mês',
-plan_period_unlimited: '/ mês',
-plan_discount:       '10% OFF em produtos e serviços',
-plan_cta:            'Aderir ao Plano',
-plan_cta_unlimited:  'Aderir Agora',
-// Card 1
-plan1_name:  'Plano Cabelo',
-plan1_perk1: '2 cortes de cabelo por mês',
-plan1_perk3: '1 ficha — 1 serviço extra de cortesia',
-// Card 2
-plan2_name:  'Plano Cabelo + Barba',
-plan2_perk1: '2 cabelo + barba por mês',
-plan2_perk3: '1 ficha — 1 serviço extra de cortesia',
-// Card 3
-plan3_name:  'Plano Cabelo',
-plan3_perk1: 'Cortes ilimitados',
-plan3_perk3: '2 fichas — 1 serviço extra de cortesia',
-// Card 4
-plan4_name:  'Plano Barba',
-plan4_perk1: 'Barbas ilimitadas',
-plan4_perk3: '1 ficha — 1 serviço extra de cortesia',
-// Card 5
-plan5_name:  'Plano Criança',
-plan5_perk1: 'Cortes ilimitados',
-plan5_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
-// Card 6
-plan6_name:  'Plano Cabelo + Barba',
-plan6_badge: 'Mais Popular',
-plan6_perk1: 'Cabelo + Barba ilimitados',
-plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
+    plans_eyebrow: "Season Tickets — Torna-te membro",
+    plans_title: "ESCOLHA A SUA ASSINATURA",
+    plans_subtitle: "Mensal · Sem contratos · Cancela quando quiseres",
+    plans_cat_limited: "2 Vezes por Mês",
+    plans_cat_unlimited: "Ilimitado",
+    plan_period_limited: "/ 2x mês",
+    plan_period_unlimited: "/ mês",
+    plan_discount: "10% OFF em produtos e serviços",
+    plan_cta: "Aderir ao Plano",
+    plan_cta_unlimited: "Aderir Agora",
+    plan1_name: "Plano Cabelo",
+    plan1_perk1: "2 cortes de cabelo por mês",
+    plan1_perk3: "1 ficha — 1 serviço extra de cortesia ",
+    plan2_name: "Plano Cabelo + Barba",
+    plan2_perk1: "2 cabelo + barba por mês",
+    plan2_perk3: "1 ficha — 1 serviço extra de cortesia",
+    plan3_name: "Plano Cabelo",
+    plan3_perk1: "Cortes ilimitados",
+    plan3_perk3:
+      "2 fichas — 1 serviço extra de cortesia + trazer um amigo de graça",
+    plan4_name: "Plano Barba",
+    plan4_perk1: "Barbas ilimitadas",
+    plan4_perk3:
+      "1 ficha — 1 serviço extra de cortesia + trazer um amigo de graça",
+    plan5_name: "Plano Criança",
+    plan5_perk1: "Cortes ilimitados",
+    plan5_perk3: "2 fichas — 1 serviço extra + trazer 1 amigo de graça",
+    plan6_name: "Plano Cabelo + Barba",
+    plan6_badge: "Mais Popular",
+    plan6_perk1: "Cabelo + Barba ilimitados",
+    plan6_perk3: "2 fichas — 1 serviço extra + trazer 1 amigo de graça",
     service_kutz_crianca: "Kutz Criança",
     service_kutz_barba: "Kutz Barba",
     service_kutz_cabelo: "Kutz Cabelo",
@@ -129,7 +124,7 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
       "Preenche o formulário e recebes confirmação no teu WhatsApp em breve.",
     contact_address_label: "Morada",
     contact_hours_label: "Horário",
-    contact_hours: "Seg–Sáb: 09h–19h · Dom: 10h–16h",
+    contact_hours: "Ter–Sáb: 10h–20h · Dom: 10h–18h",
     quick_call: "Ligar Agora",
     quick_wa: "WhatsApp Rápido",
     or_form: "ou preenche o formulário",
@@ -208,7 +203,6 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     stat_clients: "Clients",
     stat_services: "Services",
     stat_anos: "Years",
-    // Plans
     plans_eyebrow: "Season Tickets — Become a member",
     plans_title: "CHOOSE YOUR SUBSCRIPTION",
     plans_subtitle: "Monthly · No contracts · Cancel anytime",
@@ -219,27 +213,21 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     plan_discount: "10% OFF on products & services",
     plan_cta: "Join the Plan",
     plan_cta_unlimited: "Join Now",
-    // Card 1
     plan1_name: "Hair Plan",
     plan1_perk1: "2 haircuts per month",
     plan1_perk3: "1 token — 1 free extra service",
-    // Card 2
     plan2_name: "Hair + Beard Plan",
     plan2_perk1: "2 hair + beard per month",
     plan2_perk3: "1 token — 1 free extra service",
-    // Card 3
     plan3_name: "Hair Plan",
     plan3_perk1: "Unlimited haircuts",
-    plan3_perk3: "2 tokens — 1 free extra service",
-    // Card 4
+    plan3_perk3: "2 tokens — 1 free extra service + bring one extra friend",
     plan4_name: "Beard Plan",
     plan4_perk1: "Unlimited beard services",
-    plan4_perk3: "1 token — 1 free extra service",
-    // Card 5
+    plan4_perk3: "1 token — 1 free extra service + bring one extra friend",
     plan5_name: "Kids Plan",
     plan5_perk1: "Unlimited haircuts",
     plan5_perk3: "2 tokens — 1 free extra + bring 1 friend free",
-    // Card 6
     plan6_name: "Hair + Beard Plan",
     plan6_badge: "Most Popular",
     plan6_perk1: "Unlimited hair + beard",
@@ -278,13 +266,10 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     reviews_title: "REVIEWS",
     review1_text:
       '"IT REALLY IS A VERY BEAUTIFUL AND COMFORTABLE SALON. BESIDES BEING BEAUTIFUL, THE STAFF ARE EXCELLENT. I RECOMMEND IT TO ANYONE WHO HASN´T HAD THE CHANCE TO VISIT YET, GO FOR IT. FIVE STARS!"',
-
     review2_text:
       '"BALLKUTZ 5 STARS, A WELCOMING, AWESOME PLACE AND YOU REALLY FEEL COOL. I LOVED THE WORK THEY DID AND OF COURSE, I WILL ALWAYS COME BACK. WAY TO GO BALLKUTZ!"',
-
     review3_text:
       '"A TOTALLY DIFFERENT EXPERIENCE IT IS LIKE BEING IN THE PAST, PRESENT ,AND FUTURE ALL AT THE SAME TIME"',
-
     review4_text:
       '"I HIGHLY RECOMMEND COMING TO THIS BARBERSHOP; THEY WELCOME CUSTOMERS VERY WELL AND ARE REALLY COOL PEOPLE. I HAD A GREAT EXPERIENCE HERE, AND EVEN MY 5-YEAR-OLD BROTHER LOVED IT. THANKS TO THIS SHOP, MY LITTLE BROTHER GOT TO PLAY ON A PLAYSTATION 5 FOR THE FIRST TIME"',
     booking_eyebrow: "Final Whistle — Book your spot",
@@ -293,7 +278,7 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
       "Fill in the form and receive confirmation on your WhatsApp shortly.",
     contact_address_label: "Address",
     contact_hours_label: "Hours",
-    contact_hours: "Mon–Sat: 9am–7pm · Sun: 10am–4pm",
+    contact_hours: "Tue–Sat: 10am–8pm · Sun: 10am–6pm",
     quick_call: "Call Now",
     quick_wa: "Quick WhatsApp",
     or_form: "or fill in the form",
@@ -393,7 +378,6 @@ function initNavigation() {
   hamburger.addEventListener("click", openMenu);
   mobileClose.addEventListener("click", closeMenu);
 
-  // Close on any link click inside mobile menu (except lang toggle)
   mobileMenu
     .querySelectorAll("a")
     .forEach((el) => el.addEventListener("click", closeMenu));
@@ -429,18 +413,29 @@ function initNavigation() {
 function initServiceTabs() {
   document.querySelectorAll(".tab-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      document
-        .querySelectorAll(".tab-btn")
-        .forEach((b) => b.classList.remove("active"));
+      document.querySelectorAll(".tab-btn").forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
       document
         .querySelectorAll(".tab-panel")
         .forEach((p) => p.classList.remove("active"));
+
       btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
       document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
     });
   });
 
   document.querySelectorAll(".service-item").forEach((item) => {
+    // Accessibility logic: allow Enter key trigger on service items
+    item.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        item.click();
+      }
+    });
+
     item.addEventListener("click", () => {
       const select = document.getElementById("bookingService");
       const opt = [...select.options].find(
@@ -460,6 +455,13 @@ function initServiceTabs() {
 // ── Team cards ──
 function initTeamCards() {
   document.querySelectorAll(".barber-card").forEach((card) => {
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        card.click();
+      }
+    });
+
     card.addEventListener("click", () => {
       const select = document.getElementById("bookingBarber");
       const opt = [...select.options].find(
@@ -479,11 +481,13 @@ function initTeamCards() {
 // ── Reviews slider ──
 function initReviewsSlider() {
   const track = document.getElementById("reviewsTrack");
+  if (!track) return;
   const dots = document.querySelectorAll(".reviews__dot");
-  const cards = track ? [...track.querySelectorAll(".review-card")] : [];
+  const cards = [...track.querySelectorAll(".review-card")];
   if (!cards.length) return;
 
   let idx = 0;
+  let timer;
   const perView =
     window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
   const maxIdx = Math.max(0, cards.length - perView);
@@ -501,7 +505,7 @@ function initReviewsSlider() {
       goTo(+d.dataset.idx);
     }),
   );
-  let timer = setInterval(() => goTo(idx >= maxIdx ? 0 : idx + 1), 4500);
+  timer = setInterval(() => goTo(idx >= maxIdx ? 0 : idx + 1), 4500);
 }
 
 // ── Time slots ──
@@ -682,7 +686,6 @@ function initBookingForm() {
 
   renderTimeSlots();
 
-  // Mode cards
   document
     .getElementById("modeBarbershop")
     .addEventListener("click", () => switchBookingMode("barbershop"));
@@ -690,7 +693,6 @@ function initBookingForm() {
     .getElementById("modeHome")
     .addEventListener("click", () => switchBookingMode("home"));
 
-  // Quick WA button
   const waBtn = document.getElementById("waQuickBtn");
   if (waBtn)
     waBtn.addEventListener("click", (e) => {
@@ -704,6 +706,7 @@ function initBookingForm() {
     .addEventListener("click", async () => {
       if (document.getElementById("honeypot").value) return;
       if (!validateShopForm()) return;
+
       const data = {
         name: document.getElementById("clientName").value.trim(),
         phone: document.getElementById("clientPhone").value.trim(),
@@ -713,10 +716,12 @@ function initBookingForm() {
         date: document.getElementById("bookingDate").value,
         time: getSlot(),
       };
+
       const btn = document.getElementById("submitBooking");
       const span = btn.querySelector("span");
       btn.disabled = true;
       span.textContent = "...";
+
       await notifyEmail({
         Nome: data.name,
         WhatsApp: data.phone,
@@ -727,6 +732,7 @@ function initBookingForm() {
         Hora: data.time,
         Tipo: "Barbearia",
       });
+
       window.open(waShop(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
@@ -739,6 +745,7 @@ function initBookingForm() {
     .addEventListener("click", async () => {
       if (document.getElementById("honeypot").value) return;
       if (!validateHomeForm()) return;
+
       const data = {
         name: document.getElementById("homeClientName").value.trim(),
         phone: document.getElementById("homeClientPhone").value.trim(),
@@ -748,10 +755,12 @@ function initBookingForm() {
         time: document.getElementById("homeTime").value,
         notes: document.getElementById("homeNotes").value.trim(),
       };
+
       const btn = document.getElementById("submitHomeBooking");
       const span = btn.querySelector("span");
       btn.disabled = true;
       span.textContent = "...";
+
       await notifyEmail({
         Nome: data.name,
         WhatsApp: data.phone,
@@ -762,6 +771,7 @@ function initBookingForm() {
         Notas: data.notes || "N/A",
         Tipo: "Domicílio",
       });
+
       window.open(waHome(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
@@ -788,10 +798,11 @@ function initScrollAnimations() {
     },
     { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
   );
+
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 }
 
-// ── YouTube Facades (handles multiple .yt-facade elements) ──
+// ── YouTube Facades ──
 function initYouTubeFacade() {
   const facades = document.querySelectorAll(".yt-facade");
   if (!facades.length) return;
@@ -847,30 +858,28 @@ function initScrollTop() {
   });
 }
 
-// ── Plans Slider ──
-// Uses pure CSS scroll-snap; JS handles arrows, dots and mouse drag only.
+// ── Plans Slider (Fully Fixed) ──
 function initPlansSlider() {
-  const wrap    = document.querySelector(".plans__slider-wrap");
-  const slider  = document.getElementById("plansSlider");
+  const wrap = document.querySelector(".plans__slider-wrap");
+  const slider = document.getElementById("plansSlider");
   const dotsWrap = document.getElementById("plansDots");
   const btnPrev = document.getElementById("plansPrev");
   const btnNext = document.getElementById("plansNext");
 
   if (!wrap || !slider) return;
 
-  // Only actual plan cards — exclude the divider element
   const cards = [...slider.querySelectorAll(".plan-card")];
   if (!cards.length) return;
 
-  let current    = 0;
+  let current = 0;
   let isDragging = false;
   let dragStartX = 0;
   let dragStartScroll = 0;
 
-  // ── Build dots (one per card) ──
   dotsWrap.innerHTML = "";
   cards.forEach((_, i) => {
     const dot = document.createElement("button");
+    dot.type = "button";
     dot.className = "plans__dot" + (i === 0 ? " active" : "");
     dot.setAttribute("role", "tab");
     dot.setAttribute("aria-label", "Plano " + (i + 1));
@@ -881,7 +890,6 @@ function initPlansSlider() {
 
   const dots = [...dotsWrap.querySelectorAll(".plans__dot")];
 
-  // ── Update dots and arrow disabled states ──
   function updateUI() {
     dots.forEach((d, i) => {
       const active = i === current;
@@ -892,61 +900,66 @@ function initPlansSlider() {
     if (btnNext) btnNext.disabled = current === cards.length - 1;
   }
 
-  // ── Scroll the wrap so that cards[index] is at the left edge ──
-  // card.offsetLeft is relative to wrap (the nearest positioned ancestor)
   function goTo(index) {
     current = Math.max(0, Math.min(index, cards.length - 1));
+    // Provide explicit scroll behavior via JS instead of CSS to prevent drag jitter.
     wrap.scrollTo({ left: cards[current].offsetLeft, behavior: "smooth" });
     updateUI();
   }
 
-  // ── Arrow button click ──
   if (btnPrev) btnPrev.addEventListener("click", () => goTo(current - 1));
   if (btnNext) btnNext.addEventListener("click", () => goTo(current + 1));
 
-  // ── Sync dots after native scroll or touch swipe (debounced) ──
   let scrollTimer = null;
-
-  wrap.addEventListener("scroll", () => {
-    if (isDragging) return; // avoid fighting drag scroll
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      // Find the card whose left edge is closest to the scroll position
-      let closest = 0;
-      let minDist = Infinity;
-      cards.forEach((card, i) => {
-        const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-        if (dist < minDist) {
-          minDist = dist;
-          closest = i;
+  wrap.addEventListener(
+    "scroll",
+    () => {
+      if (isDragging) return;
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        let closest = 0;
+        let minDist = Infinity;
+        cards.forEach((card, i) => {
+          const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = i;
+          }
+        });
+        if (closest !== current) {
+          current = closest;
+          updateUI();
         }
-      });
-      if (closest !== current) {
-        current = closest;
-        updateUI();
-      }
-    }, 80);
-  }, { passive: true });
+      }, 150);
+    },
+    { passive: true },
+  );
 
-  // ── Mouse drag to scroll (desktop) ──
   slider.addEventListener("mousedown", (e) => {
-    isDragging    = true;
-    dragStartX     = e.clientX;
+    isDragging = true;
+    dragStartX = e.clientX;
     dragStartScroll = wrap.scrollLeft;
+    // Disable CSS snap behavior temporarily to prevent jumping/lag during manual drag
+    wrap.style.scrollSnapType = "none";
     slider.style.cursor = "grabbing";
-    e.preventDefault(); // prevents text selection during drag
+    e.preventDefault();
   });
 
   window.addEventListener("mouseup", () => {
     if (!isDragging) return;
     isDragging = false;
     slider.style.cursor = "grab";
-    // After releasing, snap to closest card
+    // Re-enable snapping
+    wrap.style.scrollSnapType = "x mandatory";
+
     let closest = 0;
-    let minDist  = Infinity;
+    let minDist = Infinity;
     cards.forEach((card, i) => {
       const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-      if (dist < minDist) { minDist = dist; closest = i; }
+      if (dist < minDist) {
+        minDist = dist;
+        closest = i;
+      }
     });
     goTo(closest);
   });
@@ -958,8 +971,6 @@ function initPlansSlider() {
   });
 
   slider.style.cursor = "grab";
-
-  // ── Initial state ──
   updateUI();
 }
 
@@ -975,6 +986,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollTop();
   updateAllText();
   initPlansSlider();
-
-  
 });
