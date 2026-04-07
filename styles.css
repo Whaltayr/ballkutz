@@ -600,7 +600,7 @@
       background-image: url('img/image-15.webp');
       background-size: cover;
       background-position: center 30%;
-      opacity: 0.30;
+      opacity: 0.40;
       filter: grayscale(50%) contrast(1.2);
       z-index: 0;
     }

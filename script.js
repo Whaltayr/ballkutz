@@ -100,7 +100,7 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     services_title: "SERVIÇOS",
     tab_cortes: "Cortes",
     tab_barba: "Barba",
-    tab_estetica: "Estética",
+    tab_estetica: "Serviços Extras",
     tab_vip: "VIP",
     tab_combo: "Combo",
     team_eyebrow: "Starting XI — Os nossos",
@@ -261,7 +261,7 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     services_title: "SERVICES",
     tab_cortes: "Cuts",
     tab_barba: "Beard",
-    tab_estetica: "Aesthetics",
+    tab_estetica: "Extra Services",
     tab_vip: "VIP",
     tab_combo: "Combo",
     team_eyebrow: "Starting XI — Our team",
@@ -975,4 +975,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollTop();
   updateAllText();
   initPlansSlider();
+
+  
 });
