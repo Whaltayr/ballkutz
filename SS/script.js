@@ -116,7 +116,7 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     reviews_eyebrow: "Fans' Voice — O que dizem",
     reviews_title: "AVALIAÇÕES",
     review1_text:
-      '"REALMENTE E UM SALÃO MUITO BONITO E CONFORTÁVEL, ALÉM DE BONITO OS FUNCIONÁRIOS AO EXCELENTES RECOMENDO PARA QUEM AINDA NÃO TEVE A OPORTUNIDADE DE AQUI ESTAR APROVEITA CINCO-ESTRELAS"',
+      '"REALMENTE E UM SALÃO MUITO BONITO E CONFORTÁVEL, ALÉM DE BONITO OS FUNCIONÁRIOS <S>AO EXCELENTES RECOMENDO PARA QUEM AINDA NÃO TEVE A OPORTUNIDADE DE AQUI ESTAR APROVEITA CINCO-ESTRELAS"',
     review2_text:
       '"BALLKUTZ 5 ESTRELAS, UM SÍTIO ACOLHEDOR, PORREIRO E TE SENTES REALMENTE COOL. GOSTEI DO TRABALHO FEITO E CLARO, VOU REGRESSAR SEMPRE. FORÇA BALLKUTZ"',
     review3_text:
@@ -208,42 +208,42 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     stat_clients: "Clients",
     stat_services: "Services",
     stat_anos: "Years",
-    // Plans
-    plans_eyebrow: "Season Tickets — Become a member",
-    plans_title: "CHOOSE YOUR SUBSCRIPTION",
-    plans_subtitle: "Monthly · No contracts · Cancel anytime",
-    plans_cat_limited: "2 Times per Month",
-    plans_cat_unlimited: "Unlimited",
-    plan_period_limited: "/ 2x month",
-    plan_period_unlimited: "/ month",
-    plan_discount: "10% OFF on products & services",
-    plan_cta: "Join the Plan",
-    plan_cta_unlimited: "Join Now",
+    // Planos
+    plans_eyebrow: "Season Tickets — Torna-te membro",
+    plans_title: "ESCOLHA A SUA ASSINATURA",
+    plans_subtitle: "Mensal · Sem contratos · Cancela quando quiseres",
+    plans_cat_limited: "2 Vezes por Mês",
+    plans_cat_unlimited: "Ilimitado",
+    plan_period_limited: "/ 2x mês",
+    plan_period_unlimited: "/ mês",
+    plan_discount: "10% OFF em produtos e serviços",
+    plan_cta: "Aderir ao Plano",
+    plan_cta_unlimited: "Aderir Agora",
     // Card 1
-    plan1_name: "Hair Plan",
-    plan1_perk1: "2 haircuts per month",
-    plan1_perk3: "1 token — 1 free extra service",
+    plan1_name: "Plano Cabelo",
+    plan1_perk1: "2 cortes de cabelo por mês",
+    plan1_perk3: "1 ficha — 1 serviço extra de cortesia",
     // Card 2
-    plan2_name: "Hair + Beard Plan",
-    plan2_perk1: "2 hair + beard per month",
-    plan2_perk3: "1 token — 1 free extra service",
+    plan2_name: "Plano Cabelo + Barba",
+    plan2_perk1: "2 cabelo + barba por mês",
+    plan2_perk3: "1 ficha — 1 serviço extra de cortesia",
     // Card 3
-    plan3_name: "Hair Plan",
-    plan3_perk1: "Unlimited haircuts",
-    plan3_perk3: "2 tokens — 1 free extra service",
+    plan3_name: "Plano Cabelo",
+    plan3_perk1: "Cortes ilimitados",
+    plan3_perk3: "2 fichas — 1 serviço extra de cortesia",
     // Card 4
-    plan4_name: "Beard Plan",
-    plan4_perk1: "Unlimited beard services",
-    plan4_perk3: "1 token — 1 free extra service",
+    plan4_name: "Plano Barba",
+    plan4_perk1: "Barbas ilimitadas",
+    plan4_perk3: "1 ficha — 1 serviço extra de cortesia",
     // Card 5
-    plan5_name: "Kids Plan",
-    plan5_perk1: "Unlimited haircuts",
-    plan5_perk3: "2 tokens — 1 free extra + bring 1 friend free",
+    plan5_name: "Plano Criança",
+    plan5_perk1: "Cortes ilimitados",
+    plan5_perk3: "2 fichas — 1 serviço extra + trazer 1 amigo de graça",
     // Card 6
-    plan6_name: "Hair + Beard Plan",
-    plan6_badge: "Most Popular",
-    plan6_perk1: "Unlimited hair + beard",
-    plan6_perk3: "2 tokens — 1 free extra + bring 1 friend free",
+    plan6_name: "Plano Cabelo + Barba",
+    plan6_badge: "Mais Popular",
+    plan6_perk1: "Cabelo + Barba ilimitados",
+    plan6_perk3: "2 fichas — 1 serviço extra + trazer 1 amigo de graça",
     service_kutz_crianca: "Kid's Cut",
     service_kutz_barba: "Beard Cut",
     service_kutz_cabelo: "Hair Cut",
@@ -262,7 +262,6 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     tab_cortes: "Cuts",
     tab_barba: "Beard",
     tab_estetica: "Aesthetics",
-    tab_vip: "VIP",
     tab_combo: "Combo",
     team_eyebrow: "Starting XI — Our team",
     team_title: "THE TEAM",
@@ -277,10 +276,10 @@ plan6_perk3: '2 fichas — 1 serviço extra + trazer 1 amigo de graça',
     reviews_eyebrow: "Fans' Voice — What they say",
     reviews_title: "REVIEWS",
     review1_text:
-      '"IT REALLY IS A VERY BEAUTIFUL AND COMFORTABLE SALON. BESIDES BEING BEAUTIFUL, THE STAFF ARE EXCELLENT. I RECOMMEND IT TO ANYONE WHO HASN´T HAD THE CHANCE TO VISIT YET, GO FOR IT. FIVE STARS!"',
+      '"I WAS VERY WELL RECEIVED, EXCELLENT SERVICE, VERY COMFORTABLE ENVIRONMENT, SIMPLY EXTRAORDINARY"',
 
     review2_text:
-      '"BALLKUTZ 5 STARS, A WELCOMING, AWESOME PLACE AND YOU REALLY FEEL COOL. I LOVED THE WORK THEY DID AND OF COURSE, I WILL ALWAYS COME BACK. WAY TO GO BALLKUTZ!"',
+      '"ON MY WALK, I CAME ACROSS BALLKUTZ BARBERSHOP, AND I WAS REALLY IMPRESSED BY HOW INNOVATIVE IT IS AND WHAT IT HAS TO OFFER US YOUNG PEOPLE. VISIT THEM AND TRY THEIR SERVICES..."',
 
     review3_text:
       '"A TOTALLY DIFFERENT EXPERIENCE IT IS LIKE BEING IN THE PAST, PRESENT ,AND FUTURE ALL AT THE SAME TIME"',
@@ -848,32 +847,27 @@ function initScrollTop() {
 }
 
 // ── Plans Slider ──
-// Uses pure CSS scroll-snap; JS handles arrows, dots and mouse drag only.
 function initPlansSlider() {
-  const wrap    = document.querySelector(".plans__slider-wrap");
-  const slider  = document.getElementById("plansSlider");
+  const slider = document.getElementById("plansSlider");
   const dotsWrap = document.getElementById("plansDots");
   const btnPrev = document.getElementById("plansPrev");
   const btnNext = document.getElementById("plansNext");
 
-  if (!wrap || !slider) return;
+  if (!slider) return;
 
-  // Only actual plan cards — exclude the divider element
+  // Only count actual plan cards, not the divider
   const cards = [...slider.querySelectorAll(".plan-card")];
   if (!cards.length) return;
 
-  let current    = 0;
-  let isDragging = false;
-  let dragStartX = 0;
-  let dragStartScroll = 0;
+  let current = 0;
 
-  // ── Build dots (one per card) ──
+  // Build dots — one per card
   dotsWrap.innerHTML = "";
   cards.forEach((_, i) => {
     const dot = document.createElement("button");
     dot.className = "plans__dot" + (i === 0 ? " active" : "");
     dot.setAttribute("role", "tab");
-    dot.setAttribute("aria-label", "Plano " + (i + 1));
+    dot.setAttribute("aria-label", `Plano ${i + 1}`);
     dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
     dot.addEventListener("click", () => goTo(i));
     dotsWrap.appendChild(dot);
@@ -881,86 +875,115 @@ function initPlansSlider() {
 
   const dots = [...dotsWrap.querySelectorAll(".plans__dot")];
 
-  // ── Update dots and arrow disabled states ──
-  function updateUI() {
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, cards.length - 1));
+
+    // Offset: position of the target card relative to the slider
+    const card = cards[current];
+    const sliderLeft = slider.getBoundingClientRect().left;
+    const cardLeft = card.getBoundingClientRect().left;
+    const currentScroll = slider.parentElement.scrollLeft || 0;
+
+    // Use scrollLeft on the wrapper for smooth native scroll
+    const targetScroll = card.offsetLeft - 20;
+    slider.parentElement.scrollTo({ left: targetScroll, behavior: "smooth" });
+
+    // Update dots
     dots.forEach((d, i) => {
-      const active = i === current;
-      d.classList.toggle("active", active);
-      d.setAttribute("aria-selected", active ? "true" : "false");
+      d.classList.toggle("active", i === current);
+      d.setAttribute("aria-selected", i === current ? "true" : "false");
     });
+
+    // Update arrows
     if (btnPrev) btnPrev.disabled = current === 0;
     if (btnNext) btnNext.disabled = current === cards.length - 1;
   }
 
-  // ── Scroll the wrap so that cards[index] is at the left edge ──
-  // card.offsetLeft is relative to wrap (the nearest positioned ancestor)
-  function goTo(index) {
-    current = Math.max(0, Math.min(index, cards.length - 1));
-    wrap.scrollTo({ left: cards[current].offsetLeft, behavior: "smooth" });
-    updateUI();
+  // Make the slider-wrap scrollable and hide scrollbar
+  const wrap = slider.parentElement;
+  wrap.style.overflowX = "auto";
+  wrap.style.scrollbarWidth = "none"; // Firefox
+  wrap.style.msOverflowStyle = "none"; // IE/Edge
+  wrap.style.cssText += "; scroll-snap-type: x mandatory;";
+
+  // Snap each card
+  cards.forEach((card) => {
+    card.style.scrollSnapAlign = "start";
+  });
+
+  // Hide webkit scrollbar via a dynamic style tag
+  if (!document.getElementById("plans-scrollbar-hide")) {
+    const st = document.createElement("style");
+    st.id = "plans-scrollbar-hide";
+    st.textContent =
+      ".plans__slider-wrap::-webkit-scrollbar { display: none; }";
+    document.head.appendChild(st);
   }
 
-  // ── Arrow button click ──
+  // Arrow buttons
   if (btnPrev) btnPrev.addEventListener("click", () => goTo(current - 1));
   if (btnNext) btnNext.addEventListener("click", () => goTo(current + 1));
 
-  // ── Sync dots after native scroll or touch swipe (debounced) ──
-  let scrollTimer = null;
-
-  wrap.addEventListener("scroll", () => {
-    if (isDragging) return; // avoid fighting drag scroll
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      // Find the card whose left edge is closest to the scroll position
-      let closest = 0;
-      let minDist = Infinity;
-      cards.forEach((card, i) => {
-        const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-        if (dist < minDist) {
-          minDist = dist;
-          closest = i;
-        }
-      });
-      if (closest !== current) {
+  // Sync dots with native scroll
+  let scrollTimer;
+  wrap.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        // Find which card is most visible
+        const wrapRect = wrap.getBoundingClientRect();
+        let closest = 0;
+        let minDist = Infinity;
+        cards.forEach((card, i) => {
+          const rect = card.getBoundingClientRect();
+          const dist = Math.abs(rect.left - wrapRect.left);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = i;
+          }
+        });
         current = closest;
-        updateUI();
-      }
-    }, 80);
-  }, { passive: true });
+        dots.forEach((d, i) => {
+          d.classList.toggle("active", i === current);
+          d.setAttribute("aria-selected", i === current ? "true" : "false");
+        });
+        if (btnPrev) btnPrev.disabled = current === 0;
+        if (btnNext) btnNext.disabled = current === cards.length - 1;
+      }, 80);
+    },
+    { passive: true },
+  );
 
-  // ── Mouse drag to scroll (desktop) ──
+  // Drag to scroll (desktop)
+  let isDragging = false;
+  let startX = 0;
+  let startScroll = 0;
+
   slider.addEventListener("mousedown", (e) => {
-    isDragging    = true;
-    dragStartX     = e.clientX;
-    dragStartScroll = wrap.scrollLeft;
+    isDragging = true;
+    startX = e.pageX - wrap.offsetLeft;
+    startScroll = wrap.scrollLeft;
     slider.style.cursor = "grabbing";
-    e.preventDefault(); // prevents text selection during drag
   });
 
-  window.addEventListener("mouseup", () => {
-    if (!isDragging) return;
+  document.addEventListener("mouseup", () => {
     isDragging = false;
     slider.style.cursor = "grab";
-    // After releasing, snap to closest card
-    let closest = 0;
-    let minDist  = Infinity;
-    cards.forEach((card, i) => {
-      const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-      if (dist < minDist) { minDist = dist; closest = i; }
-    });
-    goTo(closest);
   });
 
-  window.addEventListener("mousemove", (e) => {
+  document.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
-    const dx = e.clientX - dragStartX;
-    wrap.scrollLeft = dragStartScroll - dx;
+    e.preventDefault();
+    const x = e.pageX - wrap.offsetLeft;
+    const walk = (x - startX) * 1.2;
+    wrap.scrollLeft = startScroll - walk;
   });
 
   slider.style.cursor = "grab";
 
-  // ── Initial state ──
-  updateUI();
+  // Initial state
+  goTo(0);
 }
 
 // ── Init ──
