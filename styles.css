@@ -695,6 +695,28 @@ body::before {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+/* ── Imagem Fundo do Card (Estilo Dribbble) ── */
+.plan-card__bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px; /* Altura que a imagem vai ocupar no topo */
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5; /* Escurece a imagem para o texto ler-se bem */
+  pointer-events: none; /* Impede que a imagem interfira no clique ou scroll */
+  
+  /* Faz a imagem desaparecer gradualmente na parte de baixo */
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+}
+
+/* Garante que TODO o conteúdo do card fica acima da imagem */
+.plan-card > *:not(.plan-card__bg-img) {
+  position: relative;
+  z-index: 1;
+}
 .plan-card:hover {
   transform: translateY(-5px);
 }
