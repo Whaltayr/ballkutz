@@ -6,14 +6,13 @@ const MAKE_WEBHOOK =
   "https://hook.eu1.make.com/219sfporr8ngjjppens5t71lw8z7w1ul";
 
 const TIME_SLOTS = [
-  "09:00",
-  "09:30",
-  "10:00",
   "10:30",
   "11:00",
   "11:30",
   "12:00",
   "12:30",
+  "13:00",
+  "13:30",
   "14:00",
   "14:30",
   "15:00",
@@ -24,6 +23,7 @@ const TIME_SLOTS = [
   "17:30",
   "18:00",
   "18:30",
+  "19:30",
 ];
 
 let currentLang = "pt";
@@ -37,8 +37,8 @@ const LOCALES = {
     nav_cta: "Reservar",
     nav_about: "Sobre",
     hero_eyebrow: "Luanda, Angola · Est. 2023",
-    hero_line1: "VENHA SENTIR A DIFERENÇA, PORQUE O CORTE CERTO",
-    hero_line2: "MUDA TUDO.",
+    hero_line1: "VENHA SENTIR A DIFERENÇA, PORQUE O CORTE ",
+    hero_line2: "CERTO MUDA TUDO.",
     hero_sub:
       "A barbearia dos campeões em Luanda. Cortes de precisão, experiência de clube premium.",
     hero_cta: "Reservar Agora",
@@ -48,7 +48,7 @@ const LOCALES = {
     stat_services: "Serviços",
     stat_anos: "Anos",
     plans_eyebrow: "Season Tickets — Torna-te membro",
-    plans_title: "ESCOLHA A SUA ASSINATURA",
+    plans_title: "BARBEARIA COM ASSINATURA?",
     plans_subtitle: "Mensal · Sem contratos · Cancela quando quiseres",
     plans_cat_limited: "2 Vezes por Mês",
     plans_cat_unlimited: "Ilimitado",
@@ -70,7 +70,7 @@ const LOCALES = {
     plan4_name: "Plano Barba",
     plan4_perk1: "Barbas ilimitadas",
     plan4_perk3:
-      "1 ficha — 1 serviço extra de cortesia + trazer um amigo de graça",
+      "2 ficha — 1 serviço extra de cortesia + trazer um amigo de graça",
     plan5_name: "Plano Criança",
     plan5_perk1: "Cortes ilimitados",
     plan5_perk3: "2 fichas — 1 serviço extra + trazer 1 amigo de graça",
@@ -193,8 +193,8 @@ const LOCALES = {
     nav_cta: "Book Now",
     nav_about: "About",
     hero_eyebrow: "Luanda, Angola · Est. 2023",
-    hero_line1: "COME FEEL THE DIFFERENCE, BECAUSE THE RIGHT CUT ",
-    hero_line2: "CHANGES EVERYTHING.",
+    hero_line1: "COME FEEL THE DIFFERENCE, BECAUSE THE RIGHT ",
+    hero_line2: "CUT CHANGES EVERYTHING.",
     hero_sub:
       "The champions' barbershop in Luanda. Precision cuts, premium club experience.",
     hero_cta: "Book Now",
@@ -204,7 +204,7 @@ const LOCALES = {
     stat_services: "Services",
     stat_anos: "Years",
     plans_eyebrow: "Season Tickets — Become a member",
-    plans_title: "CHOOSE YOUR SUBSCRIPTION",
+    plans_title: "BARBERSHOP WITH SUBSCRIPTION?",
     plans_subtitle: "Monthly · No contracts · Cancel anytime",
     plans_cat_limited: "2 Times per Month",
     plans_cat_unlimited: "Unlimited",
