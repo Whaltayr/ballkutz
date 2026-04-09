@@ -32,7 +32,50 @@ let currentLang = "pt";
 
 const LOCALES = {
   pt: {
-    srv_depilacao: "Depilação Nariz ou Orelha", srv_camuflagem: "Camuflagem Cabelo ou Barba", srv_pintura: "Pintura Preta", srv_combo_hidratacao: "Combo Hidratação", srv_combo_depilacao: "Combo Depilação", srv_limpeza: "Limpeza de Pele", srv_combo_camuflagem: "Combo Camuflagem", srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)", srv_descoloracao: "Descoloração", srv_24k_limpeza: "24K Gold Limpeza de Pele",
+    opt_cortes: "Cortes",
+    opt_barba: "Barba",
+    opt_extras: "Serviços Extras",
+    opt_vip: "VIP / Combo",
+    f_srv_lineup: "Line Up — 1.500 KZ",
+    f_srv_kutz_crianca: "Kutz Criança (Sub 15) — 3.000 KZ",
+    f_srv_kutz_cabelo: "Kutz de Cabelo — 4.000 KZ",
+    f_srv_kutz_senior: "Kutz Seniores (+65) — 4.000 KZ",
+    f_srv_ritual_barba: "Ballkutz Ritual (Barboterapia) — 6.000 KZ",
+    f_srv_kutz_barba: "Kutz de Barba — 3.000 KZ",
+    f_srv_cabelo_barba: "Kutz de Cabelo + Barba — 6.000 KZ",
+    f_srv_sobrancelhas: "Sobrancelhas — 2.000 KZ",
+    f_srv_massagem: "Massagem — 2.000 KZ",
+    f_srv_hidratacao: "Hidratação de Cabelo/Barba — 2.500 KZ",
+    f_srv_depilacao: "Depilação Nariz ou Orelha — 3.000 KZ",
+    f_srv_camuflagem: "Camuflagem Cabelo ou Barba — 3.500 KZ",
+    f_srv_pintura: "Pintura Preta — 4.000 KZ",
+    f_srv_combo_hidratacao: "Combo Hidratação — 4.000 KZ",
+    f_srv_combo_depilacao: "Combo Depilação — 5.000 KZ",
+    f_srv_limpeza: "Limpeza de Pele — 5.000 KZ",
+    f_srv_combo_camuflagem: "Combo Camuflagem — 6.000 KZ",
+    f_srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular) — 7.000 KZ",
+    f_srv_descoloracao: "Descoloração — 7.000 / 12.000 KZ",
+    f_srv_24k_limpeza: "24K Gold Limpeza de Pele — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz (Cabelo, Barba, Depilação, Massagem) — 10.000 KZ",
+    f_srv_presidential: "Presidential Kutz (Completo) — 15.000 KZ",
+    ft_srv_hair: "Cortes de Cabelo",
+    ft_srv_beard: "Barba",
+    ft_srv_esthetics: "Estética",
+    ft_plan_pro: "Plano PRO",
+    ft_plan_promax: "Plano PRO MAX",
+    ft_address: "Rua 2, Cassenda, Nº 15, Luanda | Angola",
+    ft_hours_wk: "Ter–Sáb: 10h–20h",
+    ft_hours_we: "Dom: 10h–18h",
+    srv_depilacao: "Depilação Nariz ou Orelha",
+    srv_camuflagem: "Camuflagem Cabelo ou Barba",
+    srv_pintura: "Pintura Preta",
+    srv_combo_hidratacao: "Combo Hidratação",
+    srv_combo_depilacao: "Combo Depilação",
+    srv_limpeza: "Limpeza de Pele",
+    srv_combo_camuflagem: "Combo Camuflagem",
+    srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)",
+    srv_descoloracao: "Descoloração",
+    srv_24k_limpeza: "24K Gold Limpeza de Pele",
     nav_services: "Serviços",
     nav_plans: "Planos",
     nav_team: "Equipa",
@@ -57,8 +100,29 @@ const LOCALES = {
     about_p2:
       "Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, a tua imagem está sempre no topo da tabela.",
     about_v1_title: "Excelência",
-    loc_eyebrow: "Como nos encontrar", loc_title: "LOCALIZAÇÃO", loc_address: "Morada", loc_view_map: "Ver no Google Maps →", loc_hours_label: "Horário de Funcionamento", loc_hours_val: "Terça – Sábado: 10h00 – 20h00 | Domingo: 10h00 – 18h00", loc_call: "WhatsApp / Chamada", loc_btn_directions: "Como Chegar",
-  srv_kutz_cabelo: "Kutz de Cabelo", srv_kutz_crianca: "Kutz Criança (Sub 15)", srv_kutz_senior: "Kutz Seniores (+65)", srv_kutz_barba: "Kutz de Barba", srv_kutz_cabelo_barba: "Kutz de Cabelo + Barba", srv_ritual_barba: "Ballkutz Ritual (Barboterapia)", srv_lineup: "Line Up", srv_sobrancelhas: "Sobrancelhas", srv_massagem: "Massagem", srv_hidratacao: "Hidratação de Cabelo ou Barba", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cabelo, Barba, Depilação, Massagem", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem",
+    loc_eyebrow: "Como nos encontrar",
+    loc_title: "LOCALIZAÇÃO",
+    loc_address: "Morada",
+    loc_view_map: "Ver no Google Maps →",
+    loc_hours_label: "Horário de Funcionamento",
+    loc_hours_val: "Terça – Sábado: 10h00 – 20h00 | Domingo: 10h00 – 18h00",
+    loc_call: "WhatsApp / Chamada",
+    loc_btn_directions: "Como Chegar",
+    srv_kutz_cabelo: "Kutz de Cabelo",
+    srv_kutz_crianca: "Kutz Criança (Sub 15)",
+    srv_kutz_senior: "Kutz Seniores (+65)",
+    srv_kutz_barba: "Kutz de Barba",
+    srv_kutz_cabelo_barba: "Kutz de Cabelo + Barba",
+    srv_ritual_barba: "Ballkutz Ritual (Barboterapia)",
+    srv_lineup: "Line Up",
+    srv_sobrancelhas: "Sobrancelhas",
+    srv_massagem: "Massagem",
+    srv_hidratacao: "Hidratação de Cabelo ou Barba",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "Cabelo, Barba, Depilação, Massagem",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc:
+      "Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem",
     about_v1_text:
       "Cada corte é executado com precisão absoluta e atenção ao detalhe.",
     about_v2_title: "Comunidade",
@@ -174,7 +238,50 @@ const LOCALES = {
     footer_made: "Feito com ✂️ para os campeões",
   },
   en: {
-    srv_depilacao: "Nose or Ear Waxing", srv_camuflagem: "Hair or Beard Camouflage", srv_pintura: "Black Dye", srv_combo_hidratacao: "Hydration Combo", srv_combo_depilacao: "Waxing Combo", srv_limpeza: "Skin Cleansing", srv_combo_camuflagem: "Camouflage Combo", srv_velas_hopi: "Hopi Ear Candles (Thermo-Auricular Therapy)", srv_descoloracao: "Bleaching", srv_24k_limpeza: "24K Gold Skin Cleansing",
+    opt_cortes: "Cuts",
+    opt_barba: "Beard",
+    opt_extras: "Extra Services",
+    opt_vip: "VIP / Combo",
+    f_srv_lineup: "Line Up — 1.500 KZ",
+    f_srv_kutz_crianca: "Kids Cut (Under 15) — 3.000 KZ",
+    f_srv_kutz_cabelo: "Haircut — 4.000 KZ",
+    f_srv_kutz_senior: "Seniors Cut (+65) — 4.000 KZ",
+    f_srv_ritual_barba: "Ballkutz Ritual (Hot Towel) — 6.000 KZ",
+    f_srv_kutz_barba: "Beard Trim — 3.000 KZ",
+    f_srv_cabelo_barba: "Haircut + Beard — 6.000 KZ",
+    f_srv_sobrancelhas: "Eyebrows — 2.000 KZ",
+    f_srv_massagem: "Massage — 2.000 KZ",
+    f_srv_hidratacao: "Hair/Beard Hydration — 2.500 KZ",
+    f_srv_depilacao: "Nose/Ear Waxing — 3.000 KZ",
+    f_srv_camuflagem: "Hair/Beard Camouflage — 3.500 KZ",
+    f_srv_pintura: "Black Dye — 4.000 KZ",
+    f_srv_combo_hidratacao: "Hydration Combo — 4.000 KZ",
+    f_srv_combo_depilacao: "Waxing Combo — 5.000 KZ",
+    f_srv_limpeza: "Skin Cleansing — 5.000 KZ",
+    f_srv_combo_camuflagem: "Camouflage Combo — 6.000 KZ",
+    f_srv_velas_hopi: "Hopi Ear Candles — 7.000 KZ",
+    f_srv_descoloracao: "Bleaching — 7.000 / 12.000 KZ",
+    f_srv_24k_limpeza: "24K Gold Skin Cleansing — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz (Hair, Beard, Waxing, Massage) — 10.000 KZ",
+    f_srv_presidential: "Presidential Kutz (Full) — 15.000 KZ",
+    ft_srv_hair: "Haircuts",
+    ft_srv_beard: "Beard",
+    ft_srv_esthetics: "Aesthetics",
+    ft_plan_pro: "PRO Plan",
+    ft_plan_promax: "PRO MAX Plan",
+    ft_address: "Street 2, Cassenda, Nº 15, Luanda | Angola",
+    ft_hours_wk: "Tue–Sat: 10am–8pm",
+    ft_hours_we: "Sun: 10am–6pm",
+    srv_depilacao: "Nose or Ear Waxing",
+    srv_camuflagem: "Hair or Beard Camouflage",
+    srv_pintura: "Black Dye",
+    srv_combo_hidratacao: "Hydration Combo",
+    srv_combo_depilacao: "Waxing Combo",
+    srv_limpeza: "Skin Cleansing",
+    srv_combo_camuflagem: "Camouflage Combo",
+    srv_velas_hopi: "Hopi Ear Candles (Thermo-Auricular Therapy)",
+    srv_descoloracao: "Bleaching",
+    srv_24k_limpeza: "24K Gold Skin Cleansing",
     nav_services: "Services",
     nav_plans: "Plans",
     nav_team: "Team",
@@ -214,8 +321,29 @@ const LOCALES = {
     tab_barba: "Beard",
     tab_estetica: "Extra Services",
     tab_vip: "VIP",
-    loc_eyebrow: "How to find us", loc_title: "LOCATION", loc_address: "Address", loc_view_map: "View on Google Maps →", loc_hours_label: "Opening Hours", loc_hours_val: "Tuesday – Saturday: 10am – 8pm | Sunday: 10am – 6pm", loc_call: "WhatsApp / Call", loc_btn_directions: "Get Directions",
-  srv_kutz_cabelo: "Haircut", srv_kutz_crianca: "Kids Cut (Under 15)", srv_kutz_senior: "Seniors Cut (+65)", srv_kutz_barba: "Beard Trim", srv_kutz_cabelo_barba: "Haircut + Beard", srv_ritual_barba: "Ballkutz Ritual (Hot Towel)", srv_lineup: "Line Up", srv_sobrancelhas: "Eyebrows", srv_massagem: "Massage", srv_hidratacao: "Hair or Beard Hydration", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Hair, Beard, Waxing, Massage", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Hair, Hot Towel Beard, Eyebrows, Waxing Combo, Hydration, Massage",
+    loc_eyebrow: "How to find us",
+    loc_title: "LOCATION",
+    loc_address: "Address",
+    loc_view_map: "View on Google Maps →",
+    loc_hours_label: "Opening Hours",
+    loc_hours_val: "Tuesday – Saturday: 10am – 8pm | Sunday: 10am – 6pm",
+    loc_call: "WhatsApp / Call",
+    loc_btn_directions: "Get Directions",
+    srv_kutz_cabelo: "Haircut",
+    srv_kutz_crianca: "Kids Cut (Under 15)",
+    srv_kutz_senior: "Seniors Cut (+65)",
+    srv_kutz_barba: "Beard Trim",
+    srv_kutz_cabelo_barba: "Haircut + Beard",
+    srv_ritual_barba: "Ballkutz Ritual (Hot Towel)",
+    srv_lineup: "Line Up",
+    srv_sobrancelhas: "Eyebrows",
+    srv_massagem: "Massage",
+    srv_hidratacao: "Hair or Beard Hydration",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "Hair, Beard, Waxing, Massage",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc:
+      "Hair, Hot Towel Beard, Eyebrows, Waxing Combo, Hydration, Massage",
     plans_eyebrow: "Season Tickets — Become a member",
     plans_title: "BARBERSHOP SUBSCRIPTION?",
     plans_subtitle: "Monthly · No contracts · Cancel anytime",
@@ -313,9 +441,73 @@ const LOCALES = {
     footer_made: "Made with ✂️ for champions",
   },
   fr: {
-    srv_depilacao: "Épilation Nez ou Oreilles", srv_camuflagem: "Camouflage Cheveux ou Barbe", srv_pintura: "Teinture Noire", srv_combo_hidratacao: "Combo Hydratation", srv_combo_depilacao: "Combo Épilation", srv_limpeza: "Nettoyage de Peau", srv_combo_camuflagem: "Combo Camouflage", srv_velas_hopi: "Bougies Hopi (Thérapie Thermo-Auriculaire)", srv_descoloracao: "Décoloration", srv_24k_limpeza: "Nettoyage de Peau Or 24K",
-   loc_eyebrow: "Comment nous trouver", loc_title: "EMPLACEMENT", loc_address: "Adresse", loc_view_map: "Voir sur Google Maps →", loc_hours_label: "Heures d'ouverture", loc_hours_val: "Mardi – Samedi: 10h – 20h | Dimanche: 10h – 18h", loc_call: "WhatsApp / Appel", loc_btn_directions: "Itinéraire",
-  srv_kutz_cabelo: "Coupe de Cheveux", srv_kutz_crianca: "Coupe Enfant (-15 ans)", srv_kutz_senior: "Coupe Senior (+65)", srv_kutz_barba: "Taille de Barbe", srv_kutz_cabelo_barba: "Coupe + Barbe", srv_ritual_barba: "Rituel Ballkutz (Serviette Chaude)", srv_lineup: "Contours", srv_sobrancelhas: "Sourcils", srv_massagem: "Massage", srv_hidratacao: "Soin Hydratant Cheveux/Barbe", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cheveux, Barbe, Épilation, Massage", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cheveux, Barbe rituelle, Sourcils, Épilation complète, Soin, Massage",
+    opt_cortes: "Coupes",
+    opt_barba: "Barbe",
+    opt_extras: "Services Extras",
+    opt_vip: "VIP / Combo",
+    f_srv_lineup: "Contours — 1.500 KZ",
+    f_srv_kutz_crianca: "Coupe Enfant (-15) — 3.000 KZ",
+    f_srv_kutz_cabelo: "Coupe de Cheveux — 4.000 KZ",
+    f_srv_kutz_senior: "Coupe Senior (+65) — 4.000 KZ",
+    f_srv_ritual_barba: "Rituel Ballkutz (Serviette Chaude) — 6.000 KZ",
+    f_srv_kutz_barba: "Taille de Barbe — 3.000 KZ",
+    f_srv_cabelo_barba: "Coupe + Barbe — 6.000 KZ",
+    f_srv_sobrancelhas: "Sourcils — 2.000 KZ",
+    f_srv_massagem: "Massage — 2.000 KZ",
+    f_srv_hidratacao: "Soin Hydratant Cheveux/Barbe — 2.500 KZ",
+    f_srv_depilacao: "Épilation Nez/Oreilles — 3.000 KZ",
+    f_srv_camuflagem: "Camouflage Cheveux/Barbe — 3.500 KZ",
+    f_srv_pintura: "Teinture Noire — 4.000 KZ",
+    f_srv_combo_hidratacao: "Combo Hydratation — 4.000 KZ",
+    f_srv_combo_depilacao: "Combo Épilation — 5.000 KZ",
+    f_srv_limpeza: "Nettoyage de Peau — 5.000 KZ",
+    f_srv_combo_camuflagem: "Combo Camouflage — 6.000 KZ",
+    f_srv_velas_hopi: "Bougies Hopi — 7.000 KZ",
+    f_srv_descoloracao: "Décoloration — 7.000 / 12.000 KZ",
+    f_srv_24k_limpeza: "Nettoyage Or 24K — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz (Cheveux, Barbe, Épilation, Massage) — 10.000 KZ",
+    f_srv_presidential: "Presidential Kutz (Complet) — 15.000 KZ",
+    ft_srv_hair: "Coupes de Cheveux",
+    ft_srv_beard: "Barbe",
+    ft_srv_esthetics: "Esthétique",
+    ft_plan_pro: "Forfait PRO",
+    ft_plan_promax: "Forfait PRO MAX",
+    ft_address: "Rue 2, Cassenda, Nº 15, Luanda | Angola",
+    ft_hours_wk: "Mar–Sam: 10h–20h",
+    ft_hours_we: "Dim: 10h–18h",
+    srv_depilacao: "Épilation Nez ou Oreilles",
+    srv_camuflagem: "Camouflage Cheveux ou Barbe",
+    srv_pintura: "Teinture Noire",
+    srv_combo_hidratacao: "Combo Hydratation",
+    srv_combo_depilacao: "Combo Épilation",
+    srv_limpeza: "Nettoyage de Peau",
+    srv_combo_camuflagem: "Combo Camouflage",
+    srv_velas_hopi: "Bougies Hopi (Thérapie Thermo-Auriculaire)",
+    srv_descoloracao: "Décoloration",
+    srv_24k_limpeza: "Nettoyage de Peau Or 24K",
+    loc_eyebrow: "Comment nous trouver",
+    loc_title: "EMPLACEMENT",
+    loc_address: "Adresse",
+    loc_view_map: "Voir sur Google Maps →",
+    loc_hours_label: "Heures d'ouverture",
+    loc_hours_val: "Mardi – Samedi: 10h – 20h | Dimanche: 10h – 18h",
+    loc_call: "WhatsApp / Appel",
+    loc_btn_directions: "Itinéraire",
+    srv_kutz_cabelo: "Coupe de Cheveux",
+    srv_kutz_crianca: "Coupe Enfant (-15 ans)",
+    srv_kutz_senior: "Coupe Senior (+65)",
+    srv_kutz_barba: "Taille de Barbe",
+    srv_kutz_cabelo_barba: "Coupe + Barbe",
+    srv_ritual_barba: "Rituel Ballkutz (Serviette Chaude)",
+    srv_lineup: "Contours",
+    srv_sobrancelhas: "Sourcils",
+    srv_massagem: "Massage",
+    srv_hidratacao: "Soin Hydratant Cheveux/Barbe",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "Cheveux, Barbe, Épilation, Massage",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc:
+      "Cheveux, Barbe rituelle, Sourcils, Épilation complète, Soin, Massage",
     nav_services: "Services",
     nav_plans: "Abonnements",
     nav_team: "Équipe",
@@ -449,9 +641,73 @@ const LOCALES = {
     footer_made: "Fait avec ✂️ pour les champions",
   },
   es: {
-    srv_depilacao: "Depilación Nariz u Orejas", srv_camuflagem: "Camuflaje Cabello o Barba", srv_pintura: "Tinte Negro", srv_combo_hidratacao: "Combo Hidratación", srv_combo_depilacao: "Combo Depilación", srv_limpeza: "Limpieza de Cutis", srv_combo_camuflagem: "Combo Camuflaje", srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)", srv_descoloracao: "Decoloración", srv_24k_limpeza: "Limpieza de Cutis Oro 24K",
-  loc_eyebrow: "Cómo encontrarnos", loc_title: "UBICACIÓN", loc_address: "Dirección", loc_view_map: "Ver en Google Maps →", loc_hours_label: "Horario de Atención", loc_hours_val: "Martes – Sábado: 10h – 20h | Domingo: 10h – 18h", loc_call: "WhatsApp / Llamada", loc_btn_directions: "Cómo Llegar",
-  srv_kutz_cabelo: "Corte de Cabello", srv_kutz_crianca: "Corte Niños (Sub 15)", srv_kutz_senior: "Corte Senior (+65)", srv_kutz_barba: "Corte de Barba", srv_kutz_cabelo_barba: "Cabello + Barba", srv_ritual_barba: "Ritual Ballkutz (Toalla Caliente)", srv_lineup: "Line Up", srv_sobrancelhas: "Cejas", srv_massagem: "Masaje", srv_hidratacao: "Hidratación Cabello/Barba", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cabello, Barba, Depilación, Masaje", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cabello, Barba ritual, Cejas, Combo Depilación, Hidratación, Masaje",
+    opt_cortes: "Cortes",
+    opt_barba: "Barba",
+    opt_extras: "Servicios Extras",
+    opt_vip: "VIP / Combo",
+    f_srv_lineup: "Line Up — 1.500 KZ",
+    f_srv_kutz_crianca: "Corte Niños (Sub 15) — 3.000 KZ",
+    f_srv_kutz_cabelo: "Corte de Cabello — 4.000 KZ",
+    f_srv_kutz_senior: "Corte Senior (+65) — 4.000 KZ",
+    f_srv_ritual_barba: "Ritual Ballkutz (Toalla Caliente) — 6.000 KZ",
+    f_srv_kutz_barba: "Corte de Barba — 3.000 KZ",
+    f_srv_cabelo_barba: "Cabello + Barba — 6.000 KZ",
+    f_srv_sobrancelhas: "Cejas — 2.000 KZ",
+    f_srv_massagem: "Masaje — 2.000 KZ",
+    f_srv_hidratacao: "Hidratación Cabello/Barba — 2.500 KZ",
+    f_srv_depilacao: "Depilación Nariz/Orejas — 3.000 KZ",
+    f_srv_camuflagem: "Camuflaje Cabello/Barba — 3.500 KZ",
+    f_srv_pintura: "Tinte Negro — 4.000 KZ",
+    f_srv_combo_hidratacao: "Combo Hidratación — 4.000 KZ",
+    f_srv_combo_depilacao: "Combo Depilación — 5.000 KZ",
+    f_srv_limpeza: "Limpieza de Cutis — 5.000 KZ",
+    f_srv_combo_camuflagem: "Combo Camuflaje — 6.000 KZ",
+    f_srv_velas_hopi: "Velas Hopi — 7.000 KZ",
+    f_srv_descoloracao: "Decoloración — 7.000 / 12.000 KZ",
+    f_srv_24k_limpeza: "Limpieza Oro 24K — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz (Cabello, Barba, Depilación, Masaje) — 10.000 KZ",
+    f_srv_presidential: "Presidential Kutz (Completo) — 15.000 KZ",
+    ft_srv_hair: "Cortes de Cabello",
+    ft_srv_beard: "Barba",
+    ft_srv_esthetics: "Estética",
+    ft_plan_pro: "Plan PRO",
+    ft_plan_promax: "Plan PRO MAX",
+    ft_address: "Calle 2, Cassenda, Nº 15, Luanda | Angola",
+    ft_hours_wk: "Mar–Sáb: 10h–20h",
+    ft_hours_we: "Dom: 10h–18h",
+    srv_depilacao: "Depilación Nariz u Orejas",
+    srv_camuflagem: "Camuflaje Cabello o Barba",
+    srv_pintura: "Tinte Negro",
+    srv_combo_hidratacao: "Combo Hidratación",
+    srv_combo_depilacao: "Combo Depilación",
+    srv_limpeza: "Limpieza de Cutis",
+    srv_combo_camuflagem: "Combo Camuflaje",
+    srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)",
+    srv_descoloracao: "Decoloración",
+    srv_24k_limpeza: "Limpieza de Cutis Oro 24K",
+    loc_eyebrow: "Cómo encontrarnos",
+    loc_title: "UBICACIÓN",
+    loc_address: "Dirección",
+    loc_view_map: "Ver en Google Maps →",
+    loc_hours_label: "Horario de Atención",
+    loc_hours_val: "Martes – Sábado: 10h – 20h | Domingo: 10h – 18h",
+    loc_call: "WhatsApp / Llamada",
+    loc_btn_directions: "Cómo Llegar",
+    srv_kutz_cabelo: "Corte de Cabello",
+    srv_kutz_crianca: "Corte Niños (Sub 15)",
+    srv_kutz_senior: "Corte Senior (+65)",
+    srv_kutz_barba: "Corte de Barba",
+    srv_kutz_cabelo_barba: "Cabello + Barba",
+    srv_ritual_barba: "Ritual Ballkutz (Toalla Caliente)",
+    srv_lineup: "Line Up",
+    srv_sobrancelhas: "Cejas",
+    srv_massagem: "Masaje",
+    srv_hidratacao: "Hidratación Cabello/Barba",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "Cabello, Barba, Depilación, Masaje",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc:
+      "Cabello, Barba ritual, Cejas, Combo Depilación, Hidratación, Masaje",
     nav_services: "Servicios",
     nav_plans: "Planes",
     nav_team: "Equipo",
@@ -583,10 +839,73 @@ const LOCALES = {
     footer_made: "Hecho con ✂️ para campeones",
   },
   zh: {
-    srv_depilacao: "鼻部或耳部蜜蜡脱毛", srv_camuflagem: "头发或胡须遮盖", srv_pintura: "黑染", srv_combo_hidratacao: "保湿套餐", srv_combo_depilacao: "脱毛套餐", srv_limpeza: "皮肤清洁", srv_combo_camuflagem: "遮盖套餐", srv_velas_hopi: "耳烛疗法", srv_descoloracao: "漂白", srv_24k_limpeza: "24K金皮肤清洁",
-    
-    loc_eyebrow: "如何找到我们", loc_title: "位置", loc_address: "地址", loc_view_map: "在 Google Maps 上查看 →", loc_hours_label: "营业时间", loc_hours_val: "周二 – 周六: 10:00 – 20:00 | 周日: 10:00 – 18:00", loc_call: "WhatsApp / 电话", loc_btn_directions: "获取路线",
-  srv_kutz_cabelo: "理发", srv_kutz_crianca: "儿童理发 (15岁以下)", srv_kutz_senior: "长者理发 (65岁以上)", srv_kutz_barba: "修须", srv_kutz_cabelo_barba: "理发 + 修须", srv_ritual_barba: "Ballkutz 仪式 (热毛巾修须)", srv_lineup: "发际线修整", srv_sobrancelhas: "修眉", srv_massagem: "按摩", srv_hidratacao: "头发或胡须保湿", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "理发、修须、脱毛、按摩", srv_presidential: "Presidential Kutz", srv_presidential_desc: "理发、热毛巾修须、修眉、全套脱毛、保湿、按摩",
+    opt_cortes: "理发",
+    opt_barba: "胡须",
+    opt_extras: "额外服务",
+    opt_vip: "VIP / 套餐",
+    f_srv_lineup: "发际线修整 — 1.500 KZ",
+    f_srv_kutz_crianca: "儿童理发 (15岁以下) — 3.000 KZ",
+    f_srv_kutz_cabelo: "理发 — 4.000 KZ",
+    f_srv_kutz_senior: "长者理发 (+65) — 4.000 KZ",
+    f_srv_ritual_barba: "Ballkutz 仪式 (热毛巾修须) — 6.000 KZ",
+    f_srv_kutz_barba: "修须 — 3.000 KZ",
+    f_srv_cabelo_barba: "理发 + 修须 — 6.000 KZ",
+    f_srv_sobrancelhas: "修眉 — 2.000 KZ",
+    f_srv_massagem: "按摩 — 2.000 KZ",
+    f_srv_hidratacao: "头发/胡须保湿 — 2.500 KZ",
+    f_srv_depilacao: "鼻部/耳部蜜蜡脱毛 — 3.000 KZ",
+    f_srv_camuflagem: "头发/胡须遮盖 — 3.500 KZ",
+    f_srv_pintura: "黑染 — 4.000 KZ",
+    f_srv_combo_hidratacao: "保湿套餐 — 4.000 KZ",
+    f_srv_combo_depilacao: "脱毛套餐 — 5.000 KZ",
+    f_srv_limpeza: "皮肤清洁 — 5.000 KZ",
+    f_srv_combo_camuflagem: "遮盖套餐 — 6.000 KZ",
+    f_srv_velas_hopi: "耳烛疗法 — 7.000 KZ",
+    f_srv_descoloracao: "漂白 — 7.000 / 12.000 KZ",
+    f_srv_24k_limpeza: "24K金皮肤清洁 — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz (理发、修须、脱毛、按摩) — 10.000 KZ",
+    f_srv_presidential: "Presidential Kutz (全套) — 15.000 KZ",
+    ft_srv_hair: "理发",
+    ft_srv_beard: "胡须",
+    ft_srv_esthetics: "美容",
+    ft_plan_pro: "PRO 计划",
+    ft_plan_promax: "PRO MAX 计划",
+    ft_address: "罗安达, Cassenda 第2大街 15号 | 安哥拉",
+    ft_hours_wk: "周二-周六: 10:00–20:00",
+    ft_hours_we: "周日: 10:00–18:00",
+    srv_depilacao: "鼻部或耳部蜜蜡脱毛",
+    srv_camuflagem: "头发或胡须遮盖",
+    srv_pintura: "黑染",
+    srv_combo_hidratacao: "保湿套餐",
+    srv_combo_depilacao: "脱毛套餐",
+    srv_limpeza: "皮肤清洁",
+    srv_combo_camuflagem: "遮盖套餐",
+    srv_velas_hopi: "耳烛疗法",
+    srv_descoloracao: "漂白",
+    srv_24k_limpeza: "24K金皮肤清洁",
+
+    loc_eyebrow: "如何找到我们",
+    loc_title: "位置",
+    loc_address: "地址",
+    loc_view_map: "在 Google Maps 上查看 →",
+    loc_hours_label: "营业时间",
+    loc_hours_val: "周二 – 周六: 10:00 – 20:00 | 周日: 10:00 – 18:00",
+    loc_call: "WhatsApp / 电话",
+    loc_btn_directions: "获取路线",
+    srv_kutz_cabelo: "理发",
+    srv_kutz_crianca: "儿童理发 (15岁以下)",
+    srv_kutz_senior: "长者理发 (65岁以上)",
+    srv_kutz_barba: "修须",
+    srv_kutz_cabelo_barba: "理发 + 修须",
+    srv_ritual_barba: "Ballkutz 仪式 (热毛巾修须)",
+    srv_lineup: "发际线修整",
+    srv_sobrancelhas: "修眉",
+    srv_massagem: "按摩",
+    srv_hidratacao: "头发或胡须保湿",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "理发、修须、脱毛、按摩",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc: "理发、热毛巾修须、修眉、全套脱毛、保湿、按摩",
     nav_services: "服务",
     nav_plans: "计划",
     nav_team: "团队",
@@ -713,28 +1032,55 @@ const LOCALES = {
   },
 };
 
-function updateAllText() {
+function setLanguage(lang) {
+  currentLang = lang in LOCALES ? lang : "pt";
+  document.documentElement.lang = currentLang;
+
   const dict = LOCALES[currentLang];
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) el.textContent = dict[key];
+    const value = dict[key];
+    if (!value) return;
+
+    if (el.tagName === "OPTGROUP") {
+      el.label = value;
+    } else if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = value;
+    } else {
+      el.textContent = value;
+    }
   });
+
+  const langSelect = document.getElementById("langToggle");
+  if (langSelect) langSelect.value = currentLang;
+
+  const mobileLang = document.getElementById("mobileLangToggle");
+  if (mobileLang) {
+    const next = currentLang === "pt" ? "EN" : "PT";
+    mobileLang.textContent = `Switch to ${next}`;
+  }
 }
 
 function toggleLanguage(e) {
-  // Use the select's value to change the language
-  currentLang = e.target.value;
-  document.documentElement.lang = currentLang;
-  updateAllText();
+  const lang = e?.target?.value || (currentLang === "pt" ? "en" : "pt");
+  setLanguage(lang);
 }
 
-// Add event listener to the new select dropdown (must run inside DOMContentLoaded in your initNavigation func)
 document.addEventListener("DOMContentLoaded", () => {
   const langSelect = document.getElementById("langToggle");
   if (langSelect) {
-    langSelect.value = currentLang;
     langSelect.addEventListener("change", toggleLanguage);
+    langSelect.value = currentLang;
   }
+
+  const mobileLang = document.getElementById("mobileLangToggle");
+  if (mobileLang) {
+    mobileLang.addEventListener("click", () => {
+      setLanguage(currentLang === "pt" ? "en" : "pt");
+    });
+  }
+
+  setLanguage(currentLang);
 });
 
 // ── Navigation ──
@@ -770,9 +1116,9 @@ function initNavigation() {
     { passive: true },
   );
 
-  document
-    .getElementById("langToggle")
-    .addEventListener("click", toggleLanguage);
+  // document
+  //   .getElementById("langToggle")
+  //   .addEventListener("click", toggleLanguage);
 
   const mobileLang = document.getElementById("mobileLangToggle");
   if (mobileLang) {
