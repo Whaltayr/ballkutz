@@ -32,6 +32,7 @@ let currentLang = "pt";
 
 const LOCALES = {
   pt: {
+    srv_depilacao: "Depilação Nariz ou Orelha", srv_camuflagem: "Camuflagem Cabelo ou Barba", srv_pintura: "Pintura Preta", srv_combo_hidratacao: "Combo Hidratação", srv_combo_depilacao: "Combo Depilação", srv_limpeza: "Limpeza de Pele", srv_combo_camuflagem: "Combo Camuflagem", srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)", srv_descoloracao: "Descoloração", srv_24k_limpeza: "24K Gold Limpeza de Pele",
     nav_services: "Serviços",
     nav_plans: "Planos",
     nav_team: "Equipa",
@@ -56,6 +57,8 @@ const LOCALES = {
     about_p2:
       "Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, a tua imagem está sempre no topo da tabela.",
     about_v1_title: "Excelência",
+    loc_eyebrow: "Como nos encontrar", loc_title: "LOCALIZAÇÃO", loc_address: "Morada", loc_view_map: "Ver no Google Maps →", loc_hours_label: "Horário de Funcionamento", loc_hours_val: "Terça – Sábado: 10h00 – 20h00 | Domingo: 10h00 – 18h00", loc_call: "WhatsApp / Chamada", loc_btn_directions: "Como Chegar",
+  srv_kutz_cabelo: "Kutz de Cabelo", srv_kutz_crianca: "Kutz Criança (Sub 15)", srv_kutz_senior: "Kutz Seniores (+65)", srv_kutz_barba: "Kutz de Barba", srv_kutz_cabelo_barba: "Kutz de Cabelo + Barba", srv_ritual_barba: "Ballkutz Ritual (Barboterapia)", srv_lineup: "Line Up", srv_sobrancelhas: "Sobrancelhas", srv_massagem: "Massagem", srv_hidratacao: "Hidratação de Cabelo ou Barba", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cabelo, Barba, Depilação, Massagem", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem",
     about_v1_text:
       "Cada corte é executado com precisão absoluta e atenção ao detalhe.",
     about_v2_title: "Comunidade",
@@ -171,6 +174,7 @@ const LOCALES = {
     footer_made: "Feito com ✂️ para os campeões",
   },
   en: {
+    srv_depilacao: "Nose or Ear Waxing", srv_camuflagem: "Hair or Beard Camouflage", srv_pintura: "Black Dye", srv_combo_hidratacao: "Hydration Combo", srv_combo_depilacao: "Waxing Combo", srv_limpeza: "Skin Cleansing", srv_combo_camuflagem: "Camouflage Combo", srv_velas_hopi: "Hopi Ear Candles (Thermo-Auricular Therapy)", srv_descoloracao: "Bleaching", srv_24k_limpeza: "24K Gold Skin Cleansing",
     nav_services: "Services",
     nav_plans: "Plans",
     nav_team: "Team",
@@ -309,6 +313,9 @@ const LOCALES = {
     footer_made: "Made with ✂️ for champions",
   },
   fr: {
+    srv_depilacao: "Épilation Nez ou Oreilles", srv_camuflagem: "Camouflage Cheveux ou Barbe", srv_pintura: "Teinture Noire", srv_combo_hidratacao: "Combo Hydratation", srv_combo_depilacao: "Combo Épilation", srv_limpeza: "Nettoyage de Peau", srv_combo_camuflagem: "Combo Camouflage", srv_velas_hopi: "Bougies Hopi (Thérapie Thermo-Auriculaire)", srv_descoloracao: "Décoloration", srv_24k_limpeza: "Nettoyage de Peau Or 24K",
+   loc_eyebrow: "Comment nous trouver", loc_title: "EMPLACEMENT", loc_address: "Adresse", loc_view_map: "Voir sur Google Maps →", loc_hours_label: "Heures d'ouverture", loc_hours_val: "Mardi – Samedi: 10h – 20h | Dimanche: 10h – 18h", loc_call: "WhatsApp / Appel", loc_btn_directions: "Itinéraire",
+  srv_kutz_cabelo: "Coupe de Cheveux", srv_kutz_crianca: "Coupe Enfant (-15 ans)", srv_kutz_senior: "Coupe Senior (+65)", srv_kutz_barba: "Taille de Barbe", srv_kutz_cabelo_barba: "Coupe + Barbe", srv_ritual_barba: "Rituel Ballkutz (Serviette Chaude)", srv_lineup: "Contours", srv_sobrancelhas: "Sourcils", srv_massagem: "Massage", srv_hidratacao: "Soin Hydratant Cheveux/Barbe", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cheveux, Barbe, Épilation, Massage", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cheveux, Barbe rituelle, Sourcils, Épilation complète, Soin, Massage",
     nav_services: "Services",
     nav_plans: "Abonnements",
     nav_team: "Équipe",
@@ -442,6 +449,9 @@ const LOCALES = {
     footer_made: "Fait avec ✂️ pour les champions",
   },
   es: {
+    srv_depilacao: "Depilación Nariz u Orejas", srv_camuflagem: "Camuflaje Cabello o Barba", srv_pintura: "Tinte Negro", srv_combo_hidratacao: "Combo Hidratación", srv_combo_depilacao: "Combo Depilación", srv_limpeza: "Limpieza de Cutis", srv_combo_camuflagem: "Combo Camuflaje", srv_velas_hopi: "Velas Hopi (Terapia Termo-Auricular)", srv_descoloracao: "Decoloración", srv_24k_limpeza: "Limpieza de Cutis Oro 24K",
+  loc_eyebrow: "Cómo encontrarnos", loc_title: "UBICACIÓN", loc_address: "Dirección", loc_view_map: "Ver en Google Maps →", loc_hours_label: "Horario de Atención", loc_hours_val: "Martes – Sábado: 10h – 20h | Domingo: 10h – 18h", loc_call: "WhatsApp / Llamada", loc_btn_directions: "Cómo Llegar",
+  srv_kutz_cabelo: "Corte de Cabello", srv_kutz_crianca: "Corte Niños (Sub 15)", srv_kutz_senior: "Corte Senior (+65)", srv_kutz_barba: "Corte de Barba", srv_kutz_cabelo_barba: "Cabello + Barba", srv_ritual_barba: "Ritual Ballkutz (Toalla Caliente)", srv_lineup: "Line Up", srv_sobrancelhas: "Cejas", srv_massagem: "Masaje", srv_hidratacao: "Hidratación Cabello/Barba", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "Cabello, Barba, Depilación, Masaje", srv_presidential: "Presidential Kutz", srv_presidential_desc: "Cabello, Barba ritual, Cejas, Combo Depilación, Hidratación, Masaje",
     nav_services: "Servicios",
     nav_plans: "Planes",
     nav_team: "Equipo",
@@ -573,6 +583,10 @@ const LOCALES = {
     footer_made: "Hecho con ✂️ para campeones",
   },
   zh: {
+    srv_depilacao: "鼻部或耳部蜜蜡脱毛", srv_camuflagem: "头发或胡须遮盖", srv_pintura: "黑染", srv_combo_hidratacao: "保湿套餐", srv_combo_depilacao: "脱毛套餐", srv_limpeza: "皮肤清洁", srv_combo_camuflagem: "遮盖套餐", srv_velas_hopi: "耳烛疗法", srv_descoloracao: "漂白", srv_24k_limpeza: "24K金皮肤清洁",
+    
+    loc_eyebrow: "如何找到我们", loc_title: "位置", loc_address: "地址", loc_view_map: "在 Google Maps 上查看 →", loc_hours_label: "营业时间", loc_hours_val: "周二 – 周六: 10:00 – 20:00 | 周日: 10:00 – 18:00", loc_call: "WhatsApp / 电话", loc_btn_directions: "获取路线",
+  srv_kutz_cabelo: "理发", srv_kutz_crianca: "儿童理发 (15岁以下)", srv_kutz_senior: "长者理发 (65岁以上)", srv_kutz_barba: "修须", srv_kutz_cabelo_barba: "理发 + 修须", srv_ritual_barba: "Ballkutz 仪式 (热毛巾修须)", srv_lineup: "发际线修整", srv_sobrancelhas: "修眉", srv_massagem: "按摩", srv_hidratacao: "头发或胡须保湿", srv_vip_kutz: "VIP Kutz", srv_vip_kutz_desc: "理发、修须、脱毛、按摩", srv_presidential: "Presidential Kutz", srv_presidential_desc: "理发、热毛巾修须、修眉、全套脱毛、保湿、按摩",
     nav_services: "服务",
     nav_plans: "计划",
     nav_team: "团队",
