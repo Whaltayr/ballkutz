@@ -63,7 +63,14 @@
         </ul>
 
         <div class="nav__actions">
-          <button type="button" class="lang-toggle" id="langToggle" aria-label="Mudar idioma">EN</button>
+          <select class="lang-toggle" id="langToggle" aria-label="Mudar idioma"
+            style="background: transparent; color: var(--white); border: 1px solid var(--border); padding: 0.4rem; cursor: pointer; font-family: var(--font-heading); letter-spacing: 0.1em;">
+            <option value="pt" style="color:#000">PT</option>
+            <option value="en" style="color:#000">EN</option>
+            <option value="fr" style="color:#000">FR</option>
+            <option value="es" style="color:#000">ES</option>
+            <option value="zh" style="color:#000">ZH</option>
+          </select>
           <a href="#reservar" class="btn btn--primary" data-i18n="nav_cta">Reservar</a>
           <button type="button" class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"
             aria-controls="mobileMenu">
@@ -150,7 +157,7 @@
           </div>
           <div>
             <div class="hero__stat-number">1</div>
-            <div class="hero__stat-label" data-i18n="stat_anos">Anos</div>
+            <div class="hero__stat-label" data-i18n="stat_anos">Ano</div>
           </div>
         </div>
 
@@ -253,7 +260,7 @@
 
           <div class="service-item" data-service="Kutz de Cabelo" tabindex="0" role="button">
             <div class="service-item__info">
-              <div class="service-item__name">Kutz de Cabelo</div>
+              <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div>
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
@@ -466,21 +473,23 @@
           <!-- Card 0: Introdução / Conceito Netflix -->
           <div class="plan-card plan-card--intro reveal">
             <!-- 📸 IMAGEM NO FUNDO (BOTTOM) -->
-            <img src="img/image-15.webp" alt="" class="plan-card__bg-img plan-card__bg-img--bottom" aria-hidden="true" />
-            
+            <img src="img/card-0.jpeg" alt="" class="plan-card__bg-img plan-card__bg-img--bottom" aria-hidden="true" />
+
             <div class="plan-card__top">
               <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-ticket"></i></div>
               <div class="plan-card__badge plan-card__badge--unlimited">O Clube</div>
             </div>
-            
+
             <div class="plan-card__name">Como Funciona?</div>
-            
+
             <p class="plan-card__intro-text">
               Onde você paga uma mensalidade e tem acesso aos serviços de forma ilimitada, igual Netflix.
             </p>
-            
+
             <div class="plan-card__intro-arrow">
-              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-light);">Deslize para ver</span>
+              <span
+                style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-light);">Deslize
+                para ver</span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>
@@ -696,7 +705,7 @@
       <div class="team__grid">
 
         <!-- Barber 1 -->
-        <div class="barber-card reveal" data-barber="Mário Santos" tabindex="0" role="button">
+        <div class="barber-card reveal" data-barber="Cleusio" tabindex="0" role="button">
           <div class="barber-card__photo">
             <img src="img/cleusio-barber.jpg" alt="Cleusio - Head Barber">
           </div>
@@ -705,7 +714,7 @@
             <div class="barber-card__title" data-i18n="barber_head">Head Barber · Capitão</div>
             <div class="barber-card__stats">
               <div class="barber-stat">
-                <div class="barber-stat__value">8+</div>
+                <div class="barber-stat__value">10+</div>
                 <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
               </div>
               <div class="barber-stat">
@@ -718,7 +727,7 @@
         </div>
 
         <!-- Barber 2 -->
-        <div class="barber-card reveal" data-barber="Carlos Lopes" tabindex="0" role="button">
+        <div class="barber-card reveal" data-barber="Estevão" tabindex="0" role="button">
           <div class="barber-card__photo">
             <img src="img/estevao-barber.jpg" alt="Estevão - Senior Barber">
           </div>
@@ -740,13 +749,13 @@
         </div>
 
         <!-- Barber 3 -->
-        <div class="barber-card reveal" data-barber="André Mendes" tabindex="0" role="button">
+        <div class="barber-card reveal" data-barber="Danilson" tabindex="0" role="button">
           <div class="barber-card__photo">
             <img src="img/danilson-barber.jpg" alt="Danilson - Barber">
           </div>
           <div class="barber-card__info">
             <div class="barber-card__name">Danilson</div>
-            <div class="barber-card__title" data-i18n="barber_barber">Barber · Skin Specialist</div>
+            <div class="barber-card__title" data-i18n="barber_barber">Barber · Senior Barber</div>
             <div class="barber-card__stats">
               <div class="barber-stat">
                 <div class="barber-stat__value">3+</div>
@@ -761,14 +770,14 @@
           </div>
         </div>
 
-          <!-- Barber 4  -->
-        <div class="barber-card reveal" data-barber="André Mendes" tabindex="0" role="button">
+        <!-- Barber 4  -->
+        <div class="barber-card reveal" data-barber="André Hermenegildo" tabindex="0" role="button">
           <div class="barber-card__photo">
-            <img src="img/ger.jpeg" alt="Danilson - Barber">
+            <img src="img/ger.jpeg" alt="Hermenegildo - Barber">
           </div>
           <div class="barber-card__info">
             <div class="barber-card__name">Hermenegildo</div>
-            <div class="barber-card__title" data-i18n="barber_barber">Barber · Skin Specialist</div>
+            <div class="barber-card__title" data-i18n="barber_barber">Barber </div>
             <div class="barber-card__stats">
               <div class="barber-stat">
                 <div class="barber-stat__value">3+</div>
@@ -779,7 +788,29 @@
                 <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
               </div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com Danilson →</div>
+            <div class="barber-card__select" data-i18n="barber_book">Agendar com Hermenegildo →</div>
+          </div>
+        </div>
+
+        <!-- Barber 5  -->
+        <div class="barber-card reveal" data-barber="João" tabindex="0" role="button">
+          <div class="barber-card__photo">
+            <img src="img/joao-barber.jpeg" alt="João - Barber">
+          </div>
+          <div class="barber-card__info">
+            <div class="barber-card__name">João</div>
+            <div class="barber-card__title" data-i18n="barber_barber">Barber </div>
+            <div class="barber-card__stats">
+              <div class="barber-stat">
+                <div class="barber-stat__value">3+</div>
+                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+              </div>
+              <div class="barber-stat">
+                <div class="barber-stat__value">Barba</div>
+                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+              </div>
+            </div>
+            <div class="barber-card__select" data-i18n="barber_book">Agendar com João →</div>
           </div>
         </div>
 
@@ -854,7 +885,7 @@
                 <span class="yt-facade__label">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title">BallKutz — O Clube dos Campeões</div>
+                <div class="yt-facade__meta-title">BALLKUTZ Grand Opening Day | Dia Da Inauguração 2025 EP.1</div>
                 <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
               </div>
             </div>
@@ -873,7 +904,7 @@
                 <span class="yt-facade__label">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title">Cortes em Destaque</div>
+                <div class="yt-facade__meta-title">How Everything Started - EP.1/S1 BALLKUTZ Barbershop</div>
                 <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
               </div>
             </div>
@@ -1043,7 +1074,7 @@
                     <option value="Kutz de Barba">Kutz de Barba — 3.000 KZ</option>
                     <option value="Kutz de Cabelo + Barba">Kutz de Cabelo + Barba — 6.000 KZ</option>
                   </optgroup>
-                  <optgroup label="Estética">
+                  <optgroup label="Serviços Extras">
                     <option value="Sobrancelhas">Sobrancelhas — 2.000 KZ</option>
                     <option value="Massagem">Massagem — 2.000 KZ</option>
                     <option value="Hidratação de Cabelo ou Barba">Hidratação de Cabelo ou Barba — 2.500 KZ</option>
@@ -1070,9 +1101,11 @@
                 <label class="form-label" for="bookingBarber" data-i18n="form_barber">Barbeiro</label>
                 <select class="form-select" id="bookingBarber">
                   <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
-                  <option value="Mário Santos">Mário Santos — Head Barber</option>
-                  <option value="Carlos Lopes">Carlos Lopes — Senior Barber</option>
-                  <option value="André Mendes">André Mendes — Skin Specialist</option>
+                  <option value="Mário Santos">Cleusio</option>
+                  <option value="Carlos Lopes">Danilson</option>
+                  <option value="André Mendes">Hermenegildo</option>
+                  <option value="André Mendes">João</option>
+                  <option value="André Mendes">Estevão</option>
                 </select>
               </div>
             </div>
@@ -1255,7 +1288,9 @@
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <p class="review-text" data-i18n="review1_text">"REALMENTE E UM SALÃO MUITO BONITO E CONFORTÁVEL, ALÉM DE BONITO OS FUNCIONÁRIOS AO EXCELENTES RECOMENDO PARA QUEM AINDA NÃO TEVE A OPORTUNIDADE DE AQUI ESTAR APROVEITA CINCO-ESTRELAS
+            <p class="review-text" data-i18n="review1_text">"REALMENTE E UM SALÃO MUITO BONITO E CONFORTÁVEL, ALÉM DE
+              BONITO OS FUNCIONÁRIOS AO EXCELENTES RECOMENDO PARA QUEM AINDA NÃO TEVE A OPORTUNIDADE DE AQUI ESTAR
+              APROVEITA CINCO-ESTRELAS
               "</p>
             <div class="review-author">
               <div class="review-avatar">NP</div>
@@ -1273,7 +1308,8 @@
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <p class="review-text" data-i18n="review2_text">"BALLKUTZ 5 ESTRELAS, UM SÍTIO ACOLHEDOR, PORREIRO E TE SENTES REALMENTE COOL. GOSTEI DO TRABALHO FEITO E CLARO, VOU REGRESSAR SEMPRE. FORÇA BALLKUTZ"</p>
+            <p class="review-text" data-i18n="review2_text">"BALLKUTZ 5 ESTRELAS, UM SÍTIO ACOLHEDOR, PORREIRO E TE
+              SENTES REALMENTE COOL. GOSTEI DO TRABALHO FEITO E CLARO, VOU REGRESSAR SEMPRE. FORÇA BALLKUTZ"</p>
             <div class="review-author">
               <div class="review-avatar">CB</div>
               <div>
@@ -1345,8 +1381,8 @@
     <div class="container">
 
       <div class="section-header reveal">
-        <span class="label">Como nos encontrar</span>
-        <h2 class="heading-lg">LOCALIZAÇÃO</h2>
+        <span class="label" data-i18n="loc_eyebrow">Como nos encontrar</span>
+        <h2 class="heading-lg" data-i18n="loc_title">LOCALIZAÇÃO</h2>
       </div>
 
       <div class="location__layout">
@@ -1359,10 +1395,11 @@
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <div>
-              <div class="location__detail-label">Morada</div>
+              <div class="location__detail-label" data-i18n="loc_address">Morada</div>
               <div class="location__detail-value">
                 Rua 2, Cassenda, Nº 15, Luanda | Angola<br>
-                <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener">
+                <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener"
+                  data-i18n="loc_view_map">
                   Ver no Google Maps →
                 </a>
               </div>
@@ -1374,8 +1411,8 @@
               <i class="fa-solid fa-clock"></i>
             </div>
             <div>
-              <div class="location__detail-label">Horário de Funcionamento</div>
-              <div class="location__detail-value">
+              <div class="location__detail-label" data-i18n="loc_hours_label">Horário de Funcionamento</div>
+              <div class="location__detail-value" data-i18n="loc_hours_val">
                 Terça – Sábado: 10h00 – 20h00<br>
                 Domingo: 10h00 – 18h00
               </div>
@@ -1387,7 +1424,7 @@
               <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div>
-              <div class="location__detail-label">WhatsApp / Chamada</div>
+              <div class="location__detail-label" data-i18n="loc_call">WhatsApp / Chamada</div>
               <div class="location__detail-value">
                 <a href="tel:+244975099348">+244 975 099 348</a>
               </div>
@@ -1410,14 +1447,12 @@
           </div>
 
           <div class="location__actions">
-            <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener" class="btn btn--primary"
-              aria-label="Abrir no Google Maps">
-              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
-              Como Chegar
+         <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener" class="btn btn--primary">
+              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> <span data-i18n="loc_btn_directions">Como Chegar</span>
             </a>
             <a href="#reservar" class="btn btn--ghost">
               <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              Reservar
+              <span data-i18n="nav_cta">Reservar</span>
             </a>
           </div>
 
@@ -1448,22 +1483,19 @@
           <p class="footer__tagline" data-i18n="footer_tagline">A barbearia dos campeões em Luanda. Luxo, desporto e
             excelência num só espaço.</p>
           <div class="footer__social">
-            <a href="https://www.instagram.com/ball_kutz?igsh=bzFqdW82dGlsajA%3D&utm_source=qr  "
-              class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/@BallKutz" class="footer__social-link" target="_blank" rel="noopener"
-              aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://wa.me/244975099348" class="footer__social-link" target="_blank" rel="noopener"
-              aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.ballkutz.com" class="footer__social-link" target="_blank" rel="noopener"
-              aria-label="Website">
-              <i class="fa-solid fa-globe"></i>
-            </a>
+            <a href="https://www.instagram.com/ball_kutz?igsh=bzFqdW82dGlsajA%3D&utm_source=qr"
+              class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@BallKutz" class="footer__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/244975099348" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <!-- NEW LINKS -->
+            <a href="https://www.facebook.com/profile.php?id=61577981366851&mibextid=ZbWKwL" class="footer__social-link"
+              target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@ballkutz?_r=1&_t=ZS-95On8VcclUt" class="footer__social-link"
+              target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -1495,7 +1527,7 @@
           <ul class="footer__links">
             <li><a href="#">Rua 2, Cassenda, Nº 15, Luanda | Angola</a></li>
             <li><a href="tel:+244975099348">+244 975 099 348</a></li>
-            <li><a href="mailto:josiwhatson@gmail.com">josiwhatson@gmail.com</a></li>
+            <li><a href="mailto:ballkutz@gmail.com">Ballkutz@gmail.com</a></li>
             <li><a href="#">Ter–Sáb: 10h–20h</a></li>
             <li><a href="#">Dom: 10h–18h</a></li>
           </ul>
