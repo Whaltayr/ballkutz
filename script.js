@@ -25,7 +25,7 @@ const TIME_SLOTS = [
   "18:00",
   "18:30",
   "19:30",
-  "20:00",
+
 ];
 
 let currentLang = "pt";
