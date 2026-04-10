@@ -711,6 +711,14 @@ body::before {
   -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
+/* Modificador para colocar a imagem no fundo do card com fade para cima */
+.plan-card__bg-img--bottom {
+  top: auto;
+  bottom: 0;
+  height: 60%; /* Cobre a metade inferior do card */
+  -webkit-mask-image: linear-gradient(to top, black 20%, transparent 100%);
+  mask-image: linear-gradient(to top, black 20%, transparent 100%);
+}
 
 /* Garante que TODO o conteúdo do card fica acima da imagem */
 .plan-card > *:not(.plan-card__bg-img) {

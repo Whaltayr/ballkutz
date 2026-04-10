@@ -32,6 +32,7 @@ let currentLang = "pt";
 
 const LOCALES = {
   pt: {
+    tab_domicilio: "Ao Domicílio",
     opt_cortes: "Cortes",
     opt_barba: "Barba",
     opt_extras: "Serviços Extras",
@@ -86,7 +87,7 @@ const LOCALES = {
     hero_line1: "VENHA SENTIR A DIFERENÇA, PORQUE O CORTE ",
     hero_line2: "CERTO MUDA TUDO.",
     hero_sub:
-      "A barbearia dos campeões em Luanda. Cortes de precisão, experiência de clube premium.",
+      "A barbearia dos campeões em Luanda. Cortes de excelência, experiência premium e inesquecível.",
     hero_cta: "Reservar Agora",
     hero_cta2: "Ver Serviços",
     stat_rating: "Avaliação",
@@ -95,10 +96,8 @@ const LOCALES = {
     stat_anos: "Ano",
     about_eyebrow: "A nossa história",
     about_title: "MAIS DO QUE UM CORTE.",
-    about_p1:
-      "A BallKutz nasceu da fusão entre dois mundos: a precisão do barbeiro e a paixão pelo desporto. Um espaço onde cada visita é uma experiência única — música, jogo e o melhor corte da tua vida.",
-    about_p2:
-      "Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, a tua imagem está sempre no topo da tabela.",
+ about_p1: "A BallKutz surgiu da ideia de juntar o mundo do desporto (futebol e basketball), elevando a autoestima do seu cliente ao mais alto nível. Um espaço onde cada visita é uma experiência única — música, jogos de PlayStation e o melhor corte da tua vida.",
+  about_p2: "Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, elevar o teu estilo é sempre a nossa prioridade.",
     about_v1_title: "Excelência",
     loc_eyebrow: "Como nos encontrar",
     loc_title: "LOCALIZAÇÃO",
@@ -238,6 +237,7 @@ const LOCALES = {
     footer_made: "Feito com ✂️ para os campeões",
   },
   en: {
+    tab_domicilio: "At Home",
     opt_cortes: "Cuts",
     opt_barba: "Beard",
     opt_extras: "Extra Services",
@@ -292,7 +292,7 @@ const LOCALES = {
     hero_line1: "COME FEEL THE DIFFERENCE, BECAUSE THE RIGHT ",
     hero_line2: "CUT CHANGES EVERYTHING.",
     hero_sub:
-      "The champions' barbershop in Luanda. Precision cuts, premium club experience.",
+      "The champions' barbershop in Luanda. Excellence cuts, premium and unforgettable experience",
     hero_cta: "Book Now",
     hero_cta2: "View Services",
     stat_rating: "Rating",
@@ -301,10 +301,8 @@ const LOCALES = {
     stat_anos: "Year",
     about_eyebrow: "Our story",
     about_title: "MORE THAN A CUT.",
-    about_p1:
-      "BallKutz was born from the fusion of two worlds: barber precision and sports passion. A space where every visit is unique — music, gaming, and the best cut.",
-    about_p2:
-      "You are not just a client here. You are part of the club. With exclusive subscription plans, your image is always top tier.",
+  about_p1: "BallKutz emerged from the idea of bringing together the world of sports (football and basketball), raising its clients' self-esteem to the highest level. A space where every visit is a unique experience — music, PlayStation games, and the best haircut of your life.",
+  about_p2: "Here you are not just another client. You are part of the club. With exclusive subscription plans, elevating your style is always our priority.",
     about_v1_title: "Excellence",
     about_v1_text:
       "Every cut is executed with absolute precision and attention to detail.",
@@ -441,6 +439,7 @@ const LOCALES = {
     footer_made: "Made with ✂️ for champions",
   },
   fr: {
+    tab_domicilio: "À Domicile",
     opt_cortes: "Coupes",
     opt_barba: "Barbe",
     opt_extras: "Services Extras",
@@ -527,10 +526,8 @@ const LOCALES = {
     stat_anos: "An",
     about_eyebrow: "Notre histoire",
     about_title: "PLUS QU'UNE COUPE.",
-    about_p1:
-      "BallKutz est né de la fusion de deux mondes : la précision du barbier et la passion du sport.",
-    about_p2:
-      "Ici, vous n'êtes pas juste un client. Vous faites partie du club.",
+   about_p1: "BallKutz emerged from the idea of bringing together the world of sports (football and basketball), raising its clients' self-esteem to the highest level. A space where every visit is a unique experience — music, PlayStation games, and the best haircut of your life.",
+  about_p2: "Here you are not just another client. You are part of the club. With exclusive subscription plans, elevating your style is always our priority.",
     about_v1_title: "Excellence",
     about_v1_text: "Chaque coupe est exécutée avec une précision absolue.",
     about_v2_title: "Communauté",
@@ -641,6 +638,7 @@ const LOCALES = {
     footer_made: "Fait avec ✂️ pour les champions",
   },
   es: {
+    tab_domicilio: "A Domicilio",
     opt_cortes: "Cortes",
     opt_barba: "Barba",
     opt_extras: "Servicios Extras",
@@ -727,9 +725,8 @@ const LOCALES = {
     stat_anos: "Año",
     about_eyebrow: "Nuestra historia",
     about_title: "MÁS QUE UN CORTE.",
-    about_p1:
-      "BallKutz nació de la fusión de dos mundos: la precisión del barbero y la pasión por el deporte.",
-    about_p2: "Aquí no eres un cliente más. Eres parte del club.",
+    about_p1: "BallKutz surgió de la idea de unir el mundo del deporte (fútbol y baloncesto), elevando la autoestima de sus clientes al más alto nivel. Un espacio donde cada visita es una experiencia única: música, juegos de PlayStation y el mejor corte de tu vida.",
+  about_p2: "Aquí no eres solo un cliente más. Eres parte del club. Con planes de suscripción exclusivos, elevar tu estilo es siempre nuestra prioridad.",
     about_v1_title: "Excelencia",
     about_v1_text: "Cada corte se ejecuta con precisión absoluta.",
     about_v2_title: "Comunidad",
@@ -839,6 +836,7 @@ const LOCALES = {
     footer_made: "Hecho con ✂️ para campeones",
   },
   zh: {
+    tab_domicilio: "上门服务",
     opt_cortes: "理发",
     opt_barba: "胡须",
     opt_extras: "额外服务",
@@ -924,8 +922,8 @@ const LOCALES = {
     stat_anos: "年",
     about_eyebrow: "我们的故事",
     about_title: "不仅仅是理发。",
-    about_p1: "BallKutz 诞生于两个世界的融合：理发师的精准与对体育的热情。",
-    about_p2: "在这里您不仅仅是客户。您是俱乐部的一员。",
+ about_p1: "BallKutz 源于将体育世界（足球和篮球）结合在一起的理念，将客户的自信提升到最高水平。在这里，每一次光临都是独一无二的体验——音乐、PlayStation游戏，以及你人生中最好的一次理发。",
+  about_p2: "在这里，你不仅仅是一名普通客户。你是俱乐部的一员。凭借独家订阅计划，提升您的个人风格始终是我们的首要任务。",
     about_v1_title: "卓越",
     about_v1_text: "每一次理发都以绝对的精准度执行。",
     about_v2_title: "社区",
