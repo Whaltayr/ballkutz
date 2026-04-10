@@ -11,49 +11,31 @@
   <meta name="author" content="BallKutz Barbershop" />
   <meta name="robots" content="index, follow" />
   <title>BallKutz | Barbershop — Rua 2, Cassenda, Nº 15, Luanda | Angola</title>
-
-  <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="business.business" />
   <meta property="og:title" content="BallKutz | A Barbearia dos Campeões — Luanda" />
-  <meta property="og:description"
-    content="Cortes de precisão, experiência de clube premium em Luanda. Planos PRO e PRO MAX disponíveis. Reserva pelo WhatsApp." />
+  <meta property="og:description" content="Cortes de precisão, experiência de clube premium em Luanda." />
   <meta property="og:url" content="https://www.ballkutz.com" />
   <meta property="og:image" content="https://www.ballkutz.com/og-image.jpg" />
-  <meta property="og:locale" content="pt_AO" />
-  <meta property="og:site_name" content="BallKutz Barbershop" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="BallKutz | Barbershop — Luanda" />
-  <meta name="twitter:description" content="Cortes de precisão, experiência de clube premium em Luanda." />
-  <meta name="twitter:image" content="https://www.ballkutz.com/og-image.jpg" />
-
-  <!-- Theme color for mobile browsers -->
   <meta name="theme-color" content="#512944" />
-  <meta name="msapplication-TileColor" content="#512944" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="slider-additions.css" />
 </head>
 
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-       ============================================================ -->
+  <!-- NAVIGATION -->
   <header class="site-header" id="mainNav" role="banner">
     <div class="container">
       <nav class="nav__inner" aria-label="Primary navigation">
-
         <a href="#" class="nav__logo" aria-label="BallKutz — página principal">
           <img height="50px" src="img/fff.png" alt="BallKutz Barbershop Logo">
         </a>
-
         <ul class="nav__links" role="list">
           <li><a href="sobre.html" data-i18n="nav_about">Sobre</a></li>
           <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
@@ -61,10 +43,9 @@
           <li><a href="#equipa" data-i18n="nav_team">Equipa</a></li>
           <li><a href="#galeria" data-i18n="nav_gallery">Galeria</a></li>
         </ul>
-
         <div class="nav__actions">
           <select class="lang-toggle" id="langToggle" aria-label="Mudar idioma"
-            style="background: transparent; color: var(--white); border: 1px solid var(--border); padding: 0.4rem; cursor: pointer; font-family: var(--font-heading); letter-spacing: 0.1em;">
+            style="background:transparent;color:var(--white);border:1px solid var(--border);padding:0.4rem;cursor:pointer;font-family:var(--font-heading);letter-spacing:0.1em;">
             <option value="pt" style="color:#000">PT</option>
             <option value="en" style="color:#000">EN</option>
             <option value="fr" style="color:#000">FR</option>
@@ -77,60 +58,45 @@
             <i class="fa-solid fa-bars" aria-hidden="true"></i>
           </button>
         </div>
-
       </nav>
     </div>
   </header>
 
-  <!-- Mobile Full-screen Drawer -->
+  <!-- MOBILE DRAWER -->
   <div class="nav__mobile" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
     <button type="button" class="nav__mobile-close" id="mobileClose" aria-label="Fechar menu">
       <i class="fa-solid fa-xmark" aria-hidden="true"></i>
     </button>
-
     <a href="sobre.html" class="mobile-link" data-i18n="nav_about">Sobre</a>
     <a href="#servicos" class="mobile-link" data-i18n="nav_services">Serviços</a>
     <a href="#planos" class="mobile-link" data-i18n="nav_plans">Planos</a>
     <a href="#equipa" class="mobile-link" data-i18n="nav_team">Equipa</a>
     <a href="#galeria" class="mobile-link" data-i18n="nav_gallery">Galeria</a>
-
     <div class="mobile-divider" aria-hidden="true"></div>
-
     <a href="#reservar" class="btn btn--primary mobile-link" data-i18n="nav_cta">Reservar</a>
-    <a href="tel:+244975099348" class="mobile-call-link">
-      <i class="fa-solid fa-phone" aria-hidden="true"></i> Ligar Agora
-    </a>
-
+    <a href="tel:+244975099348" class="mobile-call-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> Ligar
+      Agora</a>
     <button type="button" class="mobile-lang" id="mobileLangToggle" aria-label="Mudar idioma">PT / EN</button>
   </div>
 
-  <!-- ============================================================
-       HERO
-       ============================================================ -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero__bg"></div>
     <div class="hero__lines"></div>
     <div class="hero__image-wrap" aria-hidden="true">
       <img class="hero__image" src="img/EE.jpeg" alt="" loading="eager" fetchpriority="high" />
     </div>
-
     <div class="container">
       <div class="hero__content">
-
         <div class="hero__eyebrow">
           <span class="label" data-i18n="hero_eyebrow">Rua 2, Cassenda, Nº 15, Luanda | Angola · Est. 2025</span>
         </div>
-
         <h1 class="heading-xl hero__headline">
-          <span class="hero__headline-line1" data-i18n="hero_line1">VENHA SENTIR A DIFERENÇA, PORQUE O CORTE
-          </span><br>
+          <span data-i18n="hero_line1">VENHA SENTIR A DIFERENÇA, PORQUE O CORTE </span><br>
           <span class="line-2" data-i18n="hero_line2">CERTO MUDA TUDO.</span>
         </h1>
-
-        <p class="hero__sub" data-i18n="hero_sub">
-          A barbearia dos campeões em Luanda. Cortes de excelência, experiência premium e inesquecível.
-        </p>
-
+        <p class="hero__sub" data-i18n="hero_sub">A barbearia dos campeões em Luanda. Cortes de excelência, experiência
+          premium e inesquecível.</p>
         <div class="hero__ctas">
           <a href="#reservar" class="btn btn--primary">
             <i class="fa-brands fa-whatsapp"></i>
@@ -141,7 +107,6 @@
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-
         <div class="hero__stats">
           <div>
             <div class="hero__stat-number">5★</div>
@@ -160,21 +125,15 @@
             <div class="hero__stat-label" data-i18n="stat_anos">Ano</div>
           </div>
         </div>
-
       </div>
     </div>
-
     <div class="hero__diagonal-accent"></div>
   </section>
 
-  <!-- ============================================================
-       SOBRE NÓS (ABOUT)
-       ============================================================ -->
+  <!-- ABOUT -->
   <section class="about" id="sobre" aria-labelledby="about-heading">
     <div class="container">
       <div class="about__layout">
-
-        <!-- Visual -->
         <div class="about__visual reveal">
           <img class="about__visual-main" src="img/image-1.webp" alt="Interior da BallKutz Barbershop Luanda"
             loading="lazy" />
@@ -183,67 +142,53 @@
             <span class="text">Anos de excelência</span>
           </div>
         </div>
-
-        <!-- Content -->
         <div class="about__content reveal">
           <span class="label" data-i18n="about_eyebrow">A nossa história</span>
           <h2 id="about-heading" class="heading-lg" style="margin-top:0.75rem;margin-bottom:1.2rem;"
             data-i18n="about_title">MAIS DO QUE UM CORTE.</h2>
           <p style="font-size:0.95rem;color:var(--grey-light);line-height:1.8;margin-bottom:1rem;" data-i18n="about_p1">
-            A BallKutz surgiu da ideia de juntar o mundo do desporto futebol e basketball , elevando a auto-estima do
-            seu cliente ao mais alto nível.
-            Um espaço onde cada visita é uma experiência única — música, jogos de PlayStation e o melhor corte da tua
-            vida.
-        
-          </p>
-          <p style="font-size:0.95rem;color:var(--grey-light);line-height:1.8;" data-i18n="about_p2">
-               Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, elevar o teu
-            estilo é sempre a nossa prioridade .
-          </p>
-
+            A BallKutz surgiu da ideia de juntar o mundo do desporto futebol e basketball, elevando a auto-estima do seu
+            cliente ao mais alto nível.</p>
+          <p style="font-size:0.95rem;color:var(--grey-light);line-height:1.8;" data-i18n="about_p2">Aqui não és apenas
+            mais um cliente. És parte do clube.</p>
           <div class="about__values">
             <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+              <div class="about__value-icon"><i class="fa-solid fa-trophy"></i></div>
               <div class="about__value-title" data-i18n="about_v1_title">Excelência</div>
               <div class="about__value-text" data-i18n="about_v1_text">Cada corte é executado com precisão absoluta e
                 atenção ao detalhe.</div>
             </div>
             <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+              <div class="about__value-icon"><i class="fa-solid fa-users"></i></div>
               <div class="about__value-title" data-i18n="about_v2_title">Comunidade</div>
               <div class="about__value-text" data-i18n="about_v2_text">Um espaço de convívio onde o desporto une os
                 nossos clientes.</div>
             </div>
             <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+              <div class="about__value-icon"><i class="fa-solid fa-shield-halved"></i></div>
               <div class="about__value-title" data-i18n="about_v3_title">Confiança</div>
               <div class="about__value-text" data-i18n="about_v3_text">Profissionalismo e compromisso em cada serviço
                 prestado.</div>
             </div>
             <div class="about__value">
-              <div class="about__value-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+              <div class="about__value-icon"><i class="fa-solid fa-star"></i></div>
               <div class="about__value-title" data-i18n="about_v4_title">Luxo</div>
               <div class="about__value-text" data-i18n="about_v4_text">Decoração premium que faz sentires-te num clube
                 de campeões.</div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-     SERVIÇOS
-     ============================================================ -->
+  <!-- SERVIÇOS -->
   <section class="section" id="servicos">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="services_eyebrow">The Playbook — Preços</span>
         <h2 class="heading-lg" data-i18n="services_title">SERVIÇOS</h2>
       </div>
-
       <div class="services__tabs reveal" role="tablist" aria-label="Categorias de Serviços">
         <button type="button" class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-cortes"
           data-tab="cortes" data-i18n="tab_cortes">Cortes</button>
@@ -253,290 +198,289 @@
           data-tab="estetica" data-i18n="tab_estetica">Serviços Extras</button>
         <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-vip" data-tab="vip"
           data-i18n="tab_vip">VIP</button>
-          <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-domicilio" data-tab="domicilio" data-i18n="tab_domicilio">Ao Domicílio</button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-domicilio"
+          data-tab="domicilio" data-i18n="tab_domicilio">Ao Domicílio</button>
       </div>
-      </div>
-
       <!-- Cortes -->
       <div class="tab-panel active" id="tab-cortes" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
-
-
-
           <div class="service-item" data-service="Kutz de Cabelo" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div>
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Kutz Criança (Sub 15)" tabindex="0" role="button">
             <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz Criança (Sub 15)</div>
+              <div class="service-item__name" data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</div>
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Kutz Seniores (+65)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_senior">Kutz Seniores (+65)</div>
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
-
-
-
         </div>
       </div>
-
       <!-- Barba -->
       <div class="tab-panel" id="tab-barba" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
-
           <div class="service-item" data-service="Kutz de Barba" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_barba">Kutz de Barba</div>
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Kutz de Cabelo + Barba" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</div>
             </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Ballkutz Ritual (Barboterapia)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</div>
             </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
-
         </div>
       </div>
-
       <!-- Estética -->
       <div class="tab-panel" id="tab-estetica" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
-
           <div class="service-item" data-service="Line Up" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_lineup">Line Up</div>
             </div>
             <div class="service-item__price">1.500 KZ</div>
           </div>
-
           <div class="service-item" data-service="Sobrancelhas" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_sobrancelhas">Sobrancelhas</div>
             </div>
             <div class="service-item__price">2.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Massagem" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_massagem">Massagem</div>
             </div>
             <div class="service-item__price">2.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Hidratação de Cabelo ou Barba" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_hidratacao">Hidratação de Cabelo ou Barba</div>
             </div>
             <div class="service-item__price">2.500 KZ</div>
           </div>
-
           <div class="service-item" data-service="Depilação Nariz ou Orelha" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_depilacao">Depilação Nariz ou Orelha</div>
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Camuflagem Cabelo ou Barba" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_camuflagem">Camuflagem Cabelo ou Barba</div>
             </div>
             <div class="service-item__price">3.500 KZ</div>
           </div>
-
           <div class="service-item" data-service="Pintura Preta" tabindex="0" role="button">
             <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_pintura"> Pintura Preta</div>
+              <div class="service-item__name" data-i18n="srv_pintura">Pintura Preta</div>
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Combo Hidratação" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_combo_hidratacao">Combo Hidratação</div>
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Combo Depilação" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_combo_depilacao">Combo Depilação</div>
             </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Limpeza de Pele" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_limpeza">Limpeza de Pele</div>
             </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Combo Camuflagem" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_combo_camuflagem">Combo Camuflagem</div>
             </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Velas Hopi (Terapia Termo-Auricular)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_velas_hopi">Velas Hopi (Terapia Termo-Auricular)</div>
             </div>
             <div class="service-item__price">7.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Descoloração" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_descoloracao">Descoloração</div>
             </div>
             <div class="service-item__price">7.000 / 12.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="24K Gold Limpeza de Pele" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</div>
             </div>
             <div class="service-item__price">10.000 KZ</div>
           </div>
-
         </div>
       </div>
-
       <!-- VIP -->
       <div class="tab-panel" id="tab-vip" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
-
           <div class="service-item" data-service="VIP Kutz" tabindex="0" role="button">
             <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_hidratacao">VIP Kutz</div>
+              <div class="service-item__name" data-i18n="srv_vip_kutz">VIP Kutz</div>
               <div class="service-item__duration" data-i18n="srv_vip_kutz_desc">Cabelo, Barba, Depilação, Massagem</div>
             </div>
             <div class="service-item__price">10.000 KZ</div>
           </div>
-
           <div class="service-item" data-service="Presidential Kutz" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_presidential">Presidential Kutz</div>
-              <div class="service-item__duration" data-i18n="srv_presidential">Cabelo, Barboterapia, Sobrancelhas, Combo
-                Depilação, Hidratação
-                Cabelo, Massagem</div>
+              <div class="service-item__duration" data-i18n="srv_presidential_desc">Cabelo, Barboterapia, Sobrancelhas,
+                Combo Depilação, Hidratação Cabelo, Massagem</div>
             </div>
             <div class="service-item__price">15.000 KZ</div>
           </div>
-
         </div>
       </div>
-      <!-- NOVA ABA: Ao Domicílio -->
+      <!-- Ao Domicílio -->
       <div class="tab-panel" id="tab-domicilio" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
 
-          <!-- Cortes Domicílio -->
           <div class="service-item" data-service="Kutz de Cabelo (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div>
+            </div>
             <div class="service-item__price">7.000 KZ</div>
           </div>
           <div class="service-item" data-service="Kutz Criança Sub 15 (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</div>
+            </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
           <div class="service-item" data-service="Kutz Seniores +65 (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_kutz_senior">Kutz Seniores (+65)</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_senior">Kutz Seniores (+65)</div>
+            </div>
             <div class="service-item__price">7.000 KZ</div>
           </div>
-
-          <!-- Barba Domicílio -->
           <div class="service-item" data-service="Kutz de Barba (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_kutz_barba">Kutz de Barba</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_barba">Kutz de Barba</div>
+            </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
           <div class="service-item" data-service="Kutz de Cabelo + Barba (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</div>
+            </div>
             <div class="service-item__price">9.000 KZ</div>
           </div>
           <div class="service-item" data-service="Ballkutz Ritual Barboterapia (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</div>
+            </div>
             <div class="service-item__price">9.000 KZ</div>
           </div>
-
-          <!-- Estética / Extras Domicílio -->
           <div class="service-item" data-service="Line Up (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_lineup">Line Up</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_lineup">Line Up</div>
+            </div>
             <div class="service-item__price">4.500 KZ</div>
           </div>
+
           <div class="service-item" data-service="Sobrancelhas (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_sobrancelhas">Sobrancelhas</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_sobrancelhas">Sobrancelhas</div>
+            </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
           <div class="service-item" data-service="Massagem (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_massagem">Massagem</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_massagem">Massagem</div>
+            </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
           <div class="service-item" data-service="Hidratação de Cabelo ou Barba (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_hidratacao">Hidratação de Cabelo ou Barba</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_hidratacao">Hidratação de Cabelo ou Barba</div>
+            </div>
             <div class="service-item__price">5.500 KZ</div>
           </div>
           <div class="service-item" data-service="Depilação Nariz ou Orelha (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_depilacao">Depilação Nariz ou Orelha</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_depilacao">Depilação Nariz ou Orelha</div>
+            </div>
             <div class="service-item__price">6.000 KZ</div>
           </div>
           <div class="service-item" data-service="Camuflagem Cabelo ou Barba (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_camuflagem">Camuflagem Cabelo ou Barba</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_camuflagem">Camuflagem Cabelo ou Barba</div>
+            </div>
             <div class="service-item__price">6.500 KZ</div>
           </div>
           <div class="service-item" data-service="Pintura Preta (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_pintura">Pintura Preta</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_pintura">Pintura Preta</div>
+            </div>
             <div class="service-item__price">7.000 KZ</div>
           </div>
           <div class="service-item" data-service="Combo Hidratação (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_combo_hidratacao">Combo Hidratação</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_combo_hidratacao">Combo Hidratação</div>
+            </div>
             <div class="service-item__price">7.000 KZ</div>
           </div>
           <div class="service-item" data-service="Combo Depilação (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_combo_depilacao">Combo Depilação</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_combo_depilacao">Combo Depilação</div>
+            </div>
             <div class="service-item__price">8.000 KZ</div>
           </div>
           <div class="service-item" data-service="Limpeza de Pele (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_limpeza">Limpeza de Pele</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_limpeza">Limpeza de Pele</div>
+            </div>
             <div class="service-item__price">8.000 KZ</div>
           </div>
           <div class="service-item" data-service="Combo Camuflagem (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_combo_camuflagem">Combo Camuflagem</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_combo_camuflagem">Combo Camuflagem</div>
+            </div>
             <div class="service-item__price">9.000 KZ</div>
           </div>
           <div class="service-item" data-service="Velas Hopi (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_velas_hopi">Velas Hopi (Terapia Termo-Auricular)</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_velas_hopi">Velas Hopi (Terapia Termo-Auricular)</div>
+            </div>
             <div class="service-item__price">10.000 KZ</div>
           </div>
           <div class="service-item" data-service="Descoloração (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_descoloracao">Descoloração</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_descoloracao">Descoloração</div>
+            </div>
             <div class="service-item__price">10.000 / 15.000 KZ</div>
           </div>
           <div class="service-item" data-service="24K Gold Limpeza de Pele (Domicílio)" tabindex="0" role="button">
-            <div class="service-item__info"><div class="service-item__name" data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</div></div>
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</div>
+            </div>
             <div class="service-item__price">13.000 KZ</div>
           </div>
-
-          <!-- VIP Domicílio -->
           <div class="service-item" data-service="VIP Kutz (Domicílio)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_vip_kutz">VIP Kutz</div>
@@ -547,30 +491,24 @@
           <div class="service-item" data-service="Presidential Kutz (Domicílio)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_presidential">Presidential Kutz</div>
-              <div class="service-item__duration" data-i18n="srv_presidential_desc">Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem</div>
+              <div class="service-item__duration" data-i18n="srv_presidential_desc">Cabelo, Barboterapia, Sobrancelhas,
+                Combo Depilação, Hidratação Cabelo, Massagem</div>
             </div>
             <div class="service-item__price">18.000 KZ</div>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ============================================================
-     PLANOS DE ASSINATURA
-     ============================================================ -->
+  <!-- PLANOS -->
   <section class="section plans" id="planos">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label tit_l" data-i18n="plans_eyebrow">Season Tickets — Torna-te membro</span>
         <h2 class="heading-lg" data-i18n="plans_title">BARBEARIA POR ASSINATURA?</h2>
         <p class="plans__subtitle" data-i18n="plans_subtitle">Mensal · Sem contratos · Cancela quando quiseres</p>
       </div>
-
-      <!-- Categoria 1: 2x por mês -->
       <div class="plans__category reveal">
         <div class="plans__category-label">
           <span class="plans__category-badge plans__category-badge--limited">
@@ -580,525 +518,402 @@
         </div>
       </div>
 
-      <!-- Slider wrapper -->
-      <div class="plans__slider-wrap">
+      <!-- ★ PLANS SLIDER — id added to wrap -->
+      <div class="plans__slider-wrap" id="plansSliderWrap">
         <div class="plans__slider" id="plansSlider">
 
-<!-- Card 0: Introdução / Conceito Netflix -->
-<div class="plan-card plan-card--intro reveal">
-  <!-- 📸 IMAGEM NO FUNDO (BOTTOM) -->
-  <img src="img/card-0.jpeg" alt="" class="plan-card__bg-img plan-card__bg-img--bottom" aria-hidden="true" />
+          <!-- Card 0: Conceito -->
+          <div class="plan-card plan-card-0 plan-card--intro reveal">
+            <img src="img/card-0.jpeg" alt="" class="plan-card__bg-img plan-card__bg-img--bottom" aria-hidden="true" />
+            <div class="plan-card__name"><P data-i18n="plan-card-como">Como Funciona?</P></div>
+            <p class="plan-card__intro-text"><span data-i18n="plan_intro_text">ONDE VOCÊ PAGA UMA MENSALIDADE E TEM
+                ACESSO AOS SERVIÇOS DE FORMA LIMITADA OU ILIMITADA, IGUAL </span>
+              <strong style="color: #E50914; letter-spacing: 0.05em; text-transform: uppercase;"
+                data-i18n="plan_intro_text_2">Netflix</strong>.
+            </p>
+            </p>
+            <div class="plan-card__intro-arrow" style="margin-top:auto;display:flex;align-items:center;gap:0.5rem;">
+              <span
+                style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--grey-light);">Deslize
+                para ver</span>
+              <i class="fa-solid fa-arrow-right-long" style="color:var(--grey-light);"></i>
+            </div>
+          </div>
 
-  
-
-  <div class="plan-card__name">Como Funciona?</div>
-
-  <p class="plan-card__intro-text" data-i18n="plan_intro_text">
-   ONDE VOCÊ PAGA UMA MENSALIDADE E TEM ACESSO AOS SERVIÇOS DE FORMA LIMITADA OU ILIMITADA, IGUAL<strong style="color: #E50914; letter-spacing: 0.05em; text-transform: uppercase;" data-i18n="plan_intro_text_2"data-i18n="plan_intro_text_2">Netflix</strong>.
-  </p>
-
-  <div class="plan-card__intro-arrow" style="margin-top: auto; display: flex; align-items: center; gap: 0.5rem;">
-    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-light);">
-      Deslize para ver
-    </span>
-    <i class="fa-solid fa-arrow-right-long" style="color: var(--grey-light);"></i>
-  </div>
-</div>
-
-          <!-- Card 1: Plano Cabelo 2x -->
+          <!-- Card 1 -->
           <div class="plan-card plan-card--limited reveal">
-            <!-- 📸 IMAGEM ADICIONADA AQUI -->
-
-
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-scissors"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-scissors"></i></div>
               <div class="plan-card__badge plan-card__badge--limited" data-i18n="plans_cat_limited">2x / Mês</div>
             </div>
             <div class="plan-card__name" data-i18n="plan1_name">Plano Cabelo</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">6.500 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_limited">/ 2x mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">6.500 KZ</span><span class="plan-card__period"
+                data-i18n="plan_period_limited">/ 2x mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                <span data-i18n="plan1_perk1">2 cortes de cabelo por mês</span>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="plan1_perk1">2 cortes de cabelo por mês</span></li>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-ticket" aria-hidden="true"></i>
-                <span data-i18n="plan1_perk3">1 ficha — 1 serviço extra de cortesia + trazer um amigo de graça</span>
-              </li>
+              <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan1_perk3">1 ficha — 1 serviço extra de cortesia
+                  + trazer um amigo de graça</span></li>
             </ul>
             <a href="#reservar" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
           </div>
 
-           <!-- Card 2: Plano Cabelo + Barba 2x -->
+          <!-- Card 2 -->
           <div class="plan-card plan-card--limited reveal">
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-user-tie"></i></div>
               <div class="plan-card__badge plan-card__badge--limited" data-i18n="plans_cat_limited">2x / Mês</div>
             </div>
             <div class="plan-card__name" data-i18n="plan2_name">Plano Cabelo + Barba</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">9.500 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_limited">/ 2x mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">9.500 KZ</span><span class="plan-card__period"
+                data-i18n="plan_period_limited">/ 2x mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                <span data-i18n="plan2_perk1">2 cabelo + barba por mês</span>
+              <li><i class="fa-solid fa-check"></i><span data-i18n="plan2_perk1">2 cabelo + barba por mês</span></li>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-ticket" aria-hidden="true"></i>
-                <span data-i18n="plan2_perk3">1 ficha — 1 serviço extra de cortesia</span>
-              </li>
+              <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan2_perk3">1 ficha — 1 serviço extra de
+                  cortesia</span></li>
             </ul>
             <a href="#reservar" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
           </div>
 
-          <!-- Card 5: Plano Criança Ilimitado -->
+          <div class="plans__slider-divider" aria-hidden="true"><span class="plans__slider-divider-line"></span><span
+              class="plans__slider-divider-label" data-i18n="plans_cat_unlimited">Ilimitado</span><span
+              class="plans__slider-divider-line"></span></div>
+
+          <!-- Card 3 -->
           <div class="plan-card plan-card--unlimited reveal">
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-child-reaching"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-child-reaching"></i></div>
               <div class="plan-card__badge plan-card__badge--unlimited" data-i18n="plans_cat_unlimited">Ilimitado</div>
             </div>
             <div class="plan-card__name" data-i18n="plan5_name">Plano Criança</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">7.500 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">7.500 KZ</span><span class="plan-card__period"
+                data-i18n="plan_period_unlimited">/ mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-infinity" aria-hidden="true"></i>
-                <span data-i18n="plan5_perk1">Cortes ilimitados</span>
+              <li><i class="fa-solid fa-infinity"></i><span data-i18n="plan5_perk1">Cortes ilimitados</span></li>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-users" aria-hidden="true"></i>
-                <span data-i18n="plan5_perk3">2 fichas — 1 serviço extra + trazer 1 amigo de graça</span>
-              </li>
+              <li><i class="fa-solid fa-users"></i><span data-i18n="plan5_perk3">2 fichas — 1 serviço extra + trazer 1
+                  amigo de graça</span></li>
             </ul>
             <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
           </div>
 
-          <!-- Card 4: Plano Barba Ilimitado -->
+          <!-- Card 4 -->
           <div class="plan-card plan-card--unlimited reveal">
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-face-smile-beam"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-face-smile-beam"></i></div>
               <div class="plan-card__badge plan-card__badge--unlimited" data-i18n="plans_cat_unlimited">Ilimitado</div>
             </div>
             <div class="plan-card__name" data-i18n="plan4_name">Plano Barba</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">8.500 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">8.500 KZ</span><span class="plan-card__period"
+                data-i18n="plan_period_unlimited">/ mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-infinity" aria-hidden="true"></i>
-                <span data-i18n="plan4_perk1">Barbas ilimitadas</span>
+              <li><i class="fa-solid fa-infinity"></i><span data-i18n="plan4_perk1">Barbas ilimitadas</span></li>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-ticket" aria-hidden="true"></i>
-                <span data-i18n="plan4_perk3">2 ficha — 1 serviço extra de cortesia</span>
-              </li>
+              <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan4_perk3">2 ficha — 1 serviço extra de
+                  cortesia</span></li>
             </ul>
             <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
           </div>
 
-         
 
-          <!-- Divisor visual entre categorias -->
-          <div class="plans__slider-divider" aria-hidden="true">
-            <span class="plans__slider-divider-line"></span>
-            <span class="plans__slider-divider-label" data-i18n="plans_cat_unlimited">Ilimitado</span>
-            <span class="plans__slider-divider-line"></span>
-          </div>
 
-          <!-- Card 3: Plano Cabelo Ilimitado -->
+          <!-- Card 5 -->
           <div class="plan-card plan-card--unlimited reveal">
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-scissors"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-scissors"></i></div>
               <div class="plan-card__badge plan-card__badge--unlimited" data-i18n="plans_cat_unlimited">Ilimitado</div>
             </div>
             <div class="plan-card__name" data-i18n="plan3_name">Plano Cabelo</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">10.000 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">10.000 KZ</span><span
+                class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-infinity" aria-hidden="true"></i>
-                <span data-i18n="plan3_perk1">Cortes ilimitados</span>
+              <li><i class="fa-solid fa-infinity"></i><span data-i18n="plan3_perk1">Cortes ilimitados</span></li>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-ticket" aria-hidden="true"></i>
-                <span data-i18n="plan3_perk3">2 fichas — 1 serviço extra de cortesia</span>
-              </li>
+              <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan3_perk3">2 fichas — 1 serviço extra de
+                  cortesia</span></li>
             </ul>
             <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
           </div>
 
-
-
-
-
-          <!-- Card 6: Plano Cabelo + Barba Ilimitado (DESTAQUE) -->
+          <!-- Card 6 FEATURED -->
           <div class="plan-card plan-card--unlimited plan-card--featured reveal">
             <div class="plan-card__top">
-              <div class="plan-card__icon" aria-hidden="true"><i class="fa-solid fa-crown"></i></div>
+              <div class="plan-card__icon"><i class="fa-solid fa-crown"></i></div>
               <div class="plan-card__badge plan-card__badge--featured" data-i18n="plan6_badge">Mais Popular</div>
             </div>
             <div class="plan-card__name" data-i18n="plan6_name">Plano Cabelo + Barba</div>
-            <div class="plan-card__price">
-              <span class="plan-card__amount">15.000 KZ</span>
-              <span class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span>
-            </div>
+            <div class="plan-card__price"><span class="plan-card__amount">15.000 KZ</span><span
+                class="plan-card__period" data-i18n="plan_period_unlimited">/ mês</span></div>
             <ul class="plan-card__perks">
-              <li>
-                <i class="fa-solid fa-infinity" aria-hidden="true"></i>
-                <span data-i18n="plan6_perk1">Cabelo + Barba ilimitados</span>
+              <li><i class="fa-solid fa-infinity"></i><span data-i18n="plan6_perk1">Cabelo + Barba ilimitados</span>
               </li>
-              <li>
-                <i class="fa-solid fa-tag" aria-hidden="true"></i>
-                <span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
+              <li><i class="fa-solid fa-tag"></i><span data-i18n="plan_discount">10% OFF em produtos e serviços</span>
               </li>
-              <li>
-                <i class="fa-solid fa-users" aria-hidden="true"></i>
-                <span data-i18n="plan6_perk3">2 fichas — 1 serviço extra + trazer 1 amigo de graça</span>
-              </li>
+              <li><i class="fa-solid fa-users"></i><span data-i18n="plan6_perk3">2 fichas — 1 serviço extra + trazer 1
+                  amigo de graça</span></li>
             </ul>
             <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
           </div>
 
-        </div><!-- /plans__slider -->
-
-
-
-
-      </div><!-- /plans__slider-wrap -->
-      <!-- Controlos do slider -->
+        </div>
+      </div>
       <div class="plans__controls" role="group" aria-label="Navegação dos planos">
-        <button type="button" class="plans__arrow plans__arrow--prev" id="plansPrev" aria-label="Plano anterior">
-          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-        </button>
-        <div class="plans__dots" id="plansDots" role="tablist" aria-label="Planos de assinatura"></div>
-        <button type="button" class="plans__arrow plans__arrow--next" id="plansNext" aria-label="Próximo plano">
-          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-        </button>
+        <button type="button" class="plans__arrow plans__arrow--prev" id="plansPrev" aria-label="Plano anterior"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <div class="plans__dots" id="plansDots" role="tablist"></div>
+        <button type="button" class="plans__arrow plans__arrow--next" id="plansNext" aria-label="Próximo plano"><i
+            class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       EQUIPA (TEAM)
-       ============================================================ -->
+  <!-- ★ EQUIPA — now a slider -->
   <section class="section team" id="equipa">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="team_eyebrow">Starting XI — Os nossos</span>
         <h2 class="heading-lg" data-i18n="team_title">A EQUIPA</h2>
       </div>
 
-      <div class="team__grid">
+      <div class="team__slider-wrap" id="teamSliderWrap">
+        <div class="team__slider" id="teamSlider">
 
-        <!-- Barber 1 -->
-        <div class="barber-card reveal" data-barber="Cleusio" tabindex="0" role="button">
-          <div class="barber-card__photo">
-            <img src="img/cleusio-barber.jpg" alt="Cleusio - Head Barber">
-          </div>
-          <div class="barber-card__info">
-            <div class="barber-card__name">Cleusio</div>
-            <div class="barber-card__title" data-i18n="barber_head">Head Barber · Capitão</div>
-            <div class="barber-card__stats">
-              <div class="barber-stat">
-                <div class="barber-stat__value">10+</div>
-                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+          <div class="barber-card reveal" data-barber="Cleusio" tabindex="0" role="button">
+            <div class="barber-card__photo"><img src="img/cleusio-barber.jpg" alt="Cleusio - Head Barber"></div>
+            <div class="barber-card__info">
+              <div class="barber-card__name">Cleusio</div>
+              <div class="barber-card__title" data-i18n="barber_head">Head Barber · Capitão</div>
+              <div class="barber-card__stats">
+                <div class="barber-stat">
+                  <div class="barber-stat__value">10+</div>
+                  <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+                </div>
+                <div class="barber-stat">
+                  <div class="barber-stat__value">Fade</div>
+                  <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+                </div>
               </div>
-              <div class="barber-stat">
-                <div class="barber-stat__value">Fade</div>
-                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
-              </div>
+              <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com Cleusio →</div>
           </div>
-        </div>
 
-           <!-- Barber 3 -->
-        <div class="barber-card reveal" data-barber="Danilson" tabindex="0" role="button">
-          <div class="barber-card__photo">
-            <img src="img/danilson-barber.jpg" alt="Danilson - Barber">
-          </div>
-          <div class="barber-card__info">
-            <div class="barber-card__name">Danilson</div>
-            <div class="barber-card__title" data-i18n="barber_barber">Barber · Senior Barber</div>
-            <div class="barber-card__stats">
-              <div class="barber-stat">
-                <div class="barber-stat__value">3+</div>
-                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+          <div class="barber-card reveal" data-barber="Danilson" tabindex="0" role="button">
+            <div class="barber-card__photo"><img src="img/danilson-barber.jpg" alt="Danilson - Barber"></div>
+            <div class="barber-card__info">
+              <div class="barber-card__name">Danilson</div>
+              <div class="barber-card__title" data-i18n="barber_barber">Barber · Senior Barber</div>
+              <div class="barber-card__stats">
+                <div class="barber-stat">
+                  <div class="barber-stat__value">3+</div>
+                  <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+                </div>
+                <div class="barber-stat">
+                  <div class="barber-stat__value">Barba</div>
+                  <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+                </div>
               </div>
-              <div class="barber-stat">
-                <div class="barber-stat__value">Barba</div>
-                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
-              </div>
+              <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com Danilson →</div>
           </div>
-        </div>
 
-
-      
-
-     
-        <!-- Barber 4  -->
-        <div class="barber-card reveal" data-barber="André Hermenegildo" tabindex="0" role="button">
-          <div class="barber-card__photo">
-            <img src="img/ger.jpeg" alt="Hermenegildo - Barber">
-          </div>
-          <div class="barber-card__info">
-            <div class="barber-card__name">Hermenegildo</div>
-            <div class="barber-card__title" data-i18n="barber_barber">Barber </div>
-            <div class="barber-card__stats">
-              <div class="barber-stat">
-                <div class="barber-stat__value">3+</div>
-                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+          <div class="barber-card reveal" data-barber="André Hermenegildo" tabindex="0" role="button">
+            <div class="barber-card__photo"><img src="img/ger.jpeg" alt="Hermenegildo - Barber"></div>
+            <div class="barber-card__info">
+              <div class="barber-card__name">Hermenegildo</div>
+              <div class="barber-card__title" data-i18n="barber_barber">Barber</div>
+              <div class="barber-card__stats">
+                <div class="barber-stat">
+                  <div class="barber-stat__value">3+</div>
+                  <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+                </div>
+                <div class="barber-stat">
+                  <div class="barber-stat__value">Barba</div>
+                  <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+                </div>
               </div>
-              <div class="barber-stat">
-                <div class="barber-stat__value">Barba</div>
-                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
-              </div>
+              <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com Hermenegildo →</div>
           </div>
-        </div>
 
-        <!-- Barber 5  -->
-        <div class="barber-card reveal" data-barber="João" tabindex="0" role="button">
-          <div class="barber-card__photo">
-            <img src="img/joao-barber.jpeg" alt="João - Barber">
-          </div>
-          <div class="barber-card__info">
-            <div class="barber-card__name">João</div>
-            <div class="barber-card__title" data-i18n="barber_barber">Barber </div>
-            <div class="barber-card__stats">
-              <div class="barber-stat">
-                <div class="barber-stat__value">3+</div>
-                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+          <div class="barber-card reveal" data-barber="João" tabindex="0" role="button">
+            <div class="barber-card__photo"><img src="img/joao-barber.jpeg" alt="João - Barber"></div>
+            <div class="barber-card__info">
+              <div class="barber-card__name">João</div>
+              <div class="barber-card__title" data-i18n="barber_barber">Barber</div>
+              <div class="barber-card__stats">
+                <div class="barber-stat">
+                  <div class="barber-stat__value">3+</div>
+                  <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+                </div>
+                <div class="barber-stat">
+                  <div class="barber-stat__value">Barba</div>
+                  <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+                </div>
               </div>
-              <div class="barber-stat">
-                <div class="barber-stat__value">Barba</div>
-                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
-              </div>
+              <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com João →</div>
           </div>
-        </div>
 
-          <!-- Barber 2 -->
-        <div class="barber-card reveal" data-barber="Estevão" tabindex="0" role="button">
-          <div class="barber-card__photo">
-            <img src="img/estevao-barber.jpg" alt="Estevão - Senior Barber">
-          </div>
-          <div class="barber-card__info">
-            <div class="barber-card__name">Estevão</div>
-            <div class="barber-card__title" data-i18n="barber_senior">Senior Barber</div>
-            <div class="barber-card__stats">
-              <div class="barber-stat">
-                <div class="barber-stat__value">5+</div>
-                <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+          <div class="barber-card reveal" data-barber="Estevão" tabindex="0" role="button">
+            <div class="barber-card__photo"><img src="img/estevao-barber.jpg" alt="Estevão - Senior Barber"></div>
+            <div class="barber-card__info">
+              <div class="barber-card__name">Estevão</div>
+              <div class="barber-card__title" data-i18n="barber_senior">Senior Barber</div>
+              <div class="barber-card__stats">
+                <div class="barber-stat">
+                  <div class="barber-stat__value">5+</div>
+                  <div class="barber-stat__label" data-i18n="stat_years">Anos Exp.</div>
+                </div>
+                <div class="barber-stat">
+                  <div class="barber-stat__value">Design</div>
+                  <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
+                </div>
               </div>
-              <div class="barber-stat">
-                <div class="barber-stat__value">Design</div>
-                <div class="barber-stat__label" data-i18n="stat_specialty">Especialidade</div>
-              </div>
+              <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-            <div class="barber-card__select" data-i18n="barber_book">Agendar com Estevão →</div>
           </div>
-        </div>
 
+        </div>
+      </div>
+
+      <!-- Team slider controls -->
+      <div class="plans__controls" role="group" aria-label="Navegação da equipa">
+        <button type="button" class="plans__arrow" id="teamPrev" aria-label="Barbeiro anterior"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <div class="plans__dots" id="teamDots" role="tablist"></div>
+        <button type="button" class="plans__arrow" id="teamNext" aria-label="Próximo barbeiro"><i
+            class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       GALERIA
-       ============================================================ -->
+  <!-- GALERIA -->
   <section class="section" id="galeria">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="gallery_eyebrow">Match Highlights — O nosso trabalho</span>
         <h2 class="heading-lg" data-i18n="gallery_title">GALERIA</h2>
       </div>
-
       <div class="gallery__grid reveal">
-        <div class="gallery__item">
-          <img src="img/image-10.webp" alt="BallKutz Fade Premium Haircut" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-10.webp" alt="BallKutz Fade Premium" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Fade Premium</span></div>
         </div>
-        <div class="gallery__item">
-          <img src="img/image-2.webp" alt="BallKutz Degradê Haircut" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-2.webp" alt="BallKutz Degradê" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Degradê</span></div>
         </div>
-        <div class="gallery__item">
-          <img src="img/image-3.webp" alt="BallKutz Line Up Haircut" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-3.webp" alt="BallKutz Line Up" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Line Up</span></div>
         </div>
-        <div class="gallery__item">
-          <img src="img/image-15.webp" alt="BallKutz Barber Shop Interior Space" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-15.webp" alt="BallKutz Espaço" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">O Espaço</span></div>
         </div>
-        <div class="gallery__item">
-          <img src="img/image-14.webp" alt="BallKutz Design Haircut" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-14.webp" alt="BallKutz Design" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Design</span></div>
         </div>
-        <div class="gallery__item">
-          <img src="img/image-5.webp" alt="BallKutz Ritual Experience" loading="lazy" />
+        <div class="gallery__item"><img src="img/image-5.webp" alt="BallKutz Ritual" loading="lazy" />
           <div class="gallery__overlay"><span class="gallery__overlay-text">Ritual</span></div>
         </div>
-      </div><!-- /gallery__grid -->
-
-      <!-- ── YouTube Videos Section ── -->
+      </div>
+      <!-- YouTube Videos -->
       <div class="yt-section reveal">
         <div class="yt-section__header">
-          <div>
-            <span class="label">BallKutz TV — Os nossos vídeos</span>
-            <h3 class="heading-md" style="margin-top:0.5rem;">VÍDEOS EM DESTAQUE</h3>
+          <div><span class="label" data-i18n="yt_eyebrow">BallKutz TV — Os nossos vídeos</span>
+            <h3 class="heading-md" style="margin-top:0.5rem;" >VÍDEOS EM DESTAQUE</h3>
           </div>
-          <a href="https://www.youtube.com/@BallKutz" target="_blank" rel="noopener" class="yt-section__channel-link"
-            aria-label="Ver canal BallKutz no YouTube">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-            Ver Canal Completo
-          </a>
+          <a href="https://www.youtube.com/@BallKutz" target="_blank" rel="noopener" class="yt-section__channel-link"><i
+              class="fa-brands fa-youtube"></i> <span data-i18n="yt_channel">Ver Canal Completo</span> </a>
         </div>
-
         <div class="yt-grid">
-
-          <!-- Featured video — Video 1 -->
           <div class="yt-grid__item yt-grid__item--featured">
             <div class="yt-facade" data-video-id="XDFzLd9zLoU" data-title="BallKutz — Highlights" role="button"
-              tabindex="0" aria-label="Assistir ao vídeo BallKutz">
+              tabindex="0">
               <img class="yt-facade__thumb" src="https://img.youtube.com/vi/NW69k28-Ls8/hqdefault.jpg"
-                alt="BallKutz vídeo 1 — Fade premium Luanda" loading="lazy" />
+                alt="BallKutz vídeo 1" loading="lazy" />
               <div class="yt-facade__play" aria-hidden="true">
-                <div class="yt-facade__play-icon">
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-                <span class="yt-facade__label">Assistir</span>
+                <div class="yt-facade__play-icon"><i class="fa-brands fa-youtube"></i></div><span
+                  class="yt-facade__label" data-i18n="yt_watch">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title">BALLKUTZ Grand Opening Day | Dia Da Inauguração 2025 EP.1</div>
-                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+                <div class="yt-facade__meta-title" data-i18n="yt_vid1">BALLKUTZ Grand Opening Day | Dia Da Inauguração 2025 EP.1</div>
+                <div class="yt-facade__meta-duration" data-i18n="yt_watch_yt">🎬 Ver no YouTube</div>
               </div>
             </div>
           </div>
-
-          <!-- Video 2 -->
           <div class="yt-grid__item">
-            <div class="yt-facade" data-video-id="pEA_D2WquPM" data-title="BallKutz Cuts" role="button" tabindex="0"
-              aria-label="Assistir ao vídeo BallKutz">
+            <div class="yt-facade" data-video-id="pEA_D2WquPM" data-title="BallKutz Cuts" role="button" tabindex="0">
               <img class="yt-facade__thumb" src="https://img.youtube.com/vi/XDFzLd9zLoU/hqdefault.jpg"
-                alt="BallKutz vídeo 2 — Cortes em destaque" loading="lazy" />
+                alt="BallKutz vídeo 2" loading="lazy" />
               <div class="yt-facade__play" aria-hidden="true">
-                <div class="yt-facade__play-icon">
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-                <span class="yt-facade__label">Assistir</span>
+                <div class="yt-facade__play-icon"><i class="fa-brands fa-youtube"></i></div><span
+                  class="yt-facade__label" data-i18n="yt_watch">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title">How Everything Started - EP.1/S1 BALLKUTZ Barbershop</div>
-                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+                <div class="yt-facade__meta-title" data-i18n="yt_vid2">How Everything Started - EP.1/S1 BALLKUTZ</div>
+                <div class="yt-facade__meta-duration" data-i18n="yt_watch">🎬 Ver no YouTube</div>
               </div>
             </div>
           </div>
-
-          <!-- Video 3 -->
           <div class="yt-grid__item">
             <div class="yt-facade" data-video-id="4LA-pAhzYq0" data-title="BallKutz Experience" role="button"
-              tabindex="0" aria-label="Assistir ao vídeo BallKutz">
+              tabindex="0">
               <img class="yt-facade__thumb" src="https://img.youtube.com/vi/r6zZHl0JBrA/maxresdefault.jpg"
-                alt="BallKutz vídeo 3 — A experiência" loading="lazy" />
+                alt="BallKutz vídeo 3" loading="lazy" />
               <div class="yt-facade__play" aria-hidden="true">
-                <div class="yt-facade__play-icon">
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-                <span class="yt-facade__label">Assistir</span>
+                <div class="yt-facade__play-icon"><i class="fa-brands fa-youtube"></i></div><span
+                  class="yt-facade__label" data-i18n="yt_watch">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title">A Experiência BallKutz</div>
-                <div class="yt-facade__meta-duration">🎬 Ver no YouTube</div>
+                <div class="yt-facade__meta-title" data-i18n="yt_vid3">A Experiência BallKutz</div>
+                <div class="yt-facade__meta-duration" data-i18n="yt_watch_yt">🎬 Ver no YouTube</div>
               </div>
             </div>
           </div>
-
-        </div><!-- /yt-grid -->
-      </div><!-- /yt-section -->
-
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       RESERVAR / CONTACTO (BOOKING)
-       ============================================================ -->
+  <!-- RESERVAR -->
   <section class="section booking" id="reservar">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="booking_eyebrow">Final Whistle — Marca o teu lugar</span>
         <h2 class="heading-lg" data-i18n="booking_title">RESERVAR</h2>
       </div>
-
       <div class="booking__layout">
-
-        <!-- ── Left: contact info ── -->
         <div class="booking__info reveal">
-          <p class="hero__sub" style="margin-bottom:0" data-i18n="booking_desc">
-            Preenche o formulário e recebes confirmação no teu WhatsApp em breve.
-          </p>
-
+          <p class="hero__sub" style="margin-bottom:0" data-i18n="booking_desc">Preenche o formulário e recebes
+            confirmação no teu WhatsApp em breve.</p>
           <div class="booking__contact-items">
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div>
                 <div class="booking__contact-label" data-i18n="contact_address_label">Morada</div>
                 <div class="booking__contact-value">Rua 2, Cassenda, Nº 15, Luanda | Angola</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
               <div>
                 <div class="booking__contact-label">WhatsApp</div>
                 <div class="booking__contact-value">+244 975 099 348</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-solid fa-clock"></i></div>
               <div>
                 <div class="booking__contact-label" data-i18n="contact_hours_label">Horário</div>
                 <div class="booking__contact-value" data-i18n="contact_hours">Ter–Sáb: 10h–20h · Dom: 10h–18h</div>
               </div>
             </div>
             <div class="booking__contact-item">
-              <div class="booking__contact-icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div>
+              <div class="booking__contact-icon"><i class="fa-brands fa-instagram"></i></div>
               <div>
                 <div class="booking__contact-label">Instagram</div>
                 <div class="booking__contact-value">@ball_kutz</div>
@@ -1106,79 +921,49 @@
             </div>
           </div>
         </div>
-
-        <!-- ── Right: booking form area ── -->
         <div class="booking-form reveal" id="bookingFormWrap">
-
-          <!-- Quick-contact bar: Call + WhatsApp without form -->
           <div class="booking-quick-actions">
-            <a href="tel:+244975099348" class="btn btn--call">
-              <i class="fa-solid fa-phone" aria-hidden="true"></i>
-              <span data-i18n="quick_call">Ligar Agora</span>
-            </a>
+            <a href="tel:+244975099348" class="btn btn--call"><i class="fa-solid fa-phone"></i><span
+                data-i18n="quick_call">Ligar Agora</span></a>
             <a href="https://wa.me/244975099348" target="_blank" rel="noopener" class="btn btn--wa-quick"
-              id="waQuickBtn">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="quick_wa">WhatsApp Rápido</span>
-            </a>
+              id="waQuickBtn"><i class="fa-brands fa-whatsapp"></i><span data-i18n="quick_wa">WhatsApp Rápido</span></a>
           </div>
-
-          <div class="or-divider" data-i18n="or_form">ou preenche o formulário</div>
-
-          <!-- ── Step 1: Choose mode ── -->
+          <div class="or-divider" data-i18n="or_form">ou preenches o formulário</div>
           <div class="booking-mode-chooser">
             <span class="booking-mode-label" id="modeChoiceLabel" data-i18n="mode_label">Como preferes o teu
               corte?</span>
             <div class="booking-mode-btns" role="group" aria-labelledby="modeChoiceLabel">
-
-              <button type="button" class="booking-mode-card active" id="modeBarbershop" data-mode="barbershop"
-                aria-pressed="true">
-                <span class="booking-mode-card__icon" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
+              <button type="button" class="booking-mode-card active" id="modeBarbershop" aria-pressed="true"><span
+                  class="booking-mode-card__icon"><i class="fa-solid fa-store"></i></span>
                 <div class="booking-mode-card__title" data-i18n="mode_shop_title">Na Barbearia</div>
-                <div class="booking-mode-card__sub" data-i18n="mode_shop_sub">Vens até nós. Experiência completa de
-                  clube.</div>
+                <div class="booking-mode-card__sub" data-i18n="mode_shop_sub">Vens até nós.</div>
               </button>
-
-              <button type="button" class="booking-mode-card" id="modeHome" data-mode="home" aria-pressed="false">
-                <span class="booking-mode-card__icon" aria-hidden="true"><i class="fa-solid fa-house"></i></span>
+              <button type="button" class="booking-mode-card" id="modeHome" aria-pressed="false"><span
+                  class="booking-mode-card__icon"><i class="fa-solid fa-house"></i></span>
                 <div class="booking-mode-card__title" data-i18n="mode_home_title">Ao Domicílio</div>
-                <div class="booking-mode-card__sub" data-i18n="mode_home_sub">Vamos até ti. Corte no conforto da tua
-                  casa.</div>
+                <div class="booking-mode-card__sub" data-i18n="mode_home_sub">Vamos até ti.</div>
               </button>
-
             </div>
           </div>
-
-          <!-- Honeypot (shared) -->
           <input class="form-honeypot" type="text" name="_honeypot" id="honeypot" tabindex="-1" autocomplete="off"
             aria-hidden="true" />
-
-          <!-- ══════════════════════════════════
-               PANEL A: Barbershop Form
-               ══════════════════════════════════ -->
+          <!-- Panel Barbershop -->
           <div class="booking-panel panel-visible" id="panelBarbershop" aria-live="polite">
-
             <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="clientName" data-i18n="form_name">Nome</label>
-                <input class="form-input" type="text" id="clientName" placeholder="O teu nome" autocomplete="name" />
+              <div class="form-group"><label class="form-label" for="clientName"
+                  data-i18n="form_name">Nome</label><input class="form-input" type="text" id="clientName"
+                  placeholder="O teu nome" autocomplete="name" />
                 <div class="form-error" id="nameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="clientPhone" data-i18n="form_phone">WhatsApp</label>
-                <input class="form-input" type="tel" id="clientPhone" placeholder="+244 9XX XXX XXX"
-                  autocomplete="tel" />
-                <div class="form-error" id="phoneError" data-i18n="form_phone_error">Número de WhatsApp inválido.</div>
+              <div class="form-group"><label class="form-label" for="clientPhone"
+                  data-i18n="form_phone">WhatsApp</label><input class="form-input" type="tel" id="clientPhone"
+                  placeholder="+244 9XX XXX XXX" autocomplete="tel" />
+                <div class="form-error" id="phoneError" data-i18n="form_phone_error">Número inválido.</div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="clientEmail" data-i18n="form_email">E-mail <span
-                  style="color:var(--grey)">(opcional)</span></label>
-              <input class="form-input" type="email" id="clientEmail" placeholder="email@exemplo.com"
-                autocomplete="email" />
-            </div>
-
+            <div class="form-group"><label class="form-label" for="clientEmail" data-i18n="form_email">E-mail
+                (opcional)</label><input class="form-input" type="email" id="clientEmail"
+                placeholder="email@exemplo.com" autocomplete="email" /></div>
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="bookingService" data-i18n="form_service">Serviço</label>
@@ -1186,13 +971,12 @@
                   <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
                   <optgroup label="Cortes" data-i18n="opt_cortes">
                     <option value="Line Up" data-i18n="f_srv_lineup">Line Up — 1.500 KZ</option>
-                    <option value="Kutz Criança (Sub 15)" data-i18n="f_srv_kutz_crianca">Kutz Criança (Sub 15) — 3.000
-                      KZ</option>
-                    <option value="Kutz de Cabelo" data-i18n="f_srv_kutz_cabelo">Kutz de Cabelo — 4.000 KZ</option>
-                    <option value="Kutz Seniores (+65)" data-i18n="f_srv_kutz_senior">Kutz Seniores (+65) — 4.000 KZ
+                    <option value="Kutz Criança (Sub 15)" data-i18n="f_srv_kutz_crianca">Kutz Criança — 3.000 KZ
                     </option>
-                    <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual
-                      (Barboterapia) — 6.000 KZ</option>
+                    <option value="Kutz de Cabelo" data-i18n="f_srv_kutz_cabelo">Kutz de Cabelo — 4.000 KZ</option>
+                    <option value="Kutz Seniores (+65)" data-i18n="f_srv_kutz_senior">Kutz Seniores — 4.000 KZ</option>
+                    <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual —
+                      6.000 KZ</option>
                   </optgroup>
                   <optgroup label="Barba" data-i18n="opt_barba">
                     <option value="Kutz de Barba" data-i18n="f_srv_kutz_barba">Kutz de Barba — 3.000 KZ</option>
@@ -1202,12 +986,11 @@
                   <optgroup label="Serviços Extras" data-i18n="opt_extras">
                     <option value="Sobrancelhas" data-i18n="f_srv_sobrancelhas">Sobrancelhas — 2.000 KZ</option>
                     <option value="Massagem" data-i18n="f_srv_massagem">Massagem — 2.000 KZ</option>
-                    <option value="Hidratação de Cabelo ou Barba" data-i18n="f_srv_hidratacao">Hidratação de Cabelo ou
-                      Barba — 2.500 KZ</option>
-                    <option value="Depilação Nariz ou Orelha" data-i18n="f_srv_depilacao">Depilação Nariz ou Orelha —
-                      3.000 KZ</option>
-                    <option value="Camuflagem Cabelo ou Barba" data-i18n="f_srv_camuflagem">Camuflagem Cabelo ou Barba —
-                      3.500 KZ</option>
+                    <option value="Hidratação de Cabelo ou Barba" data-i18n="f_srv_hidratacao">Hidratação — 2.500 KZ
+                    </option>
+                    <option value="Depilação Nariz ou Orelha" data-i18n="f_srv_depilacao">Depilação — 3.000 KZ</option>
+                    <option value="Camuflagem Cabelo ou Barba" data-i18n="f_srv_camuflagem">Camuflagem — 3.500 KZ
+                    </option>
                     <option value="Pintura Preta" data-i18n="f_srv_pintura">Pintura Preta — 4.000 KZ</option>
                     <option value="Combo Hidratação" data-i18n="f_srv_combo_hidratacao">Combo Hidratação — 4.000 KZ
                     </option>
@@ -1216,18 +999,15 @@
                     <option value="Limpeza de Pele" data-i18n="f_srv_limpeza">Limpeza de Pele — 5.000 KZ</option>
                     <option value="Combo Camuflagem" data-i18n="f_srv_combo_camuflagem">Combo Camuflagem — 6.000 KZ
                     </option>
-                    <option value="Velas Hopi (Terapia Termo-Auricular)" data-i18n="f_srv_velas_hopi">Velas Hopi
-                      (Terapia Termo-Auricular) — 7.000 KZ</option>
-                    <option value="Descoloração" data-i18n="f_srv_descoloracao">Descoloração — 7.000 / 12.000 KZ
-                    </option>
-                    <option value="24K Gold Limpeza de Pele" data-i18n="f_srv_24k_limpeza">24K Gold Limpeza de Pele —
-                      10.000 KZ</option>
+                    <option value="Velas Hopi (Terapia Termo-Auricular)" data-i18n="f_srv_velas_hopi">Velas Hopi — 7.000
+                      KZ</option>
+                    <option value="Descoloração" data-i18n="f_srv_descoloracao">Descoloração — 7.000/12.000 KZ</option>
+                    <option value="24K Gold Limpeza de Pele" data-i18n="f_srv_24k_limpeza">24K Gold — 10.000 KZ</option>
                   </optgroup>
                   <optgroup label="VIP / Combo" data-i18n="opt_vip">
-                    <option value="VIP Kutz" data-i18n="f_srv_vip_kutz">VIP Kutz (Cabelo, Barba, Depilação, Massagem) —
-                      10.000 KZ</option>
-                    <option value="Presidential Kutz" data-i18n="f_srv_presidential">Presidential Kutz (Completo) —
-                      15.000 KZ</option>
+                    <option value="VIP Kutz" data-i18n="f_srv_vip_kutz">VIP Kutz — 10.000 KZ</option>
+                    <option value="Presidential Kutz" data-i18n="f_srv_presidential">Presidential Kutz — 15.000 KZ
+                    </option>
                   </optgroup>
                 </select>
                 <div class="form-error" id="serviceError" data-i18n="form_service_error">Seleciona um serviço.</div>
@@ -1236,115 +1016,73 @@
                 <label class="form-label" for="bookingBarber" data-i18n="form_barber">Barbeiro</label>
                 <select class="form-select" id="bookingBarber">
                   <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
-                  <option value="Mário Santos">Cleusio</option>
-                  <option value="Carlos Lopes">Danilson</option>
-                  <option value="André Mendes">Hermenegildo</option>
-                  <option value="André Mendes">João</option>
-                  <option value="André Mendes">Estevão</option>
+                  <option value="Cleusio">Cleusio</option>
+                  <option value="Danilson">Danilson</option>
+                  <option value="Hermenegildo">Hermenegildo</option>
+                  <option value="João">João</option>
+                  <option value="Estevão">Estevão</option>
                 </select>
               </div>
             </div>
-
             <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="bookingDate" data-i18n="form_date">Data</label>
-                <input class="form-input" type="date" id="bookingDate" />
+              <div class="form-group"><label class="form-label" for="bookingDate"
+                  data-i18n="form_date">Data</label><input class="form-input" type="date" id="bookingDate" />
                 <div class="form-error" id="dateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
               </div>
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_time">Hora</label>
-                <div class="time-slots-grid" id="timeSlotsGrid" role="group" aria-label="Escolha o horário">
-                  <!-- Generated by JS -->
-                </div>
+              <div class="form-group"><label class="form-label" data-i18n="form_time">Hora</label>
+                <div class="time-slots-grid" id="timeSlotsGrid" role="group" aria-label="Escolha o horário"></div>
                 <div class="form-error" id="timeError" data-i18n="form_time_error">Seleciona um horário.</div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="consent-label">
-                <input type="checkbox" id="consentCheck" />
-                <span data-i18n="form_consent">Concordo com o tratamento dos meus dados para fins de marcação e
-                  comunicação de promoções da BallKutz.</span>
-              </label>
+            <div class="form-group"><label class="consent-label"><input type="checkbox" id="consentCheck" /><span
+                  data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span></label>
               <div class="form-error" id="consentError" data-i18n="form_consent_error">Precisas de aceitar para
                 continuar.</div>
             </div>
-
-            <button type="button" class="btn btn--primary form-submit-btn" id="submitBooking">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="form_submit">Confirmar Marcação</span>
-            </button>
-
-          </div><!-- /panelBarbershop -->
-
-          <!-- ══════════════════════════════════
-               PANEL B: At-Home Form
-               ══════════════════════════════════ -->
+            <button type="button" class="btn btn--primary form-submit-btn" id="submitBooking"><i
+                class="fa-brands fa-whatsapp"></i><span data-i18n="form_submit">Confirmar Marcação</span></button>
+          </div>
+          <!-- Panel Home -->
           <div class="booking-panel" id="panelHome" aria-live="polite">
-
             <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="homeClientName" data-i18n="form_name">Nome</label>
-                <input class="form-input" type="text" id="homeClientName" placeholder="O teu nome"
-                  autocomplete="name" />
+              <div class="form-group"><label class="form-label" for="homeClientName"
+                  data-i18n="form_name">Nome</label><input class="form-input" type="text" id="homeClientName"
+                  placeholder="O teu nome" autocomplete="name" />
                 <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="homeClientPhone" data-i18n="form_phone">WhatsApp / Telemóvel</label>
-                <input class="form-input" type="tel" id="homeClientPhone" placeholder="+244 9XX XXX XXX"
-                  autocomplete="tel" />
-                <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número de WhatsApp inválido.
-                </div>
+              <div class="form-group"><label class="form-label" for="homeClientPhone"
+                  data-i18n="form_phone">WhatsApp</label><input class="form-input" type="tel" id="homeClientPhone"
+                  placeholder="+244 9XX XXX XXX" autocomplete="tel" />
+                <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número inválido.</div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada / Localização</label>
-              <textarea class="form-input" id="homeLocation"
-                placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda. Ou partilha o link da tua localização Google Maps."
-                rows="3"></textarea>
+            <div class="form-group"><label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada
+                / Localização</label><textarea class="form-input" id="homeLocation"
+                placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda." rows="3"></textarea>
               <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua
                 morada.</div>
             </div>
-
             <div class="form-group">
               <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
               <select class="form-select" id="homeService">
                 <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
                 <optgroup label="Cortes">
-                  <option value="Line Up (Domicílio)">Line Up — 1.500 KZ</option>
-                  <option value="Kutz Criança Sub 15 (Domicílio)">Kutz Criança (Sub 15) — 3.000 KZ</option>
-                  <option value="Kutz de Cabelo (Domicílio)">Kutz de Cabelo — 4.000 KZ</option>
-                  <option value="Kutz Seniores +65 (Domicílio)">Kutz Seniores (+65) — 4.000 KZ</option>
-                  <option value="Ballkutz Ritual Barboterapia (Domicílio)">Ballkutz Ritual (Barboterapia) — 6.000 KZ
-                  </option>
+                  <option value="Kutz de Cabelo (Domicílio)">Kutz de Cabelo — 7.000 KZ</option>
+                  <option value="Kutz Criança Sub 15 (Domicílio)">Kutz Criança — 6.000 KZ</option>
+                  <option value="Kutz de Barba (Domicílio)">Kutz de Barba — 6.000 KZ</option>
+                  <option value="Kutz de Cabelo + Barba (Domicílio)">Kutz Cabelo + Barba — 9.000 KZ</option>
                 </optgroup>
-                <optgroup label="Barba">
-                  <option value="Kutz de Barba (Domicílio)">Kutz de Barba — 3.000 KZ</option>
-                  <option value="Kutz de Cabelo + Barba (Domicílio)">Kutz de Cabelo + Barba — 6.000 KZ</option>
-                </optgroup>
-                <optgroup label="Estética">
-                  <option value="Sobrancelhas (Domicílio)">Sobrancelhas — 2.000 KZ</option>
-                  <option value="Massagem (Domicílio)">Massagem — 2.000 KZ</option>
-                  <option value="Hidratação de Cabelo ou Barba (Domicílio)">Hidratação de Cabelo ou Barba — 2.500 KZ
-                  </option>
-                  <option value="Depilação Nariz ou Orelha (Domicílio)">Depilação Nariz ou Orelha — 3.000 KZ</option>
-                  <option value="Camuflagem Cabelo ou Barba (Domicílio)">Camuflagem Cabelo ou Barba — 3.500 KZ</option>
-                  <option value="Limpeza de Pele (Domicílio)">Limpeza de Pele — 5.000 KZ</option>
-                </optgroup>
-                <optgroup label="VIP / Combo">
-                  <option value="VIP Kutz (Domicílio)">VIP Kutz — 10.000 KZ</option>
-                  <option value="Presidential Kutz (Domicílio)">Presidential Kutz — 15.000 KZ</option>
+                <optgroup label="VIP">
+                  <option value="VIP Kutz (Domicílio)">VIP Kutz — 13.000 KZ</option>
+                  <option value="Presidential Kutz (Domicílio)">Presidential Kutz — 18.000 KZ</option>
                 </optgroup>
               </select>
               <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
             </div>
-
             <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="homeDate" data-i18n="form_date">Data Preferida</label>
-                <input class="form-input" type="date" id="homeDate" />
+              <div class="form-group"><label class="form-label" for="homeDate" data-i18n="form_date">Data
+                  Preferida</label><input class="form-input" type="date" id="homeDate" />
                 <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
               </div>
               <div class="form-group">
@@ -1373,98 +1111,68 @@
                 <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes Adicionais <span
-                  style="color:var(--grey)">(opcional)</span></label>
-              <textarea class="form-input" id="homeNotes"
-                placeholder="Ex: portão azul, tocar campainha, preciso de estacionamento, etc." rows="2"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label class="consent-label">
-                <input type="checkbox" id="homeConsentCheck" />
-                <span data-i18n="form_consent">Concordo com o tratamento dos meus dados para fins de marcação e
-                  comunicação de promoções da BallKutz.</span>
-              </label>
+            <div class="form-group"><label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes
+                Adicionais (opcional)</label><textarea class="form-input" id="homeNotes"
+                placeholder="Ex: portão azul, tocar campainha..." rows="2"></textarea></div>
+            <div class="form-group"><label class="consent-label"><input type="checkbox" id="homeConsentCheck" /><span
+                  data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span></label>
               <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para
                 continuar.</div>
             </div>
-
-            <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="home_submit">Solicitar Corte ao Domicílio</span>
-            </button>
-
-          </div><!-- /panelHome -->
-
-        </div><!-- /booking-form -->
-      </div><!-- /booking__layout -->
+            <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking"><i
+                class="fa-brands fa-whatsapp"></i><span data-i18n="home_submit">Solicitar Corte ao
+                Domicílio</span></button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       AVALIAÇÕES (REVIEWS)
-       ============================================================ -->
+  <!-- ★ AVALIAÇÕES — now a slider -->
   <section class="section reviews" id="avaliacoes">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="reviews_eyebrow">Fans' Voice — O que dizem</span>
         <h2 class="heading-lg" data-i18n="reviews_title">AVALIAÇÕES</h2>
       </div>
 
-      <div class="reviews__track-wrap reveal">
+      <div class="reviews__slider-wrap reveal" id="reviewsSliderWrap">
         <div class="reviews__track" id="reviewsTrack">
 
           <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <p class="review-text" data-i18n="review1_text">"REALMENTE E UM SALÃO MUITO BONITO E CONFORTÁVEL, ALÉM DE
               BONITO OS FUNCIONÁRIOS AO EXCELENTES RECOMENDO PARA QUEM AINDA NÃO TEVE A OPORTUNIDADE DE AQUI ESTAR
-              APROVEITA CINCO-ESTRELAS
-              "</p>
+              APROVEITA CINCO-ESTRELAS"</p>
             <div class="review-author">
               <div class="review-avatar">NP</div>
               <div>
-                <div class="review-name">
-                  NORA PEDRO</div>
-                <div class="review-meta">Google </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text" data-i18n="review2_text">"BALLKUTZ 5 ESTRELAS, UM SÍTIO ACOLHEDOR, PORREIRO E TE
-              SENTES REALMENTE COOL. GOSTEI DO TRABALHO FEITO E CLARO, VOU REGRESSAR SEMPRE. FORÇA BALLKUTZ"</p>
-            <div class="review-author">
-              <div class="review-avatar">CB</div>
-              <div>
-                <div class="review-name">
-                  EMANUEL EDUARDO</div>
+                <div class="review-name">NORA PEDRO</div>
                 <div class="review-meta">Google</div>
               </div>
             </div>
           </div>
 
           <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review2_text">"BALLKUTZ 5 ESTRELAS, UM SÍTIO ACOLHEDOR, PORREIRO E TE
+              SENTES REALMENTE COOL. GOSTEI DO TRABALHO FEITO E CLARO, VOU REGRESSAR SEMPRE. FORÇA BALLKUTZ"</p>
+            <div class="review-author">
+              <div class="review-avatar">EE</div>
+              <div>
+                <div class="review-name">EMANUEL EDUARDO</div>
+                <div class="review-meta">Google</div>
+              </div>
             </div>
-            <p class="review-text" data-i18n="review3_text">"UMA EXPERIÊNCIA TOTALMENTE
-              DIFERENTE
-              É COMO SE ESTIVESSENOPASSADD,,
-              PRESENTEEFUTUROAO MESMOTEMPO"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review3_text">"UMA EXPERIÊNCIA TOTALMENTE DIFERENTE É COMO SE ESTIVESSE NO
+              PASSADO, PRESENTE E FUTURO AO MESMO TEMPO"</p>
             <div class="review-author">
               <div class="review-avatar">VD</div>
               <div>
@@ -1475,24 +1183,82 @@
           </div>
 
           <div class="review-card">
-            <div class="review-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p class="review-text" data-i18n="review4_text">"EU ACONSELHO A VIREM NESSA
-              BARBEARIA, ELES RECEBEM MUITO BEM OS
-              CLIENTES E SÃO MUITO GENTES BOA, VIVI
-              UMA BOA EXPERIÊNCIA NESSA BARBEARIA,
-              ATÉ O MEU IRMÃO DE 5 ANOS GOSTOU
-              MUITO. GRAÇAS A ESSA BARBEARIA MEU
-              IRMÃO PEQUENO JOGOU PELA PRIMEIRA
-              VEZ NUMA PLAYSTATION 5"</p>
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review4_text">"EU ACONSELHO A VIREM NESSA BARBEARIA, ELES RECEBEM MUITO
+              BEM OS CLIENTES E SÃO MUITO GENTES BOA, ATÉ O MEU IRMÃO DE 5 ANOS GOSTOU MUITO."</p>
             <div class="review-author">
-              <div class="review-avatar">AC</div>
+              <div class="review-avatar">HC</div>
               <div>
                 <div class="review-name">HAMILTON CHUGO</div>
-                <div class="review-meta">Instagram</div>
+                <div class="review-meta">GOOGLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review5_text">"EU ACONSELHO A VIREM NESSA BARBEARIA, ELES RECEBEM MUITO
+              BEM OS CLIENTES E SÃO MUITO GENTES BOA, ATÉ O MEU IRMÃO DE 5 ANOS GOSTOU MUITO."</p>
+            <div class="review-author">
+              <div class="review-avatar">JA</div>
+              <div>
+                <div class="review-name">JORGE ALBERTO</div>
+                <div class="review-meta">GOOGLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review6_text"></p>
+            <div class="review-author">
+              <div class="review-avatar">AD</div>
+              <div>
+                <div class="review-name">ALFISSENE D</div>
+                <div class="review-meta">GOOGLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review7_text">"FUI MUITO BEM RECEBIDO, EXCELENTE SERVIÇO AMBIENTE MUITO CONFORTAVEL, SIMPLISMENTE EXTRAORDINÁRIO"</p>
+            <div class="review-author">
+              <div class="review-avatar">KM</div>
+              <div>
+                <div class="review-name">KIAMI MIRANDA</div>
+                <div class="review-meta">GOOGLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review8_text">GOSTEI BASTANTE DE ESTAR NA BALLBUTZ BARBERSHOP, FOI UMA EXPERIÊNCIA NOVA E ME SENTI MUITO BEM COM O ATENDIMENTO, ME IDENTIFIQUEI COM A TEMÁTICA DESPORTIVA. <br>RECOMENDO BÃO IRÁS TE ARREPENDER </p>
+            <div class="review-author">
+              <div class="review-avatar">AF</div>
+              <div>
+                <div class="review-name">ADALBERTO FRANCISCO</div>
+                <div class="review-meta">GOOGLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text" data-i18n="review9_text">ESPAÇO ORGANIZADO E ATENDIMENTO EXCELENTE, BOM PARA OS
+              PEQUENINOS E ADULTOS TAMBÉM.</p>
+            <div class="review-author">
+              <div class="review-avatar">TC</div>
+              <div>
+                <div class="review-name">TUCAYANA CONCEIÇÃO</div>
+                <div class="review-meta">GOOGLE</div>
               </div>
             </div>
           </div>
@@ -1500,141 +1266,96 @@
         </div>
       </div>
 
-      <div class="reviews__controls" id="reviewsControls">
-        <button class="reviews__dot active" data-idx="0" aria-label="Review 1"></button>
-        <button class="reviews__dot" data-idx="1" aria-label="Review 2"></button>
-        <button class="reviews__dot" data-idx="2" aria-label="Review 3"></button>
+      <!-- Reviews slider controls -->
+      <div class="plans__controls" role="group" aria-label="Navegação das avaliações">
+        <button type="button" class="plans__arrow" id="reviewsPrev" aria-label="Avaliação anterior"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <div class="plans__dots" id="reviewsDots" role="tablist"></div>
+        <button type="button" class="plans__arrow" id="reviewsNext" aria-label="Próxima avaliação"><i
+            class="fa-solid fa-chevron-right"></i></button>
       </div>
-
     </div>
   </section>
 
-  <!-- ============================================================
-       LOCALIZAÇÃO (LOCATION)
-       ============================================================ -->
+  <!-- LOCALIZAÇÃO -->
   <section class="location" id="localizacao" aria-label="Como nos encontrar">
     <div class="container">
-
       <div class="section-header reveal">
         <span class="label" data-i18n="loc_eyebrow">Como nos encontrar</span>
         <h2 class="heading-lg" data-i18n="loc_title">LOCALIZAÇÃO</h2>
       </div>
-
       <div class="location__layout">
-
-        <!-- Info column -->
         <div class="location__info reveal">
-
           <div class="location__detail">
-            <div class="location__detail-icon" aria-hidden="true">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
+            <div class="location__detail-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
               <div class="location__detail-label" data-i18n="loc_address">Morada</div>
-              <div class="location__detail-value">
-                Rua 2, Cassenda, Nº 15, Luanda | Angola<br>
-                <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener"
-                  data-i18n="loc_view_map">
-                  Ver no Google Maps →
-                </a>
-              </div>
+              <div class="location__detail-value">Rua 2, Cassenda, Nº 15, Luanda | Angola<br><a
+                  href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener"
+                  data-i18n="loc_view_map">Ver no Google Maps →</a></div>
             </div>
           </div>
-
           <div class="location__detail">
-            <div class="location__detail-icon" aria-hidden="true">
-              <i class="fa-solid fa-clock"></i>
-            </div>
+            <div class="location__detail-icon"><i class="fa-solid fa-clock"></i></div>
             <div>
               <div class="location__detail-label" data-i18n="loc_hours_label">Horário de Funcionamento</div>
-              <div class="location__detail-value" data-i18n="loc_hours_val">
-                Terça – Sábado: 10h00 – 20h00<br>
-                Domingo: 10h00 – 18h00
-              </div>
+              <div class="location__detail-value" data-i18n="loc_hours_val">Terça – Sábado: 10h00 – 20h00<br>Domingo:
+                10h00 – 18h00</div>
             </div>
           </div>
-
           <div class="location__detail">
-            <div class="location__detail-icon" aria-hidden="true">
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
+            <div class="location__detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div>
               <div class="location__detail-label" data-i18n="loc_call">WhatsApp / Chamada</div>
-              <div class="location__detail-value">
-                <a href="tel:+244975099348">+244 975 099 348</a>
-              </div>
+              <div class="location__detail-value"><a href="tel:+244975099348">+244 975 099 348</a></div>
             </div>
           </div>
-
           <div class="location__detail">
-            <div class="location__detail-icon" aria-hidden="true">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
+            <div class="location__detail-icon"><i class="fa-brands fa-instagram"></i></div>
             <div>
               <div class="location__detail-label">Instagram</div>
-              <div class="location__detail-value">
-                <a href="https://www.instagram.com/ball_kutz?igsh=bzFqdW82dGlsajA%3D&utm_source=qr" target="_blank"
-                  rel="noopener">
-                  @ball_kutz
-                </a>
-              </div>
+              <div class="location__detail-value"><a href="https://www.instagram.com/ball_kutz" target="_blank"
+                  rel="noopener">@ball_kutz</a></div>
             </div>
           </div>
-
           <div class="location__actions">
-            <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener" class="btn btn--primary">
-              <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> <span
-                data-i18n="loc_btn_directions">Como Chegar</span>
-            </a>
-            <a href="#reservar" class="btn btn--ghost">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-              <span data-i18n="nav_cta">Reservar</span>
-            </a>
+            <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener"
+              class="btn btn--primary"><i class="fa-solid fa-diamond-turn-right"></i> <span
+                data-i18n="loc_btn_directions">Como Chegar</span></a>
+            <a href="#reservar" class="btn btn--ghost"><i class="fa-brands fa-whatsapp"></i> <span
+                data-i18n="nav_cta">Reservar</span></a>
           </div>
-
-        </div><!-- /location__info -->
-
-        <!-- Map column -->
-        <div class="location__map-wrap reveal" aria-label="Mapa BallKutz Luanda">
-          <iframe title="BallKutz Barbershop — Localização em Luanda"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.3810421243293!2d13.2326551!3d-8.8440704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3a4fb350d91%3A0x6d704a574b4f8088!2sBallKutz%20Barbearia%20%E2%80%9CBarbershop%E2%80%9D%20%7C%20Luanda!5e0!3m2!1spt-PT!2sna!4v1775416929139!5m2!1spt-PT!2sna"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="true"></iframe>
         </div>
-
+        <div class="location__map-wrap reveal">
+          <iframe title="BallKutz — Localização em Luanda"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.3810421243293!2d13.2326551!3d-8.8440704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3a4fb350d91%3A0x6d704a574b4f8088!2sBallKutz%20Barbearia%20%E2%80%9CBarbershop%E2%80%9D%20%7C%20Luanda!5e0!3m2!1spt-PT!2sna!4v1775416929139!5m2!1spt-PT!2sna"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-
         <div>
-          <div class="footer__logo">
-            <img height="80px" src="img/fff.png" alt="BallKutz Logo">
-          </div>
+          <div class="footer__logo"><img height="80px" src="img/fff.png" alt="BallKutz Logo"></div>
           <p class="footer__tagline" data-i18n="footer_tagline">A barbearia dos campeões em Luanda. Luxo, desporto e
             excelência num só espaço.</p>
           <div class="footer__social">
-            <a href="https://www.instagram.com/ball_kutz?igsh=bzFqdW82dGlsajA%3D&utm_source=qr"
-              class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ball_kutz" class="footer__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://youtube.com/@BallKutz" class="footer__social-link" target="_blank"
               rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://wa.me/244975099348" class="footer__social-link" target="_blank" rel="noopener noreferrer"
               aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <!-- NEW LINKS -->
-            <a href="https://www.facebook.com/profile.php?id=61577981366851&mibextid=ZbWKwL" class="footer__social-link"
-              target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
-                class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.tiktok.com/@ballkutz?_r=1&_t=ZS-95On8VcclUt" class="footer__social-link"
-              target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61577981366851" class="footer__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@ballkutz" class="footer__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
-
         <div>
           <div class="footer__col-title" data-i18n="footer_nav">Navegação</div>
           <ul class="footer__links">
@@ -1646,18 +1367,16 @@
             <li><a href="#reservar" data-i18n="nav_cta">Reservar</a></li>
           </ul>
         </div>
-
         <div>
           <div class="footer__col-title" data-i18n="footer_services">Serviços</div>
           <ul class="footer__links">
             <li><a href="#servicos" data-i18n="ft_srv_hair">Cortes de Cabelo</a></li>
             <li><a href="#servicos" data-i18n="ft_srv_beard">Barba</a></li>
-            <li><a href="#servicos" data-i18n="ft_srv_esthetics">Estética</a></li>
+            <li><a href="#servicos" data-i18n="ft_srv_esthetics">Serviços Extras</a></li>
             <li><a href="#planos" data-i18n="ft_plan_pro">Plano PRO</a></li>
             <li><a href="#planos" data-i18n="ft_plan_promax">Plano PRO MAX</a></li>
           </ul>
         </div>
-
         <div>
           <div class="footer__col-title" data-i18n="footer_contact">Contacto</div>
           <ul class="footer__links">
@@ -1668,59 +1387,40 @@
             <li><a href="#" data-i18n="ft_hours_we">Dom: 10h–18h</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer__bottom">
         <span class="footer__copy">© 2025 BallKutz Barbershop · Rua 2, Cassenda, Nº 15, Luanda | Angola · <span
-            data-i18n="footer_rights">Todos
-            os direitos reservados.</span></span>
+            data-i18n="footer_rights">Todos os direitos reservados.</span></span>
         <span class="footer__copy" data-i18n="footer_made">Feito com ✂️ para os campeões</span>
       </div>
     </div>
   </footer>
 
-  <!-- ============================================================
-       JAVASCRIPT / FLOATS
-       ============================================================ -->
-
-  <!-- WhatsApp Float Button -->
+  <!-- FLOATS -->
   <a href="https://wa.me/244975099348" class="whatsapp-float" target="_blank" rel="noopener"
     aria-label="WhatsApp BallKutz">
-    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
-
-  <!-- Scroll-to-top -->
   <button type="button" class="scroll-top" id="scrollTopBtn" aria-label="Voltar ao topo">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    <i class="fa-solid fa-arrow-up"></i>
   </button>
-
-  <!-- Mobile Sticky CTA Bar -->
-  <div class="mobile-cta-bar" role="complementary" aria-label="Acções rápidas">
-    <a href="tel:+244975099348" class="mcta-call">
-      <i class="fa-solid fa-phone" aria-hidden="true"></i>
-      <span data-i18n="quick_call">Ligar</span>
-    </a>
-    <a href="#reservar" class="mcta-book">
-      <i class="fa-solid fa-scissors" aria-hidden="true"></i>
-      <span data-i18n="nav_cta">Reservar</span>
-    </a>
+  <div class="mobile-cta-bar" role="complementary">
+    <a href="tel:+244975099348" class="mcta-call"><i class="fa-solid fa-phone"></i><span
+        data-i18n="quick_call">Ligar</span></a>
+    <a href="#reservar" class="mcta-book"><i class="fa-solid fa-scissors"></i><span
+        data-i18n="nav_cta">Reservar</span></a>
   </div>
-
-  <!-- Success Overlay -->
-  <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true" aria-label="Booking confirmed">
+  <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true">
     <div class="success-box">
       <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
       <h3 class="success-title" data-i18n="success_title">Pedido na Bancada!</h3>
-      <p class="success-msg" data-i18n="success_msg">
-        O teu WhatsApp foi aberto com os detalhes da marcação.<br>
-        Aguarda a confirmação da equipa BallKutz em breve. 🏆
-      </p>
+      <p class="success-msg" data-i18n="success_msg">O teu WhatsApp foi aberto com os detalhes da marcação. Aguarda
+        confirmação. 🏆</p>
       <button type="button" class="btn btn--primary" id="closeSuccess" data-i18n="success_close">Fechar</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
 </body>
 
 </html>

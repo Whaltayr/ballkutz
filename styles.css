@@ -117,7 +117,7 @@ body::before {
 
 .label {
   font-family: var(--font-heading);
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -695,6 +695,9 @@ body::before {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+.plan-card-0{
+   border-color: var(--gold);
+}
 /* ── Imagem Fundo do Card (Estilo Dribbble) ── */
 .plan-card__bg-img {
   position: absolute;
@@ -706,7 +709,7 @@ body::before {
   z-index: 0;
   opacity: 0.5; /* Escurece a imagem para o texto ler-se bem */
   pointer-events: none; /* Impede que a imagem interfira no clique ou scroll */
-  
+
   /* Faz a imagem desaparecer gradualmente na parte de baixo */
   -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
@@ -2786,6 +2789,6 @@ textarea.form-input {
     justify-content: center;
   }
 }
-.tit_l{
+.tit_l {
   color: #a8966a;
 }

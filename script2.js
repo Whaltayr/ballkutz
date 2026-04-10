@@ -61,7 +61,7 @@ const LOCALES = {
     f_srv_presidential: "Presidential Kutz (Completo) — 15.000 KZ",
     ft_srv_hair: "Cortes de Cabelo",
     ft_srv_beard: "Barba",
-    ft_srv_esthetics: "Estética",
+    ft_srv_esthetics: "Serviços Extras",
     ft_plan_pro: "Plano PRO",
     ft_plan_promax: "Plano PRO MAX",
     ft_address: "Rua 2, Cassenda, Nº 15, Luanda | Angola",
@@ -101,29 +101,6 @@ const LOCALES = {
     about_p2:
       "Aqui não és apenas mais um cliente. És parte do clube. Com planos de assinatura exclusivos, elevar o teu estilo é sempre a nossa prioridade.",
     about_v1_title: "Excelência",
-    loc_eyebrow: "Como nos encontrar",
-    loc_title: "LOCALIZAÇÃO",
-    loc_address: "Morada",
-    loc_view_map: "Ver no Google Maps →",
-    loc_hours_label: "Horário de Funcionamento",
-    loc_hours_val: "Terça – Sábado: 10h00 – 20h00 | Domingo: 10h00 – 18h00",
-    loc_call: "WhatsApp / Chamada",
-    loc_btn_directions: "Como Chegar",
-    srv_kutz_cabelo: "Kutz de Cabelo",
-    srv_kutz_crianca: "Kutz Criança (Sub 15)",
-    srv_kutz_senior: "Kutz Seniores (+65)",
-    srv_kutz_barba: "Kutz de Barba",
-    srv_kutz_cabelo_barba: "Kutz de Cabelo + Barba",
-    srv_ritual_barba: "Ballkutz Ritual (Barboterapia)",
-    srv_lineup: "Line Up",
-    srv_sobrancelhas: "Sobrancelhas",
-    srv_massagem: "Massagem",
-    srv_hidratacao: "Hidratação de Cabelo ou Barba",
-    srv_vip_kutz: "VIP Kutz",
-    srv_vip_kutz_desc: "Cabelo, Barba, Depilação, Massagem",
-    srv_presidential: "Presidential Kutz",
-    srv_presidential_desc:
-      "Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem",
     about_v1_text:
       "Cada corte é executado com precisão absoluta e atenção ao detalhe.",
     about_v2_title: "Comunidade",
@@ -140,7 +117,6 @@ const LOCALES = {
     tab_barba: "Barba",
     tab_estetica: "Serviços Extras",
     tab_vip: "VIP",
-
     plans_eyebrow: "Você já ouviu falar de",
     plans_title: "BARBEARIA POR ASSINATURA?",
     plans_subtitle: "Mensal · Sem contratos · Cancela quando quiseres",
@@ -200,7 +176,7 @@ const LOCALES = {
     contact_hours: "Ter–Sáb: 10h–20h · Dom: 10h–18h",
     quick_call: "Ligar Agora",
     quick_wa: "WhatsApp Rápido",
-    or_form: "ou preenche o formulário",
+    or_form: "ou preenches o formulário",
     mode_label: "Como preferes o teu corte?",
     mode_shop_title: "Na Barbearia",
     mode_shop_sub: "Vens até nós. Experiência completa de clube.",
@@ -240,9 +216,60 @@ const LOCALES = {
     plan_intro_text:
       "ONDE VOCÊ PAGA UMA MENSALIDADE E TEM ACESSO AOS SERVIÇOS DE FORMA LIMITADA OU ILIMITADA, IGUAL ",
     plan_intro_text_2: "NETFLIX",
+    loc_eyebrow: "Como nos encontrar",
+    loc_title: "LOCALIZAÇÃO",
+    loc_address: "Morada",
+    loc_view_map: "Ver no Google Maps →",
+    loc_hours_label: "Horário de Funcionamento",
+    loc_hours_val: "Terça – Sábado: 10h00 – 20h00 | Domingo: 10h00 – 18h00",
+    loc_call: "WhatsApp / Chamada",
+    loc_btn_directions: "Como Chegar",
+    srv_kutz_cabelo: "Kutz de Cabelo",
+    srv_kutz_crianca: "Kutz Criança (Sub 15)",
+    srv_kutz_senior: "Kutz Seniores (+65)",
+    srv_kutz_barba: "Kutz de Barba",
+    srv_kutz_cabelo_barba: "Kutz de Cabelo + Barba",
+    srv_ritual_barba: "Ballkutz Ritual (Barboterapia)",
+    srv_lineup: "Line Up",
+    srv_sobrancelhas: "Sobrancelhas",
+    srv_massagem: "Massagem",
+    srv_hidratacao: "Hidratação de Cabelo ou Barba",
+    srv_vip_kutz: "VIP Kutz",
+    srv_vip_kutz_desc: "Cabelo, Barba, Depilação, Massagem",
+    srv_presidential: "Presidential Kutz",
+    srv_presidential_desc:
+      "Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem",
+    review9_text:
+      "ESPAÇO ORGANIZADO E ATENDIMENTO EXCELENTE, BOM PARA OS  PEQUENINOS E ADULTOS TAMBÉM.",
+    review8_text:
+      "GOSTEI BASTANTE DE ESTAR NA BALLBUTZ BARBERSHOP, FOI UMA EXPERIÊNCIA NOVA E ME SENTI MUITO BEM COM O ATENDIMENTO, ME IDENTIFIQUEI COM A TEMÁTICA DESPORTIVA. RECOMENDO BÃO IRÁS TE ARREPENDER",
+    review7_text:
+      "FUI MUITO BEM RECEBIDO, EXCELENTE SERVIÇO AMBIENTE MUITO CONFORTAVEL, SIMPLISMENTE EXTRAORDINÁRIO",
+    review6_text:
+      "EXCELENTE SALÃO! O SALÃO É LIMPO, MODERNO E AGRADÁVEL. O CORTE É FEITO COM MUITO CUIDADO E O RESULTADO É EXATAMENTE O QUE EU ESPERAVA. ÓTIMA RELAÇÃO CUSTO-BENEFÍCIO. RECOMENDO ESTE SALÃO SEM HESITAR E VOLTEREI COM PRAZER! ",
+    review5_text:
+      "SERVIÇO ESPETACULAR. TENHO UMA PELE SENSÍVEL E TIVERAM MUITA ATENÇÃO A ISSO. UM SIMPLES CORTE QUE SE TORNA NUMA EXPERIÊNCIA DE SENSAÇÕES. TUDO TOP! ",
   },
   en: {
-    plan_intro_text_2: "NETFLIX",
+    how_it_works: "How it Works?",
+    yt_eyebrow: "BallKutz TV — Our videos",
+    yt_title: "FEATURED VIDEOS",
+    yt_channel: "View Full Channel",
+    yt_watch: "Watch",
+    yt_watch_yt: "🎬 Watch on YouTube",
+    yt_vid1: "BALLKUTZ Grand Opening Day | Opening Day 2025 EP.1",
+    yt_vid2: "How Everything Started - EP.1/S1 BALLKUTZ",
+    yt_vid3: "The BallKutz Experience",
+    review9_text:
+      "ORGANIZED SPACE AND EXCELLENT SERVICE, GOOD FOR LITTLE ONES AND ADULTS TOO.",
+    review8_text:
+      "I REALLY ENJOYED BEING AT BALLKUTZ BARBERSHOP, IT WAS A NEW EXPERIENCE AND I FELT VERY GOOD WITH THE SERVICE. I IDENTIFIED WITH THE SPORTS THEME. HIGHLY RECOMMEND, YOU WON'T REGRET IT.",
+    review7_text:
+      "I WAS VERY WELL RECEIVED, EXCELLENT SERVICE, VERY COMFORTABLE ENVIRONMENT, SIMPLY EXTRAORDINARY.",
+    review6_text:
+      "EXCELLENT SALON! THE SALON IS CLEAN, MODERN, AND PLEASANT. THE CUT IS DONE WITH GREAT CARE AND THE RESULT IS EXACTLY WHAT I EXPECTED. GREAT VALUE FOR MONEY. I RECOMMEND THIS SALON WITHOUT HESITATION AND WILL GLADLY RETURN!",
+    review5_text:
+      "SPECTACULAR SERVICE. I HAVE SENSITIVE SKIN AND THEY PAID GREAT ATTENTION TO THAT. A SIMPLE CUT THAT TURNS INTO AN EXPERIENCE OF SENSATIONS. EVERYTHING IS TOP-NOTCH!",
     tab_domicilio: "At Home",
     opt_cortes: "Cuts",
     opt_barba: "Beard",
@@ -272,7 +299,7 @@ const LOCALES = {
     f_srv_presidential: "Presidential Kutz (Full) — 15.000 KZ",
     ft_srv_hair: "Haircuts",
     ft_srv_beard: "Beard",
-    ft_srv_esthetics: "Aesthetics",
+    ft_srv_esthetics: "Extra Services",
     ft_plan_pro: "PRO Plan",
     ft_plan_promax: "PRO MAX Plan",
     ft_address: "Street 2, Cassenda, Nº 15, Luanda | Angola",
@@ -298,7 +325,7 @@ const LOCALES = {
     hero_line1: "COME FEEL THE DIFFERENCE, BECAUSE THE RIGHT ",
     hero_line2: "CUT CHANGES EVERYTHING.",
     hero_sub:
-      "The champions' barbershop in Luanda. Excellence cuts, premium and unforgettable experience",
+      "The champions' barbershop in Luanda. Excellence cuts, premium and unforgettable experience.",
     hero_cta: "Book Now",
     hero_cta2: "View Services",
     stat_rating: "Rating",
@@ -447,8 +474,28 @@ const LOCALES = {
     footer_made: "Made with ✂️ for champions",
     plan_intro_text:
       "WHERE YOU PAY A MONTHLY FEE AND HAVE LIMITED OR UNLIMITED ACCESS TO SERVICES, JUST LIKE ",
+    plan_intro_text_2: "NETFLIX",
   },
   fr: {
+    how_it_works: "Comment ça marche ?",
+    yt_eyebrow: "BallKutz TV — Nos vidéos",
+    yt_title: "VIDÉOS EN VEDETTE",
+    yt_channel: "Voir la Chaîne Complète",
+    yt_watch: "Regarder",
+    yt_watch_yt: "🎬 Regarder sur YouTube",
+    yt_vid1: "BALLKUTZ Grand Opening Day | Jour d'Inauguration 2025 EP.1",
+    yt_vid2: "Comment Tout a Commencé - EP.1/S1 BALLKUTZ",
+    yt_vid3: "L'Expérience BallKutz",
+    review9_text:
+      "ESPACE ORGANISÉ ET EXCELLENT SERVICE, BIEN POUR LES PETITS ET LES ADULTES AUSSI.",
+    review8_text:
+      "J'AI BEAUCOUP AIMÉ ÊTRE CHEZ BALLKUTZ BARBERSHOP, CE FUT UNE NOUVELLE EXPÉRIENCE ET JE ME SUIS TRÈS BIEN SENTI AVEC LE SERVICE, JE ME SUIS IDENTIFIÉ AU THÈME SPORTIF. JE RECOMMANDE, VOUS NE LE REGRETTEREZ PAS.",
+    review7_text:
+      "J'AI ÉTÉ TRÈS BIEN REÇU, EXCELLENT SERVICE, ENVIRONNEMENT TRÈS CONFORTABLE, TOUT SIMPLEMENT EXTRAORDINAIRE.",
+    review6_text:
+      "EXCELLENT SALON ! LE SALON EST PROPRE, MODERNE ET AGRÉABLE. LA COUPE EST FAITE AVEC BEAUCOUP DE SOIN ET LE RÉSULTAT EST EXACTEMENT CE QUE J'ATTENDAIS. TRÈS BON RAPPORT QUALITÉ-PRIX. JE RECOMMANDE CE SALON SANS HÉSITER ET J'Y RETOURNERAI AVEC PLAISIR !",
+    review5_text:
+      "SERVICE SPECTACULAIRE. J'AI LA PEAU SENSIBLE ET ILS Y ONT FAIT TRÈS ATTENTION. UNE SIMPLE COUPE QUI SE TRANSFORME EN UNE EXPÉRIENCE DE SENSATIONS. TOUT EST TOP !",
     plan_intro_text_2: "NETFLIX",
     tab_domicilio: "À Domicile",
     opt_cortes: "Coupes",
@@ -479,7 +526,7 @@ const LOCALES = {
     f_srv_presidential: "Presidential Kutz (Complet) — 15.000 KZ",
     ft_srv_hair: "Coupes de Cheveux",
     ft_srv_beard: "Barbe",
-    ft_srv_esthetics: "Esthétique",
+    ft_srv_esthetics: "Services Extras",
     ft_plan_pro: "Forfait PRO",
     ft_plan_promax: "Forfait PRO MAX",
     ft_address: "Rue 2, Cassenda, Nº 15, Luanda | Angola",
@@ -538,9 +585,9 @@ const LOCALES = {
     about_eyebrow: "Notre histoire",
     about_title: "PLUS QU'UNE COUPE.",
     about_p1:
-      "BallKutz emerged from the idea of bringing together the world of sports (football and basketball), raising its clients' self-esteem to the highest level. A space where every visit is a unique experience — music, PlayStation games, and the best haircut of your life.",
+      "BallKutz est né de l'idée de réunir le monde du sport (football et basketball), élevant l'estime de soi de ses clients au plus haut niveau.",
     about_p2:
-      "Here you are not just another client. You are part of the club. With exclusive subscription plans, elevating your style is always our priority.",
+      "Ici, vous n'êtes pas seulement un client. Vous faites partie du club.",
     about_v1_title: "Excellence",
     about_v1_text: "Chaque coupe est exécutée avec une précision absolue.",
     about_v2_title: "Communauté",
@@ -601,8 +648,7 @@ const LOCALES = {
     review1_text:
       '"UN SALON VRAIMENT MAGNIFIQUE ET CONFORTABLE. EXCELLENT PERSONNEL..."',
     review2_text: '"BALLKUTZ 5 ÉTOILES, UN ENDROIT ACCUEILLANT..."',
-    review3_text:
-      '"UNE EXPÉRIENCE TOTALEMENT DIFFÉRENTE. C\'EST COMME ÊTRE DANS LE PASSÉ ET LE FUTUR EN MÊME TEMPS"',
+    review3_text: '"UNE EXPÉRIENCE TOTALEMENT DIFFÉRENTE."',
     review4_text: '"JE RECOMMANDE FORTEMENT CE SALON..."',
     booking_eyebrow: "Coup de sifflet final — Réservez",
     booking_title: "RÉSERVER",
@@ -653,6 +699,25 @@ const LOCALES = {
       "OÙ VOUS PAYEZ UN ABONNEMENT MENSUEL ET AVEZ UN ACCÈS LIMITÉ OU ILLIMITÉ AUX SERVICES, TOUT COMME ",
   },
   es: {
+    how_it_works: "¿Cómo Funciona?",
+    yt_eyebrow: "BallKutz TV — Nuestros videos",
+    yt_title: "VIDEOS DESTACADOS",
+    yt_channel: "Ver Canal Completo",
+    yt_watch: "Ver",
+    yt_watch_yt: "🎬 Ver en YouTube",
+    yt_vid1: "BALLKUTZ Grand Opening Day | Día de Inauguración 2025 EP.1",
+    yt_vid2: "Cómo Empezó Todo - EP.1/S1 BALLKUTZ",
+    yt_vid3: "La Experiencia BallKutz",
+    review9_text:
+      "ESPACIO ORGANIZADO Y EXCELENTE ATENCIÓN, BUENO PARA LOS PEQUEÑOS Y ADULTOS TAMBIÉN.",
+    review8_text:
+      "ME GUSTÓ BASTANTE ESTAR EN BALLKUTZ BARBERSHOP, FUE UNA EXPERIENCIA NUEVA Y ME SENTÍ MUY BIEN CON LA ATENCIÓN, ME IDENTIFIQUÉ CON LA TEMÁTICA DEPORTIVA. LO RECOMIENDO, NO TE ARREPENTIRÁS.",
+    review7_text:
+      "FUI MUY BIEN RECIBIDO, EXCELENTE SERVICIO, AMBIENTE MUY CONFORTABLE, SIMPLEMENTE EXTRAORDINARIO.",
+    review6_text:
+      "¡EXCELENTE SALÓN! EL SALÓN ES LIMPIO, MODERNO Y AGRADABLE. EL CORTE SE HACE CON MUCHO CUIDADO Y EL RESULTADO ES EXACTAMENTE LO QUE ESPERABA. ÓPTIMA RELACIÓN CALIDAD-PRECIO. ¡RECOMIENDO ESTE SALÓN SIN DUDARLO Y VOLVERÉ CON GUSTO!",
+    review5_text:
+      "SERVICIO ESPECTACULAR. TENGO PIEL SENSIBLE Y PRESTARON MUCHA ATENCIÓN A ESO. UN SIMPLE CORTE QUE SE CONVIERTE EN UNA EXPERIENCIA DE SENSACIONES. ¡TODO TOP!",
     plan_intro_text_2: "NETFLIX",
     tab_domicilio: "A Domicilio",
     opt_cortes: "Cortes",
@@ -683,7 +748,7 @@ const LOCALES = {
     f_srv_presidential: "Presidential Kutz (Completo) — 15.000 KZ",
     ft_srv_hair: "Cortes de Cabello",
     ft_srv_beard: "Barba",
-    ft_srv_esthetics: "Estética",
+    ft_srv_esthetics: "Extras",
     ft_plan_pro: "Plan PRO",
     ft_plan_promax: "Plan PRO MAX",
     ft_address: "Calle 2, Cassenda, Nº 15, Luanda | Angola",
@@ -742,9 +807,8 @@ const LOCALES = {
     about_eyebrow: "Nuestra historia",
     about_title: "MÁS QUE UN CORTE.",
     about_p1:
-      "BallKutz surgió de la idea de unir el mundo del deporte (fútbol y baloncesto), elevando la autoestima de sus clientes al más alto nivel. Un espacio donde cada visita es una experiencia única: música, juegos de PlayStation y el mejor corte de tu vida.",
-    about_p2:
-      "Aquí no eres solo un cliente más. Eres parte del club. Con planes de suscripción exclusivos, elevar tu estilo es siempre nuestra prioridad.",
+      "BallKutz surgió de la idea de unir el mundo del deporte, elevando la autoestima de sus clientes al más alto nivel.",
+    about_p2: "Aquí no eres solo un cliente más. Eres parte del club.",
     about_v1_title: "Excelencia",
     about_v1_text: "Cada corte se ejecuta con precisión absoluta.",
     about_v2_title: "Comunidad",
@@ -805,8 +869,7 @@ const LOCALES = {
     review1_text:
       '"UN SALÓN REALMENTE HERMOSO Y CÓMODO. EXCELENTE PERSONAL..."',
     review2_text: '"BALLKUTZ 5 ESTRELLAS, UN LUGAR ACOGEDOR..."',
-    review3_text:
-      '"UNA EXPERIENCIA TOTALMENTE DIFERENTE. ES COMO ESTAR EN EL PASADO Y FUTURO A LA VEZ"',
+    review3_text: '"UNA EXPERIENCIA TOTALMENTE DIFERENTE."',
     review4_text: '"RECOMIENDO MUCHO VENIR AQUÍ..."',
     booking_eyebrow: "Pitazo Final — Reserva tu lugar",
     booking_title: "RESERVAR",
@@ -856,6 +919,25 @@ const LOCALES = {
       "DONDE PAGAS UNA MENSUALIDAD Y TIENES ACCESO LIMITADO O ILIMITADO A LOS SERVICIOS, IGUAL QUE ",
   },
   zh: {
+    how_it_works: "它是如何运作的？",
+    yt_eyebrow: "BallKutz TV — 我们的视频",
+    yt_title: "精选视频",
+    yt_channel: "查看完整频道",
+    yt_watch: "观看",
+    yt_watch_yt: "🎬 在 YouTube 上观看",
+    yt_vid1: "BALLKUTZ 盛大开业 | 2025 开业日 EP.1",
+    yt_vid2: "一切是如何开始的 - EP.1/S1 BALLKUTZ",
+    yt_vid3: "BallKutz 体验",
+    review9_text:
+      "空间井然有序，服务极佳，非常适合小朋友和大人。",
+    review8_text:
+      "我非常喜欢在BALLKUTZ理发店的体验，这是一种全新的体验，我对他们的服务感到非常满意，我很认同这里的体育主题。强烈推荐，你不会后悔的。",
+    review7_text:
+      "我受到了很好的接待，优质的服务，非常舒适的环境，简直非凡。",
+    review6_text:
+      "很棒的理发店！店面干净、现代且舒适。理发非常细心，结果正是我所期望的。性价比极高。我毫不犹豫地推荐这家理发店，并且我很乐意再次光临！",
+    review5_text:
+      "服务非常棒。我的皮肤很敏感，他们对此非常注意。一次简单的理发变成了一次感官体验。一切都太棒了！",
     plan_intro_text_2: "NETFLIX",
     plan_intro_text: "您只需支付月费，即可获得有限或无限次的服务权限，就像 ",
     tab_domicilio: "上门服务",
@@ -867,7 +949,7 @@ const LOCALES = {
     f_srv_kutz_crianca: "儿童理发 (15岁以下) — 3.000 KZ",
     f_srv_kutz_cabelo: "理发 — 4.000 KZ",
     f_srv_kutz_senior: "长者理发 (+65) — 4.000 KZ",
-    f_srv_ritual_barba: "Ballkutz 仪式 (热毛巾修须) — 6.000 KZ",
+    f_srv_ritual_barba: "Ballkutz 仪式 — 6.000 KZ",
     f_srv_kutz_barba: "修须 — 3.000 KZ",
     f_srv_cabelo_barba: "理发 + 修须 — 6.000 KZ",
     f_srv_sobrancelhas: "修眉 — 2.000 KZ",
@@ -883,11 +965,11 @@ const LOCALES = {
     f_srv_velas_hopi: "耳烛疗法 — 7.000 KZ",
     f_srv_descoloracao: "漂白 — 7.000 / 12.000 KZ",
     f_srv_24k_limpeza: "24K金皮肤清洁 — 10.000 KZ",
-    f_srv_vip_kutz: "VIP Kutz (理发、修须、脱毛、按摩) — 10.000 KZ",
+    f_srv_vip_kutz: "VIP Kutz — 10.000 KZ",
     f_srv_presidential: "Presidential Kutz (全套) — 15.000 KZ",
     ft_srv_hair: "理发",
     ft_srv_beard: "胡须",
-    ft_srv_esthetics: "美容",
+    ft_srv_esthetics: "额外服务",
     ft_plan_pro: "PRO 计划",
     ft_plan_promax: "PRO MAX 计划",
     ft_address: "罗安达, Cassenda 第2大街 15号 | 安哥拉",
@@ -903,7 +985,6 @@ const LOCALES = {
     srv_velas_hopi: "耳烛疗法",
     srv_descoloracao: "漂白",
     srv_24k_limpeza: "24K金皮肤清洁",
-
     loc_eyebrow: "如何找到我们",
     loc_title: "位置",
     loc_address: "地址",
@@ -945,9 +1026,8 @@ const LOCALES = {
     about_eyebrow: "我们的故事",
     about_title: "不仅仅是理发。",
     about_p1:
-      "BallKutz 源于将体育世界（足球和篮球）结合在一起的理念，将客户的自信提升到最高水平。在这里，每一次光临都是独一无二的体验——音乐、PlayStation游戏，以及你人生中最好的一次理发。",
-    about_p2:
-      "在这里，你不仅仅是一名普通客户。你是俱乐部的一员。凭借独家订阅计划，提升您的个人风格始终是我们的首要任务。",
+      "BallKutz 源于将体育世界结合在一起的理念，将客户的自信提升到最高水平。",
+    about_p2: "在这里，你不仅仅是一名普通客户。你是俱乐部的一员。",
     about_v1_title: "卓越",
     about_v1_text: "每一次理发都以绝对的精准度执行。",
     about_v2_title: "社区",
@@ -1054,6 +1134,7 @@ const LOCALES = {
   },
 };
 
+// ── i18n ──
 function setLanguage(lang) {
   currentLang = lang in LOCALES ? lang : "pt";
   document.documentElement.lang = currentLang;
@@ -1063,7 +1144,6 @@ function setLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     const value = dict[key];
     if (!value) return;
-
     if (el.tagName === "OPTGROUP") {
       el.label = value;
     } else if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
@@ -1094,14 +1174,12 @@ document.addEventListener("DOMContentLoaded", () => {
     langSelect.addEventListener("change", toggleLanguage);
     langSelect.value = currentLang;
   }
-
   const mobileLang = document.getElementById("mobileLangToggle");
   if (mobileLang) {
-    mobileLang.addEventListener("click", () => {
-      setLanguage(currentLang === "pt" ? "en" : "pt");
-    });
+    mobileLang.addEventListener("click", () =>
+      setLanguage(currentLang === "pt" ? "en" : "pt"),
+    );
   }
-
   setLanguage(currentLang);
 });
 
@@ -1125,7 +1203,6 @@ function initNavigation() {
 
   hamburger.addEventListener("click", openMenu);
   mobileClose.addEventListener("click", closeMenu);
-
   mobileMenu
     .querySelectorAll("a")
     .forEach((el) => el.addEventListener("click", closeMenu));
@@ -1137,19 +1214,6 @@ function initNavigation() {
     },
     { passive: true },
   );
-
-  // document
-  //   .getElementById("langToggle")
-  //   .addEventListener("click", toggleLanguage);
-
-  const mobileLang = document.getElementById("mobileLangToggle");
-  if (mobileLang) {
-    mobileLang.addEventListener("click", () => {
-      toggleLanguage();
-      mobileLang.textContent =
-        currentLang === "pt" ? "Switch to EN" : "Mudar para PT";
-    });
-  }
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && mobileMenu.classList.contains("open"))
@@ -1168,7 +1232,6 @@ function initServiceTabs() {
       document
         .querySelectorAll(".tab-panel")
         .forEach((p) => p.classList.remove("active"));
-
       btn.classList.add("active");
       btn.setAttribute("aria-selected", "true");
       document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
@@ -1176,14 +1239,12 @@ function initServiceTabs() {
   });
 
   document.querySelectorAll(".service-item").forEach((item) => {
-    // Accessibility logic: allow Enter key trigger on service items
     item.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         item.click();
       }
     });
-
     item.addEventListener("click", () => {
       const select = document.getElementById("bookingService");
       const opt = [...select.options].find(
@@ -1200,8 +1261,192 @@ function initServiceTabs() {
   });
 }
 
-// ── Team cards ──
-function initTeamCards() {
+// ── Generic Slider Factory ──
+// Creates a fully draggable, dot + arrow controlled slider from a scroll container.
+function createSlider({
+  wrapId,
+  sliderId,
+  dotsId,
+  prevId,
+  nextId,
+  autoplayMs = 0,
+}) {
+  const wrap = document.getElementById(wrapId);
+  const slider = document.getElementById(sliderId);
+  const dotsWrap = document.getElementById(dotsId);
+  const btnPrev = document.getElementById(prevId);
+  const btnNext = document.getElementById(nextId);
+
+  if (!wrap || !slider) return;
+
+  // Collect direct children that are slideable (skip dividers)
+  const cards = [...slider.children].filter(
+    (el) => !el.classList.contains("plans__slider-divider"),
+  );
+  if (!cards.length) return;
+
+  let current = 0;
+  let isDragging = false;
+  let dragStartX = 0;
+  let dragStartScroll = 0;
+  let autoTimer = null;
+
+  // Build dots
+  if (dotsWrap) {
+    dotsWrap.innerHTML = "";
+    cards.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "plans__dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-label", `Slide ${i + 1}`);
+      dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
+      dot.addEventListener("click", () => {
+        stopAutoplay();
+        goTo(i);
+      });
+      dotsWrap.appendChild(dot);
+    });
+  }
+
+  const dots = dotsWrap ? [...dotsWrap.querySelectorAll(".plans__dot")] : [];
+
+  function updateUI() {
+    dots.forEach((d, i) => {
+      const active = i === current;
+      d.classList.toggle("active", active);
+      d.setAttribute("aria-selected", active ? "true" : "false");
+    });
+    if (btnPrev) btnPrev.disabled = current === 0;
+    if (btnNext) btnNext.disabled = current === cards.length - 1;
+  }
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, cards.length - 1));
+    wrap.scrollTo({ left: cards[current].offsetLeft, behavior: "smooth" });
+    updateUI();
+  }
+
+  function stopAutoplay() {
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  if (btnPrev)
+    btnPrev.addEventListener("click", () => {
+      stopAutoplay();
+      goTo(current - 1);
+    });
+  if (btnNext)
+    btnNext.addEventListener("click", () => {
+      stopAutoplay();
+      goTo(current + 1);
+    });
+
+  // Sync dot on native scroll
+  let scrollTimer = null;
+  wrap.addEventListener(
+    "scroll",
+    () => {
+      if (isDragging) return;
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        let closest = 0;
+        let minDist = Infinity;
+        cards.forEach((card, i) => {
+          const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = i;
+          }
+        });
+        if (closest !== current) {
+          current = closest;
+          updateUI();
+        }
+      }, 150);
+    },
+    { passive: true },
+  );
+
+  // Drag support
+  slider.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    dragStartX = e.clientX;
+    dragStartScroll = wrap.scrollLeft;
+    wrap.style.scrollSnapType = "none";
+    slider.style.cursor = "grabbing";
+    e.preventDefault();
+  });
+
+  window.addEventListener("mouseup", () => {
+    if (!isDragging) return;
+    isDragging = false;
+    slider.style.cursor = "grab";
+    wrap.style.scrollSnapType = "x mandatory";
+    let closest = 0;
+    let minDist = Infinity;
+    cards.forEach((card, i) => {
+      const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
+      if (dist < minDist) {
+        minDist = dist;
+        closest = i;
+      }
+    });
+    goTo(closest);
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    wrap.scrollLeft = dragStartScroll - (e.clientX - dragStartX);
+  });
+
+  slider.style.cursor = "grab";
+
+  // Autoplay
+  if (autoplayMs > 0) {
+    autoTimer = setInterval(() => {
+      goTo(current >= cards.length - 1 ? 0 : current + 1);
+    }, autoplayMs);
+    wrap.addEventListener("mouseenter", stopAutoplay);
+    wrap.addEventListener("mouseleave", () => {
+      if (!autoTimer)
+        autoTimer = setInterval(
+          () => goTo(current >= cards.length - 1 ? 0 : current + 1),
+          autoplayMs,
+        );
+    });
+  }
+
+  updateUI();
+  return { goTo, getCurrentIndex: () => current };
+}
+
+// ── Plans Slider ──
+function initPlansSlider() {
+  createSlider({
+    wrapId: "plansSliderWrap",
+    sliderId: "plansSlider",
+    dotsId: "plansDots",
+    prevId: "plansPrev",
+    nextId: "plansNext",
+  });
+}
+
+// ── Team Slider ──
+function initTeamSlider() {
+  createSlider({
+    wrapId: "teamSliderWrap",
+    sliderId: "teamSlider",
+    dotsId: "teamDots",
+    prevId: "teamPrev",
+    nextId: "teamNext",
+    autoplayMs: 5000,
+  });
+
+  // Keep booking click behaviour
   document.querySelectorAll(".barber-card").forEach((card) => {
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
@@ -1209,7 +1454,6 @@ function initTeamCards() {
         card.click();
       }
     });
-
     card.addEventListener("click", () => {
       const select = document.getElementById("bookingBarber");
       const opt = [...select.options].find(
@@ -1226,34 +1470,16 @@ function initTeamCards() {
   });
 }
 
-// ── Reviews slider ──
+// ── Reviews Slider ──
 function initReviewsSlider() {
-  const track = document.getElementById("reviewsTrack");
-  if (!track) return;
-  const dots = document.querySelectorAll(".reviews__dot");
-  const cards = [...track.querySelectorAll(".review-card")];
-  if (!cards.length) return;
-
-  let idx = 0;
-  let timer;
-  const perView =
-    window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-  const maxIdx = Math.max(0, cards.length - perView);
-
-  const goTo = (i) => {
-    idx = Math.max(0, Math.min(i, maxIdx));
-    track.style.transform =
-      "translateX(-" + idx * (cards[0].offsetWidth + 24) + "px)";
-    dots.forEach((d, di) => d.classList.toggle("active", di === idx));
-  };
-
-  dots.forEach((d) =>
-    d.addEventListener("click", () => {
-      clearInterval(timer);
-      goTo(+d.dataset.idx);
-    }),
-  );
-  timer = setInterval(() => goTo(idx >= maxIdx ? 0 : idx + 1), 4500);
+  createSlider({
+    wrapId: "reviewsSliderWrap",
+    sliderId: "reviewsTrack",
+    dotsId: "reviewsDots",
+    prevId: "reviewsPrev",
+    nextId: "reviewsNext",
+    autoplayMs: 4500,
+  });
 }
 
 // ── Time slots ──
@@ -1350,7 +1576,7 @@ function validateHomeForm() {
   return n && isPhone(p) && l && s && isDate(d) && t && c;
 }
 
-// ── WhatsApp URL builders ──
+// ── WhatsApp builders ──
 function waShop(d) {
   const msg = [
     "Olá BallKutz! 🏆",
@@ -1448,13 +1674,11 @@ function initBookingForm() {
       window.open(waQuick(), "_blank", "noopener");
     });
 
-  // Shop submit
   document
     .getElementById("submitBooking")
     .addEventListener("click", async () => {
       if (document.getElementById("honeypot").value) return;
       if (!validateShopForm()) return;
-
       const data = {
         name: document.getElementById("clientName").value.trim(),
         phone: document.getElementById("clientPhone").value.trim(),
@@ -1464,12 +1688,10 @@ function initBookingForm() {
         date: document.getElementById("bookingDate").value,
         time: getSlot(),
       };
-
       const btn = document.getElementById("submitBooking");
       const span = btn.querySelector("span");
       btn.disabled = true;
       span.textContent = "...";
-
       await notifyEmail({
         Nome: data.name,
         WhatsApp: data.phone,
@@ -1480,20 +1702,17 @@ function initBookingForm() {
         Hora: data.time,
         Tipo: "Barbearia",
       });
-
       window.open(waShop(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
       span.textContent = LOCALES[currentLang].form_submit;
     });
 
-  // Home submit
   document
     .getElementById("submitHomeBooking")
     .addEventListener("click", async () => {
       if (document.getElementById("honeypot").value) return;
       if (!validateHomeForm()) return;
-
       const data = {
         name: document.getElementById("homeClientName").value.trim(),
         phone: document.getElementById("homeClientPhone").value.trim(),
@@ -1503,12 +1722,10 @@ function initBookingForm() {
         time: document.getElementById("homeTime").value,
         notes: document.getElementById("homeNotes").value.trim(),
       };
-
       const btn = document.getElementById("submitHomeBooking");
       const span = btn.querySelector("span");
       btn.disabled = true;
       span.textContent = "...";
-
       await notifyEmail({
         Nome: data.name,
         WhatsApp: data.phone,
@@ -1519,7 +1736,6 @@ function initBookingForm() {
         Notas: data.notes || "N/A",
         Tipo: "Domicílio",
       });
-
       window.open(waHome(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
@@ -1546,45 +1762,35 @@ function initScrollAnimations() {
     },
     { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
   );
-
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 }
 
 // ── YouTube Facades ──
 function initYouTubeFacade() {
-  const facades = document.querySelectorAll(".yt-facade");
-  if (!facades.length) return;
-
-  facades.forEach((facade) => {
-    const makeFacadeLoader = (el) => {
-      const loadVideo = () => {
-        const videoId = el.dataset.videoId;
-        if (!videoId || videoId === "VIDEO_ID") {
-          window.open("https://youtube.com/@BallKutz", "_blank", "noopener");
-          return;
-        }
-        const iframe = document.createElement("iframe");
-        iframe.className = "yt-facade__iframe";
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
-        iframe.allow = "autoplay; encrypted-media; picture-in-picture";
-        iframe.allowFullscreen = true;
-        iframe.title = "BallKutz — " + (el.dataset.title || "vídeo");
-        el.innerHTML = "";
-        el.appendChild(iframe);
-        el.style.cursor = "default";
-        el.removeEventListener("click", loadVideo);
-        el.removeEventListener("keydown", handleKey);
-      };
-      const handleKey = (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          loadVideo();
-        }
-      };
-      el.addEventListener("click", loadVideo);
-      el.addEventListener("keydown", handleKey);
+  document.querySelectorAll(".yt-facade").forEach((el) => {
+    const loadVideo = () => {
+      const videoId = el.dataset.videoId;
+      if (!videoId || videoId === "VIDEO_ID") {
+        window.open("https://youtube.com/@BallKutz", "_blank", "noopener");
+        return;
+      }
+      const iframe = document.createElement("iframe");
+      iframe.className = "yt-facade__iframe";
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+      iframe.allow = "autoplay; encrypted-media; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.title = "BallKutz — " + (el.dataset.title || "vídeo");
+      el.innerHTML = "";
+      el.appendChild(iframe);
+      el.style.cursor = "default";
     };
-    makeFacadeLoader(facade);
+    el.addEventListener("click", loadVideo);
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        loadVideo();
+      }
+    });
   });
 }
 
@@ -1592,7 +1798,6 @@ function initYouTubeFacade() {
 function initScrollTop() {
   const btn = document.getElementById("scrollTopBtn");
   if (!btn) return;
-
   window.addEventListener(
     "scroll",
     () => {
@@ -1600,138 +1805,21 @@ function initScrollTop() {
     },
     { passive: true },
   );
-
-  btn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-}
-
-// ── Plans Slider (Fully Fixed) ──
-function initPlansSlider() {
-  const wrap = document.querySelector(".plans__slider-wrap");
-  const slider = document.getElementById("plansSlider");
-  const dotsWrap = document.getElementById("plansDots");
-  const btnPrev = document.getElementById("plansPrev");
-  const btnNext = document.getElementById("plansNext");
-
-  if (!wrap || !slider) return;
-
-  const cards = [...slider.querySelectorAll(".plan-card")];
-  if (!cards.length) return;
-
-  let current = 0;
-  let isDragging = false;
-  let dragStartX = 0;
-  let dragStartScroll = 0;
-
-  dotsWrap.innerHTML = "";
-  cards.forEach((_, i) => {
-    const dot = document.createElement("button");
-    dot.type = "button";
-    dot.className = "plans__dot" + (i === 0 ? " active" : "");
-    dot.setAttribute("role", "tab");
-    dot.setAttribute("aria-label", "Plano " + (i + 1));
-    dot.setAttribute("aria-selected", i === 0 ? "true" : "false");
-    dot.addEventListener("click", () => goTo(i));
-    dotsWrap.appendChild(dot);
-  });
-
-  const dots = [...dotsWrap.querySelectorAll(".plans__dot")];
-
-  function updateUI() {
-    dots.forEach((d, i) => {
-      const active = i === current;
-      d.classList.toggle("active", active);
-      d.setAttribute("aria-selected", active ? "true" : "false");
-    });
-    if (btnPrev) btnPrev.disabled = current === 0;
-    if (btnNext) btnNext.disabled = current === cards.length - 1;
-  }
-
-  function goTo(index) {
-    current = Math.max(0, Math.min(index, cards.length - 1));
-    // Provide explicit scroll behavior via JS instead of CSS to prevent drag jitter.
-    wrap.scrollTo({ left: cards[current].offsetLeft, behavior: "smooth" });
-    updateUI();
-  }
-
-  if (btnPrev) btnPrev.addEventListener("click", () => goTo(current - 1));
-  if (btnNext) btnNext.addEventListener("click", () => goTo(current + 1));
-
-  let scrollTimer = null;
-  wrap.addEventListener(
-    "scroll",
-    () => {
-      if (isDragging) return;
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(() => {
-        let closest = 0;
-        let minDist = Infinity;
-        cards.forEach((card, i) => {
-          const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-          if (dist < minDist) {
-            minDist = dist;
-            closest = i;
-          }
-        });
-        if (closest !== current) {
-          current = closest;
-          updateUI();
-        }
-      }, 150);
-    },
-    { passive: true },
+  btn.addEventListener("click", () =>
+    window.scrollTo({ top: 0, behavior: "smooth" }),
   );
-
-  slider.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    dragStartX = e.clientX;
-    dragStartScroll = wrap.scrollLeft;
-    // Disable CSS snap behavior temporarily to prevent jumping/lag during manual drag
-    wrap.style.scrollSnapType = "none";
-    slider.style.cursor = "grabbing";
-    e.preventDefault();
-  });
-
-  window.addEventListener("mouseup", () => {
-    if (!isDragging) return;
-    isDragging = false;
-    slider.style.cursor = "grab";
-    // Re-enable snapping
-    wrap.style.scrollSnapType = "x mandatory";
-
-    let closest = 0;
-    let minDist = Infinity;
-    cards.forEach((card, i) => {
-      const dist = Math.abs(card.offsetLeft - wrap.scrollLeft);
-      if (dist < minDist) {
-        minDist = dist;
-        closest = i;
-      }
-    });
-    goTo(closest);
-  });
-
-  window.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-    const dx = e.clientX - dragStartX;
-    wrap.scrollLeft = dragStartScroll - dx;
-  });
-
-  slider.style.cursor = "grab";
-  updateUI();
 }
 
 // ── Init ──
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initServiceTabs();
-  initTeamCards();
-  initReviewsSlider();
-  initBookingForm();
   initScrollAnimations();
+  initBookingForm();
   initYouTubeFacade();
   initScrollTop();
-  updateAllText();
+  setLanguage(currentLang); // replaces the old undefined updateAllText()
   initPlansSlider();
+  initTeamSlider();
+  initReviewsSlider();
 });
