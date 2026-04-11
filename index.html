@@ -525,7 +525,9 @@
           <!-- Card 0: Conceito -->
           <div class="plan-card plan-card-0 plan-card--intro reveal">
             <img src="img/card-0.jpeg" alt="" class="plan-card__bg-img plan-card__bg-img--bottom" aria-hidden="true" />
-            <div class="plan-card__name"><P data-i18n="plan-card-como">Como Funciona?</P></div>
+            <div class="plan-card__name">
+              <P data-i18n="plan-card-como">Como Funciona?</P>
+            </div>
             <p class="plan-card__intro-text"><span data-i18n="plan_intro_text">ONDE VOCÊ PAGA UMA MENSALIDADE E TEM
                 ACESSO AOS SERVIÇOS DE FORMA LIMITADA OU ILIMITADA, IGUAL </span>
               <strong style="color: #E50914; letter-spacing: 0.05em; text-transform: uppercase;"
@@ -824,7 +826,7 @@
       <div class="yt-section reveal">
         <div class="yt-section__header">
           <div><span class="label" data-i18n="yt_eyebrow">BallKutz TV — Os nossos vídeos</span>
-            <h3 class="heading-md" style="margin-top:0.5rem;" >VÍDEOS EM DESTAQUE</h3>
+            <h3 class="heading-md" style="margin-top:0.5rem;">VÍDEOS EM DESTAQUE</h3>
           </div>
           <a href="https://www.youtube.com/@BallKutz" target="_blank" rel="noopener" class="yt-section__channel-link"><i
               class="fa-brands fa-youtube"></i> <span data-i18n="yt_channel">Ver Canal Completo</span> </a>
@@ -840,7 +842,8 @@
                   class="yt-facade__label" data-i18n="yt_watch">Assistir</span>
               </div>
               <div class="yt-facade__meta" aria-hidden="true">
-                <div class="yt-facade__meta-title" data-i18n="yt_vid1">BALLKUTZ Grand Opening Day | Dia Da Inauguração 2025 EP.1</div>
+                <div class="yt-facade__meta-title" data-i18n="yt_vid1">BALLKUTZ Grand Opening Day | Dia Da Inauguração
+                  2025 EP.1</div>
                 <div class="yt-facade__meta-duration" data-i18n="yt_watch_yt">🎬 Ver no YouTube</div>
               </div>
             </div>
@@ -1009,6 +1012,26 @@
                     <option value="Presidential Kutz" data-i18n="f_srv_presidential">Presidential Kutz — 15.000 KZ
                     </option>
                   </optgroup>
+
+
+                  <optgroup data-i18n="opt_p" label="Planos de Assinatura">
+                    <option value="Plano Cabelo 2x (Domicílio)" data-i18n="plan1_name">Plano Cabelo 2x/mês — 6.500 KZ
+                    </option>
+                    <option value="Plano Cabelo + Barba 2x (Domicílio)" data-i18n="plan2_name">Plano Cabelo + Barba
+                      2x/mês
+                      — 9.500 KZ</option>
+                    <option value="Plano Cabelo Ilimitado (Domicílio)" data-i18n="plan3_name">Plano Cabelo Ilimitado —
+                      10.000 KZ</option>
+                    <option value="Plano Barba Ilimitado (Domicílio)" data-i18n="plan4_name">Plano Barba Ilimitado —
+                      8.500
+                      KZ</option>
+                    <option value="Plano Criança Ilimitado (Domicílio)" data-i18n="plan5_name">Plano Criança Ilimitado —
+                      7.500 KZ</option>
+                    <option value="Plano Cabelo + Barba Ilimitado (Domicílio)" data-i18n="plan6_name">Plano Cabelo +
+                      Barba
+                      Ilimitado — 15.000 KZ
+                    </option>
+                  </optgroup>
                 </select>
                 <div class="form-error" id="serviceError" data-i18n="form_service_error">Seleciona um serviço.</div>
               </div>
@@ -1042,93 +1065,165 @@
             <button type="button" class="btn btn--primary form-submit-btn" id="submitBooking"><i
                 class="fa-brands fa-whatsapp"></i><span data-i18n="form_submit">Confirmar Marcação</span></button>
           </div>
-        <!-- Panel Home -->
-<div class="booking-panel" id="panelHome" aria-live="polite">
-  <div class="form-row">
-    <div class="form-group">
-      <label class="form-label" for="homeClientName" data-i18n="form_name">Nome</label>
-      <input class="form-input" type="text" id="homeClientName" placeholder="O teu nome" autocomplete="name" />
-      <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="homeClientPhone" data-i18n="form_phone">WhatsApp</label>
-      <input class="form-input" type="tel" id="homeClientPhone" placeholder="+244 9XX XXX XXX" autocomplete="tel" />
-      <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número inválido.</div>
-    </div>
-  </div>
+          <!-- Panel Home -->
+          <div class="booking-panel" id="panelHome" aria-live="polite">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="homeClientName" data-i18n="form_name">Nome</label>
+                <input class="form-input" type="text" id="homeClientName" placeholder="O teu nome"
+                  autocomplete="name" />
+                <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="homeClientPhone" data-i18n="form_phone">WhatsApp</label>
+                <input class="form-input" type="tel" id="homeClientPhone" placeholder="+244 9XX XXX XXX"
+                  autocomplete="tel" />
+                <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número inválido.</div>
+              </div>
+            </div>
 
-<div class="form-group">
-  <label class="form-label" for="homeClientEmail" data-i18n="form_email">E-mail</label>
-  <input class="form-input" type="email" id="homeClientEmail" placeholder="email@exemplo.com" autocomplete="email" />
-  <div class="form-error" id="homeEmailError">E-mail inválido.</div>
-</div>
+            <div class="form-group">
+              <label class="form-label" for="homeClientEmail" data-i18n="form_email">E-mail</label>
+              <input class="form-input" type="email" id="homeClientEmail" placeholder="email@exemplo.com"
+                autocomplete="email" />
+              <div class="form-error" id="homeEmailError">E-mail inválido.</div>
+            </div>
 
-  <div class="form-group">
-    <label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada / Localização</label>
-    <textarea class="form-input" id="homeLocation" placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda." rows="3"></textarea>
-    <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua morada.</div>
-  </div>
+            <div class="form-group">
+              <label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada / Localização</label>
+              <textarea class="form-input" id="homeLocation" placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda."
+                rows="3"></textarea>
+              <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua
+                morada.</div>
+            </div>
 
-  <div class="form-group">
-    <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
-    <select class="form-select" id="homeService">
-      <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
-      <optgroup label="Cortes">
-        <option value="Kutz de Cabelo (Domicílio)">Kutz de Cabelo — 7.000 KZ</option>
-        <option value="Kutz Criança Sub 15 (Domicílio)">Kutz Criança — 6.000 KZ</option>
-        <option value="Kutz de Barba (Domicílio)">Kutz de Barba — 6.000 KZ</option>
-        <option value="Kutz de Cabelo + Barba (Domicílio)">Kutz Cabelo + Barba — 9.000 KZ</option>
-      </optgroup>
-      <optgroup label="VIP">
-        <option value="VIP Kutz (Domicílio)">VIP Kutz — 13.000 KZ</option>
-        <option value="Presidential Kutz (Domicílio)">Presidential Kutz — 18.000 KZ</option>
-      </optgroup>
-    </select>
-    <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
-  </div>
+            <div class="form-group">
+              <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
+              <select class="form-select" id="homeService">
+                <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
 
-  <div class="form-row">
-    <div class="form-group">
-      <label class="form-label" for="homeDate" data-i18n="form_date">Data Preferida</label>
-      <input class="form-input" type="date" id="homeDate" />
-      <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
-      <select class="form-select" id="homeTime">
-        <option value="">Seleciona uma hora</option>
-        <option>09:00</option><option>09:30</option>
-        <option>10:00</option><option>10:30</option>
-        <option>11:00</option><option>11:30</option>
-        <option>12:00</option><option>12:30</option>
-        <option>14:00</option><option>14:30</option>
-        <option>15:00</option><option>15:30</option>
-        <option>16:00</option><option>16:30</option>
-        <option>17:00</option><option>17:30</option>
-        <option>18:00</option><option>18:30</option>
-      </select>
-      <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
-    </div>
-  </div>
+                <optgroup data-i18n="opt_cortes" label="Cortes">
+                  <option value="Line Up (Domicílio)" data-i18n="f_srv_lineup">Line Up — 1.500 KZ</option>
+                  <option value="Kutz Criança Sub 15 (Domicílio)" data-i18n="f_srv_kutz_crianca">Kutz Criança — 3.000 KZ
+                  </option>
+                  <option value="Kutz de Cabelo (Domicílio)" data-i18n="f_srv_kutz_cabelo">Kutz de Cabelo — 4.000 KZ
+                  </option>
+                  <option value="Kutz Seniores +65 (Domicílio)" data-i18n="f_srv_kutz_senior">Kutz Seniores — 4.000 KZ
+                  </option>
+                  <option value="Ballkutz Ritual Barboterapia (Domicílio)" data-i18n="f_srv_ritual_barba">Ballkutz
+                    Ritual — 6.000 KZ</option>
+                </optgroup>
 
-  <div class="form-group">
-    <label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes Adicionais (opcional)</label>
-    <textarea class="form-input" id="homeNotes" placeholder="Ex: portão azul, tocar campainha..." rows="2"></textarea>
-  </div>
+                <optgroup label="Barba" data-i18n="opt_barba">
+                  <option value="Kutz de Barba (Domicílio)" data-i18n="f_srv_kutz_barba">Kutz de Barba — 3.000 KZ
+                  </option>
+                  <option value="Kutz de Cabelo + Barba (Domicílio)" data-i18n="f_srv_cabelo_barba">Kutz Cabelo + Barba
+                    — 6.000 KZ</option>
+                </optgroup>
 
-  <div class="form-group">
-    <label class="consent-label">
-      <input type="checkbox" id="homeConsentCheck" />
-      <span data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span>
-    </label>
-    <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para continuar.</div>
-  </div>
+                <optgroup data-i18n="opt_extras" label="Serviços Extras">
+                  <option value="Sobrancelhas (Domicílio)" data-i18n="f_srv_sobrancelhas">Sobrancelhas — 2.000 KZ
+                  </option>
+                  <option value="Massagem (Domicílio)" data-i18n="f_srv_massagem">Massagem — 2.000 KZ</option>
+                  <option value="Hidratação (Domicílio)" data-i18n="f_srv_hidratacao">Hidratação — 2.500 KZ</option>
+                  <option value="Depilação (Domicílio)" data-i18n="f_srv_depilacao">Depilação — 3.000 KZ</option>
+                  <option value="Camuflagem (Domicílio)" data-i18n="f_srv_camuflagem">Camuflagem — 3.500 KZ</option>
+                  <option value="Pintura Preta (Domicílio)" data-i18n="f_srv_pintura">Pintura Preta — 4.000 KZ</option>
+                  <option value="Combo Hidratação (Domicílio)" data-i18n="f_srv_combo_hidratacao">Combo Hidratação —
+                    4.000 KZ</option>
+                  <option value="Combo Depilação (Domicílio)" data-i18n="f_srv_combo_depilacao">Combo Depilação — 5.000
+                    KZ</option>
+                  <option value="Limpeza de Pele (Domicílio)" data-i18n="f_srv_limpeza">Limpeza de Pele — 5.000 KZ
+                  </option>
+                  <option value="Combo Camuflagem (Domicílio)" data-i18n="f_srv_combo_camuflagem">Combo Camuflagem —
+                    6.000 KZ</option>
+                  <option value="Velas Hopi (Domicílio)" data-i18n="f_srv_velas_hopi">Velas Hopi — 7.000 KZ</option>
+                  <option value="Descoloração (Domicílio)" data-i18n="f_srv_descoloracao">Descoloração — 7.000/12.000 KZ
+                  </option>
+                  <option value="24K Gold Limpeza (Domicílio)" data-i18n="f_srv_24k_limpeza">24K Gold — 10.000 KZ
+                  </option>
+                </optgroup>
 
-  <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span data-i18n="home_submit">Solicitar Corte ao Domicílio</span>
-  </button>
-</div>
+                <optgroup label="VIP / Combo" data-i18n="opt_vip">
+                  <option value="VIP Kutz (Domicílio)" data-i18n="f_srv_vip_kutz">VIP Kutz — 10.000 KZ</option>
+                  <option value="Presidential Kutz (Domicílio)" data-i18n="f_srv_presidential">Presidential Kutz —
+                    15.000 KZ</option>
+                </optgroup>
+
+                <optgroup label="Planos de Assinatura">
+                  <option value="Plano Cabelo 2x (Domicílio)" data-i18n="plan1_name">Plano Cabelo 2x/mês — 6.500 KZ
+                  </option>
+                  <option value="Plano Cabelo + Barba 2x (Domicílio)" data-i18n="plan2_name">Plano Cabelo + Barba 2x/mês
+                    — 9.500 KZ</option>
+                  <option value="Plano Cabelo Ilimitado (Domicílio)" data-i18n="plan3_name">Plano Cabelo Ilimitado —
+                    10.000 KZ</option>
+                  <option value="Plano Barba Ilimitado (Domicílio)" data-i18n="plan4_name">Plano Barba Ilimitado — 8.500
+                    KZ</option>
+                  <option value="Plano Criança Ilimitado (Domicílio)" data-i18n="plan5_name">Plano Criança Ilimitado —
+                    7.500 KZ</option>
+                  <option value="Plano Cabelo + Barba Ilimitado (Domicílio)" data-i18n="plan6_name">Plano Cabelo + Barba
+                    Ilimitado — 15.000 KZ
+                  </option>
+                </optgroup>
+              </select>
+              <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="homeDate" data-i18n="form_date">Data Preferida</label>
+                <input class="form-input" type="date" id="homeDate" />
+                <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
+                <select class="form-select" id="homeTime">
+                  <option value="" data-i18n="form_time_placeholder">Seleciona uma hora</option>
+                  <option>09:00</option>
+                  <option>09:30</option>
+                  <option>10:00</option>
+                  <option>10:30</option>
+                  <option>11:00</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+                  <option>12:30</option>
+                  <option>14:00</option>
+                  <option>14:30</option>
+                  <option>15:00</option>
+                  <option>15:30</option>
+                  <option>16:00</option>
+                  <option>16:30</option>
+                  <option>17:00</option>
+                  <option>17:30</option>
+                  <option>18:00</option>
+                  <option>18:30</option>
+                </select>
+                <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes Adicionais
+                (opcional)</label>
+              <textarea class="form-input" id="homeNotes" placeholder="Ex: portão azul, tocar campainha..."
+                rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="consent-label">
+                <input type="checkbox" id="homeConsentCheck" />
+                <span data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span>
+              </label>
+              <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para
+                continuar.</div>
+            </div>
+
+            <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="home_submit">Solicitar Corte ao Domicílio</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -1232,7 +1327,8 @@
           <div class="review-card">
             <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-            <p class="review-text" data-i18n="review7_text">"FUI MUITO BEM RECEBIDO, EXCELENTE SERVIÇO AMBIENTE MUITO CONFORTAVEL, SIMPLISMENTE EXTRAORDINÁRIO"</p>
+            <p class="review-text" data-i18n="review7_text">"FUI MUITO BEM RECEBIDO, EXCELENTE SERVIÇO AMBIENTE MUITO
+              CONFORTAVEL, SIMPLISMENTE EXTRAORDINÁRIO"</p>
             <div class="review-author">
               <div class="review-avatar">KM</div>
               <div>
@@ -1245,7 +1341,10 @@
           <div class="review-card">
             <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                 class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-            <p class="review-text" data-i18n="review8_text">GOSTEI BASTANTE DE ESTAR NA BALLBUTZ BARBERSHOP, FOI UMA EXPERIÊNCIA NOVA E ME SENTI MUITO BEM COM O ATENDIMENTO, ME IDENTIFIQUEI COM A TEMÁTICA DESPORTIVA. <br>RECOMENDO BÃO IRÁS TE ARREPENDER </p>
+            <p class="review-text" data-i18n="review8_text">GOSTEI BASTANTE DE ESTAR NA BALLBUTZ BARBERSHOP, FOI UMA
+              EXPERIÊNCIA NOVA E ME SENTI MUITO BEM COM O ATENDIMENTO, ME IDENTIFIQUEI COM A TEMÁTICA DESPORTIVA.
+              <br>RECOMENDO BÃO IRÁS TE ARREPENDER
+            </p>
             <div class="review-author">
               <div class="review-avatar">AF</div>
               <div>

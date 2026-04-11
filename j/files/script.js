@@ -32,6 +32,7 @@ let currentLang = "pt";
 
 const LOCALES = {
   pt: {
+    opt_p: "Planos de Assinatura",  
     tab_domicilio: "Ao Domicílio",
     opt_cortes: "Cortes",
     opt_barba: "Barba",
@@ -242,6 +243,7 @@ const LOCALES = {
     plan_intro_text_2: "NETFLIX",
   },
   en: {
+    opt_p: "Subscription Plans",
     plan_intro_text_2: "NETFLIX",
     tab_domicilio: "At Home",
     opt_cortes: "Cuts",
@@ -449,6 +451,7 @@ const LOCALES = {
       "WHERE YOU PAY A MONTHLY FEE AND HAVE LIMITED OR UNLIMITED ACCESS TO SERVICES, JUST LIKE ",
   },
   fr: {
+    opt_p: "Forfaits d'Abonnement",
     plan_intro_text_2: "NETFLIX",
     tab_domicilio: "À Domicile",
     opt_cortes: "Coupes",
@@ -653,6 +656,7 @@ const LOCALES = {
       "OÙ VOUS PAYEZ UN ABONNEMENT MENSUEL ET AVEZ UN ACCÈS LIMITÉ OU ILLIMITÉ AUX SERVICES, TOUT COMME ",
   },
   es: {
+    opt_p: "Planes de Suscripción",
     plan_intro_text_2: "NETFLIX",
     tab_domicilio: "A Domicilio",
     opt_cortes: "Cortes",
@@ -856,6 +860,7 @@ const LOCALES = {
       "DONDE PAGAS UNA MENSUALIDAD Y TIENES ACCESO LIMITADO O ILIMITADO A LOS SERVICIOS, IGUAL QUE ",
   },
   zh: {
+    opt_p: "订阅计划",
     plan_intro_text_2: "NETFLIX",
     plan_intro_text: "您只需支付月费，即可获得有限或无限次的服务权限，就像 ",
     tab_domicilio: "上门服务",
