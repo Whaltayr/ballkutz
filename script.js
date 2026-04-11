@@ -24,9 +24,8 @@ const TIME_SLOTS = [
   "17:30",
   "18:00",
   "18:30",
-    "19:00",
+  "19:00",
   "19:30",
-
 ];
 
 let currentLang = "pt";
@@ -929,12 +928,10 @@ const LOCALES = {
     yt_vid1: "BALLKUTZ 盛大开业 | 2025 开业日 EP.1",
     yt_vid2: "一切是如何开始的 - EP.1/S1 BALLKUTZ",
     yt_vid3: "BallKutz 体验",
-    review9_text:
-      "空间井然有序，服务极佳，非常适合小朋友和大人。",
+    review9_text: "空间井然有序，服务极佳，非常适合小朋友和大人。",
     review8_text:
       "我非常喜欢在BALLKUTZ理发店的体验，这是一种全新的体验，我对他们的服务感到非常满意，我很认同这里的体育主题。强烈推荐，你不会后悔的。",
-    review7_text:
-      "我受到了很好的接待，优质的服务，非常舒适的环境，简直非凡。",
+    review7_text: "我受到了很好的接待，优质的服务，非常舒适的环境，简直非凡。",
     review6_text:
       "很棒的理发店！店面干净、现代且舒适。理发非常细心，结果正是我所期望的。性价比极高。我毫不犹豫地推荐这家理发店，并且我很乐意再次光临！",
     review5_text:
@@ -1562,19 +1559,25 @@ function validateShopForm() {
 function validateHomeForm() {
   const n = document.getElementById("homeClientName").value.trim();
   const p = document.getElementById("homeClientPhone").value.trim();
+  const e = document.getElementById("homeClientEmail").value.trim();
   const l = document.getElementById("homeLocation").value.trim();
   const s = document.getElementById("homeService").value;
   const d = document.getElementById("homeDate").value;
   const t = document.getElementById("homeTime").value;
   const c = document.getElementById("homeConsentCheck").checked;
+
+  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
   showErr("homeNameError", !n);
   showErr("homePhoneError", !isPhone(p));
+  showErr("homeEmailError", !isEmail(e));
   showErr("homeLocationError", !l);
   showErr("homeServiceError", !s);
   showErr("homeDateError", !isDate(d));
   showErr("homeTimeError", !t);
   showErr("homeConsentError", !c);
-  return n && isPhone(p) && l && s && isDate(d) && t && c;
+
+  return n && isPhone(p) && isEmail(e) && l && s && isDate(d) && t && c;
 }
 
 // ── WhatsApp builders ──
@@ -1717,6 +1720,7 @@ function initBookingForm() {
       const data = {
         name: document.getElementById("homeClientName").value.trim(),
         phone: document.getElementById("homeClientPhone").value.trim(),
+        email: document.getElementById("homeClientEmail").value.trim(), // novo
         location: document.getElementById("homeLocation").value.trim(),
         service: document.getElementById("homeService").value,
         date: document.getElementById("homeDate").value,
@@ -1730,6 +1734,7 @@ function initBookingForm() {
       await notifyEmail({
         Nome: data.name,
         WhatsApp: data.phone,
+          Email: data.email || "N/A", // novo
         Serviço: data.service,
         Data: data.date,
         Hora: data.time,

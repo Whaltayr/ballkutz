@@ -1042,87 +1042,92 @@
             <button type="button" class="btn btn--primary form-submit-btn" id="submitBooking"><i
                 class="fa-brands fa-whatsapp"></i><span data-i18n="form_submit">Confirmar Marcação</span></button>
           </div>
-          <!-- Panel Home -->
-          <div class="booking-panel" id="panelHome" aria-live="polite">
-            <div class="form-row">
-              <div class="form-group"><label class="form-label" for="homeClientName"
-                  data-i18n="form_name">Nome</label><input class="form-input" type="text" id="homeClientName"
-                  placeholder="O teu nome" autocomplete="name" />
-                <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.
-                </div>
-              </div>
-              <div class="form-group"><label class="form-label" for="homeClientPhone"
-                  data-i18n="form_phone">WhatsApp</label><input class="form-input" type="tel" id="homeClientPhone"
-                  placeholder="+244 9XX XXX XXX" autocomplete="tel" />
-                <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número inválido.</div>
-              </div>
-            </div>
-            <div class="form-group"><label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada
-                / Localização</label><textarea class="form-input" id="homeLocation"
-                placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda." rows="3"></textarea>
-              <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua
-                morada.</div>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
-              <select class="form-select" id="homeService">
-                <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
-                <optgroup label="Cortes">
-                  <option value="Kutz de Cabelo (Domicílio)">Kutz de Cabelo — 7.000 KZ</option>
-                  <option value="Kutz Criança Sub 15 (Domicílio)">Kutz Criança — 6.000 KZ</option>
-                  <option value="Kutz de Barba (Domicílio)">Kutz de Barba — 6.000 KZ</option>
-                  <option value="Kutz de Cabelo + Barba (Domicílio)">Kutz Cabelo + Barba — 9.000 KZ</option>
-                </optgroup>
-                <optgroup label="VIP">
-                  <option value="VIP Kutz (Domicílio)">VIP Kutz — 13.000 KZ</option>
-                  <option value="Presidential Kutz (Domicílio)">Presidential Kutz — 18.000 KZ</option>
-                </optgroup>
-              </select>
-              <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
-            </div>
-            <div class="form-row">
-              <div class="form-group"><label class="form-label" for="homeDate" data-i18n="form_date">Data
-                  Preferida</label><input class="form-input" type="date" id="homeDate" />
-                <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
-                <select class="form-select" id="homeTime">
-                  <option value="">Seleciona uma hora</option>
-                  <option>09:00</option>
-                  <option>09:30</option>
-                  <option>10:00</option>
-                  <option>10:30</option>
-                  <option>11:00</option>
-                  <option>11:30</option>
-                  <option>12:00</option>
-                  <option>12:30</option>
-                  <option>14:00</option>
-                  <option>14:30</option>
-                  <option>15:00</option>
-                  <option>15:30</option>
-                  <option>16:00</option>
-                  <option>16:30</option>
-                  <option>17:00</option>
-                  <option>17:30</option>
-                  <option>18:00</option>
-                  <option>18:30</option>
-                </select>
-                <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
-              </div>
-            </div>
-            <div class="form-group"><label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes
-                Adicionais (opcional)</label><textarea class="form-input" id="homeNotes"
-                placeholder="Ex: portão azul, tocar campainha..." rows="2"></textarea></div>
-            <div class="form-group"><label class="consent-label"><input type="checkbox" id="homeConsentCheck" /><span
-                  data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span></label>
-              <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para
-                continuar.</div>
-            </div>
-            <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking"><i
-                class="fa-brands fa-whatsapp"></i><span data-i18n="home_submit">Solicitar Corte ao
-                Domicílio</span></button>
-          </div>
+        <!-- Panel Home -->
+<div class="booking-panel" id="panelHome" aria-live="polite">
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="homeClientName" data-i18n="form_name">Nome</label>
+      <input class="form-input" type="text" id="homeClientName" placeholder="O teu nome" autocomplete="name" />
+      <div class="form-error" id="homeNameError" data-i18n="form_name_error">Por favor insere o teu nome.</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="homeClientPhone" data-i18n="form_phone">WhatsApp</label>
+      <input class="form-input" type="tel" id="homeClientPhone" placeholder="+244 9XX XXX XXX" autocomplete="tel" />
+      <div class="form-error" id="homePhoneError" data-i18n="form_phone_error">Número inválido.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="homeClientEmail" data-i18n="form_email">E-mail (opcional)</label>
+    <input class="form-input" type="email" id="homeClientEmail" placeholder="email@exemplo.com" autocomplete="email" />
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="homeLocation" data-i18n="home_location_label">Morada / Localização</label>
+    <textarea class="form-input" id="homeLocation" placeholder="Ex: Rua das Flores, Bairro Maculusso, Luanda." rows="3"></textarea>
+    <div class="form-error" id="homeLocationError" data-i18n="home_location_error">Por favor indica a tua morada.</div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="homeService" data-i18n="form_service">Serviço</label>
+    <select class="form-select" id="homeService">
+      <option value="" data-i18n="form_service_placeholder">Seleciona um serviço</option>
+      <optgroup label="Cortes">
+        <option value="Kutz de Cabelo (Domicílio)">Kutz de Cabelo — 7.000 KZ</option>
+        <option value="Kutz Criança Sub 15 (Domicílio)">Kutz Criança — 6.000 KZ</option>
+        <option value="Kutz de Barba (Domicílio)">Kutz de Barba — 6.000 KZ</option>
+        <option value="Kutz de Cabelo + Barba (Domicílio)">Kutz Cabelo + Barba — 9.000 KZ</option>
+      </optgroup>
+      <optgroup label="VIP">
+        <option value="VIP Kutz (Domicílio)">VIP Kutz — 13.000 KZ</option>
+        <option value="Presidential Kutz (Domicílio)">Presidential Kutz — 18.000 KZ</option>
+      </optgroup>
+    </select>
+    <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label" for="homeDate" data-i18n="form_date">Data Preferida</label>
+      <input class="form-input" type="date" id="homeDate" />
+      <div class="form-error" id="homeDateError" data-i18n="form_date_error">Seleciona uma data válida.</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
+      <select class="form-select" id="homeTime">
+        <option value="">Seleciona uma hora</option>
+        <option>09:00</option><option>09:30</option>
+        <option>10:00</option><option>10:30</option>
+        <option>11:00</option><option>11:30</option>
+        <option>12:00</option><option>12:30</option>
+        <option>14:00</option><option>14:30</option>
+        <option>15:00</option><option>15:30</option>
+        <option>16:00</option><option>16:30</option>
+        <option>17:00</option><option>17:30</option>
+        <option>18:00</option><option>18:30</option>
+      </select>
+      <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="homeNotes" data-i18n="home_notes_label">Detalhes Adicionais (opcional)</label>
+    <textarea class="form-input" id="homeNotes" placeholder="Ex: portão azul, tocar campainha..." rows="2"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label class="consent-label">
+      <input type="checkbox" id="homeConsentCheck" />
+      <span data-i18n="form_consent">Concordo com o tratamento dos meus dados.</span>
+    </label>
+    <div class="form-error" id="homeConsentError" data-i18n="form_consent_error">Precisas de aceitar para continuar.</div>
+  </div>
+
+  <button type="button" class="btn btn--primary form-submit-btn" id="submitHomeBooking">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span data-i18n="home_submit">Solicitar Corte ao Domicílio</span>
+  </button>
+</div>
         </div>
       </div>
     </div>
