@@ -123,13 +123,13 @@ const LOCALES = {
     plan_discount: "10% OFF em produtos e serviços",
     plan_cta: "Aderir ao Plano",
     plan_cta_unlimited: "Aderir Agora",
-opt_p: "Planos de Assinatura",
-plan1_name: "Plano Cabelo (2x/mês - Limitado) — 6.500 KZ",
-plan2_name: "Plano Cabelo + Barba (2x/mês - Limitado) — 9.500 KZ",
-plan3_name: "Plano Cabelo (Ilimitado) — 10.000 KZ",
-plan4_name: "Plano Barba (Ilimitado) — 8.500 KZ",
-plan5_name: "Plano Criança (Ilimitado) — 7.500 KZ",
-plan6_name: "Plano Cabelo + Barba (Ilimitado) — 15.000 KZ",
+    opt_p: "Planos de Assinatura",
+    plan1_name: "Plano Cabelo (2x/mês - Limitado) — 6.500 KZ",
+    plan2_name: "Plano Cabelo + Barba (2x/mês - Limitado) — 9.500 KZ",
+    plan3_name: "Plano Cabelo (Ilimitado) — 10.000 KZ",
+    plan4_name: "Plano Barba (Ilimitado) — 8.500 KZ",
+    plan5_name: "Plano Criança (Ilimitado) — 7.500 KZ",
+    plan6_name: "Plano Cabelo + Barba (Ilimitado) — 15.000 KZ",
     plan1_perk1: "2 cortes de cabelo por mês",
     plan1_perk3:
       "1 ficha — 1 serviço extra de cortesia + trazer um amigo de graça",
@@ -1581,60 +1581,60 @@ function validateHomeForm() {
   return n && isPhone(p) && isEmail(e) && l && s && isDate(d) && t && c;
 }
 
-// // ── WhatsApp builders ──
-// function waShop(d) {
-//   const msg = [
-//     "Olá BallKutz! 🏆",
-//     "",
-//     "Quero agendar o meu corte na barbearia:",
-//     "",
-//     "✂️ *Serviço:* " + d.service,
-//     "👤 *Barbeiro:* " + (d.barber || "Qualquer disponível"),
-//     "📅 *Data:* " + d.date,
-//     "⏰ *Hora:* " + d.time,
-//     "",
-//     "👤 *Nome:* " + d.name,
-//     "📱 *WhatsApp:* " + d.phone,
-//     "",
-//     "Aguardo confirmação. Obrigado!",
-//   ].join("\n");
-//   return (
-//     "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg)
-//   );
-// }
+// ── WhatsApp builders ──
+function waShop(d) {
+  const msg = [
+    "Olá BallKutz! 🏆",
+    "",
+    "Quero agendar o meu corte na barbearia:",
+    "",
+    "✂️ *Serviço:* " + d.service,
+    "👤 *Barbeiro:* " + (d.barber || "Qualquer disponível"),
+    "📅 *Data:* " + d.date,
+    "⏰ *Hora:* " + d.time,
+    "",
+    "👤 *Nome:* " + d.name,
+    "📱 *WhatsApp:* " + d.phone,
+    "",
+    "Aguardo confirmação. Obrigado!",
+  ].join("\n");
+  return (
+    "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg)
+  );
+}
 
-// function waHome(d) {
-//   const lines = [
-//     "Olá BallKutz! 🏠✂️",
-//     "",
-//     "Quero solicitar um corte ao domicílio:",
-//     "",
-//     "✂️ *Serviço:* " + d.service,
-//     "📅 *Data Preferida:* " + d.date,
-//     "⏰ *Hora Preferida:* " + d.time,
-//     "",
-//     "👤 *Nome:* " + d.name,
-//     "📱 *WhatsApp:* " + d.phone,
-//     "📍 *Morada:* " + d.location,
-//   ];
-//   if (d.notes) lines.push("📝 *Detalhes:* " + d.notes);
-//   lines.push("", "Aguardo confirmação e confirmação de preço. Obrigado!");
-//   return (
-//     "https://wa.me/" +
-//     WHATSAPP_NUMBER +
-//     "?text=" +
-//     encodeURIComponent(lines.join("\n"))
-//   );
-// }
+function waHome(d) {
+  const lines = [
+    "Olá BallKutz! 🏠✂️",
+    "",
+    "Quero solicitar um corte ao domicílio:",
+    "",
+    "✂️ *Serviço:* " + d.service,
+    "📅 *Data Preferida:* " + d.date,
+    "⏰ *Hora Preferida:* " + d.time,
+    "",
+    "👤 *Nome:* " + d.name,
+    "📱 *WhatsApp:* " + d.phone,
+    "📍 *Morada:* " + d.location,
+  ];
+  if (d.notes) lines.push("📝 *Detalhes:* " + d.notes);
+  lines.push("", "Aguardo confirmação e confirmação de preço. Obrigado!");
+  return (
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(lines.join("\n"))
+  );
+}
 
-// function waQuick() {
-//   return (
-//     "https://wa.me/" +
-//     WHATSAPP_NUMBER +
-//     "?text=" +
-//     encodeURIComponent("Olá BallKutz! 🏆 Quero agendar um corte. Podem ajudar?")
-//   );
-// }
+function waQuick() {
+  return (
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent("Olá BallKutz! 🏆 Quero agendar um corte. Podem ajudar?")
+  );
+}
 
 // ── Email notification ──
 async function notifyEmail(payload) {
@@ -1707,7 +1707,6 @@ function initBookingForm() {
         Hora: data.time,
         Tipo: "Barbearia",
       });
-      window.open(waShop(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
       span.textContent = LOCALES[currentLang].form_submit;
@@ -1743,7 +1742,6 @@ function initBookingForm() {
         Notas: data.notes || "N/A",
         Tipo: "Domicílio",
       });
-      window.open(waHome(data), "_blank", "noopener");
       showSuccess();
       btn.disabled = false;
       span.textContent = LOCALES[currentLang].home_submit;
