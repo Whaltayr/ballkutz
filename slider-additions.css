@@ -1,0 +1,91 @@
+/* ================================================
+   TEAM SLIDER
+   ================================================ */
+.team__slider-wrap {
+  position: relative;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.team__slider-wrap::-webkit-scrollbar { display: none; }
+
+.team__slider {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  user-select: none;
+}
+
+.team__slider .barber-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (max-width: 768px) {
+  .team__slider .barber-card {
+    flex: 0 0 calc(80vw);
+  }
+}
+@media (max-width: 480px) {
+  .team__slider .barber-card {
+    flex: 0 0 calc(88vw);
+  }
+}
+
+/* ================================================
+   REVIEWS SLIDER (refactored)
+   ================================================ */
+.reviews__slider-wrap {
+  position: relative;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.reviews__slider-wrap::-webkit-scrollbar { display: none; }
+
+/* Override the old transform-based track */
+.reviews__track {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  user-select: none;
+  /* Remove the old transition that conflicted with scroll */
+  transform: none !important;
+  transition: none !important;
+}
+
+.review-card {
+  flex: 0 0 calc(33.333% - 1rem);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (max-width: 1024px) {
+  .review-card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+@media (max-width: 768px) {
+  .review-card {
+    flex: 0 0 calc(85vw);
+  }
+}
+@media (max-width: 480px) {
+  .review-card {
+    flex: 0 0 calc(90vw);
+  }
+}
+
+/* Shared slider controls used by all sections */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
