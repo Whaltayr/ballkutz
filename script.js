@@ -1515,37 +1515,28 @@ function initReviewsSlider() {
   });
 }
 
-// // ── Time slots ──
-// function renderTimeSlots() {
-//   const grid = document.getElementById("timeSlotsGrid");
-//   if (!grid) return;
-//   grid.innerHTML = "";
-//   TIME_SLOTS.forEach((t) => {
-//     const btn = document.createElement("button");
-//     btn.type = "button";
-//     btn.className = "time-slot";
-//     btn.textContent = t;
-//     btn.dataset.time = t;
-//     btn.addEventListener("click", () => {
-//       grid
-//         .querySelectorAll(".time-slot")
-//         .forEach((s) => s.classList.remove("selected"));
-//       btn.classList.add("selected");
-//     });
-//     grid.appendChild(btn);
-//   });
-// }
-
-
+// ── Time slots (CORRIGIDO COM SEGUNDA FECHADA) ──
 function renderTimeSlots() {
   const grid = document.getElementById("timeSlotsGrid");
-  if (!grid) return;
+  const dateInput = document.getElementById("bookingDate");
+  if (!grid || !dateInput) return;
 
   grid.innerHTML = "";
 
-  const today = new Date();
-  const day = today.getDay(); 
-  // 0 = Domingo, 1 = Segunda, 2 = Terça, ... 6 = Sábado
+  const now = new Date();
+  let day = now.getDay(); // 0 = Domingo, 1 = Segunda, etc.
+  let isToday = true;
+
+  if (dateInput.value) {
+    const [y, m, d] = dateInput.value.split("-").map(Number);
+    const selectedDate = new Date(y, m - 1, d);
+    day = selectedDate.getDay();
+    
+    const todayStr = now.getFullYear() + "-" + 
+                     String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                     String(now.getDate()).padStart(2, '0');
+    isToday = (dateInput.value === todayStr);
+  }
 
   TIME_SLOTS.forEach((t) => {
     const btn = document.createElement("button");
@@ -1554,40 +1545,59 @@ function renderTimeSlots() {
     btn.textContent = t;
     btn.dataset.time = t;
 
-    // Domingo: desativar horários depois das 17:00
-    if (day === 0) {
-      const [hour, minute] = t.split(":").map(Number);
-      const slotMinutes = hour * 60 + minute;
-      const limitMinutes = 17 * 60 + 30; // 17:30
+    const [hour, minute] = t.split(":").map(Number);
+    const slotMinutes = hour * 60 + minute;
 
-      if (slotMinutes > limitMinutes) {
-        btn.classList.add("disabled");
-        btn.disabled = true;
-      }
+    // REGRA 1: Bloquear horários passados se a marcação for para hoje
+    if (isToday && (hour < now.getHours() || (hour === now.getHours() && minute <= now.getMinutes()))) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
+    }
+
+    // REGRA 2: Domingo desativar horários depois das 17:30
+    if (day === 0 && slotMinutes > (17 * 60 + 30)) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
+    }
+
+    // REGRA 3: Segunda-feira FECHADO (bloqueia todos os horários)
+    if (day === 1) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
     }
 
     btn.addEventListener("click", () => {
       if (btn.disabled) return;
-
-      grid.querySelectorAll(".time-slot").forEach((s) => {
-        s.classList.remove("selected");
-      });
-
+      grid.querySelectorAll(".time-slot").forEach((s) => s.classList.remove("selected"));
       btn.classList.add("selected");
     });
 
     grid.appendChild(btn);
   });
 }
+
 function renderHomeTimeSlots() {
   const grid = document.getElementById("homeTimeSlotsGrid");
   const hidden = document.getElementById("homeTime");
-  if (!grid || !hidden) return;
+  const dateInput = document.getElementById("homeDate");
+  if (!grid || !hidden || !dateInput) return;
 
   grid.innerHTML = "";
 
-  const today = new Date();
-  const day = today.getDay(); // 0 domingo
+  const now = new Date();
+  let day = now.getDay(); 
+  let isToday = true;
+
+  if (dateInput.value) {
+    const [y, m, d] = dateInput.value.split("-").map(Number);
+    const selectedDate = new Date(y, m - 1, d);
+    day = selectedDate.getDay();
+    
+    const todayStr = now.getFullYear() + "-" + 
+                     String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                     String(now.getDate()).padStart(2, '0');
+    isToday = (dateInput.value === todayStr);
+  }
 
   TIME_SLOTS.forEach((t) => {
     const btn = document.createElement("button");
@@ -1596,35 +1606,37 @@ function renderHomeTimeSlots() {
     btn.textContent = t;
     btn.dataset.time = t;
 
-    // Domingo: desativar depois das 17:30
-    if (day === 0) {
-      const [hour, minute] = t.split(":").map(Number);
-      const slotMinutes = hour * 60 + minute;
-      const limitMinutes = 17 * 60 + 30;
+    const [hour, minute] = t.split(":").map(Number);
+    const slotMinutes = hour * 60 + minute;
 
-      if (slotMinutes > limitMinutes) {
-        btn.classList.add("disabled");
-        btn.disabled = true;
-      }
+    // REGRA 1: Bloquear passados
+    if (isToday && (hour < now.getHours() || (hour === now.getHours() && minute <= now.getMinutes()))) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
+    }
+
+    // REGRA 2: Domingo fechar às 17:30
+    if (day === 0 && slotMinutes > (17 * 60 + 30)) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
+    }
+
+    // REGRA 3: Segunda-feira FECHADO (bloqueia todos os horários)
+    if (day === 1) {
+      btn.classList.add("disabled");
+      btn.disabled = true;
     }
 
     btn.addEventListener("click", () => {
       if (btn.disabled) return;
-
-      grid.querySelectorAll(".time-slot").forEach((s) => {
-        s.classList.remove("selected");
-      });
-
+      grid.querySelectorAll(".time-slot").forEach((s) => s.classList.remove("selected"));
       btn.classList.add("selected");
-
-      // guardar valor no hidden input
-      hidden.value = t;
+      hidden.value = t; 
     });
 
     grid.appendChild(btn);
   });
 }
-
 
 // ── Booking mode switcher ──
 let activeMode = "barbershop";
@@ -1668,19 +1680,26 @@ const getSlot = () => {
 function validateShopForm() {
   const n = document.getElementById("clientName").value.trim();
   const p = document.getElementById("clientPhone").value.trim();
+  const e = document.getElementById("clientEmail").value.trim(); // <-- CAPTURA O EMAIL
   const s = document.getElementById("bookingService").value;
   const d = document.getElementById("bookingDate").value;
   const t = getSlot();
   const c = document.getElementById("consentCheck").checked;
+
+  // Validação estrita: exige que o email esteja preenchido e num formato válido
+  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
   showErr("nameError", !n);
   showErr("phoneError", !isPhone(p));
+  showErr("emailError", !isEmail(e)); // <-- ATIVA O ERRO SE O EMAIL ESTIVER VAZIO OU INVÁLIDO
   showErr("serviceError", !s);
   showErr("dateError", !isDate(d));
   showErr("timeError", !t);
   showErr("consentError", !c);
-  return n && isPhone(p) && s && isDate(d) && t && c;
-}
 
+  // O formulário só avança se TODAS as condições forem verdadeiras (incluindo o email)
+  return n && isPhone(p) && isEmail(e) && s && isDate(d) && t && c;
+}
 function validateHomeForm() {
   const n = document.getElementById("homeClientName").value.trim();
   const p = document.getElementById("homeClientPhone").value.trim();
@@ -1734,6 +1753,7 @@ function waHome(d) {
     "Quero solicitar um corte ao domicílio:",
     "",
     "✂️ *Serviço:* " + d.service,
+    "👤 *Barbeiro:* " + (d.barber || "Qualquer disponível"), // <-- NOVA LINHA AQUI
     "📅 *Data Preferida:* " + d.date,
     "⏰ *Hora Preferida:* " + d.time,
     "",
@@ -1780,131 +1800,150 @@ const hideSuccess = () =>
   document.getElementById("successOverlay").classList.remove("visible");
 
 // ── Booking form init ──
+// ── Booking form init (CORRIGIDO) ──
 function initBookingForm() {
-  const today = new Date().toISOString().split("T")[0];
+  const now = new Date();
+  // Formatar data para YYYY-MM-DD mantendo o fuso local seguro
+  const todayStr = now.getFullYear() + "-" + 
+                   String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                   String(now.getDate()).padStart(2, '0');
+
+  // Configurar inputs de data
   ["bookingDate", "homeDate"].forEach((id) => {
     const el = document.getElementById(id);
-    if (el) el.setAttribute("min", today);
+    if (el) {
+      el.setAttribute("min", todayStr);
+      if (!el.value) el.value = todayStr; // Define a data de hoje por defeito
+      
+      // Quando o utilizador muda a data, atualiza os horários automaticamente
+      el.addEventListener("change", () => {
+        if (id === "bookingDate") renderTimeSlots();
+        if (id === "homeDate") renderHomeTimeSlots();
+      });
+    }
   });
 
   renderTimeSlots();
+  renderHomeTimeSlots();
 
-  document
-    .getElementById("modeBarbershop")
-    .addEventListener("click", () => switchBookingMode("barbershop"));
-  document
-    .getElementById("modeHome")
-    .addEventListener("click", () => switchBookingMode("home"));
+  document.getElementById("modeBarbershop").addEventListener("click", () => switchBookingMode("barbershop"));
+  document.getElementById("modeHome").addEventListener("click", () => switchBookingMode("home"));
 
   const waBtn = document.getElementById("waQuickBtn");
-  if (waBtn)
+  if (waBtn) {
     waBtn.addEventListener("click", (e) => {
       e.preventDefault();
       window.open(waQuick(), "_blank", "noopener");
     });
+  }
 
   // --- SUBMIT BARBEARIA ---
-  document
-    .getElementById("submitBooking")
-    .addEventListener("click", async () => {
-      if (document.getElementById("honeypot").value) return;
-      if (!validateShopForm()) return; // Valida os outros campos
+  document.getElementById("submitBooking").addEventListener("click", async () => {
+    if (document.getElementById("honeypot").value) return;
+    if (!validateShopForm()) return; 
 
-      // Validação E-mail Barbearia
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const emailVal = document.getElementById("clientEmail").value.trim();
-      if (!emailVal || !emailRegex.test(emailVal)) {
-        document.getElementById("emailError").style.display = "block";
-        return; // PÁRA A EXECUÇÃO AQUI SE O E-MAIL ESTIVER ERRADO
-      } else {
-        document.getElementById("emailError").style.display = "none";
-      }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailVal = document.getElementById("clientEmail").value.trim();
+    if (emailVal && !emailRegex.test(emailVal)) { // Tornamos o email realmente opcional, mas se preenchido tem de ser válido
+      document.getElementById("emailError").style.display = "block";
+      return; 
+    } else {
+      document.getElementById("emailError").style.display = "none";
+    }
 
-      const data = {
-        name: document.getElementById("clientName").value.trim(),
-        phone: document.getElementById("clientPhone").value.trim(),
-        email: emailVal,
-        service: document.getElementById("bookingService").value,
-        barber: document.getElementById("bookingBarber").value,
-        date: document.getElementById("bookingDate").value,
-        time: getSlot(),
-      };
+    const data = {
+      name: document.getElementById("clientName").value.trim(),
+      phone: document.getElementById("clientPhone").value.trim(),
+      email: emailVal,
+      service: document.getElementById("bookingService").value,
+      barber: document.getElementById("bookingBarber").value,
+      date: document.getElementById("bookingDate").value,
+      time: getSlot(),
+    };
 
-      const btn = document.getElementById("submitBooking");
-      const span = btn.querySelector("span");
-      btn.disabled = true;
-      span.textContent = "...";
+    const btn = document.getElementById("submitBooking");
+    const span = btn.querySelector("span");
+    btn.disabled = true;
+    span.textContent = "...";
       
-      await notifyEmail({
-        Nome: data.name,
-        WhatsApp: data.phone,
-        Email: data.email,
-        Serviço: data.service,
-        Barbeiro: data.barber || "Qualquer",
-        Data: data.date,
-        Hora: data.time,
-        Tipo: "Barbearia",
-      });
-      
-      showSuccess();
-      btn.disabled = false;
-      span.textContent = LOCALES[currentLang].form_submit;
+    // 1. Envia para o Make (Webhook)
+    await notifyEmail({
+      Nome: data.name,
+      WhatsApp: data.phone,
+      Email: data.email,
+      Serviço: data.service,
+      Barbeiro: data.barber || "Qualquer",
+      Data: data.date,
+      Hora: data.time,
+      Tipo: "Barbearia",
     });
-
-  // --- SUBMIT DOMICÍLIO ---
-  document
-    .getElementById("submitHomeBooking")
-    .addEventListener("click", async () => {
-      if (document.getElementById("honeypot").value) return;
-      if (!validateHomeForm()) return; // Valida os outros campos
-
-      // Validação E-mail Domicílio
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const homeEmailVal = document.getElementById("homeClientEmail").value.trim();
       
-      if (!homeEmailVal || !emailRegex.test(homeEmailVal)) {
-        document.getElementById("homeEmailError").style.display = "block";
-        return; // PÁRA A EXECUÇÃO AQUI SE O E-MAIL ESTIVER ERRADO
-      } else {
-        document.getElementById("homeEmailError").style.display = "none";
-      }
+    // 2. Abre o WhatsApp com a mensagem preenchida
+    window.open(waShop(data), "_blank", "noopener");
 
-      const data = {
-        name: document.getElementById("homeClientName").value.trim(),
-        phone: document.getElementById("homeClientPhone").value.trim(),
-        email: homeEmailVal,
-        location: document.getElementById("homeLocation").value.trim(),
-        service: document.getElementById("homeService").value,
-        date: document.getElementById("homeDate").value,
-        time: document.getElementById("homeTime").value,
-        notes: document.getElementById("homeNotes").value.trim(),
-      };
+    // 3. Mostra a mensagem de sucesso
+    showSuccess();
+    btn.disabled = false;
+    span.textContent = LOCALES[currentLang].form_submit;
+  });
 
-      const btn = document.getElementById("submitHomeBooking");
-      const span = btn.querySelector("span");
-      btn.disabled = true;
-      span.textContent = "...";
+// --- SUBMIT DOMICÍLIO ---
+  document.getElementById("submitHomeBooking").addEventListener("click", async () => {
+    if (document.getElementById("honeypot").value) return;
+    if (!validateHomeForm()) return;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const homeEmailVal = document.getElementById("homeClientEmail").value.trim();
       
-      await notifyEmail({
-        Nome: data.name,
-        WhatsApp: data.phone,
-        Email: data.email,
-        Serviço: data.service,
-        Data: data.date,
-        Hora: data.time,
-        Morada: data.location,
-        Notas: data.notes || "N/A",
-        Tipo: "Domicílio",
-      });
+    if (homeEmailVal && !emailRegex.test(homeEmailVal)) {
+      document.getElementById("homeEmailError").style.display = "block";
+      return; 
+    } else {
+      document.getElementById("homeEmailError").style.display = "none";
+    }
+
+    // 1. Capturar o barbeiro
+    const data = {
+      name: document.getElementById("homeClientName").value.trim(),
+      phone: document.getElementById("homeClientPhone").value.trim(),
+      email: homeEmailVal,
+      location: document.getElementById("homeLocation").value.trim(),
+      service: document.getElementById("homeService").value,
+      barber: document.getElementById("homeBarber").value, // <-- NOVO CAMPO
+      date: document.getElementById("homeDate").value,
+      time: document.getElementById("homeTime").value,
+      notes: document.getElementById("homeNotes").value.trim(),
+    };
+
+    const btn = document.getElementById("submitHomeBooking");
+    const span = btn.querySelector("span");
+    btn.disabled = true;
+    span.textContent = "...";
       
-      showSuccess();
-      btn.disabled = false;
-      span.textContent = LOCALES[currentLang].home_submit;
+    // 2. Enviar para o Make (Webhook) com o barbeiro incluído
+    await notifyEmail({
+      Nome: data.name,
+      WhatsApp: data.phone,
+      Email: data.email,
+      Serviço: data.service,
+      Barbeiro: data.barber || "Qualquer", // <-- NOVO CAMPO
+      Data: data.date,
+      Hora: data.time,
+      Morada: data.location,
+      Notas: data.notes || "N/A",
+      Tipo: "Domicílio",
     });
+      
+    // 3. Abre o WhatsApp atualizado
+    window.open(waHome(data), "_blank", "noopener");
 
-  document
-    .getElementById("closeSuccess")
-    .addEventListener("click", hideSuccess);
+    // 4. Mostra o sucesso
+    showSuccess();
+    btn.disabled = false;
+    span.textContent = LOCALES[currentLang].home_submit;
+  });
+
+  document.getElementById("closeSuccess").addEventListener("click", hideSuccess);
   document.getElementById("successOverlay").addEventListener("click", (e) => {
     if (e.target === e.currentTarget) hideSuccess();
   });
