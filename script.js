@@ -28,6 +28,8 @@ let currentLang = "pt";
 
 const LOCALES = {
   pt: {
+    about_badge: "Ano de excelência",
+    yt_title: "VÍDEOS EM DESTAQUE",
     tab_domicilio: "Ao Domicílio",
     opt_cortes: "Cortes",
     opt_barba: "Barba",
@@ -246,8 +248,18 @@ const LOCALES = {
       "EXCELENTE SALÃO! O SALÃO É LIMPO, MODERNO E AGRADÁVEL. O CORTE É FEITO COM MUITO CUIDADO E O RESULTADO É EXATAMENTE O QUE EU ESPERAVA. ÓTIMA RELAÇÃO CUSTO-BENEFÍCIO. RECOMENDO ESTE SALÃO SEM HESITAR E VOLTEREI COM PRAZER! ",
     review5_text:
       "SERVIÇO ESPETACULAR. TENHO UMA PELE SENSÍVEL E TIVERAM MUITA ATENÇÃO A ISSO. UM SIMPLES CORTE QUE SE TORNA NUMA EXPERIÊNCIA DE SENSAÇÕES. TUDO TOP! ",
+      home_srv_eyebrow: "Away Game — Exclusividade",
+  home_srv_title: "SERVIÇO AO DOMICÍLIO",
+  home_srv_notice_title: "Aviso Importante de Deslocação",
+  home_srv_notice_text: "Para garantir a melhor experiência no conforto do seu espaço, os valores abaixo são exclusivos para o atendimento ao domicílio. A taxa de locomoção (táxi/aplicativo) do barbeiro é da inteira responsabilidade do cliente.",
   },
   en: {
+    about_badge: "Year of excellence",
+    yt_title: "FEATURED VIDEOS",
+    home_srv_eyebrow: "Away Game — Exclusivity",
+  home_srv_title: "HOME SERVICE",
+  home_srv_notice_title: "Important Travel Notice",
+  home_srv_notice_text: "To ensure the best experience in the comfort of your space, the prices below are exclusive to home services. The barber's transportation fee (taxi/ride app) is the client's sole responsibility.",
     how_it_works: "How it Works?",
     yt_eyebrow: "BallKutz TV — Our videos",
     yt_title: "FEATURED VIDEOS",
@@ -475,6 +487,12 @@ const LOCALES = {
     plan_intro_text_2: "NETFLIX",
   },
   fr: {
+    about_badge: "Année d'excellence",
+    yt_title: "VIDÉOS EN VEDETTE",
+    home_srv_eyebrow: "Away Game — Exclusivité",
+  home_srv_title: "SERVICE À DOMICILE",
+  home_srv_notice_title: "Avis Important de Déplacement",
+  home_srv_notice_text: "Pour garantir la meilleure expérience dans le confort de votre espace, les tarifs ci-dessous sont exclusifs aux services à domicile. Les frais de transport du coiffeur (taxi/VTC) sont à l'entière charge du client.",
     how_it_works: "Comment ça marche ?",
     yt_eyebrow: "BallKutz TV — Nos vidéos",
     yt_title: "VIDÉOS EN VEDETTE",
@@ -698,6 +716,12 @@ const LOCALES = {
       "OÙ VOUS PAYEZ UN ABONNEMENT MENSUEL ET AVEZ UN ACCÈS LIMITÉ OU ILLIMITÉ AUX SERVICES, TOUT COMME ",
   },
   es: {
+    about_badge: "Año de Excelencia",
+    yt_title: "VIDEOS DESTACADOS",
+    home_srv_eyebrow: "Away Game — Exclusividad",
+  home_srv_title: "SERVICIO A DOMICILIO",
+  home_srv_notice_title: "Aviso Importante de Desplazamiento",
+  home_srv_notice_text: "Para garantizar la mejor experiencia en la comodidad de su espacio, los precios a continuación son exclusivos para servicios a domicilio. La tarifa de transporte del barbero (taxi/app) es responsabilidad exclusiva del cliente.",
     how_it_works: "¿Cómo Funciona?",
     yt_eyebrow: "BallKutz TV — Nuestros videos",
     yt_title: "VIDEOS DESTACADOS",
@@ -919,6 +943,12 @@ const LOCALES = {
       "DONDE PAGAS UNA MENSUALIDAD Y TIENES ACCESO LIMITADO O ILIMITADO A LOS SERVICIOS, IGUAL QUE ",
   },
   zh: {
+    about_badge: "卓越之年",
+    yt_title: "精选视频",
+    home_srv_eyebrow: "Away Game — 专属服务",
+  home_srv_title: "上门服务",
+  home_srv_notice_title: "重要出行须知",
+  home_srv_notice_text: "为了在您舒适的空间内提供最佳体验，以下价格为上门服务专属。理发师的交通费用（出租车/网约车）由客户全额承担。",
     how_it_works: "它是如何运作的？",
     yt_eyebrow: "BallKutz TV — 我们的视频",
     yt_title: "精选视频",
