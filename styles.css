@@ -1756,7 +1756,9 @@ body::before {
     flex-direction: column;
   }
   .booking-mode-card {
-    flex: 1 1 100%;
+      flex: none;        /* desliga o flex sizing automático */
+    width: 100%;       /* ocupa toda a largura */
+    min-height: 110px; /* garante altura mínima visível */
   }
 }
 
@@ -2189,7 +2191,7 @@ body::before {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
-  max-height: 1200px;
+  max-height: 1400px;
 }
 .home-location-field {
   margin-top: 0.5rem;
