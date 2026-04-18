@@ -1686,8 +1686,8 @@ function validateShopForm() {
   const t = getSlot();
   const c = document.getElementById("consentCheck").checked;
 
-  // Validação estrita: exige que o email esteja preenchido e num formato válido
-  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    // Validação estrita: exige que o email esteja preenchido e num formato válido
+  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(v);
 
   showErr("nameError", !n);
   showErr("phoneError", !isPhone(p));
@@ -1710,7 +1710,8 @@ function validateHomeForm() {
   const t = document.getElementById("homeTime").value;
   const c = document.getElementById("homeConsentCheck").checked;
 
-  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(v);
 
   showErr("homeNameError", !n);
   showErr("homePhoneError", !isPhone(p));
@@ -1844,7 +1845,8 @@ function initBookingForm() {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const emailVal = document.getElementById("clientEmail").value.trim();
-    if (emailVal && !emailRegex.test(emailVal)) { // Tornamos o email realmente opcional, mas se preenchido tem de ser válido
+
+    if (!emailRegex.test(emailVal)){ // Tornamos o email realmente opcional, mas se preenchido tem de ser válido
       document.getElementById("emailError").style.display = "block";
       return; 
     } else {
@@ -1895,7 +1897,7 @@ function initBookingForm() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const homeEmailVal = document.getElementById("homeClientEmail").value.trim();
       
-    if (homeEmailVal && !emailRegex.test(homeEmailVal)) {
+    if (!emailRegex.test(homeEmailVal))  {
       document.getElementById("homeEmailError").style.display = "block";
       return; 
     } else {
