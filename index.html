@@ -225,6 +225,12 @@
             </div>
             <div class="service-item__price">4.000 KZ</div>
           </div>
+          <div class="service-item" data-service="Kutz de Cabelo + Barba" tabindex="0" role="button">
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</div>
+            </div>
+            <div class="service-item__price">6.000 KZ</div>
+          </div>
         </div>
       </div>
       <!-- Barba -->
@@ -236,12 +242,7 @@
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
-          <div class="service-item" data-service="Kutz de Cabelo + Barba" tabindex="0" role="button">
-            <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</div>
-            </div>
-            <div class="service-item__price">6.000 KZ</div>
-          </div>
+          
           <div class="service-item" data-service="Ballkutz Ritual (Barboterapia)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</div>
@@ -1176,13 +1177,14 @@
                     </option>
                     <option value="Kutz de Cabelo" data-i18n="f_srv_kutz_cabelo">Kutz de Cabelo — 4.000 KZ</option>
                     <option value="Kutz Seniores (+65)" data-i18n="f_srv_kutz_senior">Kutz Seniores — 4.000 KZ</option>
-                    <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual —
-                      6.000 KZ</option>
+                   
                   </optgroup>
                   <optgroup label="Barba" data-i18n="opt_barba">
                     <option value="Kutz de Barba" data-i18n="f_srv_kutz_barba">Kutz de Barba — 3.000 KZ</option>
                     <option value="Kutz de Cabelo + Barba" data-i18n="f_srv_cabelo_barba">Kutz de Cabelo + Barba — 6.000
                       KZ</option>
+                       <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual —
+                      6.000 KZ</option>
                   </optgroup>
                   <optgroup label="Serviços Extras" data-i18n="opt_extras">
                     <option value="Sobrancelhas" data-i18n="f_srv_sobrancelhas">Sobrancelhas — 2.000 KZ</option>
@@ -1287,7 +1289,7 @@
 
             <div class="form-group">
               <label class="form-label" for="homeClientEmail" data-i18n="form_email">E-mail</label>
-              <input class="form-input" type="email" id="homeClientEmail" placeholder="email@exemplo.com"
+              <input class="form-input" required type="email" id="homeClientEmail" placeholder="email@exemplo.com"
                 autocomplete="email" />
               <div class="form-error" id="homeEmailError" data-i18n="form_email_error">E-mail inválido ou em falta.
               </div>
