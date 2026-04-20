@@ -1485,26 +1485,116 @@ function initReviewsSlider() {
   });
 }
 
-// ── Time slots ──
+// // ── Time slots ──
+// function renderTimeSlots() {
+//   const grid = document.getElementById("timeSlotsGrid");
+//   if (!grid) return;
+//   grid.innerHTML = "";
+//   TIME_SLOTS.forEach((t) => {
+//     const btn = document.createElement("button");
+//     btn.type = "button";
+//     btn.className = "time-slot";
+//     btn.textContent = t;
+//     btn.dataset.time = t;
+//     btn.addEventListener("click", () => {
+//       grid
+//         .querySelectorAll(".time-slot")
+//         .forEach((s) => s.classList.remove("selected"));
+//       btn.classList.add("selected");
+//     });
+//     grid.appendChild(btn);
+//   });
+// }
+
+
 function renderTimeSlots() {
   const grid = document.getElementById("timeSlotsGrid");
   if (!grid) return;
+
   grid.innerHTML = "";
+
+  const today = new Date();
+  const day = today.getDay(); 
+  // 0 = Domingo, 1 = Segunda, 2 = Terça, ... 6 = Sábado
+
   TIME_SLOTS.forEach((t) => {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "time-slot";
     btn.textContent = t;
     btn.dataset.time = t;
+
+    // Domingo: desativar horários depois das 17:00
+    if (day === 0) {
+      const [hour, minute] = t.split(":").map(Number);
+      const slotMinutes = hour * 60 + minute;
+      const limitMinutes = 17 * 60 + 30; // 17:30
+
+      if (slotMinutes > limitMinutes) {
+        btn.classList.add("disabled");
+        btn.disabled = true;
+      }
+    }
+
     btn.addEventListener("click", () => {
-      grid
-        .querySelectorAll(".time-slot")
-        .forEach((s) => s.classList.remove("selected"));
+      if (btn.disabled) return;
+
+      grid.querySelectorAll(".time-slot").forEach((s) => {
+        s.classList.remove("selected");
+      });
+
       btn.classList.add("selected");
     });
+
     grid.appendChild(btn);
   });
 }
+function renderHomeTimeSlots() {
+  const grid = document.getElementById("homeTimeSlotsGrid");
+  const hidden = document.getElementById("homeTime");
+  if (!grid || !hidden) return;
+
+  grid.innerHTML = "";
+
+  const today = new Date();
+  const day = today.getDay(); // 0 domingo
+
+  TIME_SLOTS.forEach((t) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "time-slot";
+    btn.textContent = t;
+    btn.dataset.time = t;
+
+    // Domingo: desativar depois das 17:30
+    if (day === 0) {
+      const [hour, minute] = t.split(":").map(Number);
+      const slotMinutes = hour * 60 + minute;
+      const limitMinutes = 17 * 60 + 30;
+
+      if (slotMinutes > limitMinutes) {
+        btn.classList.add("disabled");
+        btn.disabled = true;
+      }
+    }
+
+    btn.addEventListener("click", () => {
+      if (btn.disabled) return;
+
+      grid.querySelectorAll(".time-slot").forEach((s) => {
+        s.classList.remove("selected");
+      });
+
+      btn.classList.add("selected");
+
+      // guardar valor no hidden input
+      hidden.value = t;
+    });
+
+    grid.appendChild(btn);
+  });
+}
+
 
 // ── Booking mode switcher ──
 let activeMode = "barbershop";
@@ -1862,4 +1952,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initPlansSlider();
   initTeamSlider();
   initReviewsSlider();
+  renderHomeTimeSlots();
 });
