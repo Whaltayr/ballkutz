@@ -1814,7 +1814,7 @@ function initBookingForm() {
     const el = document.getElementById(id);
     if (el) {
       el.setAttribute("min", todayStr);
-      if (!el.value) el.value = todayStr; // Define a data de hoje por defeito
+//      if (!el.value) el.value = todayStr; // Define a data de hoje por defeito
       
       // Quando o utilizador muda a data, atualiza os horários automaticamente
       el.addEventListener("change", () => {
@@ -2013,6 +2013,10 @@ function initScrollTop() {
 
 // ── Init ──
 document.addEventListener("DOMContentLoaded", () => {
+  // Fix Safari iPhone — garante que abre no topo
+  if (history.scrollRestoration) history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+  
   initNavigation();
   initServiceTabs();
   initScrollAnimations();
