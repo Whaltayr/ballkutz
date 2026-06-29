@@ -53,7 +53,7 @@
             <option value="es" style="color:#000">ES</option>
             <option value="zh" style="color:#000">ZH</option>
           </select>
-          <a href="#reservar" class="btn btn--primary" data-i18n="nav_cta">Reservar</a>
+          <a href="#bookingFormWrap" class="btn btn--primary" data-i18n="nav_cta">Reservar</a>
           <button type="button" class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"
             aria-controls="mobileMenu">
             <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -74,7 +74,7 @@
     <a href="#equipa" class="mobile-link" data-i18n="nav_team">Equipa</a>
     <a href="#galeria" class="mobile-link" data-i18n="nav_gallery">Galeria</a>
     <div class="mobile-divider" aria-hidden="true"></div>
-    <a href="#reservar" class="btn btn--primary mobile-link" data-i18n="nav_cta">Reservar</a>
+    <a href="#bookingFormWrap" class="btn btn--primary mobile-link" data-i18n="nav_cta">Reservar</a>
     <a href="tel:+244975099348" class="mobile-call-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> Ligar
       Agora</a>
     <button type="button" class="mobile-lang" id="mobileLangToggle" aria-label="Mudar idioma">PT / EN</button>
@@ -99,7 +99,7 @@
         <p class="hero__sub" data-i18n="hero_sub">A barbearia dos campeões em Luanda. Cortes de excelência, experiência
           premium e inesquecível.</p>
         <div class="hero__ctas">
-          <a href="#reservar" class="btn btn--primary">
+          <a href="#bookingFormWrap" class="btn btn--primary">
             <i class="fa-brands fa-whatsapp"></i>
             <span data-i18n="hero_cta">Reservar Agora</span>
           </a>
@@ -207,18 +207,20 @@
       <!-- Cortes -->
       <div class="tab-panel active" id="tab-cortes" role="tabpanel" tabindex="0">
         <div class="services__grid reveal">
-          <div class="service-item" data-service="Kutz de Cabelo" tabindex="0" role="button">
-            <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div>
-            </div>
-            <div class="service-item__price">4.000 KZ</div>
-          </div>
+
           <div class="service-item" data-service="Kutz Criança (Sub 15)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</div>
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
+          <div class="service-item" data-service="Kutz de Cabelo" tabindex="0" role="button">
+            <div class="service-item__info">
+              <div class="service-item__name" data-i18n="srv_kutz_cabelo">Kutz de Cabelo</div>
+            </div>
+            <div class="service-item__price">4.000 KZ</div>
+          </div>
+
           <div class="service-item" data-service="Kutz Seniores (+65)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_kutz_senior">Kutz Seniores (+65)</div>
@@ -242,7 +244,7 @@
             </div>
             <div class="service-item__price">3.000 KZ</div>
           </div>
-          
+
           <div class="service-item" data-service="Ballkutz Ritual (Barboterapia)" tabindex="0" role="button">
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</div>
@@ -308,9 +310,9 @@
             </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
-          <div class="service-item" data-service="Limpeza de Pele" tabindex="0" role="button">
+          <div class="service-item" data-service="Limpeza Facial" tabindex="0" role="button">
             <div class="service-item__info">
-              <div class="service-item__name" data-i18n="srv_limpeza">Limpeza de Pele</div>
+              <div class="service-item__name" data-i18n="srv_limpeza">Limpeza Facial</div>
             </div>
             <div class="service-item__price">5.000 KZ</div>
           </div>
@@ -336,7 +338,7 @@
             <div class="service-item__info">
               <div class="service-item__name" data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</div>
             </div>
-            <div class="service-item__price">10.000 KZ</div>
+            <div class="service-item__price">10.000</div>
           </div>
         </div>
       </div>
@@ -505,191 +507,270 @@
     </div>
   </section>
 
-  <!-- SERVIÇOS domi-->
-  <section class="section home-service" id="domicilio"
-    style="background-color: var(--surface-light); border-top: 1px solid var(--border);">
+  <!-- SERVIÇOS AO DOMICÍLIO -->
+  <section class="section home-service" id="domicilio">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="label" data-i18n="home_srv_eyebrow">Away Game — Exclusividade</span>
-        <h2 class="heading-lg" data-i18n="home_srv_title">SERVIÇO AO DOMICÍLIO</h2>
-      </div>
 
-      <div class="home-service__notice reveal"
-        style="background: rgba(229, 9, 20, 0.08); border-left: 4px solid #E50914; padding: 1.5rem; margin-bottom: 3rem; border-radius: 4px;">
-        <h4
-          style="color: #fff; font-family: var(--font-heading); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
-          <i class="fa-solid fa-car-side" style="color: #E50914;"></i>
-          <span data-i18n="home_srv_notice_title">Aviso Importante de Deslocação</span>
-        </h4>
-        <p style="color: var(--grey-light); font-size: 0.95rem; line-height: 1.6; margin: 0;"
-          data-i18n="home_srv_notice_text">
-          Para garantir a melhor experiência no conforto do seu espaço, os valores abaixo são exclusivos para o
-          atendimento ao domicílio. <strong style="color: #fff;">A taxa de locomoção (táxi/aplicativo) do barbeiro é da
-            inteira responsabilidade do cliente.</strong>
-        </p>
-      </div>
+      <div class="home-service__layout">
 
-      <div class="services__grid reveal">
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_kutz_cabelo">Kutz de Cabelo</span></div>
-          </div>
-          <div class="service-item__price">7.000 KZ</div>
-        </div>
+        <!-- COLUNA ESQUERDA: IMAGEM + CARD -->
+        <aside class="home-service__aside">
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</span></div>
-          </div>
-          <div class="service-item__price">6.000 KZ</div>
-        </div>
+          <div class="home-service__media reveal">
+            <img src="img/sss.jpeg" alt="Barbeiro BallKutz realizando atendimento ao domicílio"
+              class="home-service__image">
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_kutz_senior">Kutz Seniores (+65)</span></div>
-          </div>
-          <div class="service-item__price">7.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_kutz_barba">Kutz de Barba</span></div>
-          </div>
-          <div class="service-item__price">6.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</span></div>
-          </div>
-          <div class="service-item__price">9.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</span>
+            <div class="home-service__media-badge">
+              <span>Away Game</span>
+              <strong>Atendimento VIP</strong>
             </div>
           </div>
-          <div class="service-item__price">9.000 KZ</div>
-        </div>
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_lineup">Line Up</span></div>
+          <div class="home-service__side-note reveal">
+            <span>Serviço Premium</span>
+            <p>
+              O barbeiro desloca-se até ao seu espaço com o padrão BallKutz:
+              precisão, higiene, presença e experiência VIP.
+            </p>
           </div>
-          <div class="service-item__price">4.500 KZ</div>
-        </div>
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_sobrancelhas">Sobrancelhas</span></div>
+        </aside>
+
+        <!-- COLUNA DIREITA: CONTEÚDO + SERVIÇOS + AVISO -->
+        <div class="home-service__content">
+
+          <div class="section-header reveal">
+            <span class="label" data-i18n="home_srv_eyebrow">Away Game — Exclusividade</span>
+            <h2 class="heading-lg" data-i18n="home_srv_title">SERVIÇO AO DOMICÍLIO</h2>
           </div>
-          <div class="service-item__price">5.000 KZ</div>
-        </div>
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_massagem">Massagem</span></div>
-          </div>
-          <div class="service-item__price">5.000 KZ</div>
-        </div>
+          <div class="services__grid reveal">
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_hidratacao">Hidratação de Cabelo ou Barba</span></div>
-          </div>
-          <div class="service-item__price">5.500 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_depilacao">Depilação Nariz ou Orelha</span></div>
-          </div>
-          <div class="service-item__price">6.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_camuflagem">Camuflagem Cabelo ou Barba</span></div>
-          </div>
-          <div class="service-item__price">6.500 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_pintura">Pintura Preta</span></div>
-          </div>
-          <div class="service-item__price">7.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_combo_hidratacao">Combo Hidratação</span></div>
-          </div>
-          <div class="service-item__price">7.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_combo_depilacao">Combo Depilação</span></div>
-          </div>
-          <div class="service-item__price">8.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_limpeza">Limpeza de Pele</span></div>
-          </div>
-          <div class="service-item__price">8.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_combo_camuflagem">Combo Camuflagem</span></div>
-          </div>
-          <div class="service-item__price">9.000 KZ</div>
-        </div>
-
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_velas_hopi">Velas Hopi (Terapia Termo-Auricular)</span>
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_kutz_cabelo">Kutz de Cabelo</span>
+                </div>
+              </div>
+              <div class="service-item__price">7.000 KZ</div>
             </div>
-          </div>
-          <div class="service-item__price">10.000 KZ</div>
-        </div>
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_descoloracao">Descoloração</span></div>
-          </div>
-          <div class="service-item__price">10.000 / 15.000 KZ</div>
-        </div>
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_kutz_crianca">Kutz Criança (Sub 15)</span>
+                </div>
+              </div>
+              <div class="service-item__price">6.000 KZ</div>
+            </div>
 
-        <div class="service-item">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</span></div>
-          </div>
-          <div class="service-item__price">13.000 KZ</div>
-        </div>
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_kutz_senior">Kutz Seniores (+65)</span>
+                </div>
+              </div>
+              <div class="service-item__price">7.000 KZ</div>
+            </div>
 
-        <div class="service-item" style="border-left: 2px solid var(--gold); background: rgba(133, 117, 78, 0.03);">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_vip_kutz">VIP Kutz</span></div>
-            <div class="service-item__duration" data-i18n="srv_vip_kutz_desc">Cabelo, Barba, Depilação, Massagem</div>
-          </div>
-          <div class="service-item__price">13.000 KZ</div>
-        </div>
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_kutz_barba">Kutz de Barba</span>
+                </div>
+              </div>
+              <div class="service-item__price">6.000 KZ</div>
+            </div>
 
-        <div class="service-item" style="border-left: 2px solid var(--gold); background: rgba(133, 117, 78, 0.03);">
-          <div class="service-item__info">
-            <div class="service-item__name"><span data-i18n="srv_presidential">Presidential Kutz</span></div>
-            <div class="service-item__duration" data-i18n="srv_presidential_desc">Cabelo, Barboterapia, Sobrancelhas,
-              Combo Depilação, Hidratação Cabelo, Massagem</div>
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_kutz_cabelo_barba">Kutz de Cabelo + Barba</span>
+                </div>
+              </div>
+              <div class="service-item__price">9.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_ritual_barba">Ballkutz Ritual (Barboterapia)</span>
+                </div>
+              </div>
+              <div class="service-item__price">9.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_lineup">Line Up</span>
+                </div>
+              </div>
+              <div class="service-item__price">4.500 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_sobrancelhas">Sobrancelhas</span>
+                </div>
+              </div>
+              <div class="service-item__price">5.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_massagem">Massagem</span>
+                </div>
+              </div>
+              <div class="service-item__price">5.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_hidratacao">Hidratação de Cabelo ou Barba</span>
+                </div>
+              </div>
+              <div class="service-item__price">5.500 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_depilacao">Depilação Nariz ou Orelha</span>
+                </div>
+              </div>
+              <div class="service-item__price">6.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_camuflagem">Camuflagem Cabelo ou Barba</span>
+                </div>
+              </div>
+              <div class="service-item__price">6.500 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_pintura">Pintura Preta</span>
+                </div>
+              </div>
+              <div class="service-item__price">7.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_combo_hidratacao">Combo Hidratação</span>
+                </div>
+              </div>
+              <div class="service-item__price">7.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_combo_depilacao">Combo Depilação</span>
+                </div>
+              </div>
+              <div class="service-item__price">8.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_limpeza">Limpeza de Pele</span>
+                </div>
+              </div>
+              <div class="service-item__price">8.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_combo_camuflagem">Combo Camuflagem</span>
+                </div>
+              </div>
+              <div class="service-item__price">9.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_velas_hopi">Velas Hopi (Terapia Termo-Auricular)</span>
+                </div>
+              </div>
+              <div class="service-item__price">10.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_descoloracao">Descoloração</span>
+                </div>
+              </div>
+              <div class="service-item__price">10.000 / 15.000 KZ</div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_24k_limpeza">24K Gold Limpeza de Pele</span>
+                </div>
+              </div>
+              <div class="service-item__price">13.000 KZ</div>
+            </div>
+
+            <div class="service-item service-item--featured">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_vip_kutz">VIP Kutz</span>
+                </div>
+                <div class="service-item__duration" data-i18n="srv_vip_kutz_desc">
+                  Cabelo, Barba, Depilação, Massagem
+                </div>
+              </div>
+              <div class="service-item__price">13.000 KZ</div>
+            </div>
+
+            <div class="service-item service-item--featured">
+              <div class="service-item__info">
+                <div class="service-item__name">
+                  <span data-i18n="srv_presidential">Presidential Kutz</span>
+                </div>
+                <div class="service-item__duration" data-i18n="srv_presidential_desc">
+                  Cabelo, Barboterapia, Sobrancelhas, Combo Depilação, Hidratação Cabelo, Massagem
+                </div>
+              </div>
+              <div class="service-item__price">18.000 KZ</div>
+            </div>
+
           </div>
-          <div class="service-item__price">18.000 KZ</div>
+
+          <div class="home-service__notice reveal">
+            <h4>
+              <i class="fa-solid fa-car-side"></i>
+              <span data-i18n="home_srv_notice_title">Aviso Importante de Deslocação</span>
+            </h4>
+
+            <p data-i18n="home_srv_notice_text">
+              Para garantir a melhor experiência no conforto do seu espaço, os valores abaixo são exclusivos para o
+              atendimento ao domicílio.
+              <strong>
+                A taxa de locomoção (táxi/aplicativo) do barbeiro é da inteira responsabilidade do cliente.
+              </strong>
+            </p>
+          </div>
+
         </div>
 
       </div>
+
     </div>
   </section>
 
@@ -750,7 +831,7 @@
               <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan1_perk3">1 ficha — 1 serviço extra de cortesia
                   + trazer um amigo de graça</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
+            <a href="#bookingFormWrap" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
           </div>
 
           <!-- Card 2 -->
@@ -769,7 +850,7 @@
               <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan2_perk3">1 ficha — 1 serviço extra de
                   cortesia</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
+            <a href="#bookingFormWrap" class="btn btn--ghost plan-card__cta" data-i18n="plan_cta">Aderir ao Plano</a>
           </div>
 
           <div class="plans__slider-divider" aria-hidden="true"><span class="plans__slider-divider-line"></span><span
@@ -792,7 +873,8 @@
               <li><i class="fa-solid fa-users"></i><span data-i18n="plan5_perk3">2 fichas — 1 serviço extra + trazer 1
                   amigo de graça</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
+            <a href="#bookingFormWrap" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir
+              Agora</a>
           </div>
 
           <!-- Card 4 -->
@@ -811,7 +893,8 @@
               <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan4_perk3">2 ficha — 1 serviço extra de
                   cortesia</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
+            <a href="#bookingFormWrap" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir
+              Agora</a>
           </div>
 
 
@@ -832,7 +915,8 @@
               <li><i class="fa-solid fa-ticket"></i><span data-i18n="plan3_perk3">2 fichas — 1 serviço extra de
                   cortesia</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
+            <a href="#bookingFormWrap" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir
+              Agora</a>
           </div>
 
           <!-- Card 6 FEATURED -->
@@ -852,7 +936,8 @@
               <li><i class="fa-solid fa-users"></i><span data-i18n="plan6_perk3">2 fichas — 1 serviço extra + trazer 1
                   amigo de graça</span></li>
             </ul>
-            <a href="#reservar" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir Agora</a>
+            <a href="#bookingFormWrap" class="btn btn--primary plan-card__cta" data-i18n="plan_cta_unlimited">Aderir
+              Agora</a>
           </div>
 
         </div>
@@ -954,7 +1039,7 @@
             </div>
           </div>
 
-          <div class="barber-card reveal" data-barber="Estevão" tabindex="0" role="button">
+          <!-- <div class="barber-card reveal" data-barber="Estevão" tabindex="0" role="button">
             <div class="barber-card__photo"><img src="img/estevao-barber.jpg" alt="Estevão - Senior Barber"></div>
             <div class="barber-card__info">
               <div class="barber-card__name">Estevão</div>
@@ -971,7 +1056,7 @@
               </div>
               <div class="barber-card__select" data-i18n="barber_book">Agendar →</div>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -1177,13 +1262,13 @@
                     </option>
                     <option value="Kutz de Cabelo" data-i18n="f_srv_kutz_cabelo">Kutz de Cabelo — 4.000 KZ</option>
                     <option value="Kutz Seniores (+65)" data-i18n="f_srv_kutz_senior">Kutz Seniores — 4.000 KZ</option>
-                   
+
                   </optgroup>
                   <optgroup label="Barba" data-i18n="opt_barba">
                     <option value="Kutz de Barba" data-i18n="f_srv_kutz_barba">Kutz de Barba — 3.000 KZ</option>
                     <option value="Kutz de Cabelo + Barba" data-i18n="f_srv_cabelo_barba">Kutz de Cabelo + Barba — 6.000
                       KZ</option>
-                       <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual —
+                    <option value="Ballkutz Ritual (Barboterapia)" data-i18n="f_srv_ritual_barba">Ballkutz Ritual —
                       6.000 KZ</option>
                   </optgroup>
                   <optgroup label="Serviços Extras" data-i18n="opt_extras">
@@ -1243,7 +1328,7 @@
                   <option value="Danilson">Danilson</option>
                   <!-- <option value="Hermenegildo">Hermenegildo</option> -->
                   <option value="João">João</option>
-                  <option value="Estevão">Estevão</option>
+                  <!-- <option value="Estevão">Estevão</option> -->
                 </select>
               </div>
             </div>
@@ -1257,7 +1342,7 @@
                 <div class="time-slots-grid" id="timeSlotsGrid" role="group" aria-label="Escolha o horário"></div>
                 <div class="form-error" id="timeError" data-i18n="form_time_error">Seleciona um horário.</div>
 
-             
+
               </div>
             </div>
             <div class="form-group"><label class="consent-label"><input type="checkbox" id="consentCheck" /><span
@@ -1368,17 +1453,19 @@
               <div class="form-error" id="homeServiceError" data-i18n="form_service_error">Seleciona um serviço.</div>
             </div>
 
-             <div class="form-group">
-                <label class="form-label" for="homeBarber" data-i18n="form_barber">Barbeiro</label>
-                <select class="form-select" id="homeBarber">
-                  <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
-                  <option value="Cleusio">Cleusio</option>
-                  <option value="Danilson">Danilson</option>
-                  <!-- <option value="Hermenegildo">Hermenegildo</option> -->
-                  <option value="João">João</option>
-                  <option value="Estevão">Estevão</option>
-                </select>
-              </div>
+
+            <div class="form-group">
+              <label class="form-label" for="homeBarber" data-i18n="form_barber">Barbeiro</label>
+              <select class="form-select" id="homeBarber">
+                <option value="" data-i18n="form_barber_placeholder">Qualquer barbeiro</option>
+                <option value="Cleusio">Cleusio</option>
+                <option value="Danilson">Danilson</option>
+                <!-- <option value="Hermenegildo">Hermenegildo</option> -->
+                <option value="João">João</option>
+                <!-- <option value="Estevão">Estevão</option> -->
+              </select>
+            </div>
+
 
             <div class="form-row">
               <div class="form-group">
@@ -1388,7 +1475,7 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="homeTime" data-i18n="form_time">Hora Preferida</label>
-               
+
                 <div class="time-slots-grid" id="homeTimeSlotsGrid" role="group" aria-label="Escolha o horário"></div>
                 <input type="hidden" id="homeTime" value="">
                 <div class="form-error" id="homeTimeError" data-i18n="form_time_error">Seleciona um horário.</div>
@@ -1619,7 +1706,7 @@
             <a href="https://maps.app.goo.gl/h3RPV5g8SMK8Vajz5" target="_blank" rel="noopener"
               class="btn btn--primary"><i class="fa-solid fa-diamond-turn-right"></i> <span
                 data-i18n="loc_btn_directions">Como Chegar</span></a>
-            <a href="#reservar" class="btn btn--ghost"><i class="fa-brands fa-whatsapp"></i> <span
+            <a href="#bookingFormWrap" class="btn btn--ghost"><i class="fa-brands fa-whatsapp"></i> <span
                 data-i18n="nav_cta">Reservar</span></a>
           </div>
         </div>
@@ -1661,7 +1748,7 @@
             <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
             <li><a href="#equipa" data-i18n="nav_team">Equipa</a></li>
             <li><a href="#galeria" data-i18n="nav_gallery">Galeria</a></li>
-            <li><a href="#reservar" data-i18n="nav_cta">Reservar</a></li>
+            <li><a href="#bookingFormWrap" data-i18n="nav_cta">Reservar</a></li>
           </ul>
         </div>
         <div>
@@ -1704,7 +1791,7 @@
   <div class="mobile-cta-bar" role="complementary">
     <a href="tel:+244975099348" class="mcta-call"><i class="fa-solid fa-phone"></i><span
         data-i18n="quick_call">Ligar</span></a>
-    <a href="#reservar" class="mcta-book"><i class="fa-solid fa-scissors"></i><span
+    <a href="#bookingFormWrap" class="mcta-book"><i class="fa-solid fa-scissors"></i><span
         data-i18n="nav_cta">Reservar</span></a>
   </div>
   <div class="success-overlay" id="successOverlay" role="dialog" aria-modal="true">
