@@ -745,6 +745,20 @@ body::before {
 .plan-card--unlimited::before {
   background: linear-gradient(90deg, var(--purple), var(--gold));
 }
+
+/* Pacote Pro Max — novo nível de topo, acima do Pro */
+.plan-card--promax::before {
+  background: linear-gradient(90deg, var(--purple-light), var(--gold), var(--purple-light));
+}
+.plan-card--promax {
+  border-color: rgba(133, 117, 78, 0.4);
+  box-shadow: 0 0 32px rgba(133, 117, 78, 0.12);
+}
+.plan-card__badge--promax {
+  color: var(--black);
+  background: linear-gradient(135deg, var(--gold), var(--purple-light));
+  border-color: transparent;
+}
 .plan-card--featured::before {
   background: linear-gradient(
     90deg,
