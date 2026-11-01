@@ -695,8 +695,8 @@ body::before {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-.plan-card-0{
-   border-color: var(--gold);
+.plan-card-0 {
+  border-color: var(--gold);
 }
 /* ── Imagem Fundo do Card (Estilo Dribbble) ── */
 .plan-card__bg-img {
@@ -748,7 +748,12 @@ body::before {
 
 /* Pacote Pro Max — novo nível de topo, acima do Pro */
 .plan-card--promax::before {
-  background: linear-gradient(90deg, var(--purple-light), var(--gold), var(--purple-light));
+  background: linear-gradient(
+    90deg,
+    var(--purple-light),
+    var(--gold),
+    var(--purple-light)
+  );
 }
 .plan-card--promax {
   border-color: rgba(133, 117, 78, 0.4);
@@ -1288,7 +1293,7 @@ body::before {
   background:
     linear-gradient(135deg, rgba(229, 9, 20, 0.13), rgba(229, 9, 20, 0.045)),
     rgba(17, 17, 17, 0.95);
-  border-left: 4px solid #E50914;
+  border-left: 4px solid #e50914;
   border-top: 1px solid rgba(229, 9, 20, 0.16);
   border-right: 1px solid rgba(229, 9, 20, 0.1);
   border-bottom: 1px solid rgba(229, 9, 20, 0.1);
@@ -1307,7 +1312,7 @@ body::before {
 }
 
 .home-service__notice h4 i {
-  color: #E50914;
+  color: #e50914;
   font-size: 0.9rem;
 }
 
@@ -2170,8 +2175,8 @@ body::before {
     flex-direction: column;
   }
   .booking-mode-card {
-      flex: none;        /* desliga o flex sizing automático */
-    width: 100%;       /* ocupa toda a largura */
+    flex: none; /* desliga o flex sizing automático */
+    width: 100%; /* ocupa toda a largura */
     min-height: 110px; /* garante altura mínima visível */
   }
 }
@@ -3264,5 +3269,30 @@ textarea.form-input {
   .home-service .service-item__price {
     font-size: 1rem;
     margin-left: 0.75rem;
+  }
+}
+
+/* ── Número da camisola ── */
+.barber-card__photo {
+  position: relative;
+}
+
+.barber-card__number {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  z-index: 3;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold-light);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .barber-card__number {
+    font-size: 2.4rem;
   }
 }
